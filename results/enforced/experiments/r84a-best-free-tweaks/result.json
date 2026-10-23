@@ -1,0 +1,11 @@
+{
+  "name": "r84a-best-free-tweaks",
+  "idea": "Best + RoPE bases x2 + document position in the output temperature",
+  "total_params": 52159113,
+  "flops_ratio": 0.9942976322094844,
+  "step_ms": 68.76304846024141,
+  "status": "trained",
+  "val_loss": 0.9300927281643757,
+  "train_step_ms": 68.84248232992832,
+  "finished": "2026-10-14 02:55"
+}

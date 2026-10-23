@@ -1,0 +1,11 @@
+{
+  "name": "r06b-d18w1792-smear-fastmuon",
+  "idea": "d18w1792 + smear + fast Muon",
+  "status": "trained",
+  "val_bpb": 0.795922,
+  "training_seconds": 3188.8,
+  "peak_vram_mb": 57616.3,
+  "num_steps": 3815.0,
+  "num_params_M": 855.1,
+  "finished": "2026-10-13 20:47"
+}

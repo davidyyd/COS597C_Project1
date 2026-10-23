@@ -1,0 +1,11 @@
+{
+  "name": "r89c-r88c-ngram-depth",
+  "idea": "r88c + n-gram repetition depth (one batched sort for n = 1..4)",
+  "status": "trained",
+  "val_bpb": 0.922832,
+  "training_seconds": 263.0,
+  "peak_vram_mb": 14926.2,
+  "num_steps": 3815.0,
+  "num_params_M": 52.7,
+  "finished": "2026-10-14 13:21"
+}

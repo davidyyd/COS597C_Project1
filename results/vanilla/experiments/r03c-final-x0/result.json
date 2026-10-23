@@ -1,0 +1,11 @@
+{
+  "name": "r03c-final-x0",
+  "idea": "Re-inject the token embedding before the output head",
+  "status": "trained",
+  "val_bpb": 0.957197,
+  "training_seconds": 250.3,
+  "peak_vram_mb": 15614.3,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-12 20:57"
+}

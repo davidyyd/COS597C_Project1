@@ -1,0 +1,11 @@
+{
+  "name": "r41d-d16m6-attngate",
+  "idea": "d16m6 proxy: head-wise attention output gate",
+  "status": "trained",
+  "val_bpb": 0.767949,
+  "training_seconds": 3125.5,
+  "peak_vram_mb": 75963.9,
+  "num_steps": 3815.0,
+  "num_params_M": 1673.7,
+  "finished": "2026-10-15 08:09"
+}

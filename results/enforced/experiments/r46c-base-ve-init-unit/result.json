@@ -1,0 +1,11 @@
+{
+  "name": "r46c-base-ve-init-unit",
+  "idea": "Value embeddings initialized at unit scale, not normalized (mechanism test)",
+  "total_params": 50332176,
+  "flops_ratio": 1.0,
+  "step_ms": 65.73956943000667,
+  "status": "trained",
+  "val_loss": 0.957531303405485,
+  "train_step_ms": 65.5145427401294,
+  "finished": "2026-10-13 08:13"
+}

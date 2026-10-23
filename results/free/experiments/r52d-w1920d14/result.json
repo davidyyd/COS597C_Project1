@@ -1,0 +1,11 @@
+{
+  "name": "r52d-w1920d14",
+  "idea": "Shape: width 1920 x 14 layers (15 heads), MLP hidden 13440 (~7x)",
+  "status": "trained",
+  "val_bpb": 0.764592,
+  "training_seconds": 3327.4,
+  "peak_vram_mb": 70618.3,
+  "num_steps": 3815.0,
+  "num_params_M": 1951.4,
+  "finished": "2026-10-15 18:58"
+}

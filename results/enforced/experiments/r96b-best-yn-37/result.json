@@ -1,0 +1,11 @@
+{
+  "name": "r96b-best-yn-37",
+  "idea": "Per-head output normalization (x per-head scale) only in the global layers 3 and 7",
+  "total_params": 52191886,
+  "flops_ratio": 1.003002898267666,
+  "step_ms": 68.30422458006069,
+  "status": "trained",
+  "val_loss": 0.9292098927897965,
+  "train_step_ms": 68.67725167001481,
+  "finished": "2026-10-14 08:09"
+}

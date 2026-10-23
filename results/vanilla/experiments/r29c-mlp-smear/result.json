@@ -1,0 +1,11 @@
+{
+  "name": "r29c-mlp-smear",
+  "idea": "Token shift for the MLP: the MLP also sees the previous position's normalized input",
+  "status": "trained",
+  "val_bpb": 0.954864,
+  "training_seconds": 234.4,
+  "peak_vram_mb": 13225.1,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-13 07:53"
+}

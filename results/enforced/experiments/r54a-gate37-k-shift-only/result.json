@@ -1,0 +1,11 @@
+{
+  "name": "r54a-gate37-k-shift-only",
+  "idea": "Role-specific reads: the time-shifted read feeds only the keys (gate(3,7) variant of the best)",
+  "total_params": 50946672,
+  "flops_ratio": 1.012377800176477,
+  "step_ms": 67.48837287013885,
+  "status": "trained",
+  "val_loss": 0.935552226286397,
+  "train_step_ms": 67.74054306006292,
+  "finished": "2026-10-13 11:09"
+}

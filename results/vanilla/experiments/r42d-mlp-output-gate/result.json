@@ -1,0 +1,11 @@
+{
+  "name": "r42d-mlp-output-gate",
+  "idea": "Low-rank elementwise gate on the MLP output",
+  "status": "trained",
+  "val_bpb": 0.955147,
+  "training_seconds": 238.0,
+  "peak_vram_mb": 13737.8,
+  "num_steps": 3815.0,
+  "num_params_M": 50.5,
+  "finished": "2026-10-13 14:17"
+}

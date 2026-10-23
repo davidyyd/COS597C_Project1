@@ -1,0 +1,11 @@
+{
+  "name": "r81d-best-s5",
+  "idea": "best (r77b) with seed 5",
+  "status": "trained",
+  "val_bpb": 0.76166,
+  "training_seconds": 3331.2,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-17 06:42"
+}

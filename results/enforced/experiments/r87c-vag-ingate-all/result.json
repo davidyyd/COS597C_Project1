@@ -1,0 +1,11 @@
+{
+  "name": "r87c-vag-ingate-all",
+  "idea": "MLP input gates in every layer (early layers now document-isolated)",
+  "total_params": 50610256,
+  "flops_ratio": 0.9842530944500442,
+  "step_ms": 62.101886619930156,
+  "status": "trained",
+  "val_loss": 0.9401853910430669,
+  "train_step_ms": 62.16681733960286,
+  "finished": "2026-10-14 04:09"
+}

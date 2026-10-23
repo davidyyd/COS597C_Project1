@@ -1,0 +1,11 @@
+{
+  "name": "r23c-d16-beta2-099",
+  "idea": "d16 (bigram262k, emb WD0): AdamW beta2 0.99 (from 0.95)",
+  "status": "trained",
+  "val_bpb": 0.786627,
+  "training_seconds": 2457.6,
+  "peak_vram_mb": 70513.8,
+  "num_steps": 3815.0,
+  "num_params_M": 1233.3,
+  "finished": "2026-10-14 13:18"
+}

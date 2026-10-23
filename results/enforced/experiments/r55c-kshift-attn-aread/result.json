@@ -1,0 +1,11 @@
+{
+  "name": "r55c-kshift-attn-aread",
+  "idea": "Key-only shift model + attention reads the previous attention output",
+  "total_params": 50946680,
+  "flops_ratio": 1.012377800176477,
+  "step_ms": 68.80518608988496,
+  "status": "trained",
+  "val_loss": 0.935275373256864,
+  "train_step_ms": 68.7782617699122,
+  "finished": "2026-10-13 11:34"
+}

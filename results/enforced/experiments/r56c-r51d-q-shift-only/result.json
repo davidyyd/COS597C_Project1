@@ -1,0 +1,11 @@
+{
+  "name": "r56c-r51d-q-shift-only",
+  "idea": "Time-shifted read only into the queries",
+  "total_params": 50877048,
+  "flops_ratio": 1.0110385284752181,
+  "step_ms": 65.01006846985547,
+  "status": "trained",
+  "val_loss": 0.9367314075429086,
+  "train_step_ms": 65.34691161999945,
+  "finished": "2026-10-13 11:57"
+}

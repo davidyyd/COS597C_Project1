@@ -1,0 +1,11 @@
+{
+  "name": "r05a-best-outtemp",
+  "idea": "Best model + per-token output temperature",
+  "total_params": 50357264,
+  "flops_ratio": 1.0003348179253146,
+  "step_ms": 63.224633270001505,
+  "status": "trained",
+  "val_loss": 0.95447324291088,
+  "train_step_ms": 62.83567830003449,
+  "finished": "2026-10-12 16:05"
+}

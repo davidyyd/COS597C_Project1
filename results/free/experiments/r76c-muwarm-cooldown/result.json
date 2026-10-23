@@ -1,0 +1,11 @@
+{
+  "name": "r76c-muwarm-cooldown",
+  "idea": "best (r75b) + Muon momentum cooldown to 0.85 over the last 500 steps",
+  "status": "trained",
+  "val_bpb": 0.761747,
+  "training_seconds": 3335.8,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-17 01:41"
+}

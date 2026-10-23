@@ -1,0 +1,11 @@
+{
+  "name": "r86c-r84b-doc-out-x0",
+  "idea": "r84b + document position in output temperature and x0 gate",
+  "total_params": 52191886,
+  "flops_ratio": 0.9949672680601138,
+  "step_ms": 68.66272479994223,
+  "status": "trained",
+  "val_loss": 0.9292950888230108,
+  "train_step_ms": 69.16190332005499,
+  "finished": "2026-10-14 03:36"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r10c-r09c-vsmear",
+  "idea": "r09c + per-channel smeared values",
+  "status": "trained",
+  "val_bpb": 0.943427,
+  "training_seconds": 269.2,
+  "peak_vram_mb": 17065.7,
+  "num_steps": 3815.0,
+  "num_params_M": 49.8,
+  "finished": "2026-10-12 23:28"
+}

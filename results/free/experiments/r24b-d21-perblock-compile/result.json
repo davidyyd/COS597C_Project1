@@ -1,0 +1,7 @@
+{
+  "name": "r24b-d21-perblock-compile",
+  "idea": "Per-block torch.compile (compile time / overhead test) on r22a",
+  "status": "timeout",
+  "reason": "stopped at the 60m limit",
+  "finished": "2026-10-14 14:20"
+}

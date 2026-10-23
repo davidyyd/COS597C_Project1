@@ -1,0 +1,11 @@
+{
+  "name": "r84c-mu-qk098-vo095",
+  "idea": "best (r83a): q,k momentum target 0.98, other attention matrices (v, proj, gates) 0.95",
+  "status": "trained",
+  "val_bpb": 0.760901,
+  "training_seconds": 3355.5,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-17 09:39"
+}

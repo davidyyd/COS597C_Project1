@@ -1,0 +1,11 @@
+{
+  "name": "r38c-signed-vegate",
+  "idea": "Signed value-embedding gate",
+  "total_params": 50872944,
+  "flops_ratio": 1.0108711195125608,
+  "step_ms": 68.40144784015138,
+  "status": "trained",
+  "val_loss": 0.9386310064562797,
+  "train_step_ms": 68.00408702983987,
+  "finished": "2026-10-13 05:26"
+}

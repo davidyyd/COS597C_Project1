@@ -1,0 +1,11 @@
+{
+  "name": "r57b-proxy-nope-full",
+  "idea": "proxy: no RoPE on the full-attention layers (RoPE only on sliding-window layers)",
+  "status": "trained",
+  "val_bpb": 0.768292,
+  "training_seconds": 3134.8,
+  "peak_vram_mb": 65219.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1725.0,
+  "finished": "2026-10-15 23:54"
+}

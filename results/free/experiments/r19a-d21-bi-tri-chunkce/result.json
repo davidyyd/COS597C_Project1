@@ -1,0 +1,11 @@
+{
+  "name": "r19a-d21-bi-tri-chunkce",
+  "idea": "d21 bigram + trigram hash embeddings (65521 each) + chunked softcap CE (memory)",
+  "status": "trained",
+  "val_bpb": 0.779001,
+  "training_seconds": 3244.1,
+  "peak_vram_mb": 76891.5,
+  "num_steps": 3815.0,
+  "num_params_M": 1235.2,
+  "finished": "2026-10-14 09:30"
+}

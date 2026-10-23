@@ -1,0 +1,11 @@
+{
+  "name": "r88d-vag-docstart-prior",
+  "idea": "Document-start vocabulary prior",
+  "total_params": 50487376,
+  "flops_ratio": 0.9815745510475267,
+  "step_ms": 61.227101830299944,
+  "status": "trained",
+  "val_loss": 0.9401378857349466,
+  "train_step_ms": 61.22880017006537,
+  "finished": "2026-10-14 04:33"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r28c-d16-bigramout262k",
+  "idea": "d16: output bigram table 262139 rows",
+  "status": "trained",
+  "val_bpb": 0.783224,
+  "training_seconds": 2510.6,
+  "peak_vram_mb": 78614.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1703.1,
+  "finished": "2026-10-14 19:54"
+}

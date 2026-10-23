@@ -1,0 +1,11 @@
+{
+  "name": "r98d-best-qkgate-57",
+  "idea": "Final model + q/k input self-gate in layers 5 and 7",
+  "total_params": 52257414,
+  "flops_ratio": 1.0043421699689248,
+  "step_ms": 68.70987802976742,
+  "status": "trained",
+  "val_loss": 0.9301041785112397,
+  "train_step_ms": 68.62829966004938,
+  "finished": "2026-10-14 08:58"
+}

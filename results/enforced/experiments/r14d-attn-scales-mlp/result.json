@@ -1,0 +1,11 @@
+{
+  "name": "r14d-attn-scales-mlp",
+  "idea": "Attention output scales the MLP's write",
+  "total_params": 50336272,
+  "flops_ratio": 1.0,
+  "step_ms": 66.84238138986984,
+  "status": "trained",
+  "val_loss": 0.9652506092693073,
+  "train_step_ms": 66.95165124023333,
+  "finished": "2026-10-12 19:28"
+}

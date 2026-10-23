@@ -1,0 +1,11 @@
+{
+  "name": "r15c-r14a-headveconv",
+  "idea": "r14a with per-head (not per-channel) contextual value-embedding conv weights",
+  "status": "trained",
+  "val_bpb": 0.938485,
+  "training_seconds": 266.3,
+  "peak_vram_mb": 17059.4,
+  "num_steps": 3815.0,
+  "num_params_M": 49.3,
+  "finished": "2026-10-13 01:43"
+}

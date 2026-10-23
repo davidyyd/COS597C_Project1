@@ -1,0 +1,11 @@
+{
+  "name": "r75d-rope-base-x2",
+  "idea": "Control for the RoPE rule: base = 20 x window (twice r74b's) in every head",
+  "total_params": 51143288,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 68.01717654976528,
+  "status": "trained",
+  "val_loss": 0.9310287258636806,
+  "train_step_ms": 68.6402946698945,
+  "finished": "2026-10-13 22:24"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r02c-selfgate-qtanh",
+  "idea": "Self-gated heads + bounded per-token query temperature",
+  "total_params": 50352656,
+  "flops_ratio": 1.0003348179253146,
+  "step_ms": 61.14431084017269,
+  "status": "trained",
+  "val_loss": 0.9535314518813165,
+  "train_step_ms": 61.23573369986843,
+  "finished": "2026-10-12 15:09"
+}

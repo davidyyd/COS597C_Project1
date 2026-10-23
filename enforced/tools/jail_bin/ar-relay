@@ -1,0 +1,52 @@
+#!/usr/bin/env python3
+"""ar-check / ar-exp for the agent (inside its jail, or first on its PATH when it runs unjailed). The real
+commands need the harness and the GPUs, which the jail hides, so this stub hands the call to the launcher
+outside the jail: it writes .ar/<id>.req.json in the run folder, then streams .ar/<id>.out (written by the
+launcher) and exits with the code in .ar/<id>.rc. Stopping this command (Ctrl-C, a timeout) cancels the
+real one."""
+
+import json
+import os
+import secrets
+import signal
+import sys
+import time
+from pathlib import Path
+
+tool = Path(sys.argv[0]).name
+run_dir = Path(os.environ.get("AR_RUN_DIR", ".")).resolve()
+q = run_dir / ".ar"
+rid = f"{time.strftime('%Y%m%d-%H%M%S')}-{secrets.token_hex(3)}"
+req, out, rc = q / f"{rid}.req.json", q / f"{rid}.out", q / f"{rid}.rc"
+
+
+def cancel(*_):
+    (q / f"{rid}.cancel").touch()
+    sys.exit(130)
+
+
+for s in (signal.SIGINT, signal.SIGTERM, signal.SIGHUP):
+    signal.signal(s, cancel)
+tmp = q / f".{rid}.tmp"
+tmp.write_text(json.dumps(dict(tool=tool, argv=sys.argv[1:], cwd=os.getcwd())))
+os.replace(tmp, req)
+
+t0, pos = time.time(), 0
+while not out.exists():
+    if time.time() - t0 > 120:
+        req.unlink(missing_ok=True)
+        sys.exit(f"{tool}: the launcher did not pick up the request (is the run's launcher running?)")
+    time.sleep(0.5)
+with open(out, "rb") as f:
+    while True:
+        chunk = f.read()
+        if chunk:
+            sys.stdout.buffer.write(chunk)
+            sys.stdout.flush()
+        elif rc.exists():
+            chunk = f.read()
+            sys.stdout.buffer.write(chunk)
+            sys.stdout.flush()
+            sys.exit(int(rc.read_text().strip() or 1))
+        else:
+            time.sleep(0.5)

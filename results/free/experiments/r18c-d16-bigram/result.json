@@ -1,0 +1,11 @@
+{
+  "name": "r18c-d16-bigram",
+  "idea": "d16 + hashed bigram embedding",
+  "status": "trained",
+  "val_bpb": 0.78987,
+  "training_seconds": 2423.1,
+  "peak_vram_mb": 65137.5,
+  "num_steps": 3815.0,
+  "num_params_M": 881.0,
+  "finished": "2026-10-14 08:31"
+}

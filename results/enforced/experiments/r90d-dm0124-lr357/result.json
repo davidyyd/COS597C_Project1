@@ -1,0 +1,11 @@
+{
+  "name": "r90d-dm0124-lr357",
+  "idea": "Best + document masking in layer 4, low-rank head gate only in 3, 5, 7",
+  "total_params": 52159109,
+  "flops_ratio": 0.9871548498027714,
+  "step_ms": 68.29517778998706,
+  "status": "trained",
+  "val_loss": 0.93008250464039,
+  "train_step_ms": 68.37906043001567,
+  "finished": "2026-10-14 05:25"
+}

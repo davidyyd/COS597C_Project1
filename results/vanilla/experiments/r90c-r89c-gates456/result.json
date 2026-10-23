@@ -1,0 +1,11 @@
+{
+  "name": "r90c-r89c-gates456",
+  "idea": "r89c with the MLP hidden gate in layers 4-6 (fit the time cap)",
+  "status": "trained",
+  "val_bpb": 0.923149,
+  "training_seconds": 267.0,
+  "peak_vram_mb": 14910.2,
+  "num_steps": 3815.0,
+  "num_params_M": 52.7,
+  "finished": "2026-10-14 14:16"
+}

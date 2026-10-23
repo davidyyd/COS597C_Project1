@@ -1,0 +1,11 @@
+{
+  "name": "r52a-r51b-docmask-full",
+  "idea": "r51b + document masking in the two full-attention layers (non-learnable score_mod)",
+  "status": "trained",
+  "val_bpb": 0.929378,
+  "training_seconds": 265.0,
+  "peak_vram_mb": 14416.7,
+  "num_steps": 3815.0,
+  "num_params_M": 50.1,
+  "finished": "2026-10-13 20:24"
+}

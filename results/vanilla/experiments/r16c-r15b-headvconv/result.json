@@ -1,0 +1,11 @@
+{
+  "name": "r16c-r15b-headvconv",
+  "idea": "r15b + contextual values: per-head 4-lag causal conv on the attention values",
+  "status": "trained",
+  "val_bpb": 0.939453,
+  "training_seconds": 268.9,
+  "peak_vram_mb": 18467.3,
+  "num_steps": 3815.0,
+  "num_params_M": 49.3,
+  "finished": "2026-10-13 02:01"
+}

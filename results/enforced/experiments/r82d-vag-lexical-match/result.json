@@ -1,0 +1,11 @@
+{
+  "name": "r82d-vag-lexical-match",
+  "idea": "Lexical-match channel in attention: q and k carry an un-rotated token-identity code",
+  "total_params": 50348176,
+  "flops_ratio": 0.9788960076450093,
+  "step_ms": 64.42778152006213,
+  "status": "trained",
+  "val_loss": 0.9415233777054898,
+  "train_step_ms": 64.75160517002223,
+  "finished": "2026-10-14 02:04"
+}

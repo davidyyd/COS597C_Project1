@@ -1,0 +1,11 @@
+{
+  "name": "r92a-best-ynorm",
+  "idea": "Best + per-head attention outputs normalized before the head gate",
+  "total_params": 52191878,
+  "flops_ratio": 1.003002898267666,
+  "step_ms": 68.14421287039295,
+  "status": "trained",
+  "val_loss": 0.9331545372844422,
+  "train_step_ms": 68.37134532004711,
+  "finished": "2026-10-14 06:33"
+}

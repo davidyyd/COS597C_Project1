@@ -1,0 +1,11 @@
+{
+  "name": "r06a-stalegates-headgate",
+  "idea": "Stale depth gates + temperature + per-head attention output gate",
+  "status": "trained",
+  "val_bpb": 0.948161,
+  "training_seconds": 265.1,
+  "peak_vram_mb": 16180.1,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-12 21:55"
+}

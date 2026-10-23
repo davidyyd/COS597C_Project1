@@ -1,0 +1,11 @@
+{
+  "name": "r45b-nochain-tb03",
+  "idea": "Token-conditioned MLP bias (layers 0-3) instead of the read chain",
+  "total_params": 52191828,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 66.17960080009652,
+  "status": "trained",
+  "val_loss": 0.938267457943348,
+  "train_step_ms": 66.22055101004662,
+  "finished": "2026-10-13 07:51"
+}

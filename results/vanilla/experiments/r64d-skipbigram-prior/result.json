@@ -1,0 +1,11 @@
+{
+  "name": "r64d-skipbigram-prior",
+  "idea": "Low-rank skip-bigram logit prior (current and previous token)",
+  "status": "trained",
+  "val_bpb": 0.955346,
+  "training_seconds": 236.6,
+  "peak_vram_mb": 12740.5,
+  "num_steps": 3815.0,
+  "num_params_M": 51.9,
+  "finished": "2026-10-14 01:57"
+}

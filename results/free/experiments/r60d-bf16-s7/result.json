@@ -1,0 +1,11 @@
+{
+  "name": "r60d-bf16-s7",
+  "idea": "r59b with seed 7",
+  "status": "trained",
+  "val_bpb": 0.764071,
+  "training_seconds": 3254.0,
+  "peak_vram_mb": 68626.4,
+  "num_steps": 3815.0,
+  "num_params_M": 1893.8,
+  "finished": "2026-10-16 02:50"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r31d-ema-context",
+  "idea": "Multi-timescale causal context channels",
+  "total_params": 50336280,
+  "flops_ratio": 1.0142855648134261,
+  "step_ms": 65.40583191992482,
+  "status": "trained",
+  "val_loss": 0.9568501440807305,
+  "train_step_ms": 65.37590913008898,
+  "finished": "2026-10-13 02:07"
+}

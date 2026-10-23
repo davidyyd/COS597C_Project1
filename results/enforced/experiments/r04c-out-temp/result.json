@@ -1,0 +1,11 @@
+{
+  "name": "r04c-out-temp",
+  "idea": "Per-token output temperature (confidence) after the gainless final norm",
+  "total_params": 50332688,
+  "flops_ratio": 1.0,
+  "step_ms": 65.84394781006267,
+  "status": "trained",
+  "val_loss": 0.9564391584165051,
+  "train_step_ms": 65.84393551005633,
+  "finished": "2026-10-12 15:51"
+}

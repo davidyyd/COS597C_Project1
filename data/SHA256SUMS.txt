@@ -1,0 +1,5 @@
+# sha256 of the prepared data, relative to $AR_DATA; check with: (cd $AR_DATA && sha256sum -c $AR_REPO/data/SHA256SUMS.txt)
+6f9947aa5a9ea2471130b2a0b0327e5bd65b867773bb77fb143d30450443fbd2  val_rows.bin
+30f0741a35d5a3753d697e517d4738f46b304bc4a323ea945034cadb793c63bf  train_rows.bin
+23f765b3bcef1c3808370ede6d9e5161cbaf2e2c86f2e8a947efb08fa3168db8  tokenizer/token_bytes.npy
+888c9fa865c72c25f9c5e9467136a9cc8655253db459fb97481deb326681c629  tokenizer/tokenizer.pkl

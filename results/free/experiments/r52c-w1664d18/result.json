@@ -1,0 +1,12 @@
+{
+  "name": "r52c-w1664d18",
+  "idea": "Shape: width 1664 x 18 layers (13 heads), MLP hidden 11648 (~7x)",
+  "status": "timeout",
+  "reason": "stopped at the 60m limit",
+  "val_bpb": 0.764519,
+  "training_seconds": 3425.4,
+  "peak_vram_mb": 74516.5,
+  "num_steps": 3815.0,
+  "num_params_M": 1810.5,
+  "finished": "2026-10-15 18:58"
+}

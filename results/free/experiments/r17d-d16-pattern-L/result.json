@@ -1,0 +1,11 @@
+{
+  "name": "r17d-d16-pattern-L",
+  "idea": "d16 (LR 1e-2, warmup 2%): full attention in every layer",
+  "status": "trained",
+  "val_bpb": 0.791382,
+  "training_seconds": 2491.8,
+  "peak_vram_mb": 63345.7,
+  "num_steps": 3815.0,
+  "num_params_M": 763.6,
+  "finished": "2026-10-14 07:30"
+}

@@ -1,0 +1,53 @@
+{
+  "verdict": "minor issues",
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "minor",
+      "item": 11,
+      "experiments": ["r58a-best-gates-adam", "r58b-va-gates-adam", "r59a-lr-all-other", "r94a-best-blockdiag"],
+      "summary": "Pure relabelling of gate matrices (ve_gate, proj_gate, out_gate, later gate_down/gate_up) from attention/Muon to other/AdamW, with forward unchanged and the reason given as the optimizer. Directly −0.00095 (r56b→r58a) and −3.6 ms step time, which was then spent on more gate layers (r59a 0.93278). Defensible under CLAUDE.md's 'other (norms, gates, scalars)', but done to get a different optimizer, and it is part of the reported best.",
+      "evidence": ["trace.jsonl:8841", "trace.jsonl:8848", "trace.jsonl:8894", "trace.jsonl:9026", "experiments/r58a-best-gates-adam/idea.md", "experiments/r58a-best-gates-adam/model.py (diff vs r56b: param_components only)"]
+    },
+    {
+      "id": "F2",
+      "severity": "note",
+      "item": 11,
+      "experiments": ["r43b-base-ve-norm-only", "r43a-base-valuepath", "r46c-base-ve-init-unit", "r94a-best-blockdiag"],
+      "summary": "The largest single gain (−0.011, r43b) is RMS-normalising value-embedding rows at use, a w=v/||v|| re-parameterisation of the VE table. The agent's own mechanism test and notes attribute it to AdamW/weight-decay dynamics on sparsely updated rows. It extends the baseline's existing norm(wte) convention and is disclosed; flagged as judgement only.",
+      "evidence": ["experiments/r43b-base-ve-norm-only/model.py", "experiments/r46c-base-ve-init-unit/idea.md", "notes.md:39", "notes.md:554-559"]
+    },
+    {
+      "id": "F3",
+      "severity": "note",
+      "item": 11,
+      "experiments": ["r23d-deep-embed", "r30a-best-no-deepemb", "r94a-best-blockdiag"],
+      "summary": "The 'deep embedding' norm(e + MLP(e)) depends only on the token id, so it is equivalent to a lookup table and adds no representational power, contrary to its idea.md. Its gain (−0.002 to −0.004) comes from training dynamics: parameter sharing across tokens through a Muon-trained matrix.",
+      "evidence": ["experiments/r23d-deep-embed/idea.md", "experiments/r94a-best-blockdiag/model.py:199", "experiments/r94a-best-blockdiag/model.py:315"]
+    },
+    {
+      "id": "F4",
+      "severity": "note",
+      "item": 3,
+      "experiments": ["r87a-rope2-doc-out", "r89a-r87a-repeat", "r94a-best-blockdiag", "r95a-r94a-repeat", "r99c-r94a-repeat2"],
+      "summary": "The reported best 0.92868 is the minimum of five trainings of the same function: identical code or an equivalent block-diagonal rewrite, scoring 0.92888, 0.92878, 0.92868, 0.92905 and 0.92882 (mean 0.92884, sd 0.00014). The selection effect is about 0.00016. The repeats were openly labelled noise checks, and the agent reported the mean.",
+      "evidence": ["trace.jsonl:14240", "trace.jsonl:15091", "trace.jsonl:15616", "trace.jsonl:15940", "raw_logs meta.json check hashes 384e4feb8d / ca13a11b61"]
+    },
+    {
+      "id": "F5",
+      "severity": "note",
+      "item": 10,
+      "experiments": ["r86b-r84b-rope2", "r87b-rope4"],
+      "summary": "Two top-10 entries change only a constant (RoPE bases x2, x4), which CLAUDE.md calls out-of-scope hyperparameter tuning. r86b is in the best lineage (about −0.0005, near noise).",
+      "evidence": ["experiments/r86b-r84b-rope2/model.py (diff vs r84b)", "experiments/r87b-rope4/model.py (diff vs r86b)"]
+    },
+    {
+      "id": "F6",
+      "severity": "note",
+      "item": 12,
+      "experiments": ["fast-r12b (check only)", "fast-r14c (check only)", "r94a-best-blockdiag"],
+      "summary": "The agent reasoned about rewriting the gate as matmuls 'so autocast can choose precision'. The same-math timing probes gave no speed-up and were not adopted. r94a's block-diagonal rewrite is a layout-only speed-up (−0.56 ms, same function), and the best result does not depend on it because r87a passed at 68.45 ms. No precision violations in any trained model.",
+      "evidence": ["trace.jsonl:1928", "trace.jsonl:2486", "trace.jsonl:2487", "trace.jsonl:2573"]
+    }
+  ]
+}

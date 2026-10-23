@@ -1,0 +1,11 @@
+{
+  "name": "r72c-r71c-split176-96",
+  "idea": "r71c with a slightly smaller current-token prior rank (176) to fit the time cap",
+  "status": "trained",
+  "val_bpb": 0.926212,
+  "training_seconds": 262.1,
+  "peak_vram_mb": 15017.2,
+  "num_steps": 3815.0,
+  "num_params_M": 50.4,
+  "finished": "2026-10-14 05:18"
+}

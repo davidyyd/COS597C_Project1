@@ -1,0 +1,11 @@
+{
+  "name": "r80b-best-docmask01-lr357",
+  "idea": "Best + document masking in local layers 0-1, low-rank head gate in 3, 5, 7",
+  "total_params": 52159112,
+  "flops_ratio": 1.0014404146161975,
+  "step_ms": 68.48086965997936,
+  "status": "trained",
+  "val_loss": 0.9301882158784023,
+  "train_step_ms": 68.28323832014576,
+  "finished": "2026-10-14 01:07"
+}

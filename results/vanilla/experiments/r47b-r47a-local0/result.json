@@ -1,0 +1,11 @@
+{
+  "name": "r47b-r47a-local0",
+  "idea": "Lean base + local attention in layer 0 (instead of the value conv)",
+  "status": "trained",
+  "val_bpb": 0.932038,
+  "training_seconds": 261.5,
+  "peak_vram_mb": 15428.7,
+  "num_steps": 3815.0,
+  "num_params_M": 50.5,
+  "finished": "2026-10-13 17:04"
+}

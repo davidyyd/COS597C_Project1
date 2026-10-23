@@ -1,0 +1,11 @@
+{
+  "name": "r77c-docmean-x0",
+  "idea": "Bag-of-words document context in x0",
+  "status": "trained",
+  "val_bpb": 0.954226,
+  "training_seconds": 235.9,
+  "peak_vram_mb": 12973.8,
+  "num_steps": 3815.0,
+  "num_params_M": 50.6,
+  "finished": "2026-10-14 07:52"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "r32d-d16-xsa",
+  "idea": "d16 (r30d): learnable exclusive self-attention (XSA)",
+  "status": "crash",
+  "reason": "no val_bpb printed; see run.log",
+  "finished": "2026-10-14 23:23"
+}

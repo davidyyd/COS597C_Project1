@@ -1,0 +1,11 @@
+{
+  "name": "r12d-docmask",
+  "idea": "Document masking: attention only within the same document (flex_attention, all layers)",
+  "status": "trained",
+  "val_bpb": 0.935817,
+  "training_seconds": 364.1,
+  "peak_vram_mb": 20867.0,
+  "num_steps": 3815.0,
+  "num_params_M": 50.4,
+  "finished": "2026-10-14 02:30"
+}

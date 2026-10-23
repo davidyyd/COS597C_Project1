@@ -1,0 +1,11 @@
+{
+  "name": "r64c-proxy-x01",
+  "idea": "proxy: extra token-embedding table mixed into every layer (x01)",
+  "status": "trained",
+  "val_bpb": 0.765468,
+  "training_seconds": 3162.9,
+  "peak_vram_mb": 66127.7,
+  "num_steps": 3815.0,
+  "num_params_M": 1739.7,
+  "finished": "2026-10-16 13:39"
+}

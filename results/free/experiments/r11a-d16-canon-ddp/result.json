@@ -1,0 +1,11 @@
+{
+  "name": "r11a-d16-canon-ddp",
+  "idea": "DDP (bucketed grad all_reduce overlapped with backward) instead of a post-backward all_reduce loop",
+  "status": "trained",
+  "val_bpb": 0.794685,
+  "training_seconds": 2705.0,
+  "peak_vram_mb": 78594.5,
+  "num_steps": 3815.0,
+  "num_params_M": 763.6,
+  "finished": "2026-10-14 01:32"
+}

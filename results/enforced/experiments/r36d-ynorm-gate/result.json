@@ -1,0 +1,11 @@
+{
+  "name": "r36d-ynorm-gate",
+  "idea": "Head output = normalized retrieval x self-gate",
+  "total_params": 50336272,
+  "flops_ratio": 1.0,
+  "step_ms": 62.58289710996905,
+  "status": "trained",
+  "val_loss": 0.9542749747023838,
+  "train_step_ms": 60.879654019954614,
+  "finished": "2026-10-13 04:31"
+}

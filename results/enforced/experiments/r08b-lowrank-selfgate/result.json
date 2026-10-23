@@ -1,0 +1,11 @@
+{
+  "name": "r08b-lowrank-selfgate",
+  "idea": "Per-dimension self-gate (low-rank) on attention heads",
+  "total_params": 50622992,
+  "flops_ratio": 1.0056919047303494,
+  "step_ms": 68.20544822985539,
+  "status": "trained",
+  "val_loss": 0.9502666717317205,
+  "train_step_ms": 68.48259388993029,
+  "finished": "2026-10-12 17:01"
+}

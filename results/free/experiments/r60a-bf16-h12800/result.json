@@ -1,0 +1,11 @@
+{
+  "name": "r60a-bf16-h12800",
+  "idea": "r59b (bf16 residual) with MLP hidden 12800 (100*128)",
+  "status": "trained",
+  "val_bpb": 0.763815,
+  "training_seconds": 3279.8,
+  "peak_vram_mb": 69029.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-16 02:50"
+}

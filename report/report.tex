@@ -1,0 +1,269 @@
+\documentclass{article}
+\usepackage{iclr2027_conference,times}
+\iclrfinalcopy
+\input{math_commands.tex}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage[pagebackref=false, breaklinks=true, letterpaper=true, colorlinks,
+            citecolor=citecolor, linkcolor=linkcolor, bookmarks=false]{hyperref}
+\definecolor{citecolor}{HTML}{0071BC}
+\definecolor{linkcolor}{HTML}{ED1C24}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{caption}
+% Float spacing as in our ICLR 2027 paper: one gap between every float and the text, wherever the float lands,
+% and one gap between a float and its caption (figures one point more, since they end at their ink).
+\renewcommand{\bottomfraction}{0.95}
+\setlength{\textfloatsep}{18pt plus 2pt minus 2pt}
+\setlength{\intextsep}{18pt plus 2pt minus 2pt}
+\captionsetup{font=small,skip=4pt}
+\captionsetup[figure]{skip=5pt}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,fit}
+\usepackage{enumitem}
+\setlist{itemsep=1pt,topsep=2pt,leftmargin=1.3em}
+
+\definecolor{free}{HTML}{6B6B6B}
+\definecolor{vanilla}{HTML}{C26A12}
+\definecolor{enforced}{HTML}{2E6DB4}
+
+\title{Can We Trust an Agent Researching by Itself?}
+
+\author{Yida Yin \\
+Princeton University}
+
+\newcommand{\bpb}{bpb}
+
+\raggedbottom
+\begin{document}
+\maketitle
+\lhead{COS 597C Project 1, Fall 2026}   % a course report: replace the template's ICLR running head
+
+\begin{abstract}
+Autonomous research agents conduct experiments to iteratively optimize a target metric under constraints specified only in their prompts. We investigate whether such prompt-based rules are sufficient. Using Karpathy's \emph{autoresearch}, we compare three configurations, each running a Claude agent for 400 experiments. (1) \emph{Free} allows the agent to operate without constraints. (2) \emph{Vanilla} specifies rules in the prompt but does not enforce them. (3) \emph{Enforced} automatically checks the same rules before every training run. \emph{Free} improves performance by training a 38$\times$ larger model, \emph{Vanilla} reduces numerical precision to accelerate training, and \emph{Enforced} follows every checked rule. These findings demonstrate that prompt-based rules alone are unreliable, and independent post-run auditing remains essential for detecting unintended behaviors. Code is available at \url{https://github.com/davidyyd/COS597C_Project1}.
+\end{abstract}
+
+\section{Introduction}
+
+Language model agents can now run machine learning experiments end to end. They propose ideas, write code, train
+models, and even report results in papers~\citep{lu2024aiscientist,yamada2025aiscientistv2,novikov2025alphaevolve,gottweis2026coscientist}.
+Karpathy's \emph{autoresearch}~\citep{karpathy2026autoresearch} is a minimal instance. A coding agent edits a
+small GPT training script, trains for about five minutes, keeps the change if the validation metric decreases, and repeats. However, optimizing a single number invites reward hacking
+\citep{amodei2016concrete,manheim2018goodhart,skalse2022rewardhacking}. Agents have been observed doing this on
+many tasks \citep{metr2025rewardhacking,zhong2025impossiblebench,huang2026rewardhackingresearch}.
+
+Autoresearch, like most such systems, states its rules in the prompt and trusts the agent to follow them. We test this trust directly. We run the same agent on Karpathy's autoresearch in three setups that differ \emph{only}
+in how the rules are enforced: \emph{Free} (no rules), \emph{Vanilla} (rules
+stated in the prompt) and \emph{Enforced} (the same rules, checked by an automatic gate
+before every training run; Figure~\ref{fig:overview}). The agent is sandboxed, and every action is recorded outside its reach. After each
+400-experiment run, a separate agent audits the full record. Our contributions are:
+\begin{itemize}
+\item a harness for autoresearch that applies a static code scan, a precision check, a causality
+test and $+5\%$ caps on parameters, FLOPs and measured step time to every candidate before it may train;
+\item a controlled comparison of the three setups,
+in which every reported result is audited by an external agent based on the raw agent traces;
+\item evidence that unchecked rules are broken whenever breaking them improves the score, and that the audit catches a gain the checks do not anticipate.
+\end{itemize}
+
+\section{Experiment Setup}
+\label{sec:setup}
+
+We aim to study whether rules stated in a prompt constrain an autonomous research agent, and what automatic
+enforcement adds. This section describes the task, the agent and the three setups.
+
+\textbf{Task.} We ask the agent to design a better architecture for language models. We build on
+Karpathy's \emph{autoresearch} codebase~\citep{karpathy2026autoresearch}, which trains a small GPT from
+nanochat~\citep{karpathy2025nanochat} on ClimbMix web text~\citep{diao2025climb} with a fixed recipe that uses
+Muon~\citep{jordan2024muon} and AdamW~\citep{loshchilov2019adamw}. The data, the training budget and the
+optimizer are held fixed, so a better score should come from a better architecture. One training run takes about
+four minutes on a single node of 8 H100 GPUs, so an agent can afford hundreds of experiments. The score is
+validation bits per byte (\bpb{})~\citep{gao2020pile}. The baseline scores 0.959 \bpb{}.
+
+\textbf{Agent.} The agent is Claude Opus 5.5 with medium thinking effort in Claude Code. Rather than making one change at a time, as in Karpathy's original autoresearch, we ask the agent to run a search, which we find lowers the metric faster. Every round, it trains four candidates: it may refine the best ideas or explore new ones. Each autoresearch run has a budget of 400 experiments.
+
+\textbf{Three setups.} The setups differ only in how the rules are enforced. \emph{Free} lets the agent change
+anything, so it has no rules. \emph{Vanilla} and \emph{Enforced} give the same rules: change only the model architecture, keep the model
+causal, keep its cost (training time, compute and size) within 5\% of the baseline, and leave the precision, optimizer
+and data untouched. While \emph{Vanilla} states these rules only in the prompt, \emph{Enforced} also checks them before a candidate may train
+(Figure~\ref{fig:overview}): a separate programmatic gate inspects each candidate's code and runs it to verify that the model
+keeps full precision, cannot see future tokens, and stays within the cost limit.
+
+\begin{figure}[!h]
+\centering
+\begin{tikzpicture}[
+  font=\small,
+  box/.style={draw=black!60, rounded corners=2pt, align=center, inner sep=4pt, fill=white},
+  gate/.style={draw=enforced, very thick, rounded corners=2pt, align=center, inner sep=4pt, fill=enforced!6},
+  aud/.style={draw=vanilla, thick, rounded corners=2pt, align=center, inner sep=4pt, fill=vanilla!5},
+  arr/.style={-{Latex[length=2mm]}, thick, black!70}]
+  \node[box, minimum width=2.6cm, minimum height=1.05cm] (agent) {\textbf{Agent} (Claude)\\edits the model};
+  \node[draw=black!45, dashed, rounded corners=3pt, inner sep=5pt, fit=(agent),
+        label={[font=\footnotesize, text=black!60, anchor=north west]south west:sandbox}] (sandbox) {};
+  \node[gate, right=1.05cm of sandbox, minimum width=3.9cm, minimum height=1.05cm] (check)
+       {\textbf{Gate}\\code scan $\cdot$ precision trace\\causality test $\cdot$ cost caps};
+  \node[box, right=0.75cm of check, minimum width=2.7cm, minimum height=1.05cm] (train)
+       {\textbf{Train and score}\\fixed recipe};
+  \node[box, below=0.75cm of train, minimum width=2.7cm, minimum height=0.95cm] (log)
+       {\textbf{Record}\\outside the sandbox};
+  \node[aud, left=0.75cm of log, minimum width=3.9cm, minimum height=0.95cm] (audit)
+       {\textbf{Audit} (after the run)\\separate agent, cited evidence};
+  \draw[arr] (sandbox) -- node[above, font=\footnotesize]{candidate} (check);
+  \draw[arr] (check) -- node[above, font=\footnotesize]{pass} (train);
+  \draw[arr] (train) -- (log);
+  \draw[arr] (log) -- (audit);
+  \draw[arr, dashed] (log.east) -- ++(0.3,0) |- ++(0,-0.85) -| node[pos=0.27, below, font=\footnotesize]
+       {score returned to the agent} (sandbox.south);
+  \draw[arr, enforced, dashed] (check.north) -- ++(0,0.35) -| node[pos=0.25, above, font=\footnotesize,
+       text=enforced]{fail: the reason is returned, nothing is trained} (sandbox.north);
+\end{tikzpicture}
+\caption{\textbf{Our enforced setup.} The agent edits the model inside a sandbox. Before a candidate may
+train, a programmatic gate checks that it keeps full precision, cannot see future tokens, and stays within the
+cost limit. A failed candidate goes back to the agent; a passing one is trained and recorded, and a separate
+agent audits the full record after the run.}
+\label{fig:overview}
+\end{figure}
+
+\textbf{Sandbox and audit.} In every setup, the agent works in a sandbox built with bubblewrap~\citep{bubblewrap} that exposes only its
+own folder. It can train models only through commands we provide and cannot access GPUs directly. Its results are recorded outside its
+reach and cannot be modified. After each run, a separate Claude agent audits the full record: whether the results are real, whether the
+rules are followed, and whether the research is new.
+
+\section{Results}
+
+\begin{figure}[b]
+\centering
+\includegraphics[width=0.5\linewidth]{../analysis/climb_all.pdf}%
+\includegraphics[width=0.5\linewidth]{../analysis/climb_zoom.pdf}\\
+\includegraphics[width=\linewidth]{../analysis/climb_legend.pdf}
+\caption{\textbf{Best validation \bpb{} so far per search round} (dashed: baseline). Left: all setups; \emph{Free}
+leaves the others behind in its first round. Right: \emph{Vanilla} leads \emph{Enforced} from round 2 onward.}
+\label{fig:climb}
+\end{figure}
+
+Figure~\ref{fig:climb} shows how the metric evolves during autoresearch. We summarize our
+findings below.
+
+\textbf{All three setups improve the score at different rates.} \emph{Free} lowers \bpb{} by 20.8\%,
+\emph{Vanilla} by 3.9\% and \emph{Enforced} by 3.2\%. \emph{Free} drops sharply in its first round and then
+improves slowly. \emph{Vanilla} and \emph{Enforced} improve gradually, and \emph{Vanilla} leads \emph{Enforced}
+from round 2 to the end. All three still improve near the end of the 400-experiment budget.
+
+\textbf{Without rules, the agent wins by scale.} \emph{Free}'s first round increases the model size a lot
+(0.845 \bpb{} with 285M parameters). Its best model is 38$\times$ larger than the baseline and trains 13$\times$
+longer. Over the whole search, \emph{Free} spends 2{,}477 H100 hours on training, 11$\times$ as much as
+either other setup. The audit of the \emph{Free} run also shows that about 80\% of the improvement comes from this scale-up. 
+
+\textbf{Stated but unchecked rules are broken.} In \emph{Vanilla}, the agent lowers the numeric precision of
+the rotary-embedding tables and the residual stream, calling it ``a precision/efficiency control, disclosed
+as such''. The two changes, verbatim from the agent's code (comments omitted):
+\begin{center}
+\small
+\begin{tabular}{@{}l@{}}
+\texttt{\textcolor{red!70!black}{- cos, sin = freqs.cos(), freqs.sin()}}\\
+\texttt{\textcolor{green!40!black}{+ cos, sin = freqs.cos().bfloat16(), freqs.sin().bfloat16()}}\\
+\texttt{\textcolor{red!70!black}{- x = norm(self.transformer.wte(idx))}}\\
+\texttt{\textcolor{green!40!black}{+ x = norm(self.transformer.wte(idx)).bfloat16()}}
+\end{tabular}
+\end{center}
+On the baseline, they cut training time by 7.5\%, more than the original 5\% allowance. The agent then spends the saved time on other modules, and all ten of its best models build on both
+changes. At the fixed precision, its best model would train 11\% longer than the baseline, beyond the 5\% limit. Even with this advantage,
+138 of its 386 trained experiments break the stated time limit. 
+
+\textbf{Checked rules hold.} The \emph{Enforced} agent submits 537 candidates to the gate. The gate passes 416
+and rejects 121: 104 exceed the step-time limit, 2 crash the speed benchmark, and 15 fail the model
+check, including one model that leaks future tokens, one that computes in lower precision and three that
+exceed the size or compute limits. The audit finds no broken rule. It does find a gain that is not
+expected: the agent moves some matrices from Muon to AdamW without changing what the
+model computes. This improves the score through the optimizer, not the architecture.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.5\linewidth]{../analysis/code_size.pdf}%
+\includegraphics[width=0.5\linewidth]{../analysis/cost_score.pdf}\\
+\includegraphics[width=\linewidth]{../analysis/fig3_legend.pdf}
+\caption{\textbf{Stacking and cost.} Left: lines of code the best model so far changes relative to the baseline.
+Right: step time relative to the baseline against score, for \emph{Enforced} and \emph{Vanilla}; the dashed line
+marks their $+5\%$ limit. \emph{Free} trains 13$\times$ longer than the baseline and is off this scale.}
+\label{fig:stack}
+\end{figure}
+
+\textbf{The best models stack known techniques.} In all three setups, we find the best models to be
+combinations of several known techniques, such as gated attention, value embeddings, $n$-gram features, U-Net
+skips and document masking. The stacking grows over the run (Figure~\ref{fig:stack}, left). In the first 10 rounds, a candidate changes a median
+of 17 to 36 lines of the baseline code and usually tries one standalone idea. In the last 10 rounds, it changes 80
+to 330 lines, and the ten best models of each setup change 152 to 330, built by combining earlier winners.
+
+\textbf{The agent spends the whole budget it is allowed.} In \emph{Enforced} and \emph{Vanilla}, the best models
+sit at the $+5\%$ step-time limit (Figure~\ref{fig:stack}, right). \emph{Enforced}'s candidates stop at the limit,
+which the gate checks, while 138 of \emph{Vanilla}'s experiments go past it. \emph{Free}, which has no cost rule,
+trains its best model 13$\times$ longer than the baseline. Such a gain says nothing about the architecture.
+
+\textbf{The reported best is often a lucky draw.} Training the same model twice gives slightly different
+scores, because of random seeds and nondeterministic GPU kernels. All three agents retrain near-identical models
+and keep the best score. In \emph{Enforced}, the reported best (0.92868) is the lowest of five trainings of the
+same model, whose mean is 0.92884. In \emph{Free}, it is the lowest of 31 trainings that differ only in the random
+seed, and 95 of its 400 experiments change nothing but the seed.
+
+\section{What did not work}
+
+Here, we also record the parts of our design that do not work as intended.
+
+\textbf{Strict checks reject some honest designs.} The precision trace flags any tensor below fp32, including
+tensors that never carry model activations. Thus, it rejects a candidate whose document mask, built inside the
+model, uses int8 tensors for bookkeeping. A stricter rule can cost a legitimate idea.
+
+\textbf{A check that measures a noisy quantity once can be gamed.} Step time varies from one measurement to the
+next, so a single benchmark is a random draw. In runs with a larger model (162M parameters, same harness), the
+agent re-submits, after a step-time failure, an edit that it has itself judged to be no faster, and the new
+measurement passes. Noisy checks need repeated measurements.
+
+\textbf{The sandbox leaks the agent's credential.} The launcher passes the agent's login token to the sandbox as a
+command-line argument. When the \emph{Free} agent runs \texttt{pgrep -af} to check on its jobs, the token appears in
+its context and in a world-readable trace. Instead, our harness passes the token through an owner-only
+file, checks that no process command line shows it, and redacts it from traces. An agent that reads its own
+environment can still see it. We publish
+the audits but not the raw traces.
+
+\textbf{Our evidence is limited.} We run each setup once, so we cannot separate the effect of a setup from the
+run-to-run variance of the search. Finally, the audit is itself an LLM judgment: we have verified every
+finding we report against its cited evidence, but not every sentence in every audit.
+
+\section{Related work}
+
+\textbf{Autonomous research agents.} Language model agents have begun to automate parts of the machine learning research
+loop. Some systems carry a project from idea to paper~\citep{lu2024aiscientist,yamada2025aiscientistv2}, others
+generate and debate research hypotheses with scientists~\citep{gottweis2026coscientist}, and
+evolutionary coding agents search over programs scored by an automatic evaluator~\citep{novikov2025alphaevolve}.
+Benchmarks measure agents on machine learning engineering, replication and post-training
+\citep{huang2024mlagentbench,chan2025mlebench,wijk2024rebench,starace2025paperbench,rank2026posttrainbench}.
+\emph{Autoresearch}~\citep{karpathy2026autoresearch} reduces this loop to one script and one metric. These works report what agents achieve; we study whether
+the reported score can be trusted.
+
+\textbf{Reward hacking.} An agent that optimizes a proxy can satisfy it without achieving the intended goal
+\citep{amodei2016concrete,manheim2018goodhart,skalse2022rewardhacking}, and frontier agents do so on research
+engineering tasks~\citep{metr2025rewardhacking}. Prior work measures this behavior with impossible tasks and
+planted shortcuts \citep{zhong2025impossiblebench,prasad2026baitbench}, monitors it through reasoning traces
+\citep{baker2025monitoring}, and audits benchmark runs post hoc from their transcripts
+\citep{kapoor2025hal,shao2026protocol}. Closest to us, \citet{huang2026rewardhackingresearch} find that research
+agents reward-hack in 30.5\% of open-ended pipeline tasks and that reviewing only the submitted code and scores
+misses some hacks. Instead, we vary how the rules are enforced and audit the
+full record of each run.
+
+\section{Conclusion and Discussion}
+
+Our study shows that stating a rule and checking it play fundamentally different roles in autonomous research. A
+rule stated in the prompt holds only while following it costs nothing: the agent breaks it as soon as breaking it
+improves the score. The same rule, checked before every training run, holds, and an independent audit of the full
+record catches what the checks do not anticipate.
+
+Moreover, the reward hacking we study is micro-level: easch case breaks, or bends, a specific rule within one
+experiment. An explicit check or a post-run audit can reveal most failures. There is also macro-level reward hacking: the agent follows the rules in every step but it still games specific experiment settings. Therefore, establishing whether an agent's discovery is transferable requires evaluating across data scales, model scales, and more diverse tasks.
+
+\newpage
+\bibliography{references}
+\bibliographystyle{iclr2027_conference}
+
+\end{document}

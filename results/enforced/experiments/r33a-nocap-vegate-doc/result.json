@@ -1,0 +1,11 @@
+{
+  "name": "r33a-nocap-vegate-doc",
+  "idea": "Value-embedding gate also reads the document position (on the no-soft-cap model)",
+  "total_params": 51004000,
+  "flops_ratio": 1.0135496629150784,
+  "step_ms": 68.24248868011637,
+  "status": "trained",
+  "val_loss": 0.949534326630211,
+  "train_step_ms": 68.11065917019732,
+  "finished": "2026-10-13 03:17"
+}

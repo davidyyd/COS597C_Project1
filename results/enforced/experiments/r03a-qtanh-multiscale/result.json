@@ -1,0 +1,11 @@
+{
+  "name": "r03a-qtanh-multiscale",
+  "idea": "Self-gate + query temperature + multi-scale heads",
+  "total_params": 50352656,
+  "flops_ratio": 1.0003348179253146,
+  "step_ms": 56.94709008006612,
+  "status": "trained",
+  "val_loss": 0.9547265136784192,
+  "train_step_ms": 57.043798670056276,
+  "finished": "2026-10-12 15:31"
+}

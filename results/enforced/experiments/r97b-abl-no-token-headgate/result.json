@@ -1,0 +1,11 @@
+{
+  "name": "r97b-abl-no-token-headgate",
+  "idea": "Ablation: final model without the per-token head-gate bias table",
+  "total_params": 52191878,
+  "flops_ratio": 1.003002898267666,
+  "step_ms": 67.84469136036932,
+  "status": "trained",
+  "val_loss": 0.9291622511680231,
+  "train_step_ms": 68.34237338000094,
+  "finished": "2026-10-14 08:28"
+}

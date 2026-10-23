@@ -1,0 +1,11 @@
+{
+  "name": "r37c-vesep-noouter",
+  "idea": "Separately normalized value parts without the final renormalization",
+  "total_params": 50872944,
+  "flops_ratio": 1.0108711195125608,
+  "step_ms": 67.90594199002953,
+  "status": "trained",
+  "val_loss": 0.937963887437799,
+  "train_step_ms": 67.84818532993086,
+  "finished": "2026-10-13 04:57"
+}

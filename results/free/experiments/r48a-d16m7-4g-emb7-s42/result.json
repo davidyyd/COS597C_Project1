@@ -1,0 +1,11 @@
+{
+  "name": "r48a-d16m7-4g-emb7-s42",
+  "idea": "r46c-d16m7-seed42 + 4-gram output table + embedding LR mult 7",
+  "status": "trained",
+  "val_bpb": 0.764609,
+  "training_seconds": 3359.4,
+  "peak_vram_mb": 69988.4,
+  "num_steps": 3815.0,
+  "num_params_M": 1893.8,
+  "finished": "2026-10-15 14:59"
+}

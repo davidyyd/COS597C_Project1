@@ -1,0 +1,11 @@
+{
+  "name": "r79a-r78a-dropve3",
+  "idea": "r78a with the VE table dropped at layer 3 instead of layer 5",
+  "status": "trained",
+  "val_bpb": 0.924342,
+  "training_seconds": 258.8,
+  "peak_vram_mb": 15100.0,
+  "num_steps": 3815.0,
+  "num_params_M": 52.7,
+  "finished": "2026-10-14 08:48"
+}

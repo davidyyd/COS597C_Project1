@@ -1,0 +1,11 @@
+{
+  "name": "r41d-gv-prev-ve-values",
+  "idea": "Previous token's value embedding as a third value source",
+  "total_params": 50360368,
+  "flops_ratio": 1.000491763827806,
+  "step_ms": 68.34403681015829,
+  "status": "trained",
+  "val_loss": 0.945835728279488,
+  "train_step_ms": 68.20343027997296,
+  "finished": "2026-10-13 06:27"
+}

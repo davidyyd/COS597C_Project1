@@ -1,0 +1,11 @@
+{
+  "name": "r08b-stalegates-mlpgate",
+  "idea": "Stale depth gates + temperature + per-token MLP output gate",
+  "status": "trained",
+  "val_bpb": 0.950175,
+  "training_seconds": 256.3,
+  "peak_vram_mb": 16161.1,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-12 22:28"
+}

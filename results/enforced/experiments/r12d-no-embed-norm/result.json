@@ -1,0 +1,11 @@
+{
+  "name": "r12d-no-embed-norm",
+  "idea": "Token embeddings keep their magnitude (no input RMSNorm)",
+  "total_params": 50332176,
+  "flops_ratio": 1.0,
+  "step_ms": 65.95919024985051,
+  "status": "trained",
+  "val_loss": 0.9572119205161714,
+  "train_step_ms": 66.69985003012698,
+  "finished": "2026-10-12 18:46"
+}

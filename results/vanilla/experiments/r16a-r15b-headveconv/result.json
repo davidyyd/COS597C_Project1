@@ -1,0 +1,11 @@
+{
+  "name": "r16a-r15b-headveconv",
+  "idea": "r15b with per-head contextual value-embedding conv weights",
+  "status": "trained",
+  "val_bpb": 0.939117,
+  "training_seconds": 252.7,
+  "peak_vram_mb": 16931.2,
+  "num_steps": 3815.0,
+  "num_params_M": 49.3,
+  "finished": "2026-10-13 02:01"
+}

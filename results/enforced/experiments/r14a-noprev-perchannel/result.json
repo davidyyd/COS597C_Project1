@@ -1,0 +1,11 @@
+{
+  "name": "r14a-noprev-perchannel",
+  "idea": "Three-read chain with per-channel weights (no prev-token keys)",
+  "total_params": 50631184,
+  "flops_ratio": 1.0056919047303494,
+  "step_ms": 67.0689353501075,
+  "status": "trained",
+  "val_loss": 0.9453460896373992,
+  "train_step_ms": 67.23566987988306,
+  "finished": "2026-10-12 19:28"
+}

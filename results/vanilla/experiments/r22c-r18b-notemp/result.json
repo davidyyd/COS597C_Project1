@@ -1,0 +1,11 @@
+{
+  "name": "r22c-r18b-notemp",
+  "idea": "Ablation of r18b: remove the per-head attention temperature",
+  "status": "trained",
+  "val_bpb": 0.93876,
+  "training_seconds": 254.2,
+  "peak_vram_mb": 16356.6,
+  "num_steps": 3815.0,
+  "num_params_M": 49.8,
+  "finished": "2026-10-13 04:28"
+}

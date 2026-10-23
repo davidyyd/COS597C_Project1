@@ -1,0 +1,11 @@
+{
+  "name": "r86c-bigram-occurrence",
+  "idea": "Document occurrence count of the current bigram",
+  "status": "trained",
+  "val_bpb": 0.955123,
+  "training_seconds": 233.4,
+  "peak_vram_mb": 12713.6,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-14 11:52"
+}

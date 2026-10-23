@@ -1,0 +1,11 @@
+{
+  "name": "r45c-va-tb03",
+  "idea": "Token-conditioned MLP bias in layers 0-3 only",
+  "total_params": 51658804,
+  "flops_ratio": 1.0056814416701834,
+  "step_ms": 63.622067060205154,
+  "status": "trained",
+  "val_loss": 0.9452561907831515,
+  "train_step_ms": 63.61958584981039,
+  "finished": "2026-10-13 07:51"
+}

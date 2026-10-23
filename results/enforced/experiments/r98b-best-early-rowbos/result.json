@@ -1,0 +1,11 @@
+{
+  "name": "r98b-best-early-rowbos",
+  "idea": "Final model: early document masking with the row's first BOS kept visible",
+  "total_params": 52191878,
+  "flops_ratio": 1.003002898267666,
+  "step_ms": 68.14374039997347,
+  "status": "trained",
+  "val_loss": 0.9288681544613676,
+  "train_step_ms": 67.93765030044597,
+  "finished": "2026-10-14 08:58"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r26a-vegate-full",
+  "idea": "Value-embedding gate reads the whole input",
+  "total_params": 51003472,
+  "flops_ratio": 1.0135496629150784,
+  "step_ms": 67.73830971011193,
+  "status": "trained",
+  "val_loss": 0.9439096845174072,
+  "train_step_ms": 67.8103183399071,
+  "finished": "2026-10-13 00:23"
+}

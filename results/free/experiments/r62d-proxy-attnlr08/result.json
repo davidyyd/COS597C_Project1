@@ -1,0 +1,11 @@
+{
+  "name": "r62d-proxy-attnlr08",
+  "idea": "proxy (bf16 resid): Muon LR x0.8 for attention matrices only",
+  "status": "trained",
+  "val_bpb": 0.766047,
+  "training_seconds": 3089.7,
+  "peak_vram_mb": 65763.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1725.0,
+  "finished": "2026-10-16 04:50"
+}

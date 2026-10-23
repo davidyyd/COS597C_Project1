@@ -1,0 +1,7 @@
+{
+  "name": "r55a-proxy-moe2-recompute",
+  "idea": "proxy with 2-expert MoE MLP (hidden 10752, cf 1.1), relu^2 recomputed in backward",
+  "status": "crash",
+  "reason": "no val_bpb printed; see run.log",
+  "finished": "2026-10-15 21:55"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r89b-nonest-attn095",
+  "idea": "best (r88a, no Nesterov): attention momentum target 0.95 (from 0.97)",
+  "status": "trained",
+  "val_bpb": 0.760071,
+  "training_seconds": 3307.6,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-17 14:39"
+}

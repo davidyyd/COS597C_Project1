@@ -1,0 +1,11 @@
+{
+  "name": "r40d-mlp-input-gate",
+  "idea": "Low-rank elementwise gate on the MLP input",
+  "status": "trained",
+  "val_bpb": 0.955074,
+  "training_seconds": 241.4,
+  "peak_vram_mb": 13737.8,
+  "num_steps": 3815.0,
+  "num_params_M": 50.5,
+  "finished": "2026-10-13 13:20"
+}

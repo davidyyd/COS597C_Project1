@@ -1,0 +1,11 @@
+{
+  "name": "r22a-d21-bigram-embwd0-bf16ar",
+  "idea": "d21 bigram 65k + backout + embedding WD 0 + flat bf16 grad all_reduce",
+  "status": "trained",
+  "val_bpb": 0.776936,
+  "training_seconds": 3198.8,
+  "peak_vram_mb": 75336.2,
+  "num_steps": 3815.0,
+  "num_params_M": 1117.8,
+  "finished": "2026-10-14 12:15"
+}

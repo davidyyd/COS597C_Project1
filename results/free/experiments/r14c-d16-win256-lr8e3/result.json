@@ -1,0 +1,11 @@
+{
+  "name": "r14c-d16-win256-lr8e3",
+  "idea": "d16 win256, LR 8e-3",
+  "status": "trained",
+  "val_bpb": 0.79318,
+  "training_seconds": 2400.2,
+  "peak_vram_mb": 63345.7,
+  "num_steps": 3815.0,
+  "num_params_M": 763.6,
+  "finished": "2026-10-14 04:33"
+}

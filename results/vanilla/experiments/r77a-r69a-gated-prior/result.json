@@ -1,0 +1,11 @@
+{
+  "name": "r77a-r69a-gated-prior",
+  "idea": "Context-gated n-gram logit priors",
+  "status": "trained",
+  "val_bpb": 0.925797,
+  "training_seconds": 262.5,
+  "peak_vram_mb": 15122.7,
+  "num_steps": 3815.0,
+  "num_params_M": 50.6,
+  "finished": "2026-10-14 07:52"
+}

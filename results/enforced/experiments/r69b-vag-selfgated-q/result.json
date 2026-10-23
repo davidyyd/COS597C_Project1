@@ -1,0 +1,11 @@
+{
+  "name": "r69b-vag-selfgated-q",
+  "idea": "Self-gated queries (per channel, after projection)",
+  "total_params": 50610224,
+  "flops_ratio": 1.0056814416701834,
+  "step_ms": 60.93434445007006,
+  "status": "trained",
+  "val_loss": 0.9451395062960612,
+  "train_step_ms": 60.88185088970931,
+  "finished": "2026-10-13 18:24"
+}

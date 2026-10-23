@@ -1,0 +1,11 @@
+{
+  "name": "r22d-x0-as-ve",
+  "idea": "Token embedding as the value embedding of the layers without a VE table",
+  "status": "trained",
+  "val_bpb": 0.958303,
+  "training_seconds": 245.8,
+  "peak_vram_mb": 14219.0,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-13 04:28"
+}

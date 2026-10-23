@@ -1,0 +1,7 @@
+{
+  "name": "r21b-d21-bigram-bf16ar",
+  "idea": "r19b + flat bf16 grad all_reduce (clean speed/quality test)",
+  "status": "crash",
+  "reason": "no val_bpb printed; see run.log",
+  "finished": "2026-10-14 11:17"
+}

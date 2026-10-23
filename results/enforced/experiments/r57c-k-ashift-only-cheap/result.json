@@ -1,0 +1,11 @@
+{
+  "name": "r57c-k-ashift-only-cheap",
+  "idea": "Keys read the previous attention output at t-1 (cheap lineage)",
+  "total_params": 50877056,
+  "flops_ratio": 1.0110385284752181,
+  "step_ms": 65.64638889016351,
+  "status": "trained",
+  "val_loss": 0.9358497989912077,
+  "train_step_ms": 65.68128344981233,
+  "finished": "2026-10-13 12:16"
+}

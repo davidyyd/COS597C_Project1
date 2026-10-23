@@ -1,0 +1,11 @@
+{
+  "name": "r18a-d21-bigram",
+  "idea": "d21 + hashed bigram embedding (65521 x 1792) added to the token embedding",
+  "status": "trained",
+  "val_bpb": 0.779263,
+  "training_seconds": 3223.2,
+  "peak_vram_mb": 75112.2,
+  "num_steps": 3815.0,
+  "num_params_M": 1117.8,
+  "finished": "2026-10-14 08:31"
+}

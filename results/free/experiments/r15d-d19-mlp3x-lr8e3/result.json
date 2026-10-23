@@ -1,0 +1,11 @@
+{
+  "name": "r15d-d19-mlp3x-lr8e3",
+  "idea": "Deeper with narrower MLP: d19, MLP 3x (same FLOPs as d16 MLP 4x)",
+  "status": "trained",
+  "val_bpb": 0.792129,
+  "training_seconds": 2568.6,
+  "peak_vram_mb": 69351.3,
+  "num_steps": 3815.0,
+  "num_params_M": 786.6,
+  "finished": "2026-10-14 05:31"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r51c-r49b-dilated-ctx",
+  "idea": "r49b + dilated contextual x0 lags (4, 8, 12)",
+  "status": "trained",
+  "val_bpb": 0.931024,
+  "training_seconds": 260.5,
+  "peak_vram_mb": 15622.4,
+  "num_steps": 3815.0,
+  "num_params_M": 50.6,
+  "finished": "2026-10-13 19:40"
+}

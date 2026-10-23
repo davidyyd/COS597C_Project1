@@ -1,0 +1,11 @@
+{
+  "name": "r20a-diag-prof-r18b",
+  "idea": "DIAGNOSTIC: profile of r18b (best valid model) to find remaining time sinks",
+  "status": "trained",
+  "val_bpb": 0.936786,
+  "training_seconds": 261.8,
+  "peak_vram_mb": 16356.7,
+  "num_steps": 3815.0,
+  "num_params_M": 49.8,
+  "finished": "2026-10-13 03:29"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r05b-r04b-rerun-profile",
+  "idea": "Rerun of r04b with a torch profiler on 3 steps (noise estimate + time breakdown)",
+  "status": "trained",
+  "val_bpb": 0.801899,
+  "training_seconds": 2847.3,
+  "peak_vram_mb": 62327.6,
+  "num_steps": 3815.0,
+  "num_params_M": 732.4,
+  "finished": "2026-10-13 19:43"
+}

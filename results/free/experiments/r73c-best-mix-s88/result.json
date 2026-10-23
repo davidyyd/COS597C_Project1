@@ -1,0 +1,11 @@
+{
+  "name": "r73c-best-mix-s88",
+  "idea": "best (r68a) with seed 88",
+  "status": "trained",
+  "val_bpb": 0.763066,
+  "training_seconds": 3339.0,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-16 22:44"
+}

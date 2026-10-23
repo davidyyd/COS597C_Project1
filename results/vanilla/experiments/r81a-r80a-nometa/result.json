@@ -1,0 +1,11 @@
+{
+  "name": "r81a-r80a-nometa",
+  "idea": "Ablation of r80a: no token metadata embedding",
+  "status": "trained",
+  "val_bpb": 0.92415,
+  "training_seconds": 260.6,
+  "peak_vram_mb": 15162.4,
+  "num_steps": 3815.0,
+  "num_params_M": 52.7,
+  "finished": "2026-10-14 09:47"
+}

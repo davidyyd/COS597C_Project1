@@ -1,0 +1,11 @@
+{
+  "name": "r79a-lr57-local-docmask",
+  "idea": "Best + local document masking, low-rank head gate kept in layers 5 and 7",
+  "total_params": 52126344,
+  "flops_ratio": 0.9721996491387158,
+  "step_ms": 68.38264455000171,
+  "status": "trained",
+  "val_loss": 0.9315360171238515,
+  "train_step_ms": 68.42106529016746,
+  "finished": "2026-10-14 00:38"
+}

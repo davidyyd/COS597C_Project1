@@ -1,0 +1,11 @@
+{
+  "name": "r02d-multiscale-heads",
+  "idea": "Multi-scale heads in sliding-window layers",
+  "total_params": 50332176,
+  "flops_ratio": 1.0,
+  "step_ms": 63.22266343006049,
+  "status": "trained",
+  "val_loss": 0.9552032025234596,
+  "train_step_ms": 63.30809930994292,
+  "finished": "2026-10-12 15:09"
+}

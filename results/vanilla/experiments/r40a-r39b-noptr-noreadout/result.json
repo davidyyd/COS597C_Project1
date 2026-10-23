@@ -1,0 +1,11 @@
+{
+  "name": "r40a-r39b-noptr-noreadout",
+  "idea": "r39b (head + channel output gates) without the pointer and the readout, to fit the cap",
+  "status": "trained",
+  "val_bpb": 0.932561,
+  "training_seconds": 260.4,
+  "peak_vram_mb": 16068.5,
+  "num_steps": 3815.0,
+  "num_params_M": 50.5,
+  "finished": "2026-10-13 13:20"
+}

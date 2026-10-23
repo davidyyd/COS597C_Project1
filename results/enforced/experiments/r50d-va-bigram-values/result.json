@@ -1,0 +1,11 @@
+{
+  "name": "r50d-va-bigram-values",
+  "idea": "Bigram-hashed value embeddings as a third normalized value source",
+  "total_params": 51404848,
+  "flops_ratio": 1.000491763827806,
+  "step_ms": 61.98737777012866,
+  "status": "trained",
+  "val_loss": 0.9460626223551442,
+  "train_step_ms": 61.892343450163025,
+  "finished": "2026-10-13 09:31"
+}

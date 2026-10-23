@@ -1,0 +1,11 @@
+{
+  "name": "r62b-r61b-ctxx0k2",
+  "idea": "r61b with a 2-lag (instead of 4-lag) contextual x0 conv (fit the cap)",
+  "status": "trained",
+  "val_bpb": 0.930211,
+  "training_seconds": 262.1,
+  "peak_vram_mb": 15306.4,
+  "num_steps": 3815.0,
+  "num_params_M": 50.6,
+  "finished": "2026-10-14 01:13"
+}

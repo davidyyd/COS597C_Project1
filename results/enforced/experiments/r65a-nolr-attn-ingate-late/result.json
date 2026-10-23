@@ -1,0 +1,11 @@
+{
+  "name": "r65a-nolr-attn-ingate-late",
+  "idea": "Best: low-rank self-gate traded for attention input gates (layers 4-7)",
+  "total_params": 51143288,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 68.49217413982842,
+  "status": "trained",
+  "val_loss": 0.9326454739467804,
+  "train_step_ms": 68.8390909001464,
+  "finished": "2026-10-13 16:15"
+}

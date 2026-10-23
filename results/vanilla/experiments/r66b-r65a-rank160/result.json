@@ -1,0 +1,11 @@
+{
+  "name": "r66b-r65a-rank160",
+  "idea": "r65a with a rank-160 bigram prior (the largest that fits the parameter cap)",
+  "status": "trained",
+  "val_bpb": 0.927071,
+  "training_seconds": 261.5,
+  "peak_vram_mb": 15157.4,
+  "num_steps": 3815.0,
+  "num_params_M": 52.7,
+  "finished": "2026-10-14 02:44"
+}

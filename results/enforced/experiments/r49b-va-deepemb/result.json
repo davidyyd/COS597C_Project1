@@ -1,0 +1,11 @@
+{
+  "name": "r49b-va-deepemb",
+  "idea": "Value-path baseline + deep embedding (re-measure)",
+  "total_params": 50872368,
+  "flops_ratio": 1.0110385284752181,
+  "step_ms": 62.42585352010792,
+  "status": "trained",
+  "val_loss": 0.9440963660653862,
+  "train_step_ms": 62.15954580984544,
+  "finished": "2026-10-13 09:13"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r83d-outemb-input",
+  "idea": "Output embedding of the current token as an extra input feature",
+  "status": "trained",
+  "val_bpb": 0.957199,
+  "training_seconds": 233.4,
+  "peak_vram_mb": 12841.0,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-14 10:37"
+}

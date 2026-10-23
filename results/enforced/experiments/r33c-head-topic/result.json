@@ -1,0 +1,11 @@
+{
+  "name": "r33c-head-topic",
+  "idea": "The LM head reads the row's topic vector",
+  "total_params": 50332177,
+  "flops_ratio": 1.0142855648134261,
+  "step_ms": 65.88460986007703,
+  "status": "trained",
+  "val_loss": 0.9573711348630423,
+  "train_step_ms": 66.1167755202041,
+  "finished": "2026-10-13 03:17"
+}

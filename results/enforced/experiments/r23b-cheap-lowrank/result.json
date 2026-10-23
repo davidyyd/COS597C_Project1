@@ -1,0 +1,11 @@
+{
+  "name": "r23b-cheap-lowrank",
+  "idea": "Cheap lineage + rank-32 per-dimension self-gate",
+  "total_params": 50602576,
+  "flops_ratio": 1.0053570868050348,
+  "step_ms": 68.82606094994117,
+  "status": "trained",
+  "val_loss": 0.9449357855414394,
+  "train_step_ms": 68.78752580989385,
+  "finished": "2026-10-12 23:09"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r60b-vag-mlp-outgate",
+  "idea": "Value-path baseline + per-channel MLP write gate from the MLP input (AdamW gate)",
+  "total_params": 50610224,
+  "flops_ratio": 1.0056814416701834,
+  "step_ms": 61.183049629908055,
+  "status": "trained",
+  "val_loss": 0.9445417709270302,
+  "train_step_ms": 61.628123610280454,
+  "finished": "2026-10-13 13:40"
+}

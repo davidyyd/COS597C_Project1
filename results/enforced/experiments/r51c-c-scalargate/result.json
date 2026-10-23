@@ -1,0 +1,11 @@
+{
+  "name": "r51c-c-scalargate",
+  "idea": "Cheap composition + scalar head self-gate",
+  "total_params": 50881136,
+  "flops_ratio": 1.0110385284752181,
+  "step_ms": 66.07302757998696,
+  "status": "trained",
+  "val_loss": 0.9376052462163804,
+  "train_step_ms": 65.90786852000747,
+  "finished": "2026-10-13 09:55"
+}

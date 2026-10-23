@@ -1,0 +1,7 @@
+{
+  "name": "r61d-proxy-adameps1e8",
+  "idea": "proxy (bf16 resid): AdamW eps 1e-8",
+  "status": "timeout",
+  "reason": "stopped at the 60m limit",
+  "finished": "2026-10-16 03:51"
+}

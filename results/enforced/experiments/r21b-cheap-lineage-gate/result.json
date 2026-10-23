@@ -1,0 +1,11 @@
+{
+  "name": "r21b-cheap-lineage-gate",
+  "idea": "Cheap lineage + scalar head self-gate",
+  "total_params": 50336312,
+  "flops_ratio": 1.0,
+  "step_ms": 62.52802995004458,
+  "status": "trained",
+  "val_loss": 0.9518671303332699,
+  "train_step_ms": 61.73742263999884,
+  "finished": "2026-10-12 22:22"
+}

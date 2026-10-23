@@ -1,0 +1,11 @@
+{
+  "name": "r97b-r95c-pointer",
+  "idea": "r95c + pointer-sentinel copy head (no doc mask)",
+  "status": "trained",
+  "val_bpb": 0.92249,
+  "training_seconds": 262.0,
+  "peak_vram_mb": 15160.0,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 21:49"
+}

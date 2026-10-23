@@ -1,0 +1,11 @@
+{
+  "name": "r87a-attnmu-late",
+  "idea": "best (r85b): attention momentum 0.97 only in the second half (layers 8-15), 0.92 elsewhere",
+  "status": "trained",
+  "val_bpb": 0.760711,
+  "training_seconds": 3307.4,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-17 12:38"
+}

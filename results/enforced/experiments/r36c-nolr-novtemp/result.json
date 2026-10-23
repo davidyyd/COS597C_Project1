@@ -1,0 +1,11 @@
+{
+  "name": "r36c-nolr-novtemp",
+  "idea": "Value-normalized model + novelty temperature",
+  "total_params": 50872976,
+  "flops_ratio": 1.0251566843259872,
+  "step_ms": 68.55397848004941,
+  "status": "trained",
+  "val_loss": 0.9419184146722975,
+  "train_step_ms": 68.7317182298284,
+  "finished": "2026-10-13 04:31"
+}

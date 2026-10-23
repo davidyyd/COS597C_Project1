@@ -1,0 +1,11 @@
+{
+  "name": "r81b-r79a-mlpshift-late",
+  "idea": "r79a + selective MLP token shift in layers 4-7",
+  "status": "trained",
+  "val_bpb": 0.924397,
+  "training_seconds": 261.4,
+  "peak_vram_mb": 15548.5,
+  "num_steps": 3815.0,
+  "num_params_M": 52.7,
+  "finished": "2026-10-14 09:47"
+}

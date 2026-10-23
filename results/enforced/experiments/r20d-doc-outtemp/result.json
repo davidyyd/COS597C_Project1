@@ -1,0 +1,11 @@
+{
+  "name": "r20d-doc-outtemp",
+  "idea": "Output temperature from the position within the document",
+  "total_params": 50332178,
+  "flops_ratio": 1.0,
+  "step_ms": 66.17687752994243,
+  "status": "trained",
+  "val_loss": 0.9569750073870094,
+  "train_step_ms": 65.6022814498283,
+  "finished": "2026-10-12 21:50"
+}

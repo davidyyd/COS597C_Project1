@@ -1,0 +1,11 @@
+{
+  "name": "r47a-best-de-to-bigramtb",
+  "idea": "Best model: deep embedding swapped for bigram-hashed token MLP biases (layers 0-3)",
+  "total_params": 51667572,
+  "flops_ratio": 1.0056814416701834,
+  "step_ms": 68.71157795016188,
+  "status": "trained",
+  "val_loss": 0.9377626884857603,
+  "train_step_ms": 68.77903675020207,
+  "finished": "2026-10-13 08:29"
+}

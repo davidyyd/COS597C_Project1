@@ -1,0 +1,11 @@
+{
+  "name": "r89a-r88c-repflags",
+  "idea": "r88c + local repetition-pattern embedding",
+  "status": "trained",
+  "val_bpb": 0.92304,
+  "training_seconds": 263.7,
+  "peak_vram_mb": 14926.3,
+  "num_steps": 3815.0,
+  "num_params_M": 52.7,
+  "finished": "2026-10-14 13:21"
+}

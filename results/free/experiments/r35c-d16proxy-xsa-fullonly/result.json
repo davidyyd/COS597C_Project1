@@ -1,0 +1,11 @@
+{
+  "name": "r35c-d16proxy-xsa-fullonly",
+  "idea": "d16 proxy + XSA only on the full-attention layers",
+  "status": "trained",
+  "val_bpb": 0.778957,
+  "training_seconds": 2528.3,
+  "peak_vram_mb": 63381.1,
+  "num_steps": 3815.0,
+  "num_params_M": 1350.8,
+  "finished": "2026-10-15 02:19"
+}

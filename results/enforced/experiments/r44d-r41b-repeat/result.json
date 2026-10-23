@@ -1,0 +1,11 @@
+{
+  "name": "r44d-r41b-repeat",
+  "idea": "Repeat of r41b (noise check of the current best)",
+  "total_params": 50897520,
+  "flops_ratio": 1.011373346400533,
+  "step_ms": 68.70131425996078,
+  "status": "trained",
+  "val_loss": 0.9371749721702352,
+  "train_step_ms": 68.86907738022273,
+  "finished": "2026-10-13 07:24"
+}

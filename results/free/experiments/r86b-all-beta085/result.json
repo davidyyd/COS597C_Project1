@@ -1,0 +1,11 @@
+{
+  "name": "r86b-all-beta085",
+  "idea": "best (r85b): beta1 0.85 for all AdamW groups (head, scalars too)",
+  "status": "trained",
+  "val_bpb": 0.760931,
+  "training_seconds": 3350.9,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-17 11:39"
+}

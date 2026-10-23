@@ -1,0 +1,11 @@
+{
+  "name": "r43d-gv-small-ve-table",
+  "idea": "Small shared value-embedding table for the non-VE layers",
+  "total_params": 51417136,
+  "flops_ratio": 1.0006591727904632,
+  "step_ms": 64.83502955990843,
+  "status": "trained",
+  "val_loss": 0.9457103878754233,
+  "train_step_ms": 65.00072999013355,
+  "finished": "2026-10-13 07:00"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r35b-d19-xsa",
+  "idea": "d19 + learnable XSA (r34a config)",
+  "status": "trained",
+  "val_bpb": 0.771524,
+  "training_seconds": 3054.3,
+  "peak_vram_mb": 74881.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1495.8,
+  "finished": "2026-10-15 02:19"
+}

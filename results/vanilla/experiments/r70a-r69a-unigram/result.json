@@ -1,0 +1,11 @@
+{
+  "name": "r70a-r69a-unigram",
+  "idea": "r69a + learned unigram logit bias (a constant feature in the folded head)",
+  "status": "trained",
+  "val_bpb": 0.926555,
+  "training_seconds": 262.6,
+  "peak_vram_mb": 15023.5,
+  "num_steps": 3815.0,
+  "num_params_M": 50.6,
+  "finished": "2026-10-14 04:22"
+}

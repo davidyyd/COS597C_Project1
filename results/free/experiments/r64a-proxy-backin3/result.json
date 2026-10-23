@@ -1,0 +1,11 @@
+{
+  "name": "r64a-proxy-backin3",
+  "idea": "proxy: last 3 attention layers read the cached 2/3-depth activation (x_backout)",
+  "status": "trained",
+  "val_bpb": 0.764652,
+  "training_seconds": 3125.3,
+  "peak_vram_mb": 65427.4,
+  "num_steps": 3815.0,
+  "num_params_M": 1725.0,
+  "finished": "2026-10-16 13:39"
+}

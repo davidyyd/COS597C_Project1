@@ -1,0 +1,11 @@
+{
+  "name": "r29a-outtemp-doc",
+  "idea": "Output temperature from content and document position",
+  "total_params": 51003985,
+  "flops_ratio": 1.0135496629150784,
+  "step_ms": 68.55427347007208,
+  "status": "trained",
+  "val_loss": 0.9433617036317732,
+  "train_step_ms": 68.6329037998803,
+  "finished": "2026-10-13 01:31"
+}

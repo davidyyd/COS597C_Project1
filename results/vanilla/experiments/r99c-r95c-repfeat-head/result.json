@@ -1,0 +1,11 @@
+{
+  "name": "r99c-r95c-repfeat-head",
+  "idea": "Repetition status fed straight to the head",
+  "status": "trained",
+  "val_bpb": 0.921564,
+  "training_seconds": 255.8,
+  "peak_vram_mb": 15845.4,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 22:57"
+}

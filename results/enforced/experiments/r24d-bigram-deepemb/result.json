@@ -1,0 +1,11 @@
+{
+  "name": "r24d-bigram-deepemb",
+  "idea": "Non-linear bigram embedding",
+  "total_params": 50725392,
+  "flops_ratio": 1.0080356302075522,
+  "step_ms": 67.01774576999014,
+  "status": "trained",
+  "val_loss": 0.9544215800363388,
+  "train_step_ms": 66.86326042021392,
+  "finished": "2026-10-12 23:34"
+}

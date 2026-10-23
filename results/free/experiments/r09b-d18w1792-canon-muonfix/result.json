@@ -1,0 +1,7 @@
+{
+  "name": "r09b-d18w1792-canon-muonfix",
+  "idea": "d18w1792 attnscale + canon + Muon fix",
+  "status": "crash",
+  "reason": "no val_bpb printed; see run.log",
+  "finished": "2026-10-13 23:34"
+}

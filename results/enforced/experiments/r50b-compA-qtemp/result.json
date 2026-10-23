@@ -1,0 +1,11 @@
+{
+  "name": "r50b-compA-qtemp",
+  "idea": "Composition A + content query temperature",
+  "total_params": 52204124,
+  "flops_ratio": 1.0167304332055678,
+  "step_ms": 64.53621868015034,
+  "status": "trained",
+  "val_loss": 0.9383281856758231,
+  "train_step_ms": 64.49585577996913,
+  "finished": "2026-10-13 09:31"
+}

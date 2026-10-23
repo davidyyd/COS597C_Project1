@@ -1,0 +1,11 @@
+{
+  "name": "r01a-d12w768",
+  "idea": "Scale to 12 layers, width 768",
+  "status": "trained",
+  "val_bpb": 0.886981,
+  "training_seconds": 619.0,
+  "peak_vram_mb": 32223.0,
+  "num_steps": 3815.0,
+  "num_params_M": 135.3,
+  "finished": "2026-10-13 16:12"
+}

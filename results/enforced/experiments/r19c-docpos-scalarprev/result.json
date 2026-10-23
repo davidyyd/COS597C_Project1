@@ -1,0 +1,11 @@
+{
+  "name": "r19c-docpos-scalarprev",
+  "idea": "Scalar prev-token weight (cheaper)",
+  "total_params": 50357304,
+  "flops_ratio": 1.0003348179253146,
+  "step_ms": 66.09391826001229,
+  "status": "trained",
+  "val_loss": 0.9461424339990593,
+  "train_step_ms": 66.30555962998187,
+  "finished": "2026-10-12 21:31"
+}

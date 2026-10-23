@@ -1,0 +1,11 @@
+{
+  "name": "r02d-attngate",
+  "idea": "Gated attention (head-wise sigmoid output gate)",
+  "status": "trained",
+  "val_bpb": 0.948879,
+  "training_seconds": 240.1,
+  "peak_vram_mb": 16002.1,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-13 16:57"
+}

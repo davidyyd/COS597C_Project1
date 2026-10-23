@@ -1,0 +1,11 @@
+{
+  "name": "r31d-d16-heads64",
+  "idea": "d16 (r30d): 28 heads of 64 (instead of 14 of 128)",
+  "status": "trained",
+  "val_bpb": 0.784597,
+  "training_seconds": 2503.5,
+  "peak_vram_mb": 77377.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1468.2,
+  "finished": "2026-10-14 22:37"
+}

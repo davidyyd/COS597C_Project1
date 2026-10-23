@@ -1,0 +1,11 @@
+{
+  "name": "r83c-r82c-nolaggates",
+  "idea": "Ablation of r82c: static ctx-VE conv (no selective lag gates)",
+  "status": "trained",
+  "val_bpb": 0.924627,
+  "training_seconds": 256.9,
+  "peak_vram_mb": 15113.9,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 10:37"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r72c-proxy-mlpramp-down",
+  "idea": "proxy backin5-mix: MLP width varying linearly with depth (step -256 per layer, same average 11648)",
+  "status": "trained",
+  "val_bpb": 0.764835,
+  "training_seconds": 3127.0,
+  "peak_vram_mb": 66095.4,
+  "num_steps": 3815.0,
+  "num_params_M": 1725.0,
+  "finished": "2026-10-16 21:45"
+}

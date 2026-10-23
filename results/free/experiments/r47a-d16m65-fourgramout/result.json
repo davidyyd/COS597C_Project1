@@ -1,0 +1,11 @@
+{
+  "name": "r47a-d16m65-fourgramout",
+  "idea": "proxy (r45d) + output-side 4-gram table (65521, sign)",
+  "status": "trained",
+  "val_bpb": 0.765327,
+  "training_seconds": 3206.8,
+  "peak_vram_mb": 68579.2,
+  "num_steps": 3815.0,
+  "num_params_M": 1842.4,
+  "finished": "2026-10-15 13:59"
+}

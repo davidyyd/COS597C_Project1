@@ -1,0 +1,11 @@
+{
+  "name": "r75c-ind-prior",
+  "idea": "Induction-candidate logit prior (attention-free copy cue)",
+  "status": "trained",
+  "val_bpb": 0.957328,
+  "training_seconds": 233.2,
+  "peak_vram_mb": 12734.5,
+  "num_steps": 3815.0,
+  "num_params_M": 51.4,
+  "finished": "2026-10-14 06:48"
+}

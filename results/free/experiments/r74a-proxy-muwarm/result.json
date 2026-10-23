@@ -1,0 +1,11 @@
+{
+  "name": "r74a-proxy-muwarm",
+  "idea": "proxy backin5-mix: Muon momentum warmup 0.8 -> 0.9 over the first 300 steps (5 levels)",
+  "status": "trained",
+  "val_bpb": 0.763693,
+  "training_seconds": 3110.5,
+  "peak_vram_mb": 66323.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1725.0,
+  "finished": "2026-10-16 23:42"
+}

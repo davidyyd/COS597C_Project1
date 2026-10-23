@@ -1,0 +1,11 @@
+{
+  "name": "r89c-nonest-mu09",
+  "idea": "best (r88a, no Nesterov): global momentum warmup target 0.9 (attention scaled to 0.97*0.9/0.92)",
+  "status": "trained",
+  "val_bpb": 0.759898,
+  "training_seconds": 3331.3,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-17 14:39"
+}

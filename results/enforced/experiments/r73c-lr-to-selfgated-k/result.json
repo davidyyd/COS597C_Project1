@@ -1,0 +1,11 @@
+{
+  "name": "r73c-lr-to-selfgated-k",
+  "idea": "Low-rank head gate -> self-gated keys (odd layers)",
+  "total_params": 51143288,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 68.12023078004131,
+  "status": "trained",
+  "val_loss": 0.9332151287032642,
+  "train_step_ms": 68.0494357200223,
+  "finished": "2026-10-13 20:57"
+}

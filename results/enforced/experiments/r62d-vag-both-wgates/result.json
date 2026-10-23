@@ -1,0 +1,11 @@
+{
+  "name": "r62d-vag-both-wgates",
+  "idea": "Write gates on both sublayers (fast value-path base)",
+  "total_params": 50872368,
+  "flops_ratio": 1.0110385284752181,
+  "step_ms": 63.97355872002663,
+  "status": "trained",
+  "val_loss": 0.9440532227941665,
+  "train_step_ms": 63.73394494992681,
+  "finished": "2026-10-13 14:32"
+}

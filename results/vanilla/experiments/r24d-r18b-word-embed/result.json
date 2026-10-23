@@ -1,0 +1,11 @@
+{
+  "name": "r24d-r18b-word-embed",
+  "idea": "r18b + word-so-far embedding in the contextual x0",
+  "status": "trained",
+  "val_bpb": 0.937207,
+  "training_seconds": 265.7,
+  "peak_vram_mb": 16485.7,
+  "num_steps": 3815.0,
+  "num_params_M": 49.8,
+  "finished": "2026-10-13 05:32"
+}

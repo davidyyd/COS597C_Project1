@@ -1,0 +1,11 @@
+{
+  "name": "r47d-value-rope",
+  "idea": "RoPE on the value path: values carry their relative offset",
+  "status": "trained",
+  "val_bpb": 0.961836,
+  "training_seconds": 237.6,
+  "peak_vram_mb": 13225.3,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-13 17:04"
+}

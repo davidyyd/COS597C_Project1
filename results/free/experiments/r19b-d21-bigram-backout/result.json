@@ -1,0 +1,11 @@
+{
+  "name": "r19b-d21-bigram-backout",
+  "idea": "d21 bigram + backout",
+  "status": "trained",
+  "val_bpb": 0.778223,
+  "training_seconds": 3217.2,
+  "peak_vram_mb": 75336.2,
+  "num_steps": 3815.0,
+  "num_params_M": 1117.8,
+  "finished": "2026-10-14 09:30"
+}

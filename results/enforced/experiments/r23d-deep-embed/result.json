@@ -1,0 +1,11 @@
+{
+  "name": "r23d-deep-embed",
+  "idea": "Deep token embedding (token-wise MLP before re-injection)",
+  "total_params": 50856464,
+  "flops_ratio": 1.0107141736100695,
+  "step_ms": 66.74061511992477,
+  "status": "trained",
+  "val_loss": 0.9550255858334145,
+  "train_step_ms": 66.64888742991025,
+  "finished": "2026-10-12 23:09"
+}

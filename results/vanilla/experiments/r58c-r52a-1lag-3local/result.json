@@ -1,0 +1,11 @@
+{
+  "name": "r58c-r52a-1lag-3local",
+  "idea": "r52a with 1-lag ctx-VE and 3 local heads (two time cuts together)",
+  "status": "trained",
+  "val_bpb": 0.930374,
+  "training_seconds": 260.7,
+  "peak_vram_mb": 14160.7,
+  "num_steps": 3815.0,
+  "num_params_M": 50.1,
+  "finished": "2026-10-13 23:15"
+}

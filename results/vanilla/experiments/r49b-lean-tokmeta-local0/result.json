@@ -1,0 +1,11 @@
+{
+  "name": "r49b-lean-tokmeta-local0",
+  "idea": "Lean base + token metadata + local attention in layer 0",
+  "status": "trained",
+  "val_bpb": 0.931007,
+  "training_seconds": 258.8,
+  "peak_vram_mb": 15430.4,
+  "num_steps": 3815.0,
+  "num_params_M": 50.6,
+  "finished": "2026-10-13 18:36"
+}

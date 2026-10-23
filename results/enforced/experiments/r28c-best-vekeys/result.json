@@ -1,0 +1,11 @@
+{
+  "name": "r28c-best-vekeys",
+  "idea": "Best model + value embeddings also into keys (full-input gate)",
+  "total_params": 51011664,
+  "flops_ratio": 1.0137170718777357,
+  "step_ms": 67.56343432993162,
+  "status": "trained",
+  "val_loss": 0.9441867420174198,
+  "train_step_ms": 67.6660994401027,
+  "finished": "2026-10-13 01:11"
+}

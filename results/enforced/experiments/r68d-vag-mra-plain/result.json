@@ -1,0 +1,11 @@
+{
+  "name": "r68d-vag-mra-plain",
+  "idea": "Plain undiluted read on the fast base (control for r68c)",
+  "total_params": 50348088,
+  "flops_ratio": 1.0003243548651486,
+  "step_ms": 59.18716515006963,
+  "status": "trained",
+  "val_loss": 0.9440570395764545,
+  "train_step_ms": 59.05484202958178,
+  "finished": "2026-10-13 17:54"
+}

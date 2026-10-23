@@ -1,0 +1,11 @@
+{
+  "name": "r80a-best-mu-late096",
+  "idea": "best (r77b) + momentum keeps rising after warmup: 0.92 -> 0.96 by the end (4 levels)",
+  "status": "trained",
+  "val_bpb": 0.761434,
+  "training_seconds": 3319.7,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-17 05:41"
+}

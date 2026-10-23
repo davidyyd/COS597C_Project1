@@ -1,0 +1,11 @@
+{
+  "name": "r11c-diag-prof-r09c",
+  "idea": "DIAGNOSTIC: r09c with a torch.profiler table (steps 100-102) and phase timings (steps 200-299)",
+  "status": "trained",
+  "val_bpb": 0.944419,
+  "training_seconds": 263.9,
+  "peak_vram_mb": 16361.6,
+  "num_steps": 3815.0,
+  "num_params_M": 49.8,
+  "finished": "2026-10-12 23:48"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r49d-d16m65-nosmear",
+  "idea": "proxy without smear",
+  "status": "trained",
+  "val_bpb": 0.765603,
+  "training_seconds": 3175.8,
+  "peak_vram_mb": 70145.5,
+  "num_steps": 3815.0,
+  "num_params_M": 1725.0,
+  "finished": "2026-10-15 15:58"
+}

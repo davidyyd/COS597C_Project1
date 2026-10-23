@@ -1,0 +1,11 @@
+{
+  "name": "r01d-ve-keys",
+  "idea": "Value embeddings also feed the keys",
+  "total_params": 50332688,
+  "flops_ratio": 1.000010463060166,
+  "step_ms": 66.41834162001032,
+  "status": "trained",
+  "val_loss": 0.9575935305881447,
+  "train_step_ms": 65.88551602995722,
+  "finished": "2026-10-12 14:50"
+}

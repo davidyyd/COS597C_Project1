@@ -1,0 +1,11 @@
+{
+  "name": "r51a-c-bigramtb",
+  "idea": "Cheap best-level composition + bigram MLP biases (layers 0-3)",
+  "total_params": 52187764,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 65.69091407000087,
+  "status": "trained",
+  "val_loss": 0.937116152828904,
+  "train_step_ms": 65.93672341987258,
+  "finished": "2026-10-13 09:55"
+}

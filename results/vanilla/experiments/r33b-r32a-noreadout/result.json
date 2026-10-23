@@ -1,0 +1,11 @@
+{
+  "name": "r33b-r32a-noreadout",
+  "idea": "Ablation: r32a without the depth readout",
+  "status": "trained",
+  "val_bpb": 0.935406,
+  "training_seconds": 248.8,
+  "peak_vram_mb": 15535.3,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-13 09:45"
+}

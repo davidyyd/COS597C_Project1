@@ -1,0 +1,11 @@
+{
+  "name": "r91c-vag-headgate",
+  "idea": "Cheap base + head self-gate (scalar + block-diagonal low-rank) in all layers",
+  "total_params": 50745424,
+  "flops_ratio": 1.003002898267666,
+  "step_ms": 64.81000682979356,
+  "status": "trained",
+  "val_loss": 0.9383696931832051,
+  "train_step_ms": 64.80892813007813,
+  "finished": "2026-10-14 06:12"
+}

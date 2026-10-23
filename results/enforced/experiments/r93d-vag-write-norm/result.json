@@ -1,0 +1,11 @@
+{
+  "name": "r93d-vag-write-norm",
+  "idea": "Attention write normalized (unit vector x learned per-layer scale), on top of per-head output normalization",
+  "total_params": 50479224,
+  "flops_ratio": 0.9815745510475267,
+  "step_ms": 62.12216771004023,
+  "status": "trained",
+  "val_loss": 0.9435203727240314,
+  "train_step_ms": 62.05792670021765,
+  "finished": "2026-10-14 07:00"
+}

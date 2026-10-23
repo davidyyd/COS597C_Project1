@@ -1,0 +1,11 @@
+{
+  "name": "r92d-vag-ynorm-late",
+  "idea": "Per-head output normalization in late layers only",
+  "total_params": 50479200,
+  "flops_ratio": 0.9815745510475267,
+  "step_ms": 60.987231180188246,
+  "status": "trained",
+  "val_loss": 0.939697183694336,
+  "train_step_ms": 61.19873039016966,
+  "finished": "2026-10-14 06:33"
+}

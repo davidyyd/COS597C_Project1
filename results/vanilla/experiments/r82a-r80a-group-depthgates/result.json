@@ -1,0 +1,11 @@
+{
+  "name": "r82a-r80a-group-depthgates",
+  "idea": "Channel-grouped stale depth gates",
+  "status": "trained",
+  "val_bpb": 0.924431,
+  "training_seconds": 261.8,
+  "peak_vram_mb": 15106.1,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 10:17"
+}

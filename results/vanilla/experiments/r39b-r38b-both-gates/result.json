@@ -1,0 +1,11 @@
+{
+  "name": "r39b-r38b-both-gates",
+  "idea": "r38b with both a per-head and a per-channel attention-output gate (one 32 -> 4+512 read)",
+  "status": "trained",
+  "val_bpb": 0.932123,
+  "training_seconds": 268.7,
+  "peak_vram_mb": 15448.0,
+  "num_steps": 3815.0,
+  "num_params_M": 50.5,
+  "finished": "2026-10-13 12:46"
+}

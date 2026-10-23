@@ -1,0 +1,11 @@
+{
+  "name": "r36a-vnorm-pre-ve",
+  "idea": "Value normalization before adding the value embeddings",
+  "total_params": 50938480,
+  "flops_ratio": 1.0122103912138196,
+  "step_ms": 68.7169431100483,
+  "status": "trained",
+  "val_loss": 0.9404341634600524,
+  "train_step_ms": 68.47297839005478,
+  "finished": "2026-10-13 04:31"
+}

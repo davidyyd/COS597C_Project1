@@ -1,0 +1,11 @@
+{
+  "name": "r13b-r12c-conv01-novsmear",
+  "idea": "r12c with conv layers 0-1 and without value smear",
+  "status": "trained",
+  "val_bpb": 0.943643,
+  "training_seconds": 258.2,
+  "peak_vram_mb": 16739.4,
+  "num_steps": 3815.0,
+  "num_params_M": 49.3,
+  "finished": "2026-10-13 00:40"
+}

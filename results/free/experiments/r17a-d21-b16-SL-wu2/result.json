@@ -1,0 +1,11 @@
+{
+  "name": "r17a-d21-b16-SL-wu2",
+  "idea": "d21 b16 fused, LR 8e-3, window pattern SL + warmup 2%",
+  "status": "trained",
+  "val_bpb": 0.781464,
+  "training_seconds": 3254.7,
+  "peak_vram_mb": 73320.4,
+  "num_steps": 3815.0,
+  "num_params_M": 1000.4,
+  "finished": "2026-10-14 07:30"
+}

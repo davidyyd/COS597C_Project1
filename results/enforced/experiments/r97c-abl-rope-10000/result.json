@@ -1,0 +1,11 @@
+{
+  "name": "r97c-abl-rope-10000",
+  "idea": "Ablation: final model with the standard RoPE base (10000) in every head",
+  "total_params": 52191878,
+  "flops_ratio": 1.003002898267666,
+  "step_ms": 68.53379049993237,
+  "status": "trained",
+  "val_loss": 0.9296749268174931,
+  "train_step_ms": 68.05569229996763,
+  "finished": "2026-10-14 08:28"
+}

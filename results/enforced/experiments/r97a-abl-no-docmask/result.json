@@ -1,0 +1,11 @@
+{
+  "name": "r97a-abl-no-docmask",
+  "idea": "Ablation: final model without document masking",
+  "total_params": 52191881,
+  "flops_ratio": 1.0244312454878053,
+  "step_ms": 68.09225781995337,
+  "status": "trained",
+  "val_loss": 0.9302668688562656,
+  "train_step_ms": 68.23931944993092,
+  "finished": "2026-10-14 08:28"
+}

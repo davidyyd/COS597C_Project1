@@ -1,0 +1,11 @@
+{
+  "name": "r72a-best-hnorm",
+  "idea": "Best + MLP hidden activations RMS-normalized before the down-projection",
+  "total_params": 51143288,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 68.1426228498458,
+  "status": "trained",
+  "val_loss": 0.9326465644560056,
+  "train_step_ms": 67.94251054991037,
+  "finished": "2026-10-13 20:19"
+}

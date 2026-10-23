@@ -1,0 +1,11 @@
+{
+  "name": "r51b-d16h12288-s42",
+  "idea": "r50b with MLP hidden 12288 (96*128, 6.86x) for time margin (seed 42)",
+  "status": "trained",
+  "val_bpb": 0.764233,
+  "training_seconds": 3291.2,
+  "peak_vram_mb": 72719.7,
+  "num_steps": 3815.0,
+  "num_params_M": 1879.1,
+  "finished": "2026-10-15 17:57"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r52b-shift2",
+  "idea": "Two time-shifted reads into attention",
+  "total_params": 50877056,
+  "flops_ratio": 1.0110385284752181,
+  "step_ms": 64.91785705002258,
+  "status": "trained",
+  "val_loss": 0.9365734881757427,
+  "train_step_ms": 65.23482544027502,
+  "finished": "2026-10-13 10:21"
+}

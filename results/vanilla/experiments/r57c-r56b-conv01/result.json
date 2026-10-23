@@ -1,0 +1,11 @@
+{
+  "name": "r57c-r56b-conv01",
+  "idea": "r56b (1-lag ctx-VE) with conv layers 0-1",
+  "status": "trained",
+  "val_bpb": 0.934336,
+  "training_seconds": 254.4,
+  "peak_vram_mb": 13831.6,
+  "num_steps": 3815.0,
+  "num_params_M": 49.6,
+  "finished": "2026-10-13 22:41"
+}

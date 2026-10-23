@@ -1,0 +1,11 @@
+{
+  "name": "r07a-d18w1792-attnscale",
+  "idea": "d18w1792 + attention scale 0.12 (+ phase timing)",
+  "status": "trained",
+  "val_bpb": 0.79402,
+  "training_seconds": 3220.5,
+  "peak_vram_mb": 57616.3,
+  "num_steps": 3815.0,
+  "num_params_M": 855.1,
+  "finished": "2026-10-13 21:49"
+}

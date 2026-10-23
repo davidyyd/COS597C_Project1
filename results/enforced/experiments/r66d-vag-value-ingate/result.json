@@ -1,0 +1,11 @@
+{
+  "name": "r66d-vag-value-ingate",
+  "idea": "Input gate on the value projection only",
+  "total_params": 50610224,
+  "flops_ratio": 1.0056814416701834,
+  "step_ms": 62.83608834957704,
+  "status": "trained",
+  "val_loss": 0.945633302504571,
+  "train_step_ms": 62.59209501033183,
+  "finished": "2026-10-13 17:01"
+}

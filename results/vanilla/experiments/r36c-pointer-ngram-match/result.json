@@ -1,0 +1,11 @@
+{
+  "name": "r36c-pointer-ngram-match",
+  "idea": "Pointer head with exact n-gram match priors (neural pointer + induction cue)",
+  "status": "trained",
+  "val_bpb": 0.952853,
+  "training_seconds": 240.9,
+  "peak_vram_mb": 12172.0,
+  "num_steps": 3815.0,
+  "num_params_M": 50.4,
+  "finished": "2026-10-13 11:35"
+}

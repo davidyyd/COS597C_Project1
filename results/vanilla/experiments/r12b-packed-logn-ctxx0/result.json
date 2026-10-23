@@ -1,0 +1,11 @@
+{
+  "name": "r12b-packed-logn-ctxx0",
+  "idea": "Packed r10c + log-n query scaling + contextual x0",
+  "status": "trained",
+  "val_bpb": 0.943865,
+  "training_seconds": 269.7,
+  "peak_vram_mb": 17449.9,
+  "num_steps": 3815.0,
+  "num_params_M": 49.8,
+  "finished": "2026-10-13 00:11"
+}

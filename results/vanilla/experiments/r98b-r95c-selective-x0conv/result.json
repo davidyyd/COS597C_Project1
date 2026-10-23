@@ -1,0 +1,11 @@
+{
+  "name": "r98b-r95c-selective-x0conv",
+  "idea": "Selective ctx-x0 conv: per-token lag gates on the input-embedding conv",
+  "status": "trained",
+  "val_bpb": 0.921592,
+  "training_seconds": 279.5,
+  "peak_vram_mb": 15974.5,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 22:31"
+}

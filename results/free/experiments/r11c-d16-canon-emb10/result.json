@@ -1,0 +1,11 @@
+{
+  "name": "r11c-d16-canon-emb10",
+  "idea": "Embedding LR multiplier 10x (from 5x) at scale",
+  "status": "trained",
+  "val_bpb": 0.794941,
+  "training_seconds": 2548.0,
+  "peak_vram_mb": 74113.7,
+  "num_steps": 3815.0,
+  "num_params_M": 763.6,
+  "finished": "2026-10-14 01:32"
+}

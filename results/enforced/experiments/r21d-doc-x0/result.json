@@ -1,0 +1,11 @@
+{
+  "name": "r21d-doc-x0",
+  "idea": "Token-identity re-injection modulated by the position within the document",
+  "total_params": 50332184,
+  "flops_ratio": 1.0,
+  "step_ms": 65.1395602800767,
+  "status": "trained",
+  "val_loss": 0.9571366072228101,
+  "train_step_ms": 65.24542234023102,
+  "finished": "2026-10-12 22:22"
+}

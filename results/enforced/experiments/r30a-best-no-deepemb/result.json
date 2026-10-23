@@ -1,0 +1,11 @@
+{
+  "name": "r30a-best-no-deepemb",
+  "idea": "Best model without the deep embedding (ablation)",
+  "total_params": 50479696,
+  "flops_ratio": 1.0028354893050087,
+  "step_ms": 67.41862095019314,
+  "status": "trained",
+  "val_loss": 0.945396048591276,
+  "train_step_ms": 67.14917981007602,
+  "finished": "2026-10-13 01:51"
+}

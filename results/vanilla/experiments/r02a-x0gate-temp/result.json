@@ -1,0 +1,11 @@
+{
+  "name": "r02a-x0gate-temp",
+  "idea": "Combine token x0 gate + per-head attention temperature",
+  "status": "trained",
+  "val_bpb": 0.951903,
+  "training_seconds": 253.7,
+  "peak_vram_mb": 15489.0,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-12 20:32"
+}

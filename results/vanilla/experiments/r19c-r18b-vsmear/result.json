@@ -1,0 +1,11 @@
+{
+  "name": "r19c-r18b-vsmear",
+  "idea": "r18b + value smear (now cheap with a bf16 value path)",
+  "status": "trained",
+  "val_bpb": 0.93632,
+  "training_seconds": 268.6,
+  "peak_vram_mb": 16804.7,
+  "num_steps": 3815.0,
+  "num_params_M": 49.8,
+  "finished": "2026-10-13 03:04"
+}

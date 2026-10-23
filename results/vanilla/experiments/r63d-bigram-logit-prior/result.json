@@ -1,0 +1,11 @@
+{
+  "name": "r63d-bigram-logit-prior",
+  "idea": "Low-rank bigram logit prior: a direct current-token -> next-token path into the logits",
+  "status": "trained",
+  "val_bpb": 0.954901,
+  "training_seconds": 235.9,
+  "peak_vram_mb": 12734.0,
+  "num_steps": 3815.0,
+  "num_params_M": 51.4,
+  "finished": "2026-10-14 01:35"
+}

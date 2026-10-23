@@ -1,0 +1,11 @@
+{
+  "name": "r15c-chain4-rawreads",
+  "idea": "Undiluted reads without the extra norms",
+  "total_params": 50618928,
+  "flops_ratio": 1.0056919047303494,
+  "step_ms": 67.20912188990042,
+  "status": "diverged",
+  "val_loss": null,
+  "train_step_ms": null,
+  "finished": "2026-10-12 19:50"
+}

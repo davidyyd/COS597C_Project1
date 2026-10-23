@@ -1,0 +1,11 @@
+{
+  "name": "r82b-r80a-group-priorgates",
+  "idea": "Component-grouped context gates on the n-gram logit priors",
+  "status": "trained",
+  "val_bpb": 0.923532,
+  "training_seconds": 261.6,
+  "peak_vram_mb": 15165.3,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 10:17"
+}

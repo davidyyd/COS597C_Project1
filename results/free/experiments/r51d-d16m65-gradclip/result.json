@@ -1,0 +1,11 @@
+{
+  "name": "r51d-d16m65-gradclip",
+  "idea": "proxy: global grad-norm clipping at 2x the running average norm",
+  "status": "trained",
+  "val_bpb": 0.765659,
+  "training_seconds": 3210.4,
+  "peak_vram_mb": 67011.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1725.0,
+  "finished": "2026-10-15 17:57"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r83b-best-lex-7",
+  "idea": "Best + lexical-match channel in the last (global) layer",
+  "total_params": 52159120,
+  "flops_ratio": 0.9942976322094844,
+  "step_ms": 68.85284013013006,
+  "status": "trained",
+  "val_loss": 0.9302114573562631,
+  "train_step_ms": 68.93288202991243,
+  "finished": "2026-10-14 02:37"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r67a-vag-qk-ingate",
+  "idea": "Input gate on the query/key projections only",
+  "total_params": 50610224,
+  "flops_ratio": 1.0056814416701834,
+  "step_ms": 62.869731939863414,
+  "status": "trained",
+  "val_loss": 0.9444195657369877,
+  "train_step_ms": 62.772228280082345,
+  "finished": "2026-10-13 17:34"
+}

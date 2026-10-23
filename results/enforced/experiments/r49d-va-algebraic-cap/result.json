@@ -1,0 +1,11 @@
+{
+  "name": "r49d-va-algebraic-cap",
+  "idea": "Algebraic logit soft-cap (heavier tails than tanh)",
+  "total_params": 50348080,
+  "flops_ratio": 1.0003243548651486,
+  "step_ms": 60.667358089995105,
+  "status": "trained",
+  "val_loss": 0.9468805042740008,
+  "train_step_ms": 60.361362189869396,
+  "finished": "2026-10-13 09:13"
+}

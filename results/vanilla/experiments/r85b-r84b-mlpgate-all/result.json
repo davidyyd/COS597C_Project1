@@ -1,0 +1,11 @@
+{
+  "name": "r85b-r84b-mlpgate-all",
+  "idea": "r84b with the MLP hidden gate in all 8 layers",
+  "status": "trained",
+  "val_bpb": 0.923484,
+  "training_seconds": 260.5,
+  "peak_vram_mb": 14990.3,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 11:21"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "r32b-d21-bigram196k-trigramout",
+  "idea": "r32a + input bigram 196613 rows + output trigram table (memory-neutral trade)",
+  "status": "crash",
+  "reason": "no val_bpb printed; see run.log",
+  "finished": "2026-10-14 23:23"
+}

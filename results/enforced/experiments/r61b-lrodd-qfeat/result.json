@@ -1,0 +1,11 @@
+{
+  "name": "r61b-lrodd-qfeat",
+  "idea": "Low-rank gate in odd layers + per-dimension query gate",
+  "total_params": 51143288,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 68.6332074998063,
+  "status": "trained",
+  "val_loss": 0.9331899788342592,
+  "train_step_ms": 68.63652845000615,
+  "finished": "2026-10-13 14:10"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r63d-vag-x0-chgate",
+  "idea": "Per-channel gate on the token-identity re-injection",
+  "total_params": 50479152,
+  "flops_ratio": 1.003002898267666,
+  "step_ms": 62.985821749898605,
+  "status": "trained",
+  "val_loss": 0.9447930651465989,
+  "train_step_ms": 62.99070392968133,
+  "finished": "2026-10-13 14:56"
+}

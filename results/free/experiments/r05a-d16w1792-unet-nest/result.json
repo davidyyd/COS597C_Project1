@@ -1,0 +1,11 @@
+{
+  "name": "r05a-d16w1792-unet-nest",
+  "idea": "Wider-shallower: d16w1792 (similar params to d24w1408)",
+  "status": "trained",
+  "val_bpb": 0.800365,
+  "training_seconds": 2790.6,
+  "peak_vram_mb": 54564.1,
+  "num_steps": 3815.0,
+  "num_params_M": 763.4,
+  "finished": "2026-10-13 19:43"
+}

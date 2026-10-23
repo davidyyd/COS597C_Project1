@@ -1,0 +1,7 @@
+{
+  "name": "r04b-docmask",
+  "idea": "Hard document masking (test of a known method as a possible base)",
+  "status": "crash",
+  "reason": "no val_bpb printed; see run.log",
+  "finished": "2026-10-12 21:15"
+}

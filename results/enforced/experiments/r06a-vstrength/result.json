@@ -1,0 +1,11 @@
+{
+  "name": "r06a-vstrength",
+  "idea": "Per-token value strength",
+  "total_params": 50377232,
+  "flops_ratio": 1.0006696358506293,
+  "step_ms": 65.98599518008996,
+  "status": "trained",
+  "val_loss": 0.9571777057892327,
+  "train_step_ms": 65.82888586999616,
+  "finished": "2026-10-12 16:21"
+}

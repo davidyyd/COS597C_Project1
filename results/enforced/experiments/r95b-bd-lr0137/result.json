@@ -1,0 +1,11 @@
+{
+  "name": "r95b-bd-lr0137",
+  "idea": "Block-diagonal gate form + low-rank head gate also in layer 0",
+  "total_params": 52224646,
+  "flops_ratio": 1.0056814416701834,
+  "step_ms": 68.4085338501609,
+  "status": "trained",
+  "val_loss": 0.9301513430352271,
+  "train_step_ms": 68.7741575401742,
+  "finished": "2026-10-14 07:46"
+}

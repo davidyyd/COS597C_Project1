@@ -1,0 +1,11 @@
+{
+  "name": "r100b-vag-token-headgate",
+  "idea": "Per-token, per-(layer, head) head-gate bias table (transfer test on the cheap base)",
+  "total_params": 51007600,
+  "flops_ratio": 1.003002898267666,
+  "step_ms": 66.71761152043473,
+  "status": "trained",
+  "val_loss": 0.9364065039506428,
+  "train_step_ms": 66.72907948959619,
+  "finished": "2026-10-14 09:35"
+}

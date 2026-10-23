@@ -1,0 +1,11 @@
+{
+  "name": "r78a-r77b-gprior-nomlpgate",
+  "idea": "r77b + context-gated priors, paid for by dropping the MLP hidden gate",
+  "status": "trained",
+  "val_bpb": 0.925327,
+  "training_seconds": 259.4,
+  "peak_vram_mb": 15100.0,
+  "num_steps": 3815.0,
+  "num_params_M": 52.7,
+  "finished": "2026-10-14 08:22"
+}

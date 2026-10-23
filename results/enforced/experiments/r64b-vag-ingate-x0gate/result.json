@@ -1,0 +1,11 @@
+{
+  "name": "r64b-vag-ingate-x0gate",
+  "idea": "Fast base + MLP input gate + per-channel x0 re-injection gate",
+  "total_params": 50741296,
+  "flops_ratio": 1.0083599850727007,
+  "step_ms": 66.5950997499749,
+  "status": "trained",
+  "val_loss": 0.942415891349442,
+  "train_step_ms": 66.65863223955967,
+  "finished": "2026-10-13 15:28"
+}

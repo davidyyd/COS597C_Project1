@@ -1,0 +1,11 @@
+{
+  "name": "r17a-r11a-attn-reads-attn",
+  "idea": "Attention-to-attention undiluted read on the faster r11a",
+  "total_params": 50623008,
+  "flops_ratio": 1.0056919047303494,
+  "step_ms": 68.24555806000717,
+  "status": "trained",
+  "val_loss": 0.9468231162260277,
+  "train_step_ms": 68.79952057002811,
+  "finished": "2026-10-12 20:35"
+}

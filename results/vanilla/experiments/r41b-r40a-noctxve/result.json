@@ -1,0 +1,11 @@
+{
+  "name": "r41b-r40a-noctxve",
+  "idea": "Ablation of r40a: remove the contextual value-embedding conv (plain VE lookups)",
+  "status": "trained",
+  "val_bpb": 0.937652,
+  "training_seconds": 250.2,
+  "peak_vram_mb": 15300.5,
+  "num_steps": 3815.0,
+  "num_params_M": 50.5,
+  "finished": "2026-10-13 13:44"
+}

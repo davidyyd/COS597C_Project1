@@ -1,0 +1,11 @@
+{
+  "name": "r62b-h12800-s2024",
+  "idea": "r60a (best config) with seed 2024",
+  "status": "trained",
+  "val_bpb": 0.763764,
+  "training_seconds": 3293.5,
+  "peak_vram_mb": 69029.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-16 04:50"
+}

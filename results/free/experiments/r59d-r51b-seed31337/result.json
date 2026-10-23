@@ -1,0 +1,11 @@
+{
+  "name": "r59d-r51b-seed31337",
+  "idea": "r51b (safe best) with seed 31337",
+  "status": "trained",
+  "val_bpb": 0.764405,
+  "training_seconds": 3321.6,
+  "peak_vram_mb": 72719.7,
+  "num_steps": 3815.0,
+  "num_params_M": 1879.1,
+  "finished": "2026-10-16 01:52"
+}

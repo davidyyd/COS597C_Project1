@@ -1,0 +1,11 @@
+{
+  "name": "r32c-d16-signtrick",
+  "idea": "d16 (r30d): sign trick on the hashed bigram embedding",
+  "status": "trained",
+  "val_bpb": 0.781535,
+  "training_seconds": 2473.1,
+  "peak_vram_mb": 77291.8,
+  "num_steps": 3815.0,
+  "num_params_M": 1468.2,
+  "finished": "2026-10-14 23:23"
+}

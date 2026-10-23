@@ -1,0 +1,11 @@
+{
+  "name": "r45d-va-bigram-tb03",
+  "idea": "Bigram-conditioned MLP bias (hashed (prev, cur) sparse table, normalized)",
+  "total_params": 51658804,
+  "flops_ratio": 1.0056814416701834,
+  "step_ms": 63.561622650013305,
+  "status": "trained",
+  "val_loss": 0.9448095590986292,
+  "train_step_ms": 63.72880625014659,
+  "finished": "2026-10-13 07:51"
+}

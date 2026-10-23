@@ -1,0 +1,11 @@
+{
+  "name": "r78d-vag-local-docmask",
+  "idea": "Document masking in the local (sliding-window) layers only",
+  "total_params": 50348080,
+  "flops_ratio": 0.95746766042487,
+  "step_ms": 59.57236614020076,
+  "status": "trained",
+  "val_loss": 0.944282434201926,
+  "train_step_ms": 59.40839960006997,
+  "finished": "2026-10-14 00:09"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r96a-best-yn-3",
+  "idea": "Per-head output normalization (x per-head scale) only in layer 3 (the middle global layer)",
+  "total_params": 52191882,
+  "flops_ratio": 1.003002898267666,
+  "step_ms": 68.3456420499715,
+  "status": "trained",
+  "val_loss": 0.929522596310106,
+  "train_step_ms": 68.52572288989904,
+  "finished": "2026-10-14 08:08"
+}

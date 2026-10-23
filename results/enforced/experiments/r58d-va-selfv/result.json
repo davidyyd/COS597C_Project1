@@ -1,0 +1,11 @@
+{
+  "name": "r58d-va-selfv",
+  "idea": "Self-value skip in the value-path world",
+  "total_params": 50348112,
+  "flops_ratio": 1.0003243548651486,
+  "step_ms": 62.74957217014162,
+  "status": "trained",
+  "val_loss": 0.945760823927086,
+  "train_step_ms": 62.73074340017047,
+  "finished": "2026-10-13 12:49"
+}

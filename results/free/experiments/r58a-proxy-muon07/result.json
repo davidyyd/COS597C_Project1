@@ -1,0 +1,11 @@
+{
+  "name": "r58a-proxy-muon07",
+  "idea": "proxy (Muon x0.85): Muon LR x0.7",
+  "status": "trained",
+  "val_bpb": 0.765406,
+  "training_seconds": 3184.2,
+  "peak_vram_mb": 67011.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1725.0,
+  "finished": "2026-10-16 00:51"
+}

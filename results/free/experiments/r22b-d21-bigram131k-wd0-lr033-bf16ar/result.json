@@ -1,0 +1,11 @@
+{
+  "name": "r22b-d21-bigram131k-wd0-lr033-bf16ar",
+  "idea": "d21 bigram 131k + backout + emb WD 0 + bigram LR/3 + bf16 grad all_reduce",
+  "status": "trained",
+  "val_bpb": 0.777557,
+  "training_seconds": 3259.1,
+  "peak_vram_mb": 77128.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1235.3,
+  "finished": "2026-10-14 12:15"
+}

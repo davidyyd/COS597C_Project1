@@ -1,0 +1,11 @@
+{
+  "name": "r28d-d16-trigramout",
+  "idea": "d16: output-side trigram table (65521) in addition to the output bigram",
+  "status": "trained",
+  "val_bpb": 0.782444,
+  "training_seconds": 2522.2,
+  "peak_vram_mb": 74157.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1468.2,
+  "finished": "2026-10-14 19:54"
+}

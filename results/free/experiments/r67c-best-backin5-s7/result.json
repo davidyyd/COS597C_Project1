@@ -1,0 +1,11 @@
+{
+  "name": "r67c-best-backin5-s7",
+  "idea": "best (r66a, backin5) with seed 7",
+  "status": "trained",
+  "val_bpb": 0.762387,
+  "training_seconds": 3305.4,
+  "peak_vram_mb": 68244.5,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-16 16:40"
+}

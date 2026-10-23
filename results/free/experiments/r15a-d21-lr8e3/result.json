@@ -1,0 +1,11 @@
+{
+  "name": "r15a-d21-lr8e3",
+  "idea": "d21 canon b8 PE win256, LR 8e-3",
+  "status": "trained",
+  "val_bpb": 0.782591,
+  "training_seconds": 3255.3,
+  "peak_vram_mb": 47712.3,
+  "num_steps": 3815.0,
+  "num_params_M": 1000.4,
+  "finished": "2026-10-14 05:31"
+}

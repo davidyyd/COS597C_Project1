@@ -1,0 +1,11 @@
+{
+  "name": "r37d-d16-cautiouswd",
+  "idea": "d16 (r35d): cautious weight decay for Muon",
+  "status": "trained",
+  "val_bpb": 0.778062,
+  "training_seconds": 2616.8,
+  "peak_vram_mb": 66096.5,
+  "num_steps": 3815.0,
+  "num_params_M": 1468.2,
+  "finished": "2026-10-15 04:13"
+}

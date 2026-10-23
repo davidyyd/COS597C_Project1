@@ -1,0 +1,11 @@
+{
+  "name": "r41c-r40a-noqgain",
+  "idea": "Ablation of r40a: remove the per-(head, channel) query gain (no QK temperature at all)",
+  "status": "trained",
+  "val_bpb": 0.934106,
+  "training_seconds": 261.8,
+  "peak_vram_mb": 16065.0,
+  "num_steps": 3815.0,
+  "num_params_M": 50.5,
+  "finished": "2026-10-13 13:44"
+}

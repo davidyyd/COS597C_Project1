@@ -1,0 +1,402 @@
+name	status	val_loss	step_ms	train_step_ms	total_params	flops_ratio	finished	idea
+baseline	baseline	0.95895	66	66	50332176	1.000	-	baseline model (baseline_model.py)
+r01a-prevtok-key	trained	0.95778	68	68	50334224	1.000	2026-10-12 14:50	Previous-token embedding injected into keys
+r01b-attn-selfgate	trained	0.95653	61	61	50336272	1.000	2026-10-12 14:50	Self-gated attention heads (gate from the head's own output)
+r01c-qtemp	diverged	-	60	-	50348560	1.000	2026-10-12 14:50	Per-token query temperature after QK-norm
+r01d-ve-keys	trained	0.95759	66	66	50332688	1.000	2026-10-12 14:50	Value embeddings also feed the keys
+r02a-selfgate-vekeys	trained	0.95675	62	62	50336784	1.000	2026-10-12 15:09	Self-gated heads + value embeddings into keys
+r02b-selfgate-prevtok	trained	0.95568	65	64	50340368	1.000	2026-10-12 15:09	Self-gated heads + previous-token embedding in keys (all layers)
+r02c-selfgate-qtanh	trained	0.95353	61	61	50352656	1.000	2026-10-12 15:09	Self-gated heads + bounded per-token query temperature
+r02d-multiscale-heads	trained	0.95520	63	63	50332176	1.000	2026-10-12 15:09	Multi-scale heads in sliding-window layers
+r03a-qtanh-multiscale	trained	0.95473	57	57	50352656	1.000	2026-10-12 15:31	Self-gate + query temperature + multi-scale heads
+r03b-qtanh-prevtok	trained	0.95282	63	63	50356752	1.000	2026-10-12 15:31	Self-gate + query temperature + previous-token embedding in keys
+r03c-qtanh-ktemp	trained	0.95665	63	63	50369040	1.001	2026-10-12 15:31	Per-key salience in addition to per-query temperature
+r03d-mlp-selfgate	trained	0.98948	66	66	50336272	1.000	2026-10-12 15:31	Self-gated MLP output
+r04a-gate-xy	trained	0.95271	65	65	50373136	1.001	2026-10-12 15:51	Head gate from retrieved value and query-side input
+r04b-prevtok-qk	trained	0.95303	65	65	50356752	1.000	2026-10-12 15:51	Previous-token embedding in queries as well as keys
+r04c-out-temp	trained	0.95644	66	66	50332688	1.000	2026-10-12 15:51	Per-token output temperature (confidence) after the gainless final norm
+r04d-x0gate	trained	0.95636	67	67	50336272	1.000	2026-10-12 15:51	State-dependent re-injection of the token embedding
+r05a-best-outtemp	trained	0.95447	63	63	50357264	1.000	2026-10-12 16:05	Best model + per-token output temperature
+r05b-best-x0gate	trained	0.95219	64	64	50360848	1.000	2026-10-12 16:05	Best model + state-dependent x0 re-injection
+r05c-r03b-repeat	trained	0.95312	63	63	50356752	1.000	2026-10-12 16:05	Repeat of r03b (noise estimate)
+r05d-mlp-intemp	trained	0.96083	66	67	50336272	1.000	2026-10-12 16:05	Per-token MLP input temperature after the gainless pre-norm
+r06a-vstrength	trained	0.95718	66	66	50377232	1.001	2026-10-12 16:21	Per-token value strength
+r06b-prevtok2	trained	0.95246	65	65	50361360	1.000	2026-10-12 16:21	Keys see the two previous tokens
+r06c-ctxmean	trained	0.95760	69	69	50332184	1.000	2026-10-12 16:21	Causal bag-of-tokens context channel
+r06d-ve-shared-all	trained	0.96029	67	67	50332688	1.000	2026-10-12 16:21	Value embeddings in every layer, shared by layer pairs
+r07a-resid-gate	trained	1.04060	65	65	50364944	1.000	2026-10-12 16:37	Per-token forget gate on the residual stream
+r07b-best-ctxmean	trained	0.95227	65	65	50360856	1.000	2026-10-12 16:37	Best model + causal bag-of-tokens context channel
+r07c-qtemp-logpos	trained	0.95246	64	64	50360880	1.000	2026-10-12 16:37	Query temperature with a log-position term
+r07d-centered-relu2	trained	0.96009	66	66	50332176	1.000	2026-10-12 16:37	Centered ReLU^2 (per-token adaptive threshold)
+r08a-ms-noqtemp	trained	0.95284	62	62	50344464	1.000	2026-10-12 17:01	Multi-scale heads instead of query temperature
+r08b-lowrank-selfgate	trained	0.95027	68	68	50622992	1.006	2026-10-12 17:01	Per-dimension self-gate (low-rank) on attention heads
+r08c-token-qtemp	trained	0.95212	64	64	50622992	1.000	2026-10-12 17:01	Token-identity offset for the query temperature
+r08d-head-compete	trained	0.98396	63	63	50348560	1.000	2026-10-12 17:01	Heads compete per token (softmax over head outputs)
+r09a-gate-multiscale	trained	0.95006	66	66	50622992	1.006	2026-10-12 17:18	Low-rank self-gate + multi-scale heads
+r09b-gate-rank48	trained	0.95026	68	68	50754064	1.008	2026-10-12 17:18	Low-rank self-gate at rank 48
+r09c-crosshead-gate	trained	0.95307	67	68	50754064	1.008	2026-10-12 17:18	Cross-head low-rank self-gate
+r09d-mlp-x0	trained	0.95679	67	67	50332184	1.000	2026-10-12 17:18	MLP reads the token identity directly
+r10a-ms-mlpx0	trained	0.95095	68	67	50623000	1.006	2026-10-12 17:41	Best model + MLP reads the token identity
+r10b-qfeat-gate	trained	0.94946	69	69	50754064	1.008	2026-10-12 17:41	Per-dimension query feature gate
+r10c-mlp-reads-attn	trained	0.95379	66	66	50332184	1.000	2026-10-12 17:41	MLP reads this block's attention output directly
+r10d-lowrank-gate-base	trained	0.95412	66	66	50598416	1.005	2026-10-12 17:41	Self-gate (scalar + rank-32 per-dim) alone on the baseline
+r11a-ms-mra	trained	0.94787	67	67	50623000	1.006	2026-10-12 18:25	Best-gate model + MLP reads the fresh attention output
+r11b-qfeat-mra	trained	0.94878	69	69	50749976	1.008	2026-10-12 18:25	Best model: swap the x0 gate for "MLP reads the fresh attention output"
+r11c-mra-multiscale	trained	0.95283	64	64	50332184	1.000	2026-10-12 18:25	MLP reads attention + multi-scale heads (two base wins)
+r11d-head-reads-mlp	trained	0.95751	66	66	50332177	1.000	2026-10-12 18:25	LM head reads the last MLP output undiluted
+r12a-best-headmlp	trained	0.95098	67	67	50623001	1.006	2026-10-12 18:46	Best model + LM head reads the last MLP output
+r12b-best-attn-reads-mlp	trained	0.94688	68	68	50623008	1.006	2026-10-12 18:46	Best model + attention reads the previous MLP output
+r12c-mra-perchannel	trained	0.94751	67	67	50627088	1.006	2026-10-12 18:46	MLP reads the fresh attention output with per-channel weights
+r12d-no-embed-norm	trained	0.95721	66	67	50332176	1.000	2026-10-12 18:46	Token embeddings keep their magnitude (no input RMSNorm)
+r13a-chain-perchannel	trained	0.94599	68	68	50631184	1.006	2026-10-12 19:09	Undiluted-read chain with per-channel weights
+r13b-chain-noembnorm	trained	0.94693	68	68	50623008	1.006	2026-10-12 19:09	Best model without the input-embedding norm
+r13c-mlp-reads-prevmlp	trained	0.94522	69	69	50623016	1.006	2026-10-12 19:09	MLP also reads the previous MLP output
+r13d-ve-prevtok	trained	0.95805	65	65	50332176	1.000	2026-10-12 19:09	Bigram values: the first value-embedding layer indexes the previous token
+r14a-noprev-perchannel	trained	0.94535	67	67	50631184	1.006	2026-10-12 19:28	Three-read chain with per-channel weights (no prev-token keys)
+r14b-chain3-noprev	trained	0.94579	67	67	50618920	1.006	2026-10-12 19:28	Best model without prev-token keys
+r14c-chain3-attn-reads-attn	trained	0.94455	68	68	50618928	1.006	2026-10-12 19:28	Attention also reads the previous attention output (no prev-token keys)
+r14d-attn-scales-mlp	trained	0.96525	67	67	50336272	1.000	2026-10-12 19:28	Attention output scales the MLP's write
+r15a-chain4-nox0gate	trained	0.94619	67	67	50614832	1.006	2026-10-12 19:50	Best model without the x0 gate
+r15b-chain4-Lmultiscale	trained	0.94657	68	68	50618928	1.006	2026-10-12 19:50	Multi-scale heads in the full-attention layers too
+r15c-chain4-rawreads	diverged	-	67	-	50618928	1.006	2026-10-12 19:50	Undiluted reads without the extra norms
+r15d-window-rope	trained	0.95474	63	63	50332176	1.000	2026-10-12 19:50	RoPE base matched to each head's window (multi-scale heads)
+r17a-r11a-attn-reads-attn	trained	0.94682	68	69	50623008	1.006	2026-10-12 20:35	Attention-to-attention undiluted read on the faster r11a
+r17b-query-reads-x0	trained	0.95700	66	66	50332184	1.000	2026-10-12 20:35	Queries read the token identity undiluted
+r17c-best-only-last-full	trained	0.94643	68	68	50618928	1.006	2026-10-12 20:35	Only the last layer has full attention
+r17d-mid-renorm	trained	0.96740	65	65	50332176	1.000	2026-10-12 20:35	Mid-depth renormalization of the residual stream
+r18a-scalargate-prevtok	trained	0.94598	65	66	50360880	1.000	2026-10-12 20:59	Budget swap: scalar self-gate only + prev-token keys
+r18b-scalargate-prevtok-qfeat	trained	0.94494	69	68	50491952	1.003	2026-10-12 20:59	Budget swap + per-dimension query gate
+r18c-scalargate-prevtok-qx0	trained	0.94612	66	67	50360888	1.000	2026-10-12 20:59	Budget swap + queries read x0
+r18d-doc-position	trained	0.95686	66	66	50332688	1.000	2026-10-12 20:59	Position within the document as an input feature
+r19a-qfeat-docpos	trained	0.94468	69	69	50492464	1.003	2026-10-12 21:31	Document position feature on qfeat-docpos
+r19b-scalargate-docpos	trained	0.94576	66	66	50361392	1.000	2026-10-12 21:31	Document position feature on scalargate-docpos
+r19c-docpos-scalarprev	trained	0.94614	66	66	50357304	1.000	2026-10-12 21:31	Scalar prev-token weight (cheaper)
+r19d-docpos-temp	trained	0.95467	65	65	50332208	1.000	2026-10-12 21:31	Attention temperature from the position within the document
+r20a-doctemp-mra	trained	0.95178	66	66	50332216	1.000	2026-10-12 21:50	Doc-position attention temperature + MLP reads attention (new cheap lineage)
+r20b-best-doctemp	trained	0.94439	69	69	50618960	1.006	2026-10-12 21:50	Doc-position term in the query temperature
+r20c-scalargate-doctemp	trained	0.94609	66	66	50360912	1.000	2026-10-12 21:50	Doc-position term in the query temperature
+r20d-doc-outtemp	trained	0.95698	66	66	50332178	1.000	2026-10-12 21:50	Output temperature from the position within the document
+r21a-cheap-gate-emachain	trained	0.94873	67	67	50336335	1.000	2026-10-12 22:22	Decaying-sum undiluted read on the cheap lineage
+r21b-cheap-lineage-gate	trained	0.95187	63	62	50336312	1.000	2026-10-12 22:22	Cheap lineage + scalar head self-gate
+r21c-cheap-gate-chain	trained	0.94791	65	65	50336336	1.000	2026-10-12 22:22	Cheap lineage + scalar gate + full undiluted-read chain
+r21d-doc-x0	trained	0.95714	65	65	50332184	1.000	2026-10-12 22:22	Token-identity re-injection modulated by the position within the document
+r22a-cheap-tempscale	trained	0.94787	65	66	50336368	1.000	2026-10-12 22:45	Learned per-head sharpness scale on the doc temperature (cheap lineage)
+r22b-cheap-ms-x0gate	trained	0.94672	64	64	50340432	1.000	2026-10-12 22:45	Cheap lineage + multi-scale heads + x0 gate
+r22c-cheap-prevtok	trained	0.94771	68	68	50340432	1.000	2026-10-12 22:45	Cheap lineage + prev-token keys
+r22d-bigram-logits	trained	0.95926	67	67	50594320	1.003	2026-10-12 22:45	Direct low-rank bigram path to the logits
+r23a-cheap-qtemp	trained	0.94639	64	65	50356816	1.000	2026-10-12 23:09	Cheap lineage + content term in the query temperature
+r23b-cheap-lowrank	trained	0.94494	69	69	50602576	1.005	2026-10-12 23:09	Cheap lineage + rank-32 per-dimension self-gate
+r23c-cheap-qtemp-prevtok	trained	0.94591	66	66	50360912	1.000	2026-10-12 23:09	Cheap lineage + content query temperature + prev-token keys
+r23d-deep-embed	trained	0.95503	67	67	50856464	1.011	2026-10-12 23:09	Deep token embedding (token-wise MLP before re-injection)
+r24a-qtp-deepemb	trained	0.94560	67	67	50885200	1.011	2026-10-12 23:34	Deep token embedding on r23c-cheap-qtemp-prevtok
+r24b-cheap-deepemb	trained	0.94547	66	66	50864720	1.011	2026-10-12 23:34	Deep token embedding on r22b-cheap-ms-x0gate
+r24c-doctemp-mra-deepemb	trained	0.95004	67	67	50856504	1.011	2026-10-12 23:34	Three strong base changes: doc temperature + MLP reads attention + deep embedding
+r24d-bigram-deepemb	trained	0.95442	67	67	50725392	1.008	2026-10-12 23:34	Non-linear bigram embedding
+r25a-cheap-de-lowrank-half	trained	0.94441	68	68	50995792	1.013	2026-10-12 23:55	Cheap lineage with deep embedding + low-rank self-gate in half the layers
+r25b-cheap-de-qtemp	trained	0.94607	66	66	50881104	1.011	2026-10-12 23:55	Cheap lineage with deep embedding + content query temperature
+r25c-cheap-bigramde	trained	0.94671	66	66	50733648	1.008	2026-10-12 23:55	Cheap lineage with the non-linear bigram embedding instead of the unigram deep embedding
+r25d-deep-head	trained	0.95844	67	66	50856464	1.011	2026-10-12 23:55	Deep head: token-wise MLP before the LM head
+r26a-vegate-full	trained	0.94391	68	68	51003472	1.014	2026-10-13 00:23	Value-embedding gate reads the whole input
+r26b-coupled-head	trained	0.96334	66	66	50463248	1.011	2026-10-13 00:23	Output embeddings coupled to input embeddings by a learned low-rank map
+r26c-best-halflr-deepemb	trained	0.94497	68	68	51012176	1.014	2026-10-13 00:23	Best model: low-rank gate in half the layers + deep embedding
+r26d-no-attn0	trained	0.95773	63	64	49676816	0.937	2026-10-13 00:23	No attention in layer 0 when the input already has bigram features
+r27a-r20b-vegate	trained	0.94408	68	69	50626640	1.006	2026-10-13 00:41	Value-embedding gate from the full input on the qtemp lineage
+r27b-best-vegate-qtemp	trained	0.94440	68	67	51019856	1.014	2026-10-13 00:41	Best model + content term in the doc temperature
+r27c-qgated-partial-rope	trained	0.95952	64	64	50348560	1.000	2026-10-13 00:41	Query-gated position sensitivity (partial RoPE with a per-token balance)
+r27d-signed-square	trained	0.97618	66	66	50332176	1.000	2026-10-13 00:41	Signed-square MLP activation h|h|
+r28a-best-outtemp	trained	0.94335	69	69	51003984	1.014	2026-10-13 01:11	Best model + per-token output temperature
+r28b-best-docouttemp	trained	0.94352	69	69	51003474	1.014	2026-10-13 01:11	Best model + doc-position output temperature
+r28c-best-vekeys	trained	0.94419	68	68	51011664	1.014	2026-10-13 01:11	Best model + value embeddings also into keys (full-input gate)
+r28d-mlp-reads-ve	trained	0.95940	66	66	50332180	1.000	2026-10-13 01:11	MLP reads the layer's value embedding
+r29a-outtemp-doc	trained	0.94336	69	69	51003985	1.014	2026-10-13 01:31	Output temperature from content and document position
+r29b-r28a-repeat	trained	0.94354	69	69	51003984	1.014	2026-10-13 01:31	Repeat of r28a (noise check of the current best)
+r29c-values-read-x0	trained	0.95853	66	66	50332180	1.000	2026-10-13 01:31	Values read the token embedding in layers without value embeddings
+r29d-stretch-rope	trained	0.95637	66	67	50336784	1.000	2026-10-13 01:31	Stretchable time: content-dependent rotary position increments
+r30a-best-no-deepemb	trained	0.94540	67	67	50479696	1.003	2026-10-13 01:51	Best model without the deep embedding (ablation)
+r30b-best-qfeat-swap	trained	0.94452	68	68	51003984	1.014	2026-10-13 01:52	Swap the half-layer low-rank output gate for a per-dimension query gate
+r30c-best-prevtok-swap	trained	0.94490	69	69	50483792	1.003	2026-10-13 01:52	Swap the deep embedding for prev-token keys
+r30d-mult-read	trained	0.95523	67	67	50332184	1.000	2026-10-13 01:52	Multiplicative undiluted read
+r31a-best-bigramde	trained	0.94411	68	68	50872912	1.011	2026-10-13 02:07	Best model with the non-linear bigram embedding
+r31b-best-de-docpos	trained	0.94413	67	67	51004496	1.014	2026-10-13 02:07	Deep embedding also sees the document position
+r31c-novelty-temp	trained	0.95429	63	63	50336304	1.000	2026-10-13 02:07	Attention temperature from token novelty
+r31d-ema-context	trained	0.95685	65	65	50336280	1.014	2026-10-13 02:07	Multi-timescale causal context channels
+r32a-novtemp-swap	trained	0.94485	67	67	50872944	1.025	2026-10-13 02:48	Best model: swap the half-layer low-rank gate for a novelty temperature
+r32b-novout-swap	trained	0.94585	67	67	50872913	1.025	2026-10-13 02:48	Best model: swap the half-layer low-rank gate for a novelty term in the output temperature
+r32c-nov-x0	trained	0.95613	63	63	50336280	1.000	2026-10-13 02:48	Token-identity re-injection modulated by novelty
+r32d-repeat-temp	trained	0.95571	60	60	50336304	1.000	2026-10-13 02:48	Attention temperature from the exact repeat count of the token
+r33a-nocap-vegate-doc	trained	0.94953	68	68	51004000	1.014	2026-10-13 03:17	Value-embedding gate also reads the document position (on the no-soft-cap model)
+r33b-best-nocap	trained	0.94952	68	68	51003984	1.014	2026-10-13 03:17	Best model without the logit soft-cap
+r33c-head-topic	trained	0.95737	66	66	50332177	1.014	2026-10-13 03:17	The LM head reads the row's topic vector
+r33d-self-value-skip	trained	0.95541	65	65	50336304	1.000	2026-10-13 03:17	Self-value skip in attention
+r34a-postcap-temp	trained	0.94426	68	68	51003984	1.014	2026-10-13 03:34	Output temperature after the soft-cap
+r34b-both-temps	trained	0.94510	69	68	51004496	1.014	2026-10-13 03:34	Per-token temperature both before and after the soft-cap
+r34c-head-x-x0	trained	0.95751	66	66	50332177	1.000	2026-10-13 03:34	Head reads a token x context product feature
+r34d-value-norm	trained	0.95497	64	64	50336304	1.000	2026-10-13 03:34	Per-head value normalization
+r35a-lr37-vnorm	trained	0.94107	69	69	50938480	1.012	2026-10-13 04:06	Low-rank gate only in the full-attention layers, plus value normalization
+r35b-nolr-vnorm	trained	0.94174	68	68	50872944	1.011	2026-10-13 04:06	Replace the low-rank gate by value normalization
+r35c-silu-values	trained	0.95546	64	64	50336304	1.000	2026-10-13 04:06	Non-linear (self-gated) values
+r35d-keys-read-x0	trained	0.95631	63	63	50336280	1.000	2026-10-13 04:06	Keys read the token identity undiluted
+r36a-vnorm-pre-ve	trained	0.94043	69	68	50938480	1.012	2026-10-13 04:31	Value normalization before adding the value embeddings
+r36b-nolr-ve-sep	trained	0.93916	68	68	50872944	1.011	2026-10-13 04:31	Normalize projected values and value embeddings separately before mixing
+r36c-nolr-novtemp	trained	0.94192	69	69	50872976	1.025	2026-10-13 04:31	Value-normalized model + novelty temperature
+r36d-ynorm-gate	trained	0.95427	63	61	50336272	1.000	2026-10-13 04:31	Head output = normalized retrieval x self-gate
+r37a-vesep-lr37-noot	trained	0.94058	69	69	50937968	1.012	2026-10-13 04:57	Separately normalized values + low-rank gate in the full-attention layers
+r37b-vesep-ynorm-noot	trained	0.93987	69	68	50872432	1.011	2026-10-13 04:57	Separately normalized values + normalized head output scaled by the self-gate
+r37c-vesep-noouter	trained	0.93796	68	68	50872944	1.011	2026-10-13 04:57	Separately normalized value parts without the final renormalization
+r37d-grouped-norm	trained	0.95671	64	64	50336272	1.000	2026-10-13 04:57	Grouped RMSNorm for block inputs
+r38a-gated-proj	trained	0.93717	67	67	50881136	1.011	2026-10-13 05:26	Gate the projected value part too
+r38b-ve-keys-norm	trained	0.94036	68	68	50881136	1.011	2026-10-13 05:26	Normalized value embeddings into keys
+r38c-signed-vegate	trained	0.93863	68	68	50872944	1.011	2026-10-13 05:26	Signed value-embedding gate
+r38d-norm-value-residual	trained	0.95556	65	65	50350608	1.000	2026-10-13 05:26	Value residual with normalized mixing
+r39a-ve-all-pairs-noot	trained	0.93991	68	68	50897008	1.011	2026-10-13 05:52	Value embeddings in every layer (pair-shared tables) with gated normalized mixing
+r39b-proj-gate-all	trained	0.93758	68	68	50889328	1.011	2026-10-13 05:52	Per-token value loudness in all layers
+r39c-prev-ve-keys-noot	trained	0.93764	69	68	50888816	1.011	2026-10-13 05:52	Previous token's identity in keys, via the value-embedding table, normalized mixing
+r39d-base-gated-values	trained	0.94631	63	63	50352176	1.000	2026-10-13 05:52	Gated normalized value mixing on a simple model
+r40a-nodeep-lr37	trained	0.93785	67	67	50422384	1.002	2026-10-13 06:10	Best model: swap the deep embedding for the low-rank gate in layers 3, 7
+r40b-gv-chain	trained	0.94330	66	67	50352208	1.000	2026-10-13 06:10	Gated-value simple model + undiluted-read chain
+r40c-gv-temps	trained	0.94361	63	63	50352720	1.000	2026-10-13 06:10	Gated-value simple model + doc temperature + output temperature
+r40d-gv-ms-x0gate	trained	0.94332	62	62	50356272	1.000	2026-10-13 06:10	Gated-value simple model + multi-scale heads + x0 gate
+r41a-gv-chain-tokgated	trained	0.94506	68	68	50368592	1.001	2026-10-13 06:27	Token-gated undiluted reads (cheap lineage)
+r41b-best-tokgated-reads	trained	0.93659	69	69	50897520	1.011	2026-10-13 06:27	Token-gated undiluted reads (best model)
+r41c-best-gates-from-x0	trained	0.93859	67	67	50881136	1.011	2026-10-13 06:27	Value gates computed from the token embedding
+r41d-gv-prev-ve-values	trained	0.94584	68	68	50360368	1.000	2026-10-13 06:27	Previous token's value embedding as a third value source
+r42a-gv-mlp-reads-ve	trained	0.94564	64	64	50352180	1.000	2026-10-13 06:43	MLP reads the normalized value embedding (value-path world)
+r42b-gv-q-ve	trained	0.94658	65	65	50360368	1.000	2026-10-13 06:43	Queries read the normalized value embedding (value-path world)
+r42c-gv-ve-all-pairs	trained	0.94915	65	65	50368560	1.001	2026-10-13 06:43	Value embeddings in all layers, pair-shared (value-path world, simple model)
+r42d-gv-ve-half-all	trained	0.94750	68	68	50352176	1.000	2026-10-13 06:43	Half-width value embeddings in every layer
+r43a-base-valuepath	trained	0.94690	61	61	50348080	1.000	2026-10-13 06:59	Gated normalized value path on the plain baseline (ablation)
+r43b-base-ve-norm-only	trained	0.94784	66	66	50332176	1.000	2026-10-13 06:59	Only normalize the value embedding (ablation)
+r43c-base-proj-norm-only	trained	0.95555	69	68	50332208	1.000	2026-10-13 06:59	Only normalize the values after mixing (ablation)
+r43d-gv-small-ve-table	trained	0.94571	65	65	51417136	1.001	2026-10-13 07:00	Small shared value-embedding table for the non-VE layers
+r44a-best-no-outtemp	trained	0.93902	68	68	50897008	1.011	2026-10-13 07:24	Best model without the output temperature (ablation)
+r44b-best-no-chain	trained	0.93926	64	63	50881104	1.011	2026-10-13 07:24	Best model without the undiluted-read chain (ablation)
+r44c-token-mlp-bias	trained	0.94479	68	69	51658808	1.006	2026-10-13 07:24	Token-conditioned MLP pre-activation bias from a normalized sparse table
+r44d-r41b-repeat	trained	0.93717	69	69	50897520	1.011	2026-10-13 07:24	Repeat of r41b (noise check of the current best)
+r45a-nochain-mra	trained	0.93819	64	64	50881112	1.011	2026-10-13 07:51	One-read chain: only the MLP reads the fresh attention output
+r45b-nochain-tb03	trained	0.93827	66	66	52191828	1.016	2026-10-13 07:51	Token-conditioned MLP bias (layers 0-3) instead of the read chain
+r45c-va-tb03	trained	0.94526	64	64	51658804	1.006	2026-10-13 07:51	Token-conditioned MLP bias in layers 0-3 only
+r45d-va-bigram-tb03	trained	0.94481	64	64	51658804	1.006	2026-10-13 07:51	Bigram-conditioned MLP bias (hashed (prev, cur) sparse table, normalized)
+r46a-nochain-mra-tb03	trained	0.93848	67	67	52191836	1.016	2026-10-13 08:13	Cheaper replacement of the read chain: MLP-reads-attention + token MLP bias (layers 0-3)
+r46b-nochain-mra-bigramtb03	trained	0.93778	67	67	52191836	1.016	2026-10-13 08:13	As r46a with the bigram-hashed token table
+r46c-base-ve-init-unit	trained	0.95753	66	66	50332176	1.000	2026-10-13 08:13	Value embeddings initialized at unit scale, not normalized (mechanism test)
+r46d-va-token-outtemp	trained	0.94560	60	60	50872944	1.000	2026-10-13 08:13	Output temperature with a token-specific term from a normalized sparse table
+r47a-best-de-to-bigramtb	trained	0.93776	69	69	51667572	1.006	2026-10-13 08:29	Best model: deep embedding swapped for bigram-hashed token MLP biases (layers 0-3)
+r47b-va-docpos-values	trained	0.94647	65	65	50430000	1.001	2026-10-13 08:29	Values carry the document position (normalized bucket table)
+r47c-va-docpos-keys	trained	0.94738	65	65	50430000	1.001	2026-10-13 08:29	Keys carry the document position (normalized bucket table)
+r47d-va-ve-even	trained	0.95312	61	61	50348080	1.000	2026-10-13 08:29	Value embeddings on the even layers
+r48a-va-ve-4567	trained	0.95620	61	61	50348080	1.000	2026-10-13 08:51	Value embeddings on the last four layers
+r48b-va-ve-plus6	trained	0.94772	61	61	50352176	1.000	2026-10-13 08:51	One more late value-embedding layer (layer 6 shares layer 7's table)
+r48c-best-ve-4567	trained	0.94360	67	67	50881136	1.011	2026-10-13 08:51	Best model with value embeddings on layers 4-7
+r48d-va-ve-3567	trained	0.95460	61	61	50348080	1.000	2026-10-13 08:51	Value embeddings on layers 3, 5, 6, 7
+r49a-va-qtemp	trained	0.94576	62	62	50364464	1.001	2026-10-13 09:13	Value-path baseline + content query temperature (re-measure)
+r49b-va-deepemb	trained	0.94410	62	62	50872368	1.011	2026-10-13 09:13	Value-path baseline + deep embedding (re-measure)
+r49c-va-lowrank	trained	0.94471	67	68	50614320	1.006	2026-10-13 09:13	Value-path baseline + scalar and low-rank head self-gate (re-measure)
+r49d-va-algebraic-cap	trained	0.94688	61	60	50348080	1.000	2026-10-13 09:13	Algebraic logit soft-cap (heavier tails than tanh)
+r50a-compA	trained	0.93807	63	63	52187740	1.016	2026-10-13 09:31	Composition A: value-path baseline + deep embed + temperatures + multi-scale/x0 gate + one read + bigram MLP bias
+r50b-compA-qtemp	trained	0.93833	65	64	52204124	1.017	2026-10-13 09:31	Composition A + content query temperature
+r50c-compA-fullchain	trained	0.93716	63	63	50877040	1.011	2026-10-13 09:31	Composition A with the full read chain instead of (MLP-reads-attention + bigram MLP bias)
+r50d-va-bigram-values	trained	0.94606	62	62	51404848	1.000	2026-10-13 09:31	Bigram-hashed value embeddings as a third normalized value source
+r51a-c-bigramtb	trained	0.93712	66	66	52187764	1.016	2026-10-13 09:55	Cheap best-level composition + bigram MLP biases (layers 0-3)
+r51b-c-gate-halflr	trained	0.93611	68	68	51012208	1.014	2026-10-13 09:55	Cheap composition + head self-gate (scalar + low-rank in odd layers)
+r51c-c-scalargate	trained	0.93761	66	66	50881136	1.011	2026-10-13 09:55	Cheap composition + scalar head self-gate
+r51d-c-shift-read	trained	0.93647	65	65	50877048	1.011	2026-10-13 09:55	Time-shifted undiluted read
+r52a-gate-shift-swap	trained	0.93572	68	69	51012208	1.014	2026-10-13 10:21	Best (r51b): swap the attention<-previous-attention read for the time-shifted MLP read
+r52b-shift2	trained	0.93657	65	65	50877056	1.011	2026-10-13 10:21	Two time-shifted reads into attention
+r52c-shift-mlp	trained	0.93585	66	65	50877056	1.011	2026-10-13 10:21	Time-shifted read into the MLP
+r52d-shift-gate37	trained	0.93588	68	68	50946680	1.012	2026-10-13 10:21	Shift-read model + head self-gate (scalar everywhere, low-rank in layers 3, 7)
+r53a-best-mlp-shift-swap	trained	0.93526	69	69	51012208	1.014	2026-10-13 10:46	Best: MLP reads the attention output at t and t-1 (instead of the previous MLP output)
+r53b-gate37-mlp-shift-swap	trained	0.93539	69	69	50946680	1.012	2026-10-13 10:46	Gate(3,7) shift model: MLP reads attention output at t and t-1 (swap)
+r53c-shift-docmask	trained	0.93669	65	65	50877048	1.011	2026-10-13 10:46	Time-shifted read masked at document boundaries
+r53d-shift-dilated	trained	0.93618	65	65	50877056	1.011	2026-10-13 10:46	Dilated time-shifted read (t-1 and t-2)
+r54a-gate37-k-shift-only	trained	0.93555	67	68	50946672	1.012	2026-10-13 11:09	Role-specific reads: the time-shifted read feeds only the keys (gate(3,7) variant of the best)
+r54b-best-gate37	trained	0.93568	67	67	50946672	1.012	2026-10-13 11:09	Best with the low-rank gate only in layers 3, 7
+r54c-r51d-k-shift-only	trained	0.93612	65	65	50877048	1.011	2026-10-13 11:09	Role-specific reads on the cheaper shift model
+r54d-va-vshift	trained	0.94669	65	65	50364464	1.001	2026-10-13 11:09	Previous position's value as a normalized value source
+r55a-g37-ynorm	trained	0.93806	68	68	50946672	1.012	2026-10-13 11:34	Head output = normalized retrieval x self-gate (on the gate(3,7) best variant)
+r55b-g37-mlp-mread	trained	0.93528	68	68	50946680	1.012	2026-10-13 11:34	Third read for the MLP: previous block's MLP output
+r55c-kshift-attn-aread	trained	0.93528	69	69	50946680	1.012	2026-10-13 11:34	Key-only shift model + attention reads the previous attention output
+r55d-va-deep-normmix	trained	0.94517	62	63	50872880	1.011	2026-10-13 11:34	Deep embedding with normalized gated mixing
+r56a-kshift-x0prev	trained	0.93546	69	69	50946680	1.012	2026-10-13 11:57	Keys also read the previous token's deep embedding
+r56b-g37-kshift-mread	trained	0.93499	68	69	50946680	1.012	2026-10-13 11:57	Key-only shift + MLP reads the previous MLP output
+r56c-r51d-q-shift-only	trained	0.93673	65	65	50877048	1.011	2026-10-13 11:57	Time-shifted read only into the queries
+r56d-r51d-kshift-x0prev	trained	0.93644	66	66	50877056	1.011	2026-10-13 11:57	Key-only shift + previous token embedding in keys (cheap lineage)
+r57a-cheap-k-mshift2	trained	0.93654	65	65	50877056	1.011	2026-10-13 12:16	Keys also read the previous MLP output at t-2 (cheap lineage)
+r57b-cheap-mread	trained	0.93605	66	67	50877056	1.011	2026-10-13 12:16	Cheap key-shift lineage + MLP reads attention output at t-1
+r57c-k-ashift-only-cheap	trained	0.93585	66	66	50877056	1.011	2026-10-13 12:16	Keys read the previous attention output at t-1 (cheap lineage)
+r57d-head-mshift	trained	0.93713	66	66	50877049	1.011	2026-10-13 12:16	LM head reads the last MLP output of the previous position
+r58a-best-gates-adam	trained	0.93404	65	64	50946680	1.012	2026-10-13 12:49	Small gate matrices labelled as gates ("other", AdamW) instead of attention projections (Muon)
+r58b-va-gates-adam	trained	0.94618	58	58	50348080	1.000	2026-10-13 12:49	Value-path gates as "other" (AdamW) on the value-path baseline
+r58c-cheap-kashift-gate37	trained	0.93497	66	66	50946688	1.012	2026-10-13 12:49	Keys read m(t-1) and a(t-1) + head self-gate (scalar, low-rank in 3, 7)
+r58d-va-selfv	trained	0.94576	63	63	50348112	1.000	2026-10-13 12:49	Self-value skip in the value-path world
+r59a-lr-all-other	trained	0.93278	68	68	51143288	1.016	2026-10-13 13:03	Low-rank self-gate in all layers, its matrices trained as gates (AdamW)
+r59b-kashift-a	trained	0.93412	66	66	50946688	1.012	2026-10-13 13:03	Best + keys also read the previous attention output at t-1
+r59c-selfv	trained	0.93287	68	68	50946712	1.012	2026-10-13 13:03	Best + self-value skip
+r59d-mlp-outgate	trained	0.93335	68	69	51208824	1.018	2026-10-13 13:03	Per-channel MLP write gate from the MLP's own (normalized) input
+r60a-vag-selfgate-lr	trained	0.94412	64	63	50614320	1.006	2026-10-13 13:40	Value-path baseline + head self-gate (scalar + low-rank, AdamW gates)
+r60b-vag-mlp-outgate	trained	0.94454	61	62	50610224	1.006	2026-10-13 13:40	Value-path baseline + per-channel MLP write gate from the MLP input (AdamW gate)
+r60c-vag-qfeat	trained	0.94494	61	60	50479152	1.003	2026-10-13 13:40	Value-path baseline + per-dimension query feature gate (AdamW gate)
+r60d-va-perdim-vgates	trained	0.94592	60	60	50430000	1.002	2026-10-13 13:40	Per-dimension value-mixing gates
+r61a-lrodd-outgate-late	trained	0.93223	68	68	51143288	1.016	2026-10-13 14:10	Low-rank gate in odd layers + MLP write gates in layers 4-7
+r61b-lrodd-qfeat	trained	0.93319	69	69	51143288	1.016	2026-10-13 14:10	Low-rank gate in odd layers + per-dimension query gate
+r61c-lr37-outgate-all	trained	0.93349	69	68	51208824	1.018	2026-10-13 14:10	Low-rank gate in layers 3, 7 + MLP write gates in all layers
+r61d-vag-mlp-gate-from-attn	trained	0.94717	62	62	50610224	1.006	2026-10-13 14:10	MLP write gate from the block's attention output
+r62a-outgate-2to7	trained	0.93252	69	69	51208824	1.018	2026-10-13 14:31	MLP write gates in layers 2-7
+r62b-wgate-attn-instead	trained	0.93330	68	68	51143288	1.016	2026-10-13 14:32	Write gates on the attention sublayer instead of the MLP (layers 4-7)
+r62c-vag-attn-wgate	trained	0.94508	61	62	50610224	1.006	2026-10-13 14:32	Attention write gate from its own input (fast value-path base)
+r62d-vag-both-wgates	trained	0.94405	64	64	50872368	1.011	2026-10-13 14:32	Write gates on both sublayers (fast value-path base)
+r63a-attn-wgate-67	trained	0.93261	69	68	51208824	1.018	2026-10-13 14:56	Best + attention write gates in layers 6-7
+r63b-r61a-repeat	trained	0.93208	68	68	51143288	1.016	2026-10-13 14:56	Repeat of r61a (noise check of the current best)
+r63c-vag-mlp-ingate	trained	0.94439	62	62	50610224	1.006	2026-10-13 14:56	Per-channel MLP input gate from the input itself
+r63d-vag-x0-chgate	trained	0.94479	63	63	50479152	1.003	2026-10-13 14:56	Per-channel gate on the token-identity re-injection
+r64a-ingate-instead	trained	0.93169	68	68	51143288	1.016	2026-10-13 15:28	Best with MLP input gates instead of MLP write gates (layers 4-7)
+r64b-vag-ingate-x0gate	trained	0.94242	67	67	50741296	1.008	2026-10-13 15:28	Fast base + MLP input gate + per-channel x0 re-injection gate
+r64c-vag-in-out-gates	trained	0.94407	65	65	50872368	1.011	2026-10-13 15:28	MLP input gate + write gate on the fast base
+r64d-vag-attn-ingate	trained	0.94343	63	63	50610224	1.006	2026-10-13 15:28	Attention input gate (feature selection for q, k, v)
+r65a-nolr-attn-ingate-late	trained	0.93265	68	69	51143288	1.016	2026-10-13 16:15	Best: low-rank self-gate traded for attention input gates (layers 4-7)
+r65b-vag-attn-ingate-from-x0	trained	0.94429	61	61	50610224	1.006	2026-10-13 16:15	Attention input gate computed from the token embedding
+r65c-attn-ingate-instead	trained	0.93371	68	68	51143288	1.016	2026-10-13 16:15	Best: attention input gates instead of MLP input gates (layers 4-7)
+r65d-vag-attn-mlp-ingates	trained	0.94228	67	66	50872368	1.011	2026-10-13 16:15	Attention and MLP input gates together (fast base)
+r66a-r64a-repeat	trained	0.93179	68	68	51143288	1.016	2026-10-13 17:01	Repeat of r64a (noise check of the current best)
+r66b-vag-normhead	trained	0.95232	59	59	50348081	1.000	2026-10-13 17:01	Output embeddings normalized at use
+r66c-best-head-ingate	trained	0.93189	69	68	51176056	1.017	2026-10-13 17:01	Head input gate (feature selection for the readout)
+r66d-vag-value-ingate	trained	0.94563	63	63	50610224	1.006	2026-10-13 17:01	Input gate on the value projection only
+r67a-vag-qk-ingate	trained	0.94442	63	63	50610224	1.006	2026-10-13 17:34	Input gate on the query/key projections only
+r67b-vag-hidden-gate	trained	0.94481	64	64	51003440	1.014	2026-10-13 17:35	Low-rank GLU on the MLP hidden units
+r67c-vag-prenorm-gate	trained	0.94602	63	63	50610224	1.006	2026-10-13 17:35	Per-channel gate before the MLP's normalization
+r67d-vag-mlp-ingate-from-attn	trained	0.94721	62	62	50610224	1.006	2026-10-13 17:35	MLP input gate computed from the attention output
+r68a-best-rebalance	trained	0.93223	68	68	51143288	1.016	2026-10-13 17:54	Best: low-rank gate in layers 1,3,5 and MLP input gates in layers 3-7
+r68b-vag-selfgated-values	trained	0.94435	63	63	50610224	1.006	2026-10-13 17:54	Self-gated values (per-channel, from the values themselves)
+r68c-vag-mra-selfgated	trained	0.94489	62	62	50610232	1.006	2026-10-13 17:54	Self-gated undiluted read
+r68d-vag-mra-plain	trained	0.94406	59	59	50348088	1.000	2026-10-13 17:54	Plain undiluted read on the fast base (control for r68c)
+r69a-best-selfv-instead	trained	0.93336	68	68	51143288	1.016	2026-10-13 18:24	Best with self-gated values instead of MLP input gates (layers 4-7)
+r69b-vag-selfgated-q	trained	0.94514	61	61	50610224	1.006	2026-10-13 18:24	Self-gated queries (per channel, after projection)
+r69c-vag-selfgated-k	trained	0.94497	62	62	50610224	1.006	2026-10-13 18:24	Self-gated keys (per channel, after projection)
+r69d-vag-qk-mlp-ingates	trained	0.94303	66	66	50872368	1.011	2026-10-13 18:24	q/k input gate + MLP input gate (fast base)
+r70a-best-no-doctemp	trained	0.93319	68	69	51143256	1.016	2026-10-13 18:55	Best without the doc-position query temperature (ablation)
+r70b-best-no-x0gate	trained	0.93305	67	68	51139192	1.016	2026-10-13 18:55	Best without the x0 re-injection gate (ablation)
+r70c-best-no-kshift	trained	0.93306	67	67	51143280	1.016	2026-10-13 18:55	Best without the key time-shifted read (ablation)
+r70d-vag-shared-ingate	trained	0.94310	64	64	50610224	1.006	2026-10-13 18:55	One input gate per block shared by attention and MLP
+r71a-best-ingate-early	trained	0.93590	68	68	51143288	1.016	2026-10-13 19:35	MLP input gates in the first half (layers 0-3) instead of the second
+r71b-best-lr-even	trained	0.93210	68	68	51143288	1.016	2026-10-13 19:35	Low-rank head self-gate in even layers instead of odd
+r71c-vag-mlp-hnorm	trained	0.94416	58	58	50348080	1.000	2026-10-13 19:35	MLP hidden activations normalized before the down-projection
+r71d-vag-temporal-ingate	trained	0.94226	64	64	50741296	1.008	2026-10-13 19:35	MLP input gate that also sees the previous position
+r72a-best-hnorm	trained	0.93265	68	68	51143288	1.016	2026-10-13 20:19	Best + MLP hidden activations RMS-normalized before the down-projection
+r72b-best-temporal-ingate	trained	0.93342	68	68	51159672	1.017	2026-10-13 20:19	Best + temporal MLP input gate (gate features of the previous position, cheap form)
+r72c-vag-temporal-hnorm	trained	0.94586	64	64	50741296	1.008	2026-10-13 20:19	Temporal MLP input gate + MLP hidden normalization (fast base)
+r72d-vag-mlp-reads-ve	trained	0.94597	59	59	50348084	1.000	2026-10-13 20:19	MLP reads the token's value-embedding row (undiluted token identity for the MLP)
+r73a-best-no-lowrank	trained	0.93254	66	67	51012216	1.014	2026-10-13 20:57	Ablation: best without the low-rank head self-gate (odd layers)
+r73b-nolr-temporal-ingate	trained	0.93499	68	67	51077752	1.015	2026-10-13 20:57	Low-rank head gate -> temporal MLP input gate (layers 4-7)
+r73c-lr-to-selfgated-k	trained	0.93322	68	68	51143288	1.016	2026-10-13 20:57	Low-rank head gate -> self-gated keys (odd layers)
+r73d-best-rope-per-window	trained	0.93151	68	68	51143288	1.016	2026-10-13 20:57	RoPE base matched to each multi-scale head's window
+r74a-doc-outtemp	trained	0.93134	68	68	51143289	1.016	2026-10-13 21:34	Output temperature also depends on document position
+r74b-rope-scale-full	trained	0.93121	68	68	51143288	1.016	2026-10-13 21:34	RoPE base proportional to receptive field in all layers
+r74c-ve1-prevtok	trained	0.93453	68	68	51143288	1.016	2026-10-13 21:34	Layer-1 value embedding indexed by the previous token
+r74d-doc-x0gate	trained	0.93141	68	68	51143296	1.016	2026-10-13 21:34	x0 re-injection gate also depends on document position
+r75a-rope-doc-both	trained	0.93116	69	69	51143297	1.016	2026-10-13 22:24	Combine: RoPE base ∝ window + doc position in output temperature + doc position in x0 gate
+r75b-doc-ve-gate	trained	0.93102	69	68	51143304	1.016	2026-10-13 22:24	Value-embedding share depends on document position
+r75c-ms-layer3-rope	trained	0.93216	68	69	51143288	1.016	2026-10-13 22:24	Multi-scale heads in the middle full-attention layer (with RoPE base ∝ window)
+r75d-rope-base-x2	trained	0.93103	68	69	51143288	1.016	2026-10-13 22:24	Control for the RoPE rule: base = 20 x window (twice r74b's) in every head
+r76a-docve-base-x2	trained	0.93113	68	68	51143304	1.016	2026-10-13 22:47	Doc-position VE gate + RoPE bases x2 (combine two round-75 results)
+r76b-token-ingate	trained	0.93087	68	68	52191880	1.016	2026-10-13 22:47	Token-conditioned MLP feature selection (gate features from a per-token table)
+r76c-token-headgate	trained	0.93074	69	68	51405448	1.016	2026-10-13 22:47	Token-conditioned head gates (per-token, per-layer, per-head gate bias)
+r76d-all-doc-x2	trained	0.93101	68	69	51143313	1.016	2026-10-13 22:47	Document position everywhere it helped + RoPE bases x2
+r77a-token-controls	trained	0.93068	69	69	51741320	1.016	2026-10-13 23:27	Token-identity bias on every bounded per-token control
+r77b-token-head-mlp	trained	0.93066	69	69	52191880	1.016	2026-10-13 23:27	Token-conditioned head gates + token-conditioned MLP feature selection
+r77c-r76c-repeat	trained	0.93084	69	69	51405448	1.016	2026-10-13 23:27	Repeat of r76c (noise check of the token head-gate model)
+r77d-bigram-headgate	trained	0.93082	69	69	51667592	1.016	2026-10-13 23:28	Head-gate biases from the current AND the previous token
+r78a-token-reads	trained	0.93141	68	68	52069000	1.016	2026-10-14 00:09	Token-conditioned undiluted-read strengths
+r78b-vag-full-docmask	trained	0.94557	61	61	50348080	0.943	2026-10-14 00:09	Control: document masking in all layers (fast base)
+r78c-r76c-token-vegates	trained	0.93074	69	69	51667592	1.016	2026-10-14 00:09	Token-conditioned value-embedding gates
+r78d-vag-local-docmask	trained	0.94428	60	59	50348080	0.957	2026-10-14 00:09	Document masking in the local (sliding-window) layers only
+r79a-lr57-local-docmask	trained	0.93154	68	68	52126344	0.972	2026-10-14 00:38	Best + local document masking, low-rank head gate kept in layers 5 and 7
+r79b-nolr-local-docmask	trained	0.93136	68	67	52060808	0.971	2026-10-14 00:38	Best - low-rank head gate + local document masking (score_mod)
+r79c-vag-docmask-early	trained	0.94340	59	59	50348080	0.979	2026-10-14 00:38	Document masking only in the early local layers (0-2)
+r79d-vag-docmask-late	trained	0.94743	59	59	50348080	0.979	2026-10-14 00:38	Document masking only in the late local layers (4-6)
+r80a-best-docmask012-lr57	trained	0.93031	68	68	52126344	0.994	2026-10-14 01:07	Best + document masking in the early local layers (0-2), low-rank head gate in 5, 7
+r80b-best-docmask01-lr357	trained	0.93019	68	68	52159112	1.001	2026-10-14 01:07	Best + document masking in local layers 0-1, low-rank head gate in 3, 5, 7
+r80c-vag-docmask-0123	trained	0.94441	60	60	50348080	0.972	2026-10-14 01:07	Document masking in the whole first half (layers 0-3, including the global layer 3)
+r80d-vag-docmask-01	trained	0.94453	59	59	50348080	0.986	2026-10-14 01:07	Document masking only in layers 0-1
+r81a-dm012-lr357	trained	0.93000	69	68	52159112	0.994	2026-10-14 01:31	Best + document masking in early local layers 0-2, low-rank head gate in 3, 5, 7
+r81b-dm012-lr1357-ig567	trained	0.93048	69	69	52159112	0.994	2026-10-14 01:31	Document masking 0-2 + full low-rank head gate (1,3,5,7), MLP input gates only in 5-7
+r81c-vag-dm012-doctemp	trained	0.94189	59	59	50348112	0.979	2026-10-14 01:31	Early-layer document masking + document-position query temperature (fast base)
+r81d-vag-localmask-sink	trained	0.94410	60	60	50348080	0.957	2026-10-14 01:31	Local-layer document masking that keeps the row's first BOS visible (sink)
+r82a-dm012-shift-isolated	trained	0.93001	69	69	52159112	0.994	2026-10-14 02:04	Early layers fully document-isolated: time-shifted reads also stop at document starts
+r82b-r81a-repeat	trained	0.93018	69	69	52159112	0.994	2026-10-14 02:04	Repeat of r81a (noise check of the current best)
+r82c-vag-dm012-late-halfheads	trained	0.94338	59	59	50348112	0.957	2026-10-14 02:04	Early local layers document-isolated; late local layers: half the heads isolated
+r82d-vag-lexical-match	trained	0.94152	64	65	50348176	0.979	2026-10-14 02:04	Lexical-match channel in attention: q and k carry an un-rotated token-identity code
+r83a-vag-dm-ingate	trained	0.94006	60	60	50479184	0.982	2026-10-14 02:37	Cheap base: early doc masking + doc temp + MLP input gates in layers 4-7
+r83b-best-lex-7	trained	0.93021	69	69	52159120	0.994	2026-10-14 02:37	Best + lexical-match channel in the last (global) layer
+r83c-vag-late-full	trained	0.94177	58	58	50348112	0.979	2026-10-14 02:37	Late layers attend over the whole row (no sliding window in the second half)
+r83d-vag-doc-jump-rope	trained	0.94237	64	65	50348112	0.979	2026-10-14 02:37	Document-jump RoPE: other documents are "far away"
+r84a-best-free-tweaks	trained	0.93009	69	69	52159113	0.994	2026-10-14 02:55	Best + RoPE bases x2 + document position in the output temperature
+r84b-noshift012-lr1357	trained	0.92944	69	69	52191877	0.995	2026-10-14 02:55	Document-isolated early layers drop the time-shifted key read; low-rank head gate back in layer 1
+r84c-vag-late-prevdoc	trained	0.94009	61	61	50479184	0.960	2026-10-14 02:55	Late local layers see only the current and the previous document
+r84d-vag-early-nope	trained	0.97885	59	59	50479184	0.982	2026-10-14 02:55	No RoPE in the document-isolated early layers
+r85a-noshift-all012-ig3	trained	0.93102	69	69	52224642	0.996	2026-10-14 03:12	No time-shifted reads in the isolated layers 0-2; MLP input gate also in layer 3
+r85b-r81a-noshift012	trained	0.93005	68	68	52159109	0.994	2026-10-14 03:12	Ablation: r81a without the key shift read in layers 0-2 (no low-rank gate added)
+r85c-noshift-all012	trained	0.93015	68	68	52191874	0.995	2026-10-14 03:12	No time-shifted reads at all in the isolated layers 0-2
+r85d-vag-early-docfull	trained	0.94029	62	61	50479184	0.982	2026-10-14 03:12	Early layers: whole current document visible (document mask, no sliding window)
+r86a-r84b-repeat	trained	0.92960	69	69	52191877	0.995	2026-10-14 03:36	Repeat of r84b (noise check)
+r86b-r84b-rope2	trained	0.92899	69	68	52191877	0.995	2026-10-14 03:36	r84b + RoPE bases x2
+r86c-r84b-doc-out-x0	trained	0.92930	69	69	52191886	0.995	2026-10-14 03:36	r84b + document position in output temperature and x0 gate
+r86d-vag-prevdoc-summary	trained	0.94007	62	62	50479188	0.982	2026-10-14 03:36	Late layers read the previous document's final state (neighbour-document summary)
+r87a-rope2-doc-out	trained	0.92888	68	68	52191878	0.995	2026-10-14 04:09	r86b + document position in the output temperature
+r87b-rope4	trained	0.92905	69	69	52191877	0.995	2026-10-14 04:09	RoPE bases x4 (base = 40 x window)
+r87c-vag-ingate-all	trained	0.94019	62	62	50610256	0.984	2026-10-14 04:09	MLP input gates in every layer (early layers now document-isolated)
+r87d-vag-ingate-early	trained	0.94132	60	61	50479184	0.982	2026-10-14 04:09	MLP input gates in the early half only (document-isolated layers)
+r88a-dm-spare-long-head	trained	0.92996	69	69	52191878	0.995	2026-10-14 04:33	Early document mask spares the longest-window head
+r88b-token-qtemp	trained	0.92911	69	69	51667590	0.995	2026-10-14 04:33	Token table: query-temperature biases instead of MLP-gate features
+r88c-vag-doc-parity	trained	0.93994	66	66	50483280	0.982	2026-10-14 04:33	Soft current-vs-neighbour document bias via document-parity q/k features
+r88d-vag-docstart-prior	trained	0.94014	61	61	50487376	0.982	2026-10-14 04:33	Document-start vocabulary prior
+r89a-r87a-repeat	trained	0.92878	68	69	52191878	0.995	2026-10-14 04:58	Repeat of r87a (noise check of the best)
+r89b-early-rope-half	trained	0.92914	69	69	52191878	0.995	2026-10-14 04:58	Finer RoPE in the document-isolated early layers (base 10 x window there)
+r89c-vag-dm0124	trained	0.93953	61	61	50479184	0.974	2026-10-14 04:58	Boundary probe: document masking in layers 0-2 and 4
+r89d-doc-headgate	trained	0.92886	68	68	52191910	0.995	2026-10-14 04:58	Head self-gate also depends on document position
+r90a-r86b-dm0124	trained	0.92901	69	69	52191876	0.988	2026-10-14 05:24	r86b + document masking also in layer 4
+r90b-vag-dm01245	trained	0.94058	61	61	50479184	0.967	2026-10-14 05:25	Boundary probe: document masking in layers 0-2, 4, 5
+r90c-vag-dm012456	trained	0.94068	61	61	50479184	0.960	2026-10-14 05:25	Boundary probe: document masking in all local layers (0-2, 4-6) on the cheap base
+r90d-dm0124-lr357	trained	0.93008	68	68	52159109	0.987	2026-10-14 05:25	Best + document masking in layer 4, low-rank head gate only in 3, 5, 7
+r91a-bd-lr13567	trained	0.92985	69	69	52224646	1.006	2026-10-14 06:12	Block-diagonal low-rank head gate (faster form) + gate also in layer 6
+r91b-vag-doc-title-x0	trained	0.93999	61	61	50479188	0.982	2026-10-14 06:12	Late layers re-inject the document's first token (title signal)
+r91c-vag-headgate	trained	0.93837	65	65	50745424	1.003	2026-10-14 06:12	Cheap base + head self-gate (scalar + block-diagonal low-rank) in all layers
+r91d-vag-yhead-norm	trained	0.93883	62	62	50479216	0.982	2026-10-14 06:12	Per-head attention outputs normalized (agreement magnitude removed)
+r92a-best-ynorm	trained	0.93315	68	68	52191878	1.003	2026-10-14 06:33	Best + per-head attention outputs normalized before the head gate
+r92b-vag-headgate-ynorm	trained	0.93733	67	66	50745456	1.003	2026-10-14 06:33	Cheap base + head gates + per-head output normalization
+r92c-vag-ynorm-noscale	trained	0.94113	61	61	50479184	0.982	2026-10-14 06:33	Per-head output normalization without the per-head scale
+r92d-vag-ynorm-late	trained	0.93970	61	61	50479200	0.982	2026-10-14 06:33	Per-head output normalization in late layers only
+r93a-best-yn-early	trained	0.93027	68	68	52191894	1.003	2026-10-14 07:00	Best + per-head output normalization (with per-head scale) in early layers 0-3
+r93b-best-yn-late	trained	0.93049	68	69	52191894	1.003	2026-10-14 07:00	Best + per-head output normalization (with per-head scale) in late layers 4-7
+r93c-best-yn-even	trained	0.93109	69	69	52191894	1.003	2026-10-14 07:00	Best + per-head output normalization (with per-head scale) in even layers
+r93d-vag-write-norm	trained	0.94352	62	62	50479224	0.982	2026-10-14 07:00	Attention write normalized (unit vector x learned per-layer scale), on top of per-head output normalization
+r94a-best-blockdiag	trained	0.92868	68	68	52191878	1.003	2026-10-14 07:27	Best with the low-rank head gate in block-diagonal matmul form (equivalence check)
+r94b-bd-doc-x0	trained	0.92903	68	68	52191886	1.003	2026-10-14 07:27	Block-diagonal gate form + document position in the x0 re-injection gate
+r94c-vag-ynorm-learned-power	trained	0.93782	67	66	50745456	1.003	2026-10-14 07:27	Learned partial output normalization per head (y / rms(y)^a_h)
+r94d-vag-ynorm-early	trained	0.93831	61	61	50479200	0.982	2026-10-14 07:27	Per-head output normalization in early layers only
+r95a-r94a-repeat	trained	0.92905	68	69	52191878	1.003	2026-10-14 07:46	Repeat of r94a (best, block-diagonal gate form)
+r95b-bd-lr0137	trained	0.93015	68	69	52224646	1.006	2026-10-14 07:46	Block-diagonal gate form + low-rank head gate also in layer 0
+r95c-vag-hg-ynorm-early	trained	0.93728	66	66	50745440	1.003	2026-10-14 07:46	Head gate + per-head output normalization in early layers only (cheap base)
+r95d-vag-ynorm-012	trained	0.93989	61	61	50479196	0.982	2026-10-14 07:46	Per-head output normalization only in the document-isolated layers 0-2
+r96a-best-yn-3	trained	0.92952	68	69	52191882	1.003	2026-10-14 08:08	Per-head output normalization (x per-head scale) only in layer 3 (the middle global layer)
+r96b-best-yn-37	trained	0.92921	68	69	52191886	1.003	2026-10-14 08:09	Per-head output normalization (x per-head scale) only in the global layers 3 and 7
+r96c-vag-yn-3	trained	0.93924	61	61	50479188	0.982	2026-10-14 08:09	Per-head output normalization (x per-head scale) only in layer 3 (the middle global layer)
+r96d-vag-yn-37	trained	0.93936	61	61	50479192	0.982	2026-10-14 08:09	Per-head output normalization (x per-head scale) only in the global layers 3 and 7
+r97a-abl-no-docmask	trained	0.93027	68	68	52191881	1.024	2026-10-14 08:28	Ablation: final model without document masking
+r97b-abl-no-token-headgate	trained	0.92916	68	68	52191878	1.003	2026-10-14 08:28	Ablation: final model without the per-token head-gate bias table
+r97c-abl-rope-10000	trained	0.92967	69	68	52191878	1.003	2026-10-14 08:28	Ablation: final model with the standard RoPE base (10000) in every head
+r97d-vag-early-no-bos	trained	0.94084	61	61	50479184	0.982	2026-10-14 08:28	Isolated early layers without their document's BOS key (sink test)
+r98a-vag-early-rowbos	trained	0.93995	61	61	50479184	0.982	2026-10-14 08:58	Early document masking with the row's first BOS kept visible
+r98b-best-early-rowbos	trained	0.92887	68	68	52191878	1.003	2026-10-14 08:58	Final model: early document masking with the row's first BOS kept visible
+r98c-best-qkgate-7	trained	0.92976	69	68	52224646	1.004	2026-10-14 08:58	Final model + q/k input self-gate in layer 7
+r98d-best-qkgate-57	trained	0.93010	69	69	52257414	1.004	2026-10-14 08:58	Final model + q/k input self-gate in layers 5 and 7
+r99a-vag-global-prevdoc	trained	0.94033	61	62	50479184	0.967	2026-10-14 09:22	Global layers restricted to the current + previous document
+r99b-vag-all-prevdoc	trained	0.94031	62	62	50479184	0.946	2026-10-14 09:22	All later layers restricted to the current + previous document
+r99c-r94a-repeat2	trained	0.92882	68	68	52191878	1.003	2026-10-14 09:22	Second repeat of the final model r94a
+r99d-vag-early-parity-soft	trained	0.94260	65	65	50482256	1.003	2026-10-14 09:22	Learned soft document isolation in early layers (parity q/k features instead of the hard mask)
+r100a-vag-rope-window	trained	0.93622	66	66	50745456	1.003	2026-10-14 09:35	RoPE base proportional to the window (20 x window), no multi-scale heads (transfer test on the cheap base)
+r100b-vag-token-headgate	trained	0.93641	67	67	51007600	1.003	2026-10-14 09:35	Per-token, per-(layer, head) head-gate bias table (transfer test on the cheap base)
+r100c-vag-abl-docmask	trained	0.93997	66	66	50745456	1.024	2026-10-14 09:35	Ablation: no early document masking (transfer test on the cheap base)
+r100d-vag-multiscale	trained	0.94068	64	64	50745456	1.003	2026-10-14 09:35	Multi-scale head windows (128..1024) in the local layers (transfer test on the cheap base)
+r101a-vag-rope-token	trained	0.93567	67	67	51007600	1.003	2026-10-14 10:11	Cheap base + RoPE base proportional to window + token head-gate table (stacking test)
+r101b-vag-doc-outtemp	trained	0.93545	68	67	51007601	1.003	2026-10-14 10:11	Cheap base (+RoPE/token) + document position in the output temperature (transfer test)
+r101c-vag-kshift	trained	0.93640	68	68	51007604	1.003	2026-10-14 10:11	Cheap base (+RoPE/token) + time-shifted key read in the non-isolated layers (transfer test)
+r101d-abl-token-mlp	trained	0.92907	68	68	51405446	1.003	2026-10-14 10:11	Ablation: final model without the token MLP-gate features

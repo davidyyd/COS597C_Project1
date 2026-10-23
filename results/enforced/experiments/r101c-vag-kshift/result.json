@@ -1,0 +1,11 @@
+{
+  "name": "r101c-vag-kshift",
+  "idea": "Cheap base (+RoPE/token) + time-shifted key read in the non-isolated layers (transfer test)",
+  "total_params": 51007604,
+  "flops_ratio": 1.003002898267666,
+  "step_ms": 67.68493143026717,
+  "status": "trained",
+  "val_loss": 0.9364042547753659,
+  "train_step_ms": 67.63373624009546,
+  "finished": "2026-10-14 10:11"
+}

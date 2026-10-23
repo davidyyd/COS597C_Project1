@@ -1,0 +1,11 @@
+{
+  "name": "r07b-stalegates-fullread",
+  "idea": "Stale depth gates read from the full normalized state",
+  "status": "trained",
+  "val_bpb": 0.971479,
+  "training_seconds": 261.5,
+  "peak_vram_mb": 15680.1,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-12 22:17"
+}

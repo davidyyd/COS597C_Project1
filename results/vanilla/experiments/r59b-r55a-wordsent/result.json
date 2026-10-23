@@ -1,0 +1,11 @@
+{
+  "name": "r59b-r55a-wordsent",
+  "idea": "r55a + position-in-word and sentence-position embeddings",
+  "status": "trained",
+  "val_bpb": 0.931198,
+  "training_seconds": 263.8,
+  "peak_vram_mb": 14289.6,
+  "num_steps": 3815.0,
+  "num_params_M": 50.1,
+  "finished": "2026-10-13 23:37"
+}

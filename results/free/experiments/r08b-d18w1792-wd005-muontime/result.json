@@ -1,0 +1,11 @@
+{
+  "name": "r08b-d18w1792-wd005-muontime",
+  "idea": "d18w1792 attnscale, weight decay 0.05 (+ Muon timing breakdown)",
+  "status": "trained",
+  "val_bpb": 0.796148,
+  "training_seconds": 3185.7,
+  "peak_vram_mb": 57616.3,
+  "num_steps": 3815.0,
+  "num_params_M": 855.1,
+  "finished": "2026-10-13 22:48"
+}

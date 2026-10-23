@@ -1,0 +1,11 @@
+{
+  "name": "r61b-h12800-s7",
+  "idea": "r60a (best) with seed 7",
+  "status": "trained",
+  "val_bpb": 0.763708,
+  "training_seconds": 3296.1,
+  "peak_vram_mb": 69029.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-16 03:51"
+}

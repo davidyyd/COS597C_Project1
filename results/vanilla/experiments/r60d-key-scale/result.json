@@ -1,0 +1,11 @@
+{
+  "name": "r60d-key-scale",
+  "idea": "Data-dependent key scale after QK-norm (key-side sharpness)",
+  "status": "trained",
+  "val_bpb": 0.955928,
+  "training_seconds": 232.6,
+  "peak_vram_mb": 12717.0,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-14 00:18"
+}

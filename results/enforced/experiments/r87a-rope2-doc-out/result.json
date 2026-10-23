@@ -1,0 +1,11 @@
+{
+  "name": "r87a-rope2-doc-out",
+  "idea": "r86b + document position in the output temperature",
+  "total_params": 52191878,
+  "flops_ratio": 0.9949672680601138,
+  "step_ms": 68.44595404982101,
+  "status": "trained",
+  "val_loss": 0.9288794684945785,
+  "train_step_ms": 68.45786278019659,
+  "finished": "2026-10-14 04:09"
+}

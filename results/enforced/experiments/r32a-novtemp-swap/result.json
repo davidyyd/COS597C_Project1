@@ -1,0 +1,11 @@
+{
+  "name": "r32a-novtemp-swap",
+  "idea": "Best model: swap the half-layer low-rank gate for a novelty temperature",
+  "total_params": 50872944,
+  "flops_ratio": 1.0251566843259872,
+  "step_ms": 67.41598306020023,
+  "status": "trained",
+  "val_loss": 0.9448535884085943,
+  "train_step_ms": 67.3672359000193,
+  "finished": "2026-10-13 02:48"
+}

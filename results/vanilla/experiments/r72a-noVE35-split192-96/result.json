@@ -1,0 +1,11 @@
+{
+  "name": "r72a-noVE35-split192-96",
+  "idea": "r71c also dropping layer 5's VE table (VE only in layers 1 and 7), prior 192 + 96",
+  "status": "trained",
+  "val_bpb": 0.927609,
+  "training_seconds": 258.4,
+  "peak_vram_mb": 14844.9,
+  "num_steps": 3815.0,
+  "num_params_M": 46.4,
+  "finished": "2026-10-14 05:18"
+}

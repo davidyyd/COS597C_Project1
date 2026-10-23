@@ -1,0 +1,11 @@
+{
+  "name": "r59b-kashift-a",
+  "idea": "Best + keys also read the previous attention output at t-1",
+  "total_params": 50946688,
+  "flops_ratio": 1.012377800176477,
+  "step_ms": 65.99014034029096,
+  "status": "trained",
+  "val_loss": 0.9341199105759993,
+  "train_step_ms": 65.80685135006206,
+  "finished": "2026-10-13 13:03"
+}

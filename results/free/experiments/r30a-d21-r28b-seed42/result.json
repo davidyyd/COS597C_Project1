@@ -1,0 +1,11 @@
+{
+  "name": "r30a-d21-r28b-seed42",
+  "idea": "r28b with seed 42",
+  "status": "trained",
+  "val_bpb": 0.772561,
+  "training_seconds": 3234.3,
+  "peak_vram_mb": 77994.7,
+  "num_steps": 3815.0,
+  "num_params_M": 1587.6,
+  "finished": "2026-10-14 21:51"
+}

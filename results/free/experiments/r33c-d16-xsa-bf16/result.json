@@ -1,0 +1,7 @@
+{
+  "name": "r33c-d16-xsa-bf16",
+  "idea": "d16 (r30d): learnable XSA, bf16 formulation",
+  "status": "crash",
+  "reason": "no val_bpb printed; see run.log",
+  "finished": "2026-10-15 00:22"
+}

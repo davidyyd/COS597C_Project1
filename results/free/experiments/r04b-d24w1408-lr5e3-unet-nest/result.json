@@ -1,0 +1,11 @@
+{
+  "name": "r04b-d24w1408-lr5e3-unet-nest",
+  "idea": "d24w1408, LR 5e-3, U-net skips + Nesterov Muon",
+  "status": "trained",
+  "val_bpb": 0.801906,
+  "training_seconds": 2847.0,
+  "peak_vram_mb": 62327.6,
+  "num_steps": 3815.0,
+  "num_params_M": 732.4,
+  "finished": "2026-10-13 18:43"
+}

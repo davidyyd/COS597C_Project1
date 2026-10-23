@@ -1,0 +1,11 @@
+{
+  "name": "r93b-best-yn-late",
+  "idea": "Best + per-head output normalization (with per-head scale) in late layers 4-7",
+  "total_params": 52191894,
+  "flops_ratio": 1.003002898267666,
+  "step_ms": 68.16124837001553,
+  "status": "trained",
+  "val_loss": 0.9304948534411469,
+  "train_step_ms": 68.59680094989017,
+  "finished": "2026-10-14 07:00"
+}

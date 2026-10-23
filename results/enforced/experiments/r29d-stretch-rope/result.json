@@ -1,0 +1,11 @@
+{
+  "name": "r29d-stretch-rope",
+  "idea": "Stretchable time: content-dependent rotary position increments",
+  "total_params": 50336784,
+  "flops_ratio": 1.000010463060166,
+  "step_ms": 66.3256279999041,
+  "status": "trained",
+  "val_loss": 0.9563658216711143,
+  "train_step_ms": 66.64299663010752,
+  "finished": "2026-10-13 01:31"
+}

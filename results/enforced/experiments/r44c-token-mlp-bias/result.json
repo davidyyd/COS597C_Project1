@@ -1,0 +1,11 @@
+{
+  "name": "r44c-token-mlp-bias",
+  "idea": "Token-conditioned MLP pre-activation bias from a normalized sparse table",
+  "total_params": 51658808,
+  "flops_ratio": 1.0056814416701834,
+  "step_ms": 68.47038211999461,
+  "status": "trained",
+  "val_loss": 0.9447882941687389,
+  "train_step_ms": 68.55069118988467,
+  "finished": "2026-10-13 07:24"
+}

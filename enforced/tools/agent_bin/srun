@@ -1,0 +1,4 @@
+#!/bin/sh
+# stand-in on the PATH of agent sessions: GPU work goes through ar-check and ar-exp
+echo "srun is not available in this session: use ar-check and ar-exp" >&2
+exit 1

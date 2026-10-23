@@ -1,0 +1,11 @@
+{
+  "name": "r85c-noshift-all012",
+  "idea": "No time-shifted reads at all in the isolated layers 0-2",
+  "total_params": 52191874,
+  "flops_ratio": 0.9949672680601138,
+  "step_ms": 68.29926693986636,
+  "status": "trained",
+  "val_loss": 0.9301480715075517,
+  "train_step_ms": 68.37840662046801,
+  "finished": "2026-10-14 03:12"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r92b-vag-headgate-ynorm",
+  "idea": "Cheap base + head gates + per-head output normalization",
+  "total_params": 50745456,
+  "flops_ratio": 1.003002898267666,
+  "step_ms": 66.74972168999375,
+  "status": "trained",
+  "val_loss": 0.9373264847957034,
+  "train_step_ms": 66.47711778001394,
+  "finished": "2026-10-14 06:33"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r37a-vesep-lr37-noot",
+  "idea": "Separately normalized values + low-rank gate in the full-attention layers",
+  "total_params": 50937968,
+  "flops_ratio": 1.0122103912138196,
+  "step_ms": 68.85621913999785,
+  "status": "trained",
+  "val_loss": 0.9405800190689152,
+  "train_step_ms": 68.61628675018437,
+  "finished": "2026-10-13 04:57"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r52c-r51b-posinword",
+  "idea": "r51b + position-in-word embedding",
+  "status": "trained",
+  "val_bpb": 0.930676,
+  "training_seconds": 262.8,
+  "peak_vram_mb": 14416.7,
+  "num_steps": 3815.0,
+  "num_params_M": 50.1,
+  "finished": "2026-10-13 20:24"
+}

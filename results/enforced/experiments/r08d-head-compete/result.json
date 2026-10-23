@@ -1,0 +1,11 @@
+{
+  "name": "r08d-head-compete",
+  "idea": "Heads compete per token (softmax over head outputs)",
+  "total_params": 50348560,
+  "flops_ratio": 1.0003348179253146,
+  "step_ms": 63.26819367008284,
+  "status": "trained",
+  "val_loss": 0.9839635431022677,
+  "train_step_ms": 63.11963466985617,
+  "finished": "2026-10-12 17:01"
+}

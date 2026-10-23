@@ -1,0 +1,11 @@
+{
+  "name": "r59a-proxy-bf16resid",
+  "idea": "proxy (r49c): bf16 residual stream",
+  "status": "trained",
+  "val_bpb": 0.765049,
+  "training_seconds": 3094.5,
+  "peak_vram_mb": 65763.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1725.0,
+  "finished": "2026-10-16 01:52"
+}

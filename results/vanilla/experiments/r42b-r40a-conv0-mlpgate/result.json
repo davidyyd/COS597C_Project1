@@ -1,0 +1,11 @@
+{
+  "name": "r42b-r40a-conv0-mlpgate",
+  "idea": "r40a with layer 0 back to the value conv (cheaper) + grouped MLP hidden gate",
+  "status": "trained",
+  "val_bpb": 0.932459,
+  "training_seconds": 252.7,
+  "peak_vram_mb": 15867.2,
+  "num_steps": 3815.0,
+  "num_params_M": 50.0,
+  "finished": "2026-10-13 14:17"
+}

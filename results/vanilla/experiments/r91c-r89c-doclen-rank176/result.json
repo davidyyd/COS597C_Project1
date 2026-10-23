@@ -1,0 +1,11 @@
+{
+  "name": "r91c-r89c-doclen-rank176",
+  "idea": "r89c + document-length temperature, prior ranks 176 + 80 (fit the cap)",
+  "status": "trained",
+  "val_bpb": 0.923249,
+  "training_seconds": 261.6,
+  "peak_vram_mb": 14915.8,
+  "num_steps": 3815.0,
+  "num_params_M": 52.1,
+  "finished": "2026-10-14 15:16"
+}

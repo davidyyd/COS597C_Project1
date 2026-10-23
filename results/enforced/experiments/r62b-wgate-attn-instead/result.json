@@ -1,0 +1,11 @@
+{
+  "name": "r62b-wgate-attn-instead",
+  "idea": "Write gates on the attention sublayer instead of the MLP (layers 4-7)",
+  "total_params": 51143288,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 68.03381181991426,
+  "status": "trained",
+  "val_loss": 0.9332950085040058,
+  "train_step_ms": 67.56717384007061,
+  "finished": "2026-10-13 14:32"
+}

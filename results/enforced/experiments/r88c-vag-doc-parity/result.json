@@ -1,0 +1,11 @@
+{
+  "name": "r88c-vag-doc-parity",
+  "idea": "Soft current-vs-neighbour document bias via document-parity q/k features",
+  "total_params": 50483280,
+  "flops_ratio": 0.9815745510475267,
+  "step_ms": 66.01547767990269,
+  "status": "trained",
+  "val_loss": 0.9399391404286644,
+  "train_step_ms": 66.04708366008708,
+  "finished": "2026-10-14 04:33"
+}

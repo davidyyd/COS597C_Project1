@@ -1,0 +1,11 @@
+{
+  "name": "r02b-d20w1280-grouplr",
+  "idea": "d20w1280 + group LRs",
+  "status": "trained",
+  "val_bpb": 0.818506,
+  "training_seconds": 2020.1,
+  "peak_vram_mb": 47162.8,
+  "num_steps": 3815.0,
+  "num_params_M": 519.0,
+  "finished": "2026-10-13 16:57"
+}

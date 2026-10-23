@@ -1,0 +1,11 @@
+{
+  "name": "r32d-repeat-temp",
+  "idea": "Attention temperature from the exact repeat count of the token",
+  "total_params": 50336304,
+  "flops_ratio": 1.0,
+  "step_ms": 59.98834083991824,
+  "status": "trained",
+  "val_loss": 0.9557113798223758,
+  "train_step_ms": 59.929306319972966,
+  "finished": "2026-10-13 02:48"
+}

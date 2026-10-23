@@ -1,0 +1,11 @@
+{
+  "name": "r86a-r84b-repeat",
+  "idea": "Repeat of r84b (noise check)",
+  "total_params": 52191877,
+  "flops_ratio": 0.9949672680601138,
+  "step_ms": 68.6155544698704,
+  "status": "trained",
+  "val_loss": 0.9295957967418438,
+  "train_step_ms": 68.8076703104889,
+  "finished": "2026-10-14 03:36"
+}

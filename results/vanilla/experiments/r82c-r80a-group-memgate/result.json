@@ -1,0 +1,11 @@
+{
+  "name": "r82c-r80a-group-memgate",
+  "idea": "Feature-grouped gate on the mid-network hashed memory",
+  "status": "trained",
+  "val_bpb": 0.923481,
+  "training_seconds": 261.6,
+  "peak_vram_mb": 15113.9,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 10:17"
+}

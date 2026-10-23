@@ -1,0 +1,11 @@
+{
+  "name": "r45c-d16m65-gate-nocanon",
+  "idea": "r43d without Canon layers (ablation; fixed)",
+  "status": "trained",
+  "val_bpb": 0.77028,
+  "training_seconds": 3067.5,
+  "peak_vram_mb": 66716.4,
+  "num_steps": 3815.0,
+  "num_params_M": 1724.9,
+  "finished": "2026-10-15 12:03"
+}

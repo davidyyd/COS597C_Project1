@@ -1,0 +1,7 @@
+{
+  "name": "r52b-w2048d12",
+  "idea": "Shape: width 2048 x 12 layers (16 heads), MLP hidden 14336 (~7x)",
+  "status": "timeout",
+  "reason": "stopped at the 60m limit",
+  "finished": "2026-10-15 18:58"
+}

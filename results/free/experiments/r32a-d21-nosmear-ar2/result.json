@@ -1,0 +1,7 @@
+{
+  "name": "r32a-d21-nosmear-ar2",
+  "idea": "r30a without smear + leaner bf16 grad all_reduce (no fp32 temporary)",
+  "status": "crash",
+  "reason": "no val_bpb printed; see run.log",
+  "finished": "2026-10-14 23:23"
+}

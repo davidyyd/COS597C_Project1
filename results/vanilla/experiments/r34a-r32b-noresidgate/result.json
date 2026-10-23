@@ -1,0 +1,11 @@
+{
+  "name": "r34a-r32b-noresidgate",
+  "idea": "r32b without the residual gate (keep the x0 gate), to fit the cap",
+  "status": "trained",
+  "val_bpb": 0.935632,
+  "training_seconds": 260.4,
+  "peak_vram_mb": 16110.6,
+  "num_steps": 3815.0,
+  "num_params_M": 50.4,
+  "finished": "2026-10-13 10:18"
+}

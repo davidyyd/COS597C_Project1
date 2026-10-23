@@ -1,0 +1,11 @@
+{
+  "name": "r37d-grouped-norm",
+  "idea": "Grouped RMSNorm for block inputs",
+  "total_params": 50336272,
+  "flops_ratio": 1.0,
+  "step_ms": 63.94715496979188,
+  "status": "trained",
+  "val_loss": 0.9567101499589529,
+  "train_step_ms": 63.90861790976487,
+  "finished": "2026-10-13 04:57"
+}

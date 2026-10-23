@@ -1,0 +1,11 @@
+{
+  "name": "r21c-cheap-gate-chain",
+  "idea": "Cheap lineage + scalar gate + full undiluted-read chain",
+  "total_params": 50336336,
+  "flops_ratio": 1.0,
+  "step_ms": 65.36484804004431,
+  "status": "trained",
+  "val_loss": 0.9479122623146384,
+  "train_step_ms": 65.253637630085,
+  "finished": "2026-10-12 22:22"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r11d-diag-prof-r10a",
+  "idea": "DIAGNOSTIC: r10a with a torch.profiler table (steps 100-102) and phase timings (steps 200-299)",
+  "status": "trained",
+  "val_bpb": 0.944442,
+  "training_seconds": 266.9,
+  "peak_vram_mb": 16361.8,
+  "num_steps": 3815.0,
+  "num_params_M": 49.8,
+  "finished": "2026-10-12 23:48"
+}

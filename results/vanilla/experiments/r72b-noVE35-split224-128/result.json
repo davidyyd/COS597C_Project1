@@ -1,0 +1,11 @@
+{
+  "name": "r72b-noVE35-split224-128",
+  "idea": "r72a with the freed parameters/time put into prior rank (224 + 128)",
+  "status": "trained",
+  "val_bpb": 0.926689,
+  "training_seconds": 259.8,
+  "peak_vram_mb": 14865.9,
+  "num_steps": 3815.0,
+  "num_params_M": 47.5,
+  "finished": "2026-10-14 05:18"
+}

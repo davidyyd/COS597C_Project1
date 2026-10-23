@@ -1,0 +1,11 @@
+{
+  "name": "r87b-rope4",
+  "idea": "RoPE bases x4 (base = 40 x window)",
+  "total_params": 52191877,
+  "flops_ratio": 0.9949672680601138,
+  "step_ms": 68.646138679469,
+  "status": "trained",
+  "val_loss": 0.9290507465997524,
+  "train_step_ms": 68.73544880014379,
+  "finished": "2026-10-14 04:09"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r21c-d16-bigram262k-lr033",
+  "idea": "d16 bigram 262k with 1/3 LR on the bigram table",
+  "status": "trained",
+  "val_bpb": 0.787608,
+  "training_seconds": 2463.9,
+  "peak_vram_mb": 70513.8,
+  "num_steps": 3815.0,
+  "num_params_M": 1233.3,
+  "finished": "2026-10-14 11:17"
+}

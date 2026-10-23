@@ -1,0 +1,11 @@
+{
+  "name": "r25c-cheap-bigramde",
+  "idea": "Cheap lineage with the non-linear bigram embedding instead of the unigram deep embedding",
+  "total_params": 50733648,
+  "flops_ratio": 1.0080356302075522,
+  "step_ms": 65.50266234000446,
+  "status": "trained",
+  "val_loss": 0.9467133155784212,
+  "train_step_ms": 65.96000451012515,
+  "finished": "2026-10-12 23:55"
+}

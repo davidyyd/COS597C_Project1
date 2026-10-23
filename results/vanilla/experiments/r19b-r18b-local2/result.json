@@ -1,0 +1,11 @@
+{
+  "name": "r19b-r18b-local2",
+  "idea": "r18b with layer 2 also local (window 128)",
+  "status": "trained",
+  "val_bpb": 0.937719,
+  "training_seconds": 253.0,
+  "peak_vram_mb": 16356.7,
+  "num_steps": 3815.0,
+  "num_params_M": 49.8,
+  "finished": "2026-10-13 03:04"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r35c-silu-values",
+  "idea": "Non-linear (self-gated) values",
+  "total_params": 50336304,
+  "flops_ratio": 1.0,
+  "step_ms": 63.74934343009954,
+  "status": "trained",
+  "val_loss": 0.9554643113260545,
+  "train_step_ms": 63.69284666987369,
+  "finished": "2026-10-13 04:06"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r23b-d16-headlr1",
+  "idea": "d16 (bigram262k, emb WD0): lm_head LR multiplier 1.0 (from 0.4)",
+  "status": "trained",
+  "val_bpb": 0.786458,
+  "training_seconds": 2463.6,
+  "peak_vram_mb": 70513.8,
+  "num_steps": 3815.0,
+  "num_params_M": 1233.3,
+  "finished": "2026-10-14 13:18"
+}

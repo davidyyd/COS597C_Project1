@@ -1,0 +1,11 @@
+{
+  "name": "r90a-r86b-dm0124",
+  "idea": "r86b + document masking also in layer 4",
+  "total_params": 52191876,
+  "flops_ratio": 0.9878244856534006,
+  "step_ms": 68.86091331005446,
+  "status": "trained",
+  "val_loss": 0.9290057630942152,
+  "train_step_ms": 68.67966441990575,
+  "finished": "2026-10-14 05:24"
+}

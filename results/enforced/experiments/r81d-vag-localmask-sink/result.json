@@ -1,0 +1,11 @@
+{
+  "name": "r81d-vag-localmask-sink",
+  "idea": "Local-layer document masking that keeps the row's first BOS visible (sink)",
+  "total_params": 50348080,
+  "flops_ratio": 0.95746766042487,
+  "step_ms": 59.674804040114395,
+  "status": "trained",
+  "val_loss": 0.9441035906890027,
+  "train_step_ms": 59.94797098013805,
+  "finished": "2026-10-14 01:31"
+}

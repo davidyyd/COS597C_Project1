@@ -1,0 +1,11 @@
+{
+  "name": "r81a-best-attnlane",
+  "idea": "best (r77b) + attention lane for the last 5 layers (x_backout + their attention outputs)",
+  "status": "trained",
+  "val_bpb": 0.761403,
+  "training_seconds": 3306.2,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-17 06:42"
+}

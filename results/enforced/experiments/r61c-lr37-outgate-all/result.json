@@ -1,0 +1,11 @@
+{
+  "name": "r61c-lr37-outgate-all",
+  "idea": "Low-rank gate in layers 3, 7 + MLP write gates in all layers",
+  "total_params": 51208824,
+  "flops_ratio": 1.0177348869815117,
+  "step_ms": 68.68646713992348,
+  "status": "trained",
+  "val_loss": 0.9334940945944208,
+  "train_step_ms": 68.2053029598319,
+  "finished": "2026-10-13 14:10"
+}

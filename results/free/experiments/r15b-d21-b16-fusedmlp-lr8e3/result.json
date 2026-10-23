@@ -1,0 +1,11 @@
+{
+  "name": "r15b-d21-b16-fusedmlp-lr8e3",
+  "idea": "d21 at device batch 16 with fused ReLU^2-proj (recompute activation in backward), LR 8e-3",
+  "status": "trained",
+  "val_bpb": 0.782732,
+  "training_seconds": 3162.4,
+  "peak_vram_mb": 73320.4,
+  "num_steps": 3815.0,
+  "num_params_M": 1000.4,
+  "finished": "2026-10-14 05:31"
+}

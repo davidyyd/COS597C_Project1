@@ -1,0 +1,11 @@
+{
+  "name": "r66a-r64a-repeat",
+  "idea": "Repeat of r64a (noise check of the current best)",
+  "total_params": 51143288,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 67.84403270983603,
+  "status": "trained",
+  "val_loss": 0.9317868342456341,
+  "train_step_ms": 68.27667456003837,
+  "finished": "2026-10-13 17:01"
+}

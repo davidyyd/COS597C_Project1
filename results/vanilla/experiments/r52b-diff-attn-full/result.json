@@ -1,0 +1,7 @@
+{
+  "name": "r52b-diff-attn-full",
+  "idea": "Differential attention in the two full-attention layers",
+  "status": "crash",
+  "reason": "no val_bpb printed; see run.log",
+  "finished": "2026-10-13 20:24"
+}

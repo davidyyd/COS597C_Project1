@@ -1,0 +1,11 @@
+{
+  "name": "r86b-r84b-rope2",
+  "idea": "r84b + RoPE bases x2",
+  "total_params": 52191877,
+  "flops_ratio": 0.9949672680601138,
+  "step_ms": 68.8800214100047,
+  "status": "trained",
+  "val_loss": 0.9289885194170927,
+  "train_step_ms": 68.30802127020434,
+  "finished": "2026-10-14 03:36"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r27d-signed-square",
+  "idea": "Signed-square MLP activation h|h|",
+  "total_params": 50332176,
+  "flops_ratio": 1.0,
+  "step_ms": 65.81351276006899,
+  "status": "trained",
+  "val_loss": 0.976183577662797,
+  "train_step_ms": 66.25271521974355,
+  "finished": "2026-10-13 00:41"
+}

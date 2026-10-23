@@ -1,0 +1,11 @@
+{
+  "name": "r87c-occ-all3",
+  "idea": "Unigram count + log-distance + bigram count occurrence features",
+  "status": "trained",
+  "val_bpb": 0.954388,
+  "training_seconds": 234.5,
+  "peak_vram_mb": 12714.7,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-14 12:20"
+}

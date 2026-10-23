@@ -1,0 +1,7 @@
+{
+  "name": "r31a-d21-nosmear",
+  "idea": "r30a (r28b seed 42) without smear",
+  "status": "crash",
+  "reason": "no val_bpb printed; see run.log",
+  "finished": "2026-10-14 22:37"
+}

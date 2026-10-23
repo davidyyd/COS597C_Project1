@@ -1,0 +1,11 @@
+{
+  "name": "r07b-d18w1792-attnscale-lr4e3",
+  "idea": "d18w1792 + attention scale 0.12, LR 4e-3",
+  "status": "trained",
+  "val_bpb": 0.794768,
+  "training_seconds": 3185.6,
+  "peak_vram_mb": 57616.3,
+  "num_steps": 3815.0,
+  "num_params_M": 855.1,
+  "finished": "2026-10-13 21:49"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r10d-lowrank-gate-base",
+  "idea": "Self-gate (scalar + rank-32 per-dim) alone on the baseline",
+  "total_params": 50598416,
+  "flops_ratio": 1.0053570868050348,
+  "step_ms": 66.34314009017544,
+  "status": "trained",
+  "val_loss": 0.9541151469440738,
+  "train_step_ms": 66.27252064005006,
+  "finished": "2026-10-12 17:41"
+}

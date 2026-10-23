@@ -1,0 +1,11 @@
+{
+  "name": "r64c-vag-in-out-gates",
+  "idea": "MLP input gate + write gate on the fast base",
+  "total_params": 50872368,
+  "flops_ratio": 1.0110385284752181,
+  "step_ms": 64.70752549997997,
+  "status": "trained",
+  "val_loss": 0.9440743514104036,
+  "train_step_ms": 64.7218986399821,
+  "finished": "2026-10-13 15:28"
+}

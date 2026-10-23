@@ -1,0 +1,11 @@
+{
+  "name": "r19c-d16-bigram262k",
+  "idea": "d16 bigram table 4x larger (262139)",
+  "status": "trained",
+  "val_bpb": 0.788538,
+  "training_seconds": 2465.0,
+  "peak_vram_mb": 70513.8,
+  "num_steps": 3815.0,
+  "num_params_M": 1233.3,
+  "finished": "2026-10-14 09:30"
+}

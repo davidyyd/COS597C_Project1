@@ -1,0 +1,11 @@
+{
+  "name": "r02a-selfgate-vekeys",
+  "idea": "Self-gated heads + value embeddings into keys",
+  "total_params": 50336784,
+  "flops_ratio": 1.000010463060166,
+  "step_ms": 62.11997986989445,
+  "status": "trained",
+  "val_loss": 0.956749885388844,
+  "train_step_ms": 62.32439776009414,
+  "finished": "2026-10-12 15:09"
+}

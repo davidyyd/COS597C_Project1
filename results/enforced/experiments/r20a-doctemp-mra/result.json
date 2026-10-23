@@ -1,0 +1,11 @@
+{
+  "name": "r20a-doctemp-mra",
+  "idea": "Doc-position attention temperature + MLP reads attention (new cheap lineage)",
+  "total_params": 50332216,
+  "flops_ratio": 1.0,
+  "step_ms": 66.01319837005576,
+  "status": "trained",
+  "val_loss": 0.9517846605731184,
+  "train_step_ms": 65.82391839008778,
+  "finished": "2026-10-12 21:50"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r07d-centered-relu2",
+  "idea": "Centered ReLU^2 (per-token adaptive threshold)",
+  "total_params": 50332176,
+  "flops_ratio": 1.0,
+  "step_ms": 65.57165072008502,
+  "status": "trained",
+  "val_loss": 0.9600884793816169,
+  "train_step_ms": 65.68191237005522,
+  "finished": "2026-10-12 16:37"
+}

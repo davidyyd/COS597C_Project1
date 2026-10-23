@@ -1,0 +1,11 @@
+{
+  "name": "r43b-base-ve-norm-only",
+  "idea": "Only normalize the value embedding (ablation)",
+  "total_params": 50332176,
+  "flops_ratio": 1.0,
+  "step_ms": 65.57305602007546,
+  "status": "trained",
+  "val_loss": 0.9478447870563328,
+  "train_step_ms": 65.71592750988202,
+  "finished": "2026-10-13 06:59"
+}

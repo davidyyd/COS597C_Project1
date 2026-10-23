@@ -1,0 +1,11 @@
+{
+  "name": "r70d-best-mix-s99",
+  "idea": "best (r68a) with seed 99",
+  "status": "trained",
+  "val_bpb": 0.762076,
+  "training_seconds": 3353.8,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-16 19:44"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r93d-value-salience",
+  "idea": "Per-key value salience",
+  "status": "trained",
+  "val_bpb": 0.955923,
+  "training_seconds": 235.3,
+  "peak_vram_mb": 13229.0,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-14 18:54"
+}

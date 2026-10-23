@@ -1,0 +1,11 @@
+{
+  "name": "r45a-d16m7-canon2-stash",
+  "idea": "d16 MLP 7x + canon2 + stash + gate",
+  "status": "trained",
+  "val_bpb": 0.764957,
+  "training_seconds": 3320.4,
+  "peak_vram_mb": 68420.8,
+  "num_steps": 3815.0,
+  "num_params_M": 1776.4,
+  "finished": "2026-10-15 12:03"
+}

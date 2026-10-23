@@ -1,0 +1,11 @@
+{
+  "name": "r39c-d14-mlp7x-gskip",
+  "idea": "d14 MLP 7x + gated skips (XSA, trigram_out)",
+  "status": "trained",
+  "val_bpb": 0.77077,
+  "training_seconds": 2976.8,
+  "peak_vram_mb": 67474.3,
+  "num_steps": 3815.0,
+  "num_params_M": 1646.1,
+  "finished": "2026-10-15 06:09"
+}

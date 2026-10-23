@@ -1,0 +1,11 @@
+{
+  "name": "r91a-bd-lr13567",
+  "idea": "Block-diagonal low-rank head gate (faster form) + gate also in layer 6",
+  "total_params": 52224646,
+  "flops_ratio": 1.0056814416701834,
+  "step_ms": 68.59185458975844,
+  "status": "trained",
+  "val_loss": 0.9298530887621507,
+  "train_step_ms": 68.77379599027336,
+  "finished": "2026-10-14 06:12"
+}

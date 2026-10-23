@@ -1,0 +1,11 @@
+{
+  "name": "r42a-gv-mlp-reads-ve",
+  "idea": "MLP reads the normalized value embedding (value-path world)",
+  "total_params": 50352180,
+  "flops_ratio": 1.0003243548651486,
+  "step_ms": 64.22369046020322,
+  "status": "trained",
+  "val_loss": 0.9456382097960842,
+  "train_step_ms": 64.31101226015016,
+  "finished": "2026-10-13 06:43"
+}

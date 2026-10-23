@@ -1,0 +1,11 @@
+{
+  "name": "r77c-r76c-repeat",
+  "idea": "Repeat of r76c (noise check of the token head-gate model)",
+  "total_params": 51405448,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 68.61492400988936,
+  "status": "trained",
+  "val_loss": 0.9308406130223436,
+  "train_step_ms": 69.10065508040134,
+  "finished": "2026-10-13 23:27"
+}

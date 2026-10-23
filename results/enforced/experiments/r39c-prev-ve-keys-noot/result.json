@@ -1,0 +1,11 @@
+{
+  "name": "r39c-prev-ve-keys-noot",
+  "idea": "Previous token's identity in keys, via the value-embedding table, normalized mixing",
+  "total_params": 50888816,
+  "flops_ratio": 1.0112059374378757,
+  "step_ms": 68.52187509997748,
+  "status": "trained",
+  "val_loss": 0.937639324629666,
+  "train_step_ms": 68.39061096980004,
+  "finished": "2026-10-13 05:52"
+}

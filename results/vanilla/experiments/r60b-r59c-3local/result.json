@@ -1,0 +1,11 @@
+{
+  "name": "r60b-r59c-3local",
+  "idea": "r59c with 3 of 4 local heads in the sliding-window layers (fit the cap)",
+  "status": "trained",
+  "val_bpb": 0.930338,
+  "training_seconds": 263.8,
+  "peak_vram_mb": 14292.5,
+  "num_steps": 3815.0,
+  "num_params_M": 50.1,
+  "finished": "2026-10-14 00:18"
+}

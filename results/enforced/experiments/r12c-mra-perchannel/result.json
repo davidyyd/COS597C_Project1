@@ -1,0 +1,11 @@
+{
+  "name": "r12c-mra-perchannel",
+  "idea": "MLP reads the fresh attention output with per-channel weights",
+  "total_params": 50627088,
+  "flops_ratio": 1.0056919047303494,
+  "step_ms": 66.69201081997016,
+  "status": "trained",
+  "val_loss": 0.9475085012740295,
+  "train_step_ms": 66.59137894981541,
+  "finished": "2026-10-12 18:46"
+}

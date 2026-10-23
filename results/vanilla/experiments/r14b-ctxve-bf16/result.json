@@ -1,0 +1,11 @@
+{
+  "name": "r14b-ctxve-bf16",
+  "idea": "Contextual value embeddings in bf16 (speed/quality check of r13d)",
+  "status": "trained",
+  "val_bpb": 0.950333,
+  "training_seconds": 288.7,
+  "peak_vram_mb": 15998.1,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-13 01:05"
+}

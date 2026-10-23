@@ -1,0 +1,11 @@
+{
+  "name": "r69d-trigram-decomposed",
+  "idea": "Decomposed trigram logit prior: current, previous and two-back token tables (rank 48 each)",
+  "status": "trained",
+  "val_bpb": 0.954188,
+  "training_seconds": 236.5,
+  "peak_vram_mb": 12761.3,
+  "num_steps": 3815.0,
+  "num_params_M": 52.7,
+  "finished": "2026-10-14 04:02"
+}

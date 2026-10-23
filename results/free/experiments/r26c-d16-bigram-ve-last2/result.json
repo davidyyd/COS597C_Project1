@@ -1,0 +1,11 @@
+{
+  "name": "r26c-d16-bigram-ve-last2",
+  "idea": "d16: bigram-hashed value embeddings on the last two VE layers",
+  "status": "trained",
+  "val_bpb": 0.785148,
+  "training_seconds": 2481.4,
+  "peak_vram_mb": 73649.2,
+  "num_steps": 3815.0,
+  "num_params_M": 1438.8,
+  "finished": "2026-10-14 17:56"
+}

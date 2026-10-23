@@ -1,0 +1,11 @@
+{
+  "name": "r95b-r94b-gatesall-bigocc",
+  "idea": "r95a + bigram occurrence-count embedding (free from the batched n-gram sort)",
+  "status": "trained",
+  "val_bpb": 0.921747,
+  "training_seconds": 255.1,
+  "peak_vram_mb": 15651.7,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 20:30"
+}

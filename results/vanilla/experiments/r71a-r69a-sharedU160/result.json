@@ -1,0 +1,11 @@
+{
+  "name": "r71a-r69a-sharedU160",
+  "idea": "r69a with one token table shared by both lags (separate output factors), rank 160 each",
+  "status": "trained",
+  "val_bpb": 0.927121,
+  "training_seconds": 262.9,
+  "peak_vram_mb": 15017.9,
+  "num_steps": 3815.0,
+  "num_params_M": 49.8,
+  "finished": "2026-10-14 04:51"
+}

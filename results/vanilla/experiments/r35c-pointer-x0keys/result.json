@@ -1,0 +1,11 @@
+{
+  "name": "r35c-pointer-x0keys",
+  "idea": "Pointer head whose keys are the contextual token embeddings (not final states)",
+  "status": "trained",
+  "val_bpb": 0.956725,
+  "training_seconds": 236.4,
+  "peak_vram_mb": 12210.2,
+  "num_steps": 3815.0,
+  "num_params_M": 50.4,
+  "finished": "2026-10-13 10:48"
+}

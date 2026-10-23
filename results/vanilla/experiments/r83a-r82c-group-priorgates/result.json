@@ -1,0 +1,11 @@
+{
+  "name": "r83a-r82c-group-priorgates",
+  "idea": "r82c + component-grouped prior gates (combine r82b and r82c)",
+  "status": "trained",
+  "val_bpb": 0.923469,
+  "training_seconds": 261.6,
+  "peak_vram_mb": 15118.2,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 10:37"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r30d-mult-read",
+  "idea": "Multiplicative undiluted read",
+  "total_params": 50332184,
+  "flops_ratio": 1.0,
+  "step_ms": 66.64755817997502,
+  "status": "trained",
+  "val_loss": 0.9552251490216155,
+  "train_step_ms": 66.5653220601962,
+  "finished": "2026-10-13 01:52"
+}

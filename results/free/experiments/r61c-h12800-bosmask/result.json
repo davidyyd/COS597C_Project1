@@ -1,0 +1,11 @@
+{
+  "name": "r61c-h12800-bosmask",
+  "idea": "r60a + BOS-target masking",
+  "status": "trained",
+  "val_bpb": 0.763901,
+  "training_seconds": 3279.1,
+  "peak_vram_mb": 69029.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-16 03:51"
+}

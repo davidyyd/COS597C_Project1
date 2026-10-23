@@ -1,0 +1,11 @@
+{
+  "name": "r91b-vag-doc-title-x0",
+  "idea": "Late layers re-inject the document's first token (title signal)",
+  "total_params": 50479188,
+  "flops_ratio": 0.9815745510475267,
+  "step_ms": 60.990340120042674,
+  "status": "trained",
+  "val_loss": 0.9399940066740544,
+  "train_step_ms": 61.41817287993035,
+  "finished": "2026-10-14 06:12"
+}

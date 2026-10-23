@@ -1,0 +1,11 @@
+{
+  "name": "r08a-ms-noqtemp",
+  "idea": "Multi-scale heads instead of query temperature",
+  "total_params": 50344464,
+  "flops_ratio": 1.0,
+  "step_ms": 61.54173160000937,
+  "status": "trained",
+  "val_loss": 0.9528449763240895,
+  "train_step_ms": 62.17118221014971,
+  "finished": "2026-10-12 17:01"
+}

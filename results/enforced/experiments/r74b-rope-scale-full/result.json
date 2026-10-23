@@ -1,0 +1,11 @@
+{
+  "name": "r74b-rope-scale-full",
+  "idea": "RoPE base proportional to receptive field in all layers",
+  "total_params": 51143288,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 68.07772247004323,
+  "status": "trained",
+  "val_loss": 0.9312126811385968,
+  "train_step_ms": 68.38953587983269,
+  "finished": "2026-10-13 21:34"
+}

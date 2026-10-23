@@ -1,0 +1,7 @@
+{
+  "name": "r44a-d16m65-gate-nocanon",
+  "idea": "r43d without Canon layers (ablation / time)",
+  "status": "crash",
+  "reason": "no val_bpb printed; see run.log",
+  "finished": "2026-10-15 11:04"
+}

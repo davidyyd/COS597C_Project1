@@ -1,0 +1,11 @@
+{
+  "name": "r79d-vag-docmask-late",
+  "idea": "Document masking only in the late local layers (4-6)",
+  "total_params": 50348080,
+  "flops_ratio": 0.9788960076450093,
+  "step_ms": 58.84662311000284,
+  "status": "trained",
+  "val_loss": 0.9474342784898934,
+  "train_step_ms": 59.108169119863305,
+  "finished": "2026-10-14 00:38"
+}

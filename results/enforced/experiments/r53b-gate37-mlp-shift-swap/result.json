@@ -1,0 +1,11 @@
+{
+  "name": "r53b-gate37-mlp-shift-swap",
+  "idea": "Gate(3,7) shift model: MLP reads attention output at t and t-1 (swap)",
+  "total_params": 50946680,
+  "flops_ratio": 1.012377800176477,
+  "step_ms": 68.71343602018896,
+  "status": "trained",
+  "val_loss": 0.9353935571941389,
+  "train_step_ms": 68.55887473997427,
+  "finished": "2026-10-13 10:46"
+}

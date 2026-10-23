@@ -1,0 +1,11 @@
+{
+  "name": "r76b-muwarm-600",
+  "idea": "best (r75b) with momentum warmup over 600 steps (0.8->0.9, 5 levels)",
+  "status": "trained",
+  "val_bpb": 0.761271,
+  "training_seconds": 3308.1,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-17 01:41"
+}

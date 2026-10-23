@@ -1,0 +1,11 @@
+{
+  "name": "r17b-query-reads-x0",
+  "idea": "Queries read the token identity undiluted",
+  "total_params": 50332184,
+  "flops_ratio": 1.0,
+  "step_ms": 66.29407581000123,
+  "status": "trained",
+  "val_loss": 0.9570037695678224,
+  "train_step_ms": 66.21680918993661,
+  "finished": "2026-10-12 20:35"
+}

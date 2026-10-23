@@ -1,0 +1,7 @@
+{
+  "name": "r54d-proxy-moe2-cf125",
+  "idea": "proxy with 2-expert MoE MLP (hidden 10752), capacity factor 1.25",
+  "status": "crash",
+  "reason": "no val_bpb printed; see run.log",
+  "finished": "2026-10-15 20:57"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r13d-context-ve",
+  "idea": "Contextual value embeddings: causal per-channel conv over each value embedding",
+  "status": "trained",
+  "val_bpb": 0.949978,
+  "training_seconds": 293.6,
+  "peak_vram_mb": 17022.1,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-13 00:40"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "r33a-d21-nosmear-sign",
+  "idea": "d21 no smear + lean all_reduce + empty_cache before first all_reduce + bigram sign trick",
+  "status": "crash",
+  "reason": "no val_bpb printed; see run.log",
+  "finished": "2026-10-15 00:22"
+}

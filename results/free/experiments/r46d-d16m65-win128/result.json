@@ -1,0 +1,11 @@
+{
+  "name": "r46d-d16m65-win128",
+  "idea": "proxy (r45d) with S-window 128",
+  "status": "trained",
+  "val_bpb": 0.766214,
+  "training_seconds": 3220.0,
+  "peak_vram_mb": 67011.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1725.0,
+  "finished": "2026-10-15 13:02"
+}

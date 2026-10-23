@@ -1,0 +1,11 @@
+{
+  "name": "r03d-mlp-selfgate",
+  "idea": "Self-gated MLP output",
+  "total_params": 50336272,
+  "flops_ratio": 1.0,
+  "step_ms": 66.28374787978828,
+  "status": "trained",
+  "val_loss": 0.9894774985287196,
+  "train_step_ms": 66.49618931987789,
+  "finished": "2026-10-12 15:31"
+}

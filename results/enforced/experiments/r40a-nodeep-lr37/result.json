@@ -1,0 +1,11 @@
+{
+  "name": "r40a-nodeep-lr37",
+  "idea": "Best model: swap the deep embedding for the low-rank gate in layers 3, 7",
+  "total_params": 50422384,
+  "flops_ratio": 1.0016636265664074,
+  "step_ms": 66.56582711002557,
+  "status": "trained",
+  "val_loss": 0.9378473392643619,
+  "train_step_ms": 66.5143778998754,
+  "finished": "2026-10-13 06:10"
+}

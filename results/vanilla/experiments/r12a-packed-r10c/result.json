@@ -1,0 +1,11 @@
+{
+  "name": "r12a-packed-r10c",
+  "idea": "r10c with the per-layer extras packed into a few tensors (same model, fewer all-reduces)",
+  "status": "trained",
+  "val_bpb": 0.94363,
+  "training_seconds": 265.7,
+  "peak_vram_mb": 17065.7,
+  "num_steps": 3815.0,
+  "num_params_M": 49.8,
+  "finished": "2026-10-13 00:11"
+}

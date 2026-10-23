@@ -1,0 +1,11 @@
+{
+  "name": "r15b-r14a-noreadout",
+  "idea": "r14a without the multi-depth readout",
+  "status": "trained",
+  "val_bpb": 0.939664,
+  "training_seconds": 251.8,
+  "peak_vram_mb": 16931.3,
+  "num_steps": 3815.0,
+  "num_params_M": 49.3,
+  "finished": "2026-10-13 01:43"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r101c-r90b-s9",
+  "idea": "best (r90b) with seed 9",
+  "status": "trained",
+  "val_bpb": 0.760179,
+  "training_seconds": 3334.6,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-18 02:33"
+}

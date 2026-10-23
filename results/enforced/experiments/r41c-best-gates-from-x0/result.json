@@ -1,0 +1,11 @@
+{
+  "name": "r41c-best-gates-from-x0",
+  "idea": "Value gates computed from the token embedding",
+  "total_params": 50881136,
+  "flops_ratio": 1.0110385284752181,
+  "step_ms": 66.98602795979241,
+  "status": "trained",
+  "val_loss": 0.9385886129101524,
+  "train_step_ms": 67.13678225001786,
+  "finished": "2026-10-13 06:27"
+}

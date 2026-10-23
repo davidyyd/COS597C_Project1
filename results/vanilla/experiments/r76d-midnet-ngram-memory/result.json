@@ -1,0 +1,11 @@
+{
+  "name": "r76d-midnet-ngram-memory",
+  "idea": "Mid-network hashed bigram memory with a context gate (Engram-like)",
+  "status": "trained",
+  "val_bpb": 0.95623,
+  "training_seconds": 231.9,
+  "peak_vram_mb": 12818.8,
+  "num_steps": 3815.0,
+  "num_params_M": 52.5,
+  "finished": "2026-10-14 07:21"
+}

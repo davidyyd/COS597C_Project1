@@ -1,0 +1,11 @@
+{
+  "name": "r56b-g37-kshift-mread",
+  "idea": "Key-only shift + MLP reads the previous MLP output",
+  "total_params": 50946680,
+  "flops_ratio": 1.012377800176477,
+  "step_ms": 68.48204317007912,
+  "status": "trained",
+  "val_loss": 0.9349925224265928,
+  "train_step_ms": 68.70605681993766,
+  "finished": "2026-10-13 11:57"
+}

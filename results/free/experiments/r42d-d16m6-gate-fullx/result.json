@@ -1,0 +1,11 @@
+{
+  "name": "r42d-d16m6-gate-fullx",
+  "idea": "d16m6 + attention gate computed from the full input (not x[:32])",
+  "status": "trained",
+  "val_bpb": 0.770325,
+  "training_seconds": 3131.9,
+  "peak_vram_mb": 75967.7,
+  "num_steps": 3815.0,
+  "num_params_M": 1674.1,
+  "finished": "2026-10-15 09:06"
+}

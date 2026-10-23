@@ -1,0 +1,7 @@
+{
+  "name": "r29e-d21-trigramout-noresid",
+  "idea": "r28b + output trigram table, resid_lambdas removed (memory)",
+  "status": "crash",
+  "reason": "no val_bpb printed; see run.log",
+  "finished": "2026-10-14 20:53"
+}

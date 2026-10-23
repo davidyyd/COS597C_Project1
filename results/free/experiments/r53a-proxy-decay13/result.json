@@ -1,0 +1,11 @@
+{
+  "name": "r53a-proxy-decay13",
+  "idea": "proxy: LR decay shape ((T-t)/(T-w))^1.3",
+  "status": "trained",
+  "val_bpb": 0.766898,
+  "training_seconds": 3190.7,
+  "peak_vram_mb": 67011.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1725.0,
+  "finished": "2026-10-15 19:57"
+}

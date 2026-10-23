@@ -1,0 +1,11 @@
+{
+  "name": "r74a-doc-outtemp",
+  "idea": "Output temperature also depends on document position",
+  "total_params": 51143289,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 68.22058941004798,
+  "status": "trained",
+  "val_loss": 0.931336999190263,
+  "train_step_ms": 68.17973736004205,
+  "finished": "2026-10-13 21:34"
+}

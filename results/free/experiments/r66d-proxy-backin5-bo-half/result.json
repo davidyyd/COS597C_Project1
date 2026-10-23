@@ -1,0 +1,11 @@
+{
+  "name": "r66d-proxy-backin5-bo-half",
+  "idea": "proxy: backout activation from layer L/2 (not 2L/3), last 5 attention layers read it",
+  "status": "trained",
+  "val_bpb": 0.76457,
+  "training_seconds": 3130.6,
+  "peak_vram_mb": 64979.1,
+  "num_steps": 3815.0,
+  "num_params_M": 1725.0,
+  "finished": "2026-10-16 15:40"
+}

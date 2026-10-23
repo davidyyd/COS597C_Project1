@@ -1,0 +1,11 @@
+{
+  "name": "r29h-d16-midbigram",
+  "idea": "d16 (r28d): extra bigram table injected at the middle layer",
+  "status": "trained",
+  "val_bpb": 0.785314,
+  "training_seconds": 2481.6,
+  "peak_vram_mb": 76173.5,
+  "num_steps": 3815.0,
+  "num_params_M": 1585.6,
+  "finished": "2026-10-14 20:53"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r89d-ngram-depth",
+  "idea": "Document repetition features with n-gram repetition depth (control)",
+  "status": "trained",
+  "val_bpb": 0.954575,
+  "training_seconds": 234.3,
+  "peak_vram_mb": 12714.7,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-14 13:21"
+}

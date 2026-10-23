@@ -1,0 +1,11 @@
+{
+  "name": "r96d-lexical-salience",
+  "idea": "Lexical (token-identity) key/value salience",
+  "status": "trained",
+  "val_bpb": 0.955808,
+  "training_seconds": 234.6,
+  "peak_vram_mb": 13247.0,
+  "num_steps": 3815.0,
+  "num_params_M": 50.9,
+  "finished": "2026-10-14 20:59"
+}

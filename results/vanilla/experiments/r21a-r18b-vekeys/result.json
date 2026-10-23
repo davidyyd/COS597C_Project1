@@ -1,0 +1,11 @@
+{
+  "name": "r21a-r18b-vekeys",
+  "idea": "r18b + contextual value embeddings also added to the keys",
+  "status": "trained",
+  "val_bpb": 0.936864,
+  "training_seconds": 264.3,
+  "peak_vram_mb": 16356.7,
+  "num_steps": 3815.0,
+  "num_params_M": 49.8,
+  "finished": "2026-10-13 04:02"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "r66c-proxy-backin7",
+  "idea": "proxy: last 7 attention layers read x_backout",
+  "status": "crash",
+  "reason": "no val_bpb printed; see run.log",
+  "finished": "2026-10-16 15:40"
+}

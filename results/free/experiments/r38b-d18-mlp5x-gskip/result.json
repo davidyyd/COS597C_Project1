@@ -1,0 +1,11 @@
+{
+  "name": "r38b-d18-mlp5x-gskip",
+  "idea": "d18 + MLP 5x + gated skips (XSA, trigram_out)",
+  "status": "trained",
+  "val_bpb": 0.768998,
+  "training_seconds": 3203.0,
+  "peak_vram_mb": 76594.9,
+  "num_steps": 3815.0,
+  "num_params_M": 1675.6,
+  "finished": "2026-10-15 05:11"
+}

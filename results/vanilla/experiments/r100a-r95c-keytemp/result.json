@@ -1,0 +1,11 @@
+{
+  "name": "r100a-r95c-keytemp",
+  "idea": "r95c + key-position temperature (folded into the key RoPE tables)",
+  "status": "trained",
+  "val_bpb": 0.921311,
+  "training_seconds": 258.2,
+  "peak_vram_mb": 15857.4,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 23:25"
+}

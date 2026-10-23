@@ -1,0 +1,11 @@
+{
+  "name": "r24b-cheap-deepemb",
+  "idea": "Deep token embedding on r22b-cheap-ms-x0gate",
+  "total_params": 50864720,
+  "flops_ratio": 1.0107141736100695,
+  "step_ms": 66.1179188999813,
+  "status": "trained",
+  "val_loss": 0.9454744289418331,
+  "train_step_ms": 65.95453451998765,
+  "finished": "2026-10-12 23:34"
+}

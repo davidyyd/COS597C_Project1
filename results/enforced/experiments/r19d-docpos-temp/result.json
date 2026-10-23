@@ -1,0 +1,11 @@
+{
+  "name": "r19d-docpos-temp",
+  "idea": "Attention temperature from the position within the document",
+  "total_params": 50332208,
+  "flops_ratio": 1.0,
+  "step_ms": 65.49931418005144,
+  "status": "trained",
+  "val_loss": 0.9546659904164239,
+  "train_step_ms": 65.06729155982612,
+  "finished": "2026-10-12 21:31"
+}

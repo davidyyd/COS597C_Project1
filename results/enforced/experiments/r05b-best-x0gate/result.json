@@ -1,0 +1,11 @@
+{
+  "name": "r05b-best-x0gate",
+  "idea": "Best model + state-dependent x0 re-injection",
+  "total_params": 50360848,
+  "flops_ratio": 1.0003348179253146,
+  "step_ms": 63.699993600021116,
+  "status": "trained",
+  "val_loss": 0.9521885579273804,
+  "train_step_ms": 63.73425291007152,
+  "finished": "2026-10-12 16:05"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r46b-r44c-ctxx0-bf16",
+  "idea": "r44c with the contextual x0 conv computed in bf16",
+  "status": "trained",
+  "val_bpb": 0.932147,
+  "training_seconds": 254.1,
+  "peak_vram_mb": 15611.2,
+  "num_steps": 3815.0,
+  "num_params_M": 50.0,
+  "finished": "2026-10-13 16:37"
+}

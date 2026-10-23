@@ -1,0 +1,11 @@
+{
+  "name": "r09c-crosshead-gate",
+  "idea": "Cross-head low-rank self-gate",
+  "total_params": 50754064,
+  "flops_ratio": 1.0083704481328668,
+  "step_ms": 67.26714208023623,
+  "status": "trained",
+  "val_loss": 0.953066894951406,
+  "train_step_ms": 67.52676461008377,
+  "finished": "2026-10-12 17:18"
+}

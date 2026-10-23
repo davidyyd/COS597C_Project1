@@ -1,0 +1,11 @@
+{
+  "name": "r72d-vag-mlp-reads-ve",
+  "idea": "MLP reads the token's value-embedding row (undiluted token identity for the MLP)",
+  "total_params": 50348084,
+  "flops_ratio": 1.0003243548651486,
+  "step_ms": 59.404633400263265,
+  "status": "trained",
+  "val_loss": 0.9459684296208225,
+  "train_step_ms": 59.36761949007632,
+  "finished": "2026-10-13 20:19"
+}

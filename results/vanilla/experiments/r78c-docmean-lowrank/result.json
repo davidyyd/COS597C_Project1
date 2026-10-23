@@ -1,0 +1,11 @@
+{
+  "name": "r78c-docmean-lowrank",
+  "idea": "Low-rank bag-of-words document context in x0",
+  "status": "trained",
+  "val_bpb": 0.954559,
+  "training_seconds": 235.1,
+  "peak_vram_mb": 12892.0,
+  "num_steps": 3815.0,
+  "num_params_M": 50.5,
+  "finished": "2026-10-14 08:22"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r90c-mu09-s1337",
+  "idea": "best (r89c) with seed 1337",
+  "status": "trained",
+  "val_bpb": 0.759866,
+  "training_seconds": 3356.0,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-17 15:38"
+}

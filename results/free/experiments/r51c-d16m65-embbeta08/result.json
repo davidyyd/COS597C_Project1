@@ -1,0 +1,11 @@
+{
+  "name": "r51c-d16m65-embbeta08",
+  "idea": "proxy: AdamW beta1 0.8 for the embedding tables",
+  "status": "trained",
+  "val_bpb": 0.765992,
+  "training_seconds": 3172.6,
+  "peak_vram_mb": 67011.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1725.0,
+  "finished": "2026-10-15 17:57"
+}

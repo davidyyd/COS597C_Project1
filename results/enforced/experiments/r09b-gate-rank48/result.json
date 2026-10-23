@@ -1,0 +1,11 @@
+{
+  "name": "r09b-gate-rank48",
+  "idea": "Low-rank self-gate at rank 48",
+  "total_params": 50754064,
+  "flops_ratio": 1.0083704481328668,
+  "step_ms": 68.38312771986239,
+  "status": "trained",
+  "val_loss": 0.9502627867926059,
+  "train_step_ms": 68.33747341006529,
+  "finished": "2026-10-12 17:18"
+}

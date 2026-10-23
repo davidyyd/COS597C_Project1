@@ -1,0 +1,11 @@
+{
+  "name": "r100a-vag-rope-window",
+  "idea": "RoPE base proportional to the window (20 x window), no multi-scale heads (transfer test on the cheap base)",
+  "total_params": 50745456,
+  "flops_ratio": 1.003002898267666,
+  "step_ms": 66.42423672019504,
+  "status": "trained",
+  "val_loss": 0.9362222760484203,
+  "train_step_ms": 66.30287304986268,
+  "finished": "2026-10-14 09:35"
+}

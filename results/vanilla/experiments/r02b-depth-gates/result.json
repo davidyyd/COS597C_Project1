@@ -1,0 +1,11 @@
+{
+  "name": "r02b-depth-gates",
+  "idea": "Per-token depth gates: gate both the residual and the x0 re-injection",
+  "status": "trained",
+  "val_bpb": 0.952132,
+  "training_seconds": 265.4,
+  "peak_vram_mb": 15490.0,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-12 20:32"
+}

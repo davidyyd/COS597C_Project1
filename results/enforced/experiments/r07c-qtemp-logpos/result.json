@@ -1,0 +1,11 @@
+{
+  "name": "r07c-qtemp-logpos",
+  "idea": "Query temperature with a log-position term",
+  "total_params": 50360880,
+  "flops_ratio": 1.0003348179253146,
+  "step_ms": 63.97987467003986,
+  "status": "trained",
+  "val_loss": 0.9524566868831124,
+  "train_step_ms": 64.1613816798781,
+  "finished": "2026-10-12 16:37"
+}

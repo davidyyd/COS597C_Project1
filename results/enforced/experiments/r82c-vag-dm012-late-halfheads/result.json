@@ -1,0 +1,11 @@
+{
+  "name": "r82c-vag-dm012-late-halfheads",
+  "idea": "Early local layers document-isolated; late local layers: half the heads isolated",
+  "total_params": 50348112,
+  "flops_ratio": 0.95746766042487,
+  "step_ms": 59.405169900273904,
+  "status": "trained",
+  "val_loss": 0.943379219936202,
+  "train_step_ms": 59.320865889894776,
+  "finished": "2026-10-14 02:04"
+}

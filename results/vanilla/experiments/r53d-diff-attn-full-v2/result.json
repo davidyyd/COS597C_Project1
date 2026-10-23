@@ -1,0 +1,11 @@
+{
+  "name": "r53d-diff-attn-full-v2",
+  "idea": "Differential attention in the two full-attention layers (retry of r52b)",
+  "status": "trained",
+  "val_bpb": 0.958485,
+  "training_seconds": 244.6,
+  "peak_vram_mb": 12981.0,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-13 20:51"
+}

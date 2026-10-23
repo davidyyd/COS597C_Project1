@@ -1,0 +1,11 @@
+{
+  "name": "r65b-best-backin3-s1337",
+  "idea": "best config (r60a) + last 3 attention layers read x_backout (seed 1337)",
+  "status": "trained",
+  "val_bpb": 0.762016,
+  "training_seconds": 3317.0,
+  "peak_vram_mb": 68692.7,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-16 14:41"
+}

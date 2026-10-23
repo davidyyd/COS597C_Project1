@@ -1,0 +1,11 @@
+{
+  "name": "r45d-d16m65-canon2-stash",
+  "idea": "r44c (canon kernel 2) + grad stash",
+  "status": "trained",
+  "val_bpb": 0.765883,
+  "training_seconds": 3196.1,
+  "peak_vram_mb": 67011.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1725.0,
+  "finished": "2026-10-15 12:03"
+}

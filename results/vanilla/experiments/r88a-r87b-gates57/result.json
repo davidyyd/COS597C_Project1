@@ -1,0 +1,11 @@
+{
+  "name": "r88a-r87b-gates57",
+  "idea": "r87b with the MLP hidden gate in layers 5-7 (fit the time cap)",
+  "status": "trained",
+  "val_bpb": 0.923473,
+  "training_seconds": 266.4,
+  "peak_vram_mb": 14910.7,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 12:54"
+}

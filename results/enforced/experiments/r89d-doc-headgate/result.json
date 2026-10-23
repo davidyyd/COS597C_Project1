@@ -1,0 +1,11 @@
+{
+  "name": "r89d-doc-headgate",
+  "idea": "Head self-gate also depends on document position",
+  "total_params": 52191910,
+  "flops_ratio": 0.9949672680601138,
+  "step_ms": 68.49244548997376,
+  "status": "trained",
+  "val_loss": 0.9288638605812936,
+  "train_step_ms": 68.33921896992251,
+  "finished": "2026-10-14 04:58"
+}

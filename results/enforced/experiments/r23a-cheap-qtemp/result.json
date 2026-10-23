@@ -1,0 +1,11 @@
+{
+  "name": "r23a-cheap-qtemp",
+  "idea": "Cheap lineage + content term in the query temperature",
+  "total_params": 50356816,
+  "flops_ratio": 1.0003348179253146,
+  "step_ms": 64.05775235005422,
+  "status": "trained",
+  "val_loss": 0.9463890253975945,
+  "train_step_ms": 64.52801965991966,
+  "finished": "2026-10-12 23:09"
+}

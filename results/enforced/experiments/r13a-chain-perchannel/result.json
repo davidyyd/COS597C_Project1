@@ -1,0 +1,11 @@
+{
+  "name": "r13a-chain-perchannel",
+  "idea": "Undiluted-read chain with per-channel weights",
+  "total_params": 50631184,
+  "flops_ratio": 1.0056919047303494,
+  "step_ms": 68.03056692006066,
+  "status": "trained",
+  "val_loss": 0.9459854688274654,
+  "train_step_ms": 67.77356378006516,
+  "finished": "2026-10-12 19:09"
+}

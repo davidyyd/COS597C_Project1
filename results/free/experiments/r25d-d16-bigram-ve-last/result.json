@@ -1,0 +1,11 @@
+{
+  "name": "r25d-d16-bigram-ve-last",
+  "idea": "d16 (mu 0.9): last layer's value embedding indexed by bigram hash (65521 rows)",
+  "status": "trained",
+  "val_bpb": 0.784822,
+  "training_seconds": 2466.6,
+  "peak_vram_mb": 72081.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1336.1,
+  "finished": "2026-10-14 15:18"
+}

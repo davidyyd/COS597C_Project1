@@ -1,0 +1,11 @@
+{
+  "name": "r45b-d17m6-canon2-stash",
+  "idea": "d17 MLP 6x + canon2 + stash + gate",
+  "status": "trained",
+  "val_bpb": 0.765494,
+  "training_seconds": 3264.0,
+  "peak_vram_mb": 69094.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1739.7,
+  "finished": "2026-10-15 12:03"
+}

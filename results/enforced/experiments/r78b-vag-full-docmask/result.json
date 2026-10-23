@@ -1,0 +1,11 @@
+{
+  "name": "r78b-vag-full-docmask",
+  "idea": "Control: document masking in all layers (fast base)",
+  "total_params": 50348080,
+  "flops_ratio": 0.9431820956114438,
+  "step_ms": 60.66555051016621,
+  "status": "trained",
+  "val_loss": 0.9455744150064133,
+  "train_step_ms": 60.66747337987181,
+  "finished": "2026-10-14 00:09"
+}

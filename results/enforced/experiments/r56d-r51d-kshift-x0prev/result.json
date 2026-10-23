@@ -1,0 +1,11 @@
+{
+  "name": "r56d-r51d-kshift-x0prev",
+  "idea": "Key-only shift + previous token embedding in keys (cheap lineage)",
+  "total_params": 50877056,
+  "flops_ratio": 1.0110385284752181,
+  "step_ms": 66.28146670991555,
+  "status": "trained",
+  "val_loss": 0.9364373789930797,
+  "train_step_ms": 66.14620537002338,
+  "finished": "2026-10-13 11:57"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r63c-r61b-3local",
+  "idea": "r61b with 3 local heads (fit the cap)",
+  "status": "trained",
+  "val_bpb": 0.931059,
+  "training_seconds": 260.5,
+  "peak_vram_mb": 15434.4,
+  "num_steps": 3815.0,
+  "num_params_M": 50.6,
+  "finished": "2026-10-14 01:35"
+}

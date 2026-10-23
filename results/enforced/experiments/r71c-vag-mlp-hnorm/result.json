@@ -1,0 +1,11 @@
+{
+  "name": "r71c-vag-mlp-hnorm",
+  "idea": "MLP hidden activations normalized before the down-projection",
+  "total_params": 50348080,
+  "flops_ratio": 1.0003243548651486,
+  "step_ms": 58.46294076007325,
+  "status": "trained",
+  "val_loss": 0.9441610468938024,
+  "train_step_ms": 58.40541114041116,
+  "finished": "2026-10-13 19:35"
+}

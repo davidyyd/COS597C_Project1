@@ -1,0 +1,11 @@
+{
+  "name": "r20b-best-doctemp",
+  "idea": "Doc-position term in the query temperature",
+  "total_params": 50618960,
+  "flops_ratio": 1.0056919047303494,
+  "step_ms": 68.51082346984185,
+  "status": "trained",
+  "val_loss": 0.9443852146963957,
+  "train_step_ms": 68.66264034004416,
+  "finished": "2026-10-12 21:50"
+}

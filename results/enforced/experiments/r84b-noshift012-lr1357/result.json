@@ -1,0 +1,11 @@
+{
+  "name": "r84b-noshift012-lr1357",
+  "idea": "Document-isolated early layers drop the time-shifted key read; low-rank head gate back in layer 1",
+  "total_params": 52191877,
+  "flops_ratio": 0.9949672680601138,
+  "step_ms": 68.6155544698704,
+  "status": "trained",
+  "val_loss": 0.9294434662344567,
+  "train_step_ms": 68.70439335005358,
+  "finished": "2026-10-14 02:55"
+}

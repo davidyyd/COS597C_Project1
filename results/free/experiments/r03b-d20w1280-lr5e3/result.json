@@ -1,0 +1,11 @@
+{
+  "name": "r03b-d20w1280-lr5e3",
+  "idea": "d20w1280 + group LRs, LR 5e-3",
+  "status": "trained",
+  "val_bpb": 0.814674,
+  "training_seconds": 2033.4,
+  "peak_vram_mb": 47162.8,
+  "num_steps": 3815.0,
+  "num_params_M": 519.0,
+  "finished": "2026-10-13 17:49"
+}

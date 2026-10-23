@@ -1,0 +1,11 @@
+{
+  "name": "r27a-r20b-vegate",
+  "idea": "Value-embedding gate from the full input on the qtemp lineage",
+  "total_params": 50626640,
+  "flops_ratio": 1.0058488506328407,
+  "step_ms": 68.46276705007767,
+  "status": "trained",
+  "val_loss": 0.9440835525819907,
+  "train_step_ms": 68.5595081601059,
+  "finished": "2026-10-13 00:41"
+}

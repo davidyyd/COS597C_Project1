@@ -1,0 +1,11 @@
+{
+  "name": "r42c-gv-ve-all-pairs",
+  "idea": "Value embeddings in all layers, pair-shared (value-path world, simple model)",
+  "total_params": 50368560,
+  "flops_ratio": 1.0006591727904632,
+  "step_ms": 65.31392994016642,
+  "status": "trained",
+  "val_loss": 0.9491463779733665,
+  "train_step_ms": 65.16479821992107,
+  "finished": "2026-10-13 06:43"
+}

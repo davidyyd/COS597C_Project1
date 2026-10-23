@@ -1,0 +1,11 @@
+{
+  "name": "r65c-attn-ingate-instead",
+  "idea": "Best: attention input gates instead of MLP input gates (layers 4-7)",
+  "total_params": 51143288,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 68.04355686006602,
+  "status": "trained",
+  "val_loss": 0.9337069483638033,
+  "train_step_ms": 67.80688213999383,
+  "finished": "2026-10-13 16:15"
+}

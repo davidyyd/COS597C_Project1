@@ -1,0 +1,11 @@
+{
+  "name": "r35d-keys-read-x0",
+  "idea": "Keys read the token identity undiluted",
+  "total_params": 50336280,
+  "flops_ratio": 1.0,
+  "step_ms": 62.748727219877765,
+  "status": "trained",
+  "val_loss": 0.9563060481342112,
+  "train_step_ms": 62.77572680002777,
+  "finished": "2026-10-13 04:06"
+}

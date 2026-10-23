@@ -1,0 +1,11 @@
+{
+  "name": "r39d-d13-mlp8x-gskip",
+  "idea": "d13 MLP 8x + gated skips (XSA, trigram_out)",
+  "status": "trained",
+  "val_bpb": 0.771453,
+  "training_seconds": 2967.0,
+  "peak_vram_mb": 66040.3,
+  "num_steps": 3815.0,
+  "num_params_M": 1671.8,
+  "finished": "2026-10-15 06:09"
+}

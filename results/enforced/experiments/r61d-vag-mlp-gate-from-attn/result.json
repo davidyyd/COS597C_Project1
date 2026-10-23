@@ -1,0 +1,11 @@
+{
+  "name": "r61d-vag-mlp-gate-from-attn",
+  "idea": "MLP write gate from the block's attention output",
+  "total_params": 50610224,
+  "flops_ratio": 1.0056814416701834,
+  "step_ms": 62.11261729011312,
+  "status": "trained",
+  "val_loss": 0.9471666266319475,
+  "train_step_ms": 62.023837129818276,
+  "finished": "2026-10-13 14:10"
+}

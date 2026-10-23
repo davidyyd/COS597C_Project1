@@ -1,0 +1,11 @@
+{
+  "name": "r52a-gate-shift-swap",
+  "idea": "Best (r51b): swap the attention<-previous-attention read for the time-shifted MLP read",
+  "total_params": 51012208,
+  "flops_ratio": 1.0137170718777357,
+  "step_ms": 68.2393252698239,
+  "status": "trained",
+  "val_loss": 0.9357168931793935,
+  "train_step_ms": 68.64951983996434,
+  "finished": "2026-10-13 10:21"
+}

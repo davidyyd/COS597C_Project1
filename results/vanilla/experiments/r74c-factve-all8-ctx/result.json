@@ -1,0 +1,11 @@
+{
+  "name": "r74c-factve-all8-ctx",
+  "idea": "Factorised VE in all layers + contextual (4-lag) conv on the 256-d table outputs",
+  "status": "trained",
+  "val_bpb": 0.951842,
+  "training_seconds": 245.6,
+  "peak_vram_mb": 14265.1,
+  "num_steps": 3815.0,
+  "num_params_M": 51.4,
+  "finished": "2026-10-14 06:17"
+}

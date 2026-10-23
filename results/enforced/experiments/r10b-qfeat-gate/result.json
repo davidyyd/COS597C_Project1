@@ -1,0 +1,11 @@
+{
+  "name": "r10b-qfeat-gate",
+  "idea": "Per-dimension query feature gate",
+  "total_params": 50754064,
+  "flops_ratio": 1.0083704481328668,
+  "step_ms": 68.59914862987353,
+  "status": "trained",
+  "val_loss": 0.9494568323183993,
+  "train_step_ms": 68.78883611992933,
+  "finished": "2026-10-12 17:41"
+}

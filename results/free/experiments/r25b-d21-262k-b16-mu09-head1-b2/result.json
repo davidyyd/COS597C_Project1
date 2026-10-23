@@ -1,0 +1,11 @@
+{
+  "name": "r25b-d21-262k-b16-mu09-head1-b2",
+  "idea": "r24a + Muon mu 0.9 + head LR x1.0 + Adam beta2 0.99",
+  "status": "trained",
+  "val_bpb": 0.775225,
+  "training_seconds": 3227.1,
+  "peak_vram_mb": 78960.8,
+  "num_steps": 3815.0,
+  "num_params_M": 1470.1,
+  "finished": "2026-10-14 15:18"
+}

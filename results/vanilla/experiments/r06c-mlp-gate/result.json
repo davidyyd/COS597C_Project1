@@ -1,0 +1,11 @@
+{
+  "name": "r06c-mlp-gate",
+  "idea": "Per-token MLP output gate",
+  "status": "trained",
+  "val_bpb": 0.957319,
+  "training_seconds": 252.8,
+  "peak_vram_mb": 15999.0,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-12 21:55"
+}

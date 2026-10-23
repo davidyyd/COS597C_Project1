@@ -1,0 +1,11 @@
+{
+  "name": "r78b-muwarm-08-095",
+  "idea": "best (r75b) with momentum warmup 0.8 -> 0.95",
+  "status": "trained",
+  "val_bpb": 0.76098,
+  "training_seconds": 3333.1,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-17 03:41"
+}

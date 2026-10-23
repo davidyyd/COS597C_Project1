@@ -1,0 +1,11 @@
+{
+  "name": "r93a-best-yn-early",
+  "idea": "Best + per-head output normalization (with per-head scale) in early layers 0-3",
+  "total_params": 52191894,
+  "flops_ratio": 1.003002898267666,
+  "step_ms": 68.35818475985434,
+  "status": "trained",
+  "val_loss": 0.9302700722271144,
+  "train_step_ms": 68.49356436985545,
+  "finished": "2026-10-14 07:00"
+}

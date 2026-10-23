@@ -1,0 +1,11 @@
+{
+  "name": "r60d-va-perdim-vgates",
+  "idea": "Per-dimension value-mixing gates",
+  "total_params": 50430000,
+  "flops_ratio": 1.001998444491722,
+  "step_ms": 59.8681635200046,
+  "status": "trained",
+  "val_loss": 0.9459210606263554,
+  "train_step_ms": 59.841269589960575,
+  "finished": "2026-10-13 13:40"
+}

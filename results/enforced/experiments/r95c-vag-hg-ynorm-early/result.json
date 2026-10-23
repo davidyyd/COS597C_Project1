@@ -1,0 +1,11 @@
+{
+  "name": "r95c-vag-hg-ynorm-early",
+  "idea": "Head gate + per-head output normalization in early layers only (cheap base)",
+  "total_params": 50745440,
+  "flops_ratio": 1.003002898267666,
+  "step_ms": 65.86433866992593,
+  "status": "trained",
+  "val_loss": 0.9372806152514208,
+  "train_step_ms": 65.77097106957808,
+  "finished": "2026-10-14 07:46"
+}

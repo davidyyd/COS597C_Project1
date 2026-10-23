@@ -1,0 +1,11 @@
+{
+  "name": "r85a-emb-beta095",
+  "idea": "best (r83a): AdamW beta1 0.95 for the embedding tables",
+  "status": "trained",
+  "val_bpb": 0.760657,
+  "training_seconds": 3304.2,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-17 10:38"
+}

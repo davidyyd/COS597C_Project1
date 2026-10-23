@@ -1,0 +1,11 @@
+{
+  "name": "r51d-c-shift-read",
+  "idea": "Time-shifted undiluted read",
+  "total_params": 50877048,
+  "flops_ratio": 1.0110385284752181,
+  "step_ms": 65.03564670012565,
+  "status": "trained",
+  "val_loss": 0.9364655959192801,
+  "train_step_ms": 64.82227100990713,
+  "finished": "2026-10-13 09:55"
+}

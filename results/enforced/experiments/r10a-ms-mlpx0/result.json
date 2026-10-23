@@ -1,0 +1,11 @@
+{
+  "name": "r10a-ms-mlpx0",
+  "idea": "Best model + MLP reads the token identity",
+  "total_params": 50623000,
+  "flops_ratio": 1.0056919047303494,
+  "step_ms": 67.65643069986254,
+  "status": "trained",
+  "val_loss": 0.9509534199162538,
+  "train_step_ms": 67.29012508993037,
+  "finished": "2026-10-12 17:41"
+}

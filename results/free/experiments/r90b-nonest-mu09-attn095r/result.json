@@ -1,0 +1,11 @@
+{
+  "name": "r90b-nonest-mu09-attn095r",
+  "idea": "best (r89c): global 0.9 and attention ratio 0.95/0.92 (attention ~0.929)",
+  "status": "trained",
+  "val_bpb": 0.75984,
+  "training_seconds": 3332.2,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-17 15:38"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r17c-best-only-last-full",
+  "idea": "Only the last layer has full attention",
+  "total_params": 50618928,
+  "flops_ratio": 1.0056919047303494,
+  "step_ms": 68.0558625399135,
+  "status": "trained",
+  "val_loss": 0.9464276703182605,
+  "train_step_ms": 68.19133493991103,
+  "finished": "2026-10-12 20:35"
+}

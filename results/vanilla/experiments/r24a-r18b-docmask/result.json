@@ -1,0 +1,7 @@
+{
+  "name": "r24a-r18b-docmask",
+  "idea": "r18b + document masking with per-batch block masks built in-graph",
+  "status": "crash",
+  "reason": "no val_bpb printed; see run.log",
+  "finished": "2026-10-13 05:32"
+}

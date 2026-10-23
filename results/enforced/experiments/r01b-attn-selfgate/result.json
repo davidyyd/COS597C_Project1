@@ -1,0 +1,11 @@
+{
+  "name": "r01b-attn-selfgate",
+  "idea": "Self-gated attention heads (gate from the head's own output)",
+  "total_params": 50336272,
+  "flops_ratio": 1.0,
+  "step_ms": 60.91347292996943,
+  "status": "trained",
+  "val_loss": 0.9565341690327456,
+  "train_step_ms": 61.11617856004159,
+  "finished": "2026-10-12 14:50"
+}

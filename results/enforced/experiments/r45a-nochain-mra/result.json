@@ -1,0 +1,11 @@
+{
+  "name": "r45a-nochain-mra",
+  "idea": "One-read chain: only the MLP reads the fresh attention output",
+  "total_params": 50881112,
+  "flops_ratio": 1.0110385284752181,
+  "step_ms": 64.34437500982312,
+  "status": "trained",
+  "val_loss": 0.9381905770429755,
+  "train_step_ms": 64.37995170010254,
+  "finished": "2026-10-13 07:51"
+}

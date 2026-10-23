@@ -1,0 +1,11 @@
+{
+  "name": "r05b-docmask-v2",
+  "idea": "Hard document masking, block masks built eagerly (retry of r04b)",
+  "status": "trained",
+  "val_bpb": 0.956719,
+  "training_seconds": 303.5,
+  "peak_vram_mb": 14718.8,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-12 21:33"
+}

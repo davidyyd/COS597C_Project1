@@ -1,0 +1,11 @@
+{
+  "name": "r26b-d21-adambf16",
+  "idea": "r25a + bf16-state AdamW (memory/quality check)",
+  "status": "trained",
+  "val_bpb": 0.774821,
+  "training_seconds": 3281.4,
+  "peak_vram_mb": 76439.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1470.1,
+  "finished": "2026-10-14 17:56"
+}

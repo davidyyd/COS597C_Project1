@@ -1,0 +1,11 @@
+{
+  "name": "r25d-deep-head",
+  "idea": "Deep head: token-wise MLP before the LM head",
+  "total_params": 50856464,
+  "flops_ratio": 1.0107141736100695,
+  "step_ms": 66.50876337022055,
+  "status": "trained",
+  "val_loss": 0.9584363579055265,
+  "train_step_ms": 66.49143308983184,
+  "finished": "2026-10-12 23:55"
+}

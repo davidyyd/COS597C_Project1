@@ -1,0 +1,11 @@
+{
+  "name": "r36d-d16-xsa-trigramin",
+  "idea": "d16 (r35d): input trigram table (sign) added to the token embedding",
+  "status": "trained",
+  "val_bpb": 0.777096,
+  "training_seconds": 2596.5,
+  "peak_vram_mb": 67441.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1585.6,
+  "finished": "2026-10-15 03:16"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r48c-best-ve-4567",
+  "idea": "Best model with value embeddings on layers 4-7",
+  "total_params": 50881136,
+  "flops_ratio": 1.0110385284752181,
+  "step_ms": 66.96778987010475,
+  "status": "trained",
+  "val_loss": 0.9436049553458065,
+  "train_step_ms": 67.00996517000021,
+  "finished": "2026-10-13 08:51"
+}

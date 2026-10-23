@@ -1,0 +1,11 @@
+{
+  "name": "r31c-novelty-temp",
+  "idea": "Attention temperature from token novelty",
+  "total_params": 50336304,
+  "flops_ratio": 1.0,
+  "step_ms": 62.66671438002959,
+  "status": "trained",
+  "val_loss": 0.954291468654414,
+  "train_step_ms": 62.75546138000209,
+  "finished": "2026-10-13 02:07"
+}

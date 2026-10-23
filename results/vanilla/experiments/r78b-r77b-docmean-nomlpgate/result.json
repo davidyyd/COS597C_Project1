@@ -1,0 +1,11 @@
+{
+  "name": "r78b-r77b-docmean-nomlpgate",
+  "idea": "r77b + low-rank bag-of-words document context, MLP gate dropped",
+  "status": "trained",
+  "val_bpb": 0.928656,
+  "training_seconds": 262.5,
+  "peak_vram_mb": 15111.2,
+  "num_steps": 3815.0,
+  "num_params_M": 52.9,
+  "finished": "2026-10-14 08:22"
+}

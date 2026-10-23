@@ -1,0 +1,11 @@
+{
+  "name": "r09d-mlp-x0",
+  "idea": "MLP reads the token identity directly",
+  "total_params": 50332184,
+  "flops_ratio": 1.0,
+  "step_ms": 66.86205114994664,
+  "status": "trained",
+  "val_loss": 0.956789007407296,
+  "train_step_ms": 66.6460100398399,
+  "finished": "2026-10-12 17:18"
+}

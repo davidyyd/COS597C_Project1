@@ -1,0 +1,11 @@
+{
+  "name": "r17c-d16-wsd50",
+  "idea": "d16 (LR 1e-2, warmup 2%): WSD schedule, constant LR to 50% then linear decay to 0",
+  "status": "trained",
+  "val_bpb": 0.793983,
+  "training_seconds": 2409.1,
+  "peak_vram_mb": 63345.7,
+  "num_steps": 3815.0,
+  "num_params_M": 763.6,
+  "finished": "2026-10-14 07:30"
+}

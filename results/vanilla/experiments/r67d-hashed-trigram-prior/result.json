@@ -1,0 +1,11 @@
+{
+  "name": "r67d-hashed-trigram-prior",
+  "idea": "Hashed trigram logit prior (table indexed by hash(previous, current token))",
+  "status": "trained",
+  "val_bpb": 0.955423,
+  "training_seconds": 232.8,
+  "peak_vram_mb": 12740.5,
+  "num_steps": 3815.0,
+  "num_params_M": 51.9,
+  "finished": "2026-10-14 03:06"
+}

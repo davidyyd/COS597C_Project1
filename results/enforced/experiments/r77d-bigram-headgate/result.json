@@ -1,0 +1,11 @@
+{
+  "name": "r77d-bigram-headgate",
+  "idea": "Head-gate biases from the current AND the previous token",
+  "total_params": 51667592,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 68.78446453018114,
+  "status": "trained",
+  "val_loss": 0.9308243916976195,
+  "train_step_ms": 69.05333914997755,
+  "finished": "2026-10-13 23:28"
+}

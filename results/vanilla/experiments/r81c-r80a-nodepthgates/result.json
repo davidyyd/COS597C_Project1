@@ -1,0 +1,11 @@
+{
+  "name": "r81c-r80a-nodepthgates",
+  "idea": "Ablation of r80a: no stale depth gates (plain resid/x0 lambdas)",
+  "status": "trained",
+  "val_bpb": 0.925173,
+  "training_seconds": 257.6,
+  "peak_vram_mb": 15162.1,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 09:47"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r39a-d16-mlp6x-gskip",
+  "idea": "d16 MLP 6x + gated skips (XSA, trigram_out)",
+  "status": "trained",
+  "val_bpb": 0.769128,
+  "training_seconds": 3120.7,
+  "peak_vram_mb": 72365.8,
+  "num_steps": 3815.0,
+  "num_params_M": 1673.7,
+  "finished": "2026-10-15 06:09"
+}

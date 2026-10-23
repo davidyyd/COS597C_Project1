@@ -1,0 +1,11 @@
+{
+  "name": "r60b-bf16-bosmask",
+  "idea": "r59b + BOS-target masking",
+  "status": "trained",
+  "val_bpb": 0.763969,
+  "training_seconds": 3251.2,
+  "peak_vram_mb": 68626.4,
+  "num_steps": 3815.0,
+  "num_params_M": 1893.8,
+  "finished": "2026-10-16 02:50"
+}

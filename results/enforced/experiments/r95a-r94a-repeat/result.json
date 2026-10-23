@@ -1,0 +1,11 @@
+{
+  "name": "r95a-r94a-repeat",
+  "idea": "Repeat of r94a (best, block-diagonal gate form)",
+  "total_params": 52191878,
+  "flops_ratio": 1.003002898267666,
+  "step_ms": 67.8894792997744,
+  "status": "trained",
+  "val_loss": 0.929046180092372,
+  "train_step_ms": 68.62705866995384,
+  "finished": "2026-10-14 07:46"
+}

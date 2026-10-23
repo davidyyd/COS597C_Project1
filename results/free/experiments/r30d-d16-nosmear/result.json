@@ -1,0 +1,11 @@
+{
+  "name": "r30d-d16-nosmear",
+  "idea": "d16 (r28d): remove smear (redundant with the bigram embedding?)",
+  "status": "trained",
+  "val_bpb": 0.78214,
+  "training_seconds": 2469.6,
+  "peak_vram_mb": 77291.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1468.2,
+  "finished": "2026-10-14 21:52"
+}

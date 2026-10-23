@@ -1,0 +1,11 @@
+{
+  "name": "r88b-token-qtemp",
+  "idea": "Token table: query-temperature biases instead of MLP-gate features",
+  "total_params": 51667590,
+  "flops_ratio": 0.9949672680601138,
+  "step_ms": 68.53583707008511,
+  "status": "trained",
+  "val_loss": 0.9291120877436666,
+  "train_step_ms": 68.60207397025079,
+  "finished": "2026-10-14 04:33"
+}

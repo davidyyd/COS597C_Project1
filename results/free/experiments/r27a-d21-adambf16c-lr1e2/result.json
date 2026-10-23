@@ -1,0 +1,11 @@
+{
+  "name": "r27a-d21-adambf16c-lr1e2",
+  "idea": "r26b (bf16 AdamW, now compiled) with LR 1e-2",
+  "status": "trained",
+  "val_bpb": 0.773334,
+  "training_seconds": 3224.5,
+  "peak_vram_mb": 76439.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1470.1,
+  "finished": "2026-10-14 18:56"
+}

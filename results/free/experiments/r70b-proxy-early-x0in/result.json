@@ -1,0 +1,11 @@
+{
+  "name": "r70b-proxy-early-x0in",
+  "idea": "proxy backin5-mix + layers 1-3 attention read mix(x0, x) (learnable, init pure x0)",
+  "status": "trained",
+  "val_bpb": 0.76523,
+  "training_seconds": 3122.5,
+  "peak_vram_mb": 66659.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1725.0,
+  "finished": "2026-10-16 19:44"
+}

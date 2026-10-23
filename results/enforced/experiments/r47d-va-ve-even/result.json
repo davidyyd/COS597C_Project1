@@ -1,0 +1,11 @@
+{
+  "name": "r47d-va-ve-even",
+  "idea": "Value embeddings on the even layers",
+  "total_params": 50348080,
+  "flops_ratio": 1.0003243548651486,
+  "step_ms": 61.144134839996696,
+  "status": "trained",
+  "val_loss": 0.9531249645676447,
+  "train_step_ms": 60.99133186013205,
+  "finished": "2026-10-13 08:29"
+}

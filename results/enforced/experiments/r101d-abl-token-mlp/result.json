@@ -1,0 +1,11 @@
+{
+  "name": "r101d-abl-token-mlp",
+  "idea": "Ablation: final model without the token MLP-gate features",
+  "total_params": 51405446,
+  "flops_ratio": 1.003002898267666,
+  "step_ms": 68.03304479049984,
+  "status": "trained",
+  "val_loss": 0.9290716707455098,
+  "train_step_ms": 67.94921613007318,
+  "finished": "2026-10-14 10:11"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r28a-qk-gain",
+  "idea": "Per-channel query gains in the QK-norm (learned RoPE-band weighting)",
+  "status": "trained",
+  "val_bpb": 0.954566,
+  "training_seconds": 232.3,
+  "peak_vram_mb": 12713.0,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-13 07:25"
+}

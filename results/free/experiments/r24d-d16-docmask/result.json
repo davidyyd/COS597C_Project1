@@ -1,0 +1,11 @@
+{
+  "name": "r24d-d16-docmask",
+  "idea": "d16 (bigram262k, emb WD0) + document masking",
+  "status": "trained",
+  "val_bpb": 0.78665,
+  "training_seconds": 2502.7,
+  "peak_vram_mb": 70514.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1233.3,
+  "finished": "2026-10-14 14:20"
+}

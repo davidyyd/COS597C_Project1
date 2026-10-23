@@ -1,0 +1,11 @@
+{
+  "name": "r92a-r90b-rowtemp",
+  "idea": "r90b-r88c-depth2 + position-aware attention temperature (cheap static form)",
+  "status": "trained",
+  "val_bpb": 0.922549,
+  "training_seconds": 265.5,
+  "peak_vram_mb": 14926.3,
+  "num_steps": 3815.0,
+  "num_params_M": 52.7,
+  "finished": "2026-10-14 17:53"
+}

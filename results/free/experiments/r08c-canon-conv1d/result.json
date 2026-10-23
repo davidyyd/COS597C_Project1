@@ -1,0 +1,11 @@
+{
+  "name": "r08c-canon-conv1d",
+  "idea": "Canon via F.conv1d (speed test of same math)",
+  "status": "trained",
+  "val_bpb": 0.937477,
+  "training_seconds": 466.0,
+  "peak_vram_mb": 15758.1,
+  "num_steps": 3815.0,
+  "num_params_M": 50.4,
+  "finished": "2026-10-13 22:48"
+}

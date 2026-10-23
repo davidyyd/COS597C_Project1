@@ -1,0 +1,11 @@
+{
+  "name": "r99b-vag-all-prevdoc",
+  "idea": "All later layers restricted to the current + previous document",
+  "total_params": 50479184,
+  "flops_ratio": 0.9458606390139612,
+  "step_ms": 62.362997160089435,
+  "status": "trained",
+  "val_loss": 0.9403066420375373,
+  "train_step_ms": 62.06947041035164,
+  "finished": "2026-10-14 09:22"
+}

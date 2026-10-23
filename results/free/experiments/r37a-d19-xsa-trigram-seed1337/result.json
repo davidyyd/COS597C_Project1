@@ -1,0 +1,11 @@
+{
+  "name": "r37a-d19-xsa-trigram-seed1337",
+  "idea": "r36a (d19 XSA trigram_out) with seed 1337",
+  "status": "trained",
+  "val_bpb": 0.770987,
+  "training_seconds": 3046.9,
+  "peak_vram_mb": 76673.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1613.2,
+  "finished": "2026-10-15 04:12"
+}

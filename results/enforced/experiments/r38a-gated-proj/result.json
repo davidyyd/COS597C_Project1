@@ -1,0 +1,11 @@
+{
+  "name": "r38a-gated-proj",
+  "idea": "Gate the projected value part too",
+  "total_params": 50881136,
+  "flops_ratio": 1.0110385284752181,
+  "step_ms": 67.30462022998836,
+  "status": "trained",
+  "val_loss": 0.9371697240945892,
+  "train_step_ms": 67.05689068010543,
+  "finished": "2026-10-13 05:26"
+}

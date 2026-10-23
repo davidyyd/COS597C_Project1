@@ -1,0 +1,11 @@
+{
+  "name": "r13d-ve-prevtok",
+  "idea": "Bigram values: the first value-embedding layer indexes the previous token",
+  "total_params": 50332176,
+  "flops_ratio": 1.0,
+  "step_ms": 65.25135150994174,
+  "status": "trained",
+  "val_loss": 0.9580476595235898,
+  "train_step_ms": 65.33534721005708,
+  "finished": "2026-10-12 19:09"
+}

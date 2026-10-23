@@ -1,0 +1,11 @@
+{
+  "name": "r46d-va-token-outtemp",
+  "idea": "Output temperature with a token-specific term from a normalized sparse table",
+  "total_params": 50872944,
+  "flops_ratio": 1.0003243548651486,
+  "step_ms": 60.475162340153474,
+  "status": "trained",
+  "val_loss": 0.945600859855123,
+  "train_step_ms": 60.314671309897676,
+  "finished": "2026-10-13 08:13"
+}

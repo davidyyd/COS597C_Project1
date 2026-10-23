@@ -1,0 +1,11 @@
+{
+  "name": "r36c-d16-xsa-init05",
+  "idea": "d16 (r35d): XSA gate initialized half on (tanh(alpha)=0.5)",
+  "status": "trained",
+  "val_bpb": 0.776578,
+  "training_seconds": 2582.4,
+  "peak_vram_mb": 66096.5,
+  "num_steps": 3815.0,
+  "num_params_M": 1468.2,
+  "finished": "2026-10-15 03:16"
+}

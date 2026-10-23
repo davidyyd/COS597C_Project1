@@ -1,0 +1,11 @@
+{
+  "name": "r49b-d16m7-emb9",
+  "idea": "r48a with embedding LR mult 9",
+  "status": "trained",
+  "val_bpb": 0.764608,
+  "training_seconds": 3347.4,
+  "peak_vram_mb": 69988.4,
+  "num_steps": 3815.0,
+  "num_params_M": 1893.8,
+  "finished": "2026-10-15 15:58"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r41a-gv-chain-tokgated",
+  "idea": "Token-gated undiluted reads (cheap lineage)",
+  "total_params": 50368592,
+  "flops_ratio": 1.0006591727904632,
+  "step_ms": 68.48104940989288,
+  "status": "trained",
+  "val_loss": 0.9450587404565742,
+  "train_step_ms": 68.4405137601425,
+  "finished": "2026-10-13 06:27"
+}

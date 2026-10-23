@@ -1,0 +1,11 @@
+{
+  "name": "r34c-d16proxy-xsa",
+  "idea": "d16 proxy + learnable XSA (bf16)",
+  "status": "trained",
+  "val_bpb": 0.777726,
+  "training_seconds": 2572.9,
+  "peak_vram_mb": 64305.1,
+  "num_steps": 3815.0,
+  "num_params_M": 1350.8,
+  "finished": "2026-10-15 01:21"
+}

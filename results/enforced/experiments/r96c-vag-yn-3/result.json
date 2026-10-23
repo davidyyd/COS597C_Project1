@@ -1,0 +1,11 @@
+{
+  "name": "r96c-vag-yn-3",
+  "idea": "Per-head output normalization (x per-head scale) only in layer 3 (the middle global layer)",
+  "total_params": 50479188,
+  "flops_ratio": 0.9815745510475267,
+  "step_ms": 60.89659880002728,
+  "status": "trained",
+  "val_loss": 0.9392385564083371,
+  "train_step_ms": 60.58891674998449,
+  "finished": "2026-10-14 08:09"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r85c-attn097-s7",
+  "idea": "best (r83a) with seed 7",
+  "status": "trained",
+  "val_bpb": 0.760777,
+  "training_seconds": 3316.3,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-17 10:38"
+}

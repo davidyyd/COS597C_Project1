@@ -1,0 +1,11 @@
+{
+  "name": "r17a-r16a-localattn1",
+  "idea": "r16a with layer 1 as short local attention (window 128) instead of a conv",
+  "status": "trained",
+  "val_bpb": 0.937013,
+  "training_seconds": 266.5,
+  "peak_vram_mb": 17257.7,
+  "num_steps": 3815.0,
+  "num_params_M": 49.8,
+  "finished": "2026-10-13 02:20"
+}

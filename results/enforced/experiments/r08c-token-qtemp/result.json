@@ -1,0 +1,11 @@
+{
+  "name": "r08c-token-qtemp",
+  "idea": "Token-identity offset for the query temperature",
+  "total_params": 50622992,
+  "flops_ratio": 1.0003348179253146,
+  "step_ms": 64.09943045990076,
+  "status": "trained",
+  "val_loss": 0.9521179474550525,
+  "train_step_ms": 64.41534226003569,
+  "finished": "2026-10-12 17:01"
+}

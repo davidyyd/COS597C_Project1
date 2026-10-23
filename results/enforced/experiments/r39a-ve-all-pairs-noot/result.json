@@ -1,0 +1,11 @@
+{
+  "name": "r39a-ve-all-pairs-noot",
+  "idea": "Value embeddings in every layer (pair-shared tables) with gated normalized mixing",
+  "total_params": 50897008,
+  "flops_ratio": 1.011373346400533,
+  "step_ms": 68.32419279002352,
+  "status": "trained",
+  "val_loss": 0.9399113324434233,
+  "train_step_ms": 68.33251097006723,
+  "finished": "2026-10-13 05:52"
+}

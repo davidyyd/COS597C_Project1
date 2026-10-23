@@ -1,0 +1,11 @@
+{
+  "name": "r14d-diag-prof-r12c",
+  "idea": "DIAGNOSTIC: profile of r12c-packed-readout-ctxx0 (where do the extra 25 s go?)",
+  "status": "trained",
+  "val_bpb": 0.94136,
+  "training_seconds": 274.9,
+  "peak_vram_mb": 17577.9,
+  "num_steps": 3815.0,
+  "num_params_M": 49.8,
+  "finished": "2026-10-13 01:05"
+}

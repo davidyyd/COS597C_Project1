@@ -1,0 +1,11 @@
+{
+  "name": "r21a-cheap-gate-emachain",
+  "idea": "Decaying-sum undiluted read on the cheap lineage",
+  "total_params": 50336335,
+  "flops_ratio": 1.0,
+  "step_ms": 67.0129247001023,
+  "status": "trained",
+  "val_loss": 0.948728576626484,
+  "train_step_ms": 66.68212824995862,
+  "finished": "2026-10-12 22:22"
+}

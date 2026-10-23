@@ -1,0 +1,11 @@
+{
+  "name": "r25d-r19a-bf16-resid",
+  "idea": "r19a-r18b-local0 with a bf16 residual stream",
+  "status": "trained",
+  "val_bpb": 0.936258,
+  "training_seconds": 247.8,
+  "peak_vram_mb": 15023.1,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-13 05:54"
+}

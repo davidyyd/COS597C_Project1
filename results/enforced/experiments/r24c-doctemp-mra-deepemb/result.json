@@ -1,0 +1,11 @@
+{
+  "name": "r24c-doctemp-mra-deepemb",
+  "idea": "Three strong base changes: doc temperature + MLP reads attention + deep embedding",
+  "total_params": 50856504,
+  "flops_ratio": 1.0107141736100695,
+  "step_ms": 66.85278582008323,
+  "status": "trained",
+  "val_loss": 0.9500417542040349,
+  "train_step_ms": 66.81066907010972,
+  "finished": "2026-10-12 23:34"
+}

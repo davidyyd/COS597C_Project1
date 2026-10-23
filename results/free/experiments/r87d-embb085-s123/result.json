@@ -1,0 +1,11 @@
+{
+  "name": "r87d-embb085-s123",
+  "idea": "best (r85b) with seed 123",
+  "status": "trained",
+  "val_bpb": 0.760783,
+  "training_seconds": 3357.5,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-17 12:38"
+}

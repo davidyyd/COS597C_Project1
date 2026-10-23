@@ -1,0 +1,11 @@
+{
+  "name": "r99d-control-allwins",
+  "idea": "Control + all control-level wins combined (additivity test)",
+  "status": "trained",
+  "val_bpb": 0.949723,
+  "training_seconds": 238.2,
+  "peak_vram_mb": 13747.9,
+  "num_steps": 3815.0,
+  "num_params_M": 50.4,
+  "finished": "2026-10-14 22:57"
+}

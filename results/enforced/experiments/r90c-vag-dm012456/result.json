@@ -1,0 +1,11 @@
+{
+  "name": "r90c-vag-dm012456",
+  "idea": "Boundary probe: document masking in all local layers (0-2, 4-6) on the cheap base",
+  "total_params": 50479184,
+  "flops_ratio": 0.9601462038273874,
+  "step_ms": 61.34605023995391,
+  "status": "trained",
+  "val_loss": 0.940681981681466,
+  "train_step_ms": 60.94329873973038,
+  "finished": "2026-10-14 05:25"
+}

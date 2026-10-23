@@ -1,0 +1,11 @@
+{
+  "name": "r69a-best-selfv-instead",
+  "idea": "Best with self-gated values instead of MLP input gates (layers 4-7)",
+  "total_params": 51143288,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 68.08012270979816,
+  "status": "trained",
+  "val_loss": 0.9333605753711675,
+  "train_step_ms": 68.2316767500015,
+  "finished": "2026-10-13 18:24"
+}

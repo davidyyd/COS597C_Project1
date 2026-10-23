@@ -1,0 +1,11 @@
+{
+  "name": "r29c-values-read-x0",
+  "idea": "Values read the token embedding in layers without value embeddings",
+  "total_params": 50332180,
+  "flops_ratio": 1.0,
+  "step_ms": 66.1060471800738,
+  "status": "trained",
+  "val_loss": 0.958527074641693,
+  "train_step_ms": 65.73264011007268,
+  "finished": "2026-10-13 01:31"
+}

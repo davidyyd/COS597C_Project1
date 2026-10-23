@@ -1,0 +1,11 @@
+{
+  "name": "r91a-mlpmu088",
+  "idea": "best (r90b) + MLP momentum target 0.88 (global 0.9, attention ~0.929)",
+  "status": "trained",
+  "val_bpb": 0.76011,
+  "training_seconds": 3344.6,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-17 16:38"
+}

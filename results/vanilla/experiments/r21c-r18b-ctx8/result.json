@@ -1,0 +1,11 @@
+{
+  "name": "r21c-r18b-ctx8",
+  "idea": "r18b with a width-8 contextual x0 (lags 0-7)",
+  "status": "trained",
+  "val_bpb": 0.936697,
+  "training_seconds": 265.3,
+  "peak_vram_mb": 16868.7,
+  "num_steps": 3815.0,
+  "num_params_M": 49.8,
+  "finished": "2026-10-13 04:02"
+}

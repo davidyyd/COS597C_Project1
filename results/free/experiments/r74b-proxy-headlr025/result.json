@@ -1,0 +1,11 @@
+{
+  "name": "r74b-proxy-headlr025",
+  "idea": "proxy backin5-mix: lm_head LR multiplier 0.25",
+  "status": "trained",
+  "val_bpb": 0.764894,
+  "training_seconds": 3131.5,
+  "peak_vram_mb": 66323.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1725.0,
+  "finished": "2026-10-16 23:42"
+}

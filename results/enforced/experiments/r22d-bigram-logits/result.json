@@ -1,0 +1,11 @@
+{
+  "name": "r22d-bigram-logits",
+  "idea": "Direct low-rank bigram path to the logits",
+  "total_params": 50594320,
+  "flops_ratio": 1.0026785434025174,
+  "step_ms": 67.37082218984142,
+  "status": "trained",
+  "val_loss": 0.9592553984904348,
+  "train_step_ms": 67.25275069009513,
+  "finished": "2026-10-12 22:45"
+}

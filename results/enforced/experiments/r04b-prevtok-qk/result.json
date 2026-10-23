@@ -1,0 +1,11 @@
+{
+  "name": "r04b-prevtok-qk",
+  "idea": "Previous-token embedding in queries as well as keys",
+  "total_params": 50356752,
+  "flops_ratio": 1.0003348179253146,
+  "step_ms": 64.53608763986267,
+  "status": "trained",
+  "val_loss": 0.9530338388905188,
+  "train_step_ms": 65.06070850009564,
+  "finished": "2026-10-12 15:51"
+}

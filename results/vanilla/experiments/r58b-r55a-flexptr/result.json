@@ -1,0 +1,7 @@
+{
+  "name": "r58b-r55a-flexptr",
+  "idea": "r55a with the flex pointer (speed reference)",
+  "status": "crash",
+  "reason": "no val_bpb printed; see run.log",
+  "finished": "2026-10-13 23:15"
+}

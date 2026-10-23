@@ -1,0 +1,11 @@
+{
+  "name": "r53c-shift-docmask",
+  "idea": "Time-shifted read masked at document boundaries",
+  "total_params": 50877048,
+  "flops_ratio": 1.0110385284752181,
+  "step_ms": 64.6675797199714,
+  "status": "trained",
+  "val_loss": 0.9366851290576667,
+  "train_step_ms": 64.79554732999532,
+  "finished": "2026-10-13 10:46"
+}

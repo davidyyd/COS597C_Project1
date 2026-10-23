@@ -1,0 +1,11 @@
+{
+  "name": "r75c-ms-layer3-rope",
+  "idea": "Multi-scale heads in the middle full-attention layer (with RoPE base \u221d window)",
+  "total_params": 51143288,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 68.03220714995405,
+  "status": "trained",
+  "val_loss": 0.9321614241644705,
+  "train_step_ms": 68.5142075800104,
+  "finished": "2026-10-13 22:24"
+}

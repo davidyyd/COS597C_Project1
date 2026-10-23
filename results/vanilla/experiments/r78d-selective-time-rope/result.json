@@ -1,0 +1,11 @@
+{
+  "name": "r78d-selective-time-rope",
+  "idea": "Selective-time RoPE: token-dependent position clock per head",
+  "status": "trained",
+  "val_bpb": 0.956727,
+  "training_seconds": 238.5,
+  "peak_vram_mb": 13866.5,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-14 08:22"
+}

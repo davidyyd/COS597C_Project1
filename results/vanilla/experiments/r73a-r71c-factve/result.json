@@ -1,0 +1,11 @@
+{
+  "name": "r73a-r71c-factve",
+  "idea": "r71c with factorised (rank-256) value-embedding tables",
+  "status": "trained",
+  "val_bpb": 0.931428,
+  "training_seconds": 263.4,
+  "peak_vram_mb": 15048.7,
+  "num_steps": 3815.0,
+  "num_params_M": 44.7,
+  "finished": "2026-10-14 05:45"
+}

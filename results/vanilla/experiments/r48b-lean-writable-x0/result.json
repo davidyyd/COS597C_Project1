@@ -1,0 +1,11 @@
+{
+  "name": "r48b-lean-writable-x0",
+  "idea": "Writable x0 stream: blocks may add their output into the re-injected embedding stream",
+  "status": "trained",
+  "val_bpb": 0.932601,
+  "training_seconds": 258.1,
+  "peak_vram_mb": 15735.7,
+  "num_steps": 3815.0,
+  "num_params_M": 50.0,
+  "finished": "2026-10-13 17:40"
+}

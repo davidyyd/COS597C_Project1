@@ -1,0 +1,11 @@
+{
+  "name": "r52d-shift-gate37",
+  "idea": "Shift-read model + head self-gate (scalar everywhere, low-rank in layers 3, 7)",
+  "total_params": 50946680,
+  "flops_ratio": 1.012377800176477,
+  "step_ms": 67.8940223500831,
+  "status": "trained",
+  "val_loss": 0.9358804695631648,
+  "train_step_ms": 67.90092345996527,
+  "finished": "2026-10-13 10:21"
+}

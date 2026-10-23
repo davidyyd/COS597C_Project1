@@ -1,0 +1,11 @@
+{
+  "name": "r19b-scalargate-docpos",
+  "idea": "Document position feature on scalargate-docpos",
+  "total_params": 50361392,
+  "flops_ratio": 1.0003348179253146,
+  "step_ms": 66.40198873006739,
+  "status": "trained",
+  "val_loss": 0.9457633457296691,
+  "train_step_ms": 66.26678681001067,
+  "finished": "2026-10-12 21:31"
+}

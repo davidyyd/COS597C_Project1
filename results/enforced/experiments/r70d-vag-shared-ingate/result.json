@@ -1,0 +1,11 @@
+{
+  "name": "r70d-vag-shared-ingate",
+  "idea": "One input gate per block shared by attention and MLP",
+  "total_params": 50610224,
+  "flops_ratio": 1.0056814416701834,
+  "step_ms": 64.00649340997916,
+  "status": "trained",
+  "val_loss": 0.943099845104086,
+  "train_step_ms": 63.98976997996215,
+  "finished": "2026-10-13 18:55"
+}

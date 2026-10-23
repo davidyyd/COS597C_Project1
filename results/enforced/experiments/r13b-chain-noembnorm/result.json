@@ -1,0 +1,11 @@
+{
+  "name": "r13b-chain-noembnorm",
+  "idea": "Best model without the input-embedding norm",
+  "total_params": 50623008,
+  "flops_ratio": 1.0056919047303494,
+  "step_ms": 67.97146213008091,
+  "status": "trained",
+  "val_loss": 0.9469338029123796,
+  "train_step_ms": 68.09115293988725,
+  "finished": "2026-10-12 19:09"
+}

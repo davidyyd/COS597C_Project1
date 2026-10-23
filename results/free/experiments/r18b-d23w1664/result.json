@@ -1,0 +1,11 @@
+{
+  "name": "r18b-d23w1664",
+  "idea": "Deeper/narrower at ~same FLOPs: d23 x 1664 (13 heads)",
+  "status": "trained",
+  "val_bpb": 0.784295,
+  "training_seconds": 3241.1,
+  "peak_vram_mb": 73721.5,
+  "num_steps": 3815.0,
+  "num_params_M": 955.4,
+  "finished": "2026-10-14 08:31"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r53d-d16h12288-s7",
+  "idea": "r51b with seed 7",
+  "status": "trained",
+  "val_bpb": 0.76444,
+  "training_seconds": 3301.5,
+  "peak_vram_mb": 72719.7,
+  "num_steps": 3815.0,
+  "num_params_M": 1879.1,
+  "finished": "2026-10-15 19:57"
+}

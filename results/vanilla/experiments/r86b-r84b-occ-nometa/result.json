@@ -1,0 +1,11 @@
+{
+  "name": "r86b-r84b-occ-nometa",
+  "idea": "r84b: token metadata embedding replaced by the document occurrence-count embedding",
+  "status": "trained",
+  "val_bpb": 0.923266,
+  "training_seconds": 262.1,
+  "peak_vram_mb": 14957.1,
+  "num_steps": 3815.0,
+  "num_params_M": 52.7,
+  "finished": "2026-10-14 11:52"
+}

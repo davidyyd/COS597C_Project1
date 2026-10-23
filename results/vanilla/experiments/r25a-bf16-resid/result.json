@@ -1,0 +1,11 @@
+{
+  "name": "r25a-bf16-resid",
+  "idea": "bf16 residual stream (control on r18a)",
+  "status": "trained",
+  "val_bpb": 0.95726,
+  "training_seconds": 230.5,
+  "peak_vram_mb": 12713.0,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-13 05:54"
+}

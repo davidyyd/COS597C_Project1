@@ -1,0 +1,11 @@
+{
+  "name": "r36b-nolr-ve-sep",
+  "idea": "Normalize projected values and value embeddings separately before mixing",
+  "total_params": 50872944,
+  "flops_ratio": 1.0108711195125608,
+  "step_ms": 68.16701643983833,
+  "status": "trained",
+  "val_loss": 0.9391608576260457,
+  "train_step_ms": 68.17144166998332,
+  "finished": "2026-10-13 04:31"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r30c-d16-attnscale014",
+  "idea": "d16 (r28d): attention scale 0.14",
+  "status": "trained",
+  "val_bpb": 0.782436,
+  "training_seconds": 2489.8,
+  "peak_vram_mb": 74157.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1468.2,
+  "finished": "2026-10-14 21:52"
+}

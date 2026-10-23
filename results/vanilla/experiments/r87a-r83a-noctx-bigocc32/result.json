@@ -1,0 +1,11 @@
+{
+  "name": "r87a-r83a-noctx-bigocc32",
+  "idea": "r83a - ctx-x0 conv + document BIGRAM occurrence count (cheap int32 sort)",
+  "status": "trained",
+  "val_bpb": 0.923062,
+  "training_seconds": 262.5,
+  "peak_vram_mb": 14926.7,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 12:20"
+}

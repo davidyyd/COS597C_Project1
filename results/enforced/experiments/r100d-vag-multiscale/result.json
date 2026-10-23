@@ -1,0 +1,11 @@
+{
+  "name": "r100d-vag-multiscale",
+  "idea": "Multi-scale head windows (128..1024) in the local layers (transfer test on the cheap base)",
+  "total_params": 50745456,
+  "flops_ratio": 1.003002898267666,
+  "step_ms": 64.15689932007808,
+  "status": "trained",
+  "val_loss": 0.940681981681466,
+  "train_step_ms": 64.36066167952958,
+  "finished": "2026-10-14 09:35"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r56a-r55a-sdpa-docmask",
+  "idea": "r55a with the full-layer document mask applied through SDPA (boolean attn_mask) instead of flex",
+  "status": "trained",
+  "val_bpb": 0.930378,
+  "training_seconds": 274.2,
+  "peak_vram_mb": 14800.0,
+  "num_steps": 3815.0,
+  "num_params_M": 50.1,
+  "finished": "2026-10-13 22:18"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r85b-r81a-noshift012",
+  "idea": "Ablation: r81a without the key shift read in layers 0-2 (no low-rank gate added)",
+  "total_params": 52159109,
+  "flops_ratio": 0.9942976322094844,
+  "step_ms": 68.06189674010966,
+  "status": "trained",
+  "val_loss": 0.9300540832437098,
+  "train_step_ms": 67.78788943018299,
+  "finished": "2026-10-14 03:12"
+}

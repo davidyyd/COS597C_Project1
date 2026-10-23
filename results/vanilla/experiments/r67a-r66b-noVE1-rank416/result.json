@@ -1,0 +1,11 @@
+{
+  "name": "r67a-r66b-noVE1-rank416",
+  "idea": "r66b trading layer 1's value-embedding table (4.2M params) for bigram-prior rank 416",
+  "status": "trained",
+  "val_bpb": 0.928263,
+  "training_seconds": 263.7,
+  "peak_vram_mb": 15063.9,
+  "num_steps": 3815.0,
+  "num_params_M": 52.7,
+  "finished": "2026-10-14 03:06"
+}

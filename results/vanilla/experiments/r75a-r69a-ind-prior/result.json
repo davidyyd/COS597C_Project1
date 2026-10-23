@@ -1,0 +1,11 @@
+{
+  "name": "r75a-r69a-ind-prior",
+  "idea": "r69a with an induction-candidate logit prior (prior rank 160 + 64 + 64)",
+  "status": "trained",
+  "val_bpb": 0.927022,
+  "training_seconds": 262.3,
+  "peak_vram_mb": 15022.9,
+  "num_steps": 3815.0,
+  "num_params_M": 50.6,
+  "finished": "2026-10-14 06:48"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r96a-r95c-vsal",
+  "idea": "r95c + per-key value salience (4 more columns of the shared smear/salience gate)",
+  "status": "trained",
+  "val_bpb": 0.921542,
+  "training_seconds": 259.7,
+  "peak_vram_mb": 16299.7,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 20:59"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r99d-vag-early-parity-soft",
+  "idea": "Learned soft document isolation in early layers (parity q/k features instead of the hard mask)",
+  "total_params": 50482256,
+  "flops_ratio": 1.003002898267666,
+  "step_ms": 65.31177682045382,
+  "status": "trained",
+  "val_loss": 0.9426012097608897,
+  "train_step_ms": 65.18666297954042,
+  "finished": "2026-10-14 09:22"
+}

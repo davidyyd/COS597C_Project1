@@ -1,0 +1,11 @@
+{
+  "name": "r48d-d16m65-muonlr12",
+  "idea": "proxy: Muon LR x1.2 relative to AdamW (RMS factor 0.24)",
+  "status": "trained",
+  "val_bpb": 0.766396,
+  "training_seconds": 3183.0,
+  "peak_vram_mb": 67011.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1725.0,
+  "finished": "2026-10-15 14:59"
+}

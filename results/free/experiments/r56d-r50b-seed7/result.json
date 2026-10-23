@@ -1,0 +1,11 @@
+{
+  "name": "r56d-r50b-seed7",
+  "idea": "r50b (best) with seed 7",
+  "status": "trained",
+  "val_bpb": 0.764136,
+  "training_seconds": 3339.9,
+  "peak_vram_mb": 73122.4,
+  "num_steps": 3815.0,
+  "num_params_M": 1893.8,
+  "finished": "2026-10-15 22:55"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r24a-d21-bigram262k-b16-memsave",
+  "idea": "d21 bigram 262k (r23a) at device batch 16: bf16 Muon momentum + per-step Muon update buffer",
+  "status": "trained",
+  "val_bpb": 0.775635,
+  "training_seconds": 3230.5,
+  "peak_vram_mb": 78960.8,
+  "num_steps": 3815.0,
+  "num_params_M": 1470.1,
+  "finished": "2026-10-14 14:20"
+}

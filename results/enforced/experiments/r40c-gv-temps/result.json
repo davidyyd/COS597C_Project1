@@ -1,0 +1,11 @@
+{
+  "name": "r40c-gv-temps",
+  "idea": "Gated-value simple model + doc temperature + output temperature",
+  "total_params": 50352720,
+  "flops_ratio": 1.0003243548651486,
+  "step_ms": 63.21545158018125,
+  "status": "trained",
+  "val_loss": 0.9436132704786482,
+  "train_step_ms": 63.30969218019163,
+  "finished": "2026-10-13 06:10"
+}

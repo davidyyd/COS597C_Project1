@@ -1,0 +1,11 @@
+{
+  "name": "r26a-d21-adambf16-bigramve",
+  "idea": "r25a + bf16-state AdamW + bigram-hashed value embedding on the last layer",
+  "status": "trained",
+  "val_bpb": 0.775879,
+  "training_seconds": 3313.7,
+  "peak_vram_mb": 77615.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1572.9,
+  "finished": "2026-10-14 17:56"
+}

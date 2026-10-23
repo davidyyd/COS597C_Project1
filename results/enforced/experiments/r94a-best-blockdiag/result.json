@@ -1,0 +1,11 @@
+{
+  "name": "r94a-best-blockdiag",
+  "idea": "Best with the low-rank head gate in block-diagonal matmul form (equivalence check)",
+  "total_params": 52191878,
+  "flops_ratio": 1.003002898267666,
+  "step_ms": 67.8894792997744,
+  "status": "trained",
+  "val_loss": 0.928682358952134,
+  "train_step_ms": 68.25524928979576,
+  "finished": "2026-10-14 07:27"
+}

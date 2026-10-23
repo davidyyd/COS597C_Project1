@@ -1,0 +1,11 @@
+{
+  "name": "r59d-mlp-outgate",
+  "idea": "Per-channel MLP write gate from the MLP's own (normalized) input",
+  "total_params": 51208824,
+  "flops_ratio": 1.0177348869815117,
+  "step_ms": 67.74073600012343,
+  "status": "trained",
+  "val_loss": 0.9333457171829749,
+  "train_step_ms": 68.66789302002871,
+  "finished": "2026-10-13 13:03"
+}

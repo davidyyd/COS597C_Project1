@@ -1,0 +1,11 @@
+{
+  "name": "r73c-r73b-rank384",
+  "idea": "r73b with the freed parameters in the n-gram priors (256 + 128)",
+  "status": "trained",
+  "val_bpb": 0.929157,
+  "training_seconds": 267.7,
+  "peak_vram_mb": 15270.4,
+  "num_steps": 3815.0,
+  "num_params_M": 48.5,
+  "finished": "2026-10-14 05:45"
+}

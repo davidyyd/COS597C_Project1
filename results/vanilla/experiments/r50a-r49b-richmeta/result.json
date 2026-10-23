@@ -1,0 +1,11 @@
+{
+  "name": "r50a-r49b-richmeta",
+  "idea": "r49b with richer token metadata (adds the last-character class)",
+  "status": "trained",
+  "val_bpb": 0.931021,
+  "training_seconds": 261.2,
+  "peak_vram_mb": 15436.0,
+  "num_steps": 3815.0,
+  "num_params_M": 51.1,
+  "finished": "2026-10-13 19:10"
+}

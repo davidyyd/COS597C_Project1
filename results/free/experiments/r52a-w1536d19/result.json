@@ -1,0 +1,11 @@
+{
+  "name": "r52a-w1536d19",
+  "idea": "Shape: width 1536 x 19 layers (12 heads), MLP hidden 10752 (~7x)",
+  "status": "trained",
+  "val_bpb": 0.766727,
+  "training_seconds": 3071.6,
+  "peak_vram_mb": 71534.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1662.6,
+  "finished": "2026-10-15 18:58"
+}

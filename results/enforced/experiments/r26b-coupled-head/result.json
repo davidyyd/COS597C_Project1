@@ -1,0 +1,11 @@
+{
+  "name": "r26b-coupled-head",
+  "idea": "Output embeddings coupled to input embeddings by a learned low-rank map",
+  "total_params": 50463248,
+  "flops_ratio": 1.0107141736100695,
+  "step_ms": 65.70496558008017,
+  "status": "trained",
+  "val_loss": 0.963340854988777,
+  "train_step_ms": 65.7713191199582,
+  "finished": "2026-10-13 00:23"
+}

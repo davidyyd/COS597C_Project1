@@ -1,0 +1,11 @@
+{
+  "name": "r96a-h12928",
+  "idea": "best (r90b) with MLP hidden 12928 (101*128, +1%)",
+  "status": "trained",
+  "val_bpb": 0.759825,
+  "training_seconds": 3358.7,
+  "peak_vram_mb": 69790.3,
+  "num_steps": 3815.0,
+  "num_params_M": 1915.8,
+  "finished": "2026-10-17 21:36"
+}

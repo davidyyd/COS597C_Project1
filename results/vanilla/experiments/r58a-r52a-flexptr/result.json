@@ -1,0 +1,7 @@
+{
+  "name": "r58a-r52a-flexptr",
+  "idea": "r52a with the pointer computed by two block-sparse flex passes (instead of dense T x T chunks)",
+  "status": "crash",
+  "reason": "no val_bpb printed; see run.log",
+  "finished": "2026-10-13 23:15"
+}

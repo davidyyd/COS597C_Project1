@@ -1,0 +1,11 @@
+{
+  "name": "r62c-r61b-nounet-keyscale",
+  "idea": "r62a + data-dependent key scale (read through the existing selective-smear gate projection)",
+  "status": "trained",
+  "val_bpb": 0.931708,
+  "training_seconds": 243.5,
+  "peak_vram_mb": 15438.4,
+  "num_steps": 3815.0,
+  "num_params_M": 50.6,
+  "finished": "2026-10-14 01:13"
+}

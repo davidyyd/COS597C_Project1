@@ -1,0 +1,11 @@
+{
+  "name": "r43b-d16m6-gate-memdiag",
+  "idea": "r42a + memory diagnostics (prints allocated/peak memory around forward/backward at steps 1-2)",
+  "status": "trained",
+  "val_bpb": 0.767723,
+  "training_seconds": 3126.7,
+  "peak_vram_mb": 75963.9,
+  "num_steps": 3815.0,
+  "num_params_M": 1673.7,
+  "finished": "2026-10-15 10:06"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r80c-vag-docmask-0123",
+  "idea": "Document masking in the whole first half (layers 0-3, including the global layer 3)",
+  "total_params": 50348080,
+  "flops_ratio": 0.9717532252382962,
+  "step_ms": 60.0904710998293,
+  "status": "trained",
+  "val_loss": 0.944406479626286,
+  "train_step_ms": 60.09299690020271,
+  "finished": "2026-10-14 01:07"
+}

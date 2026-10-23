@@ -1,0 +1,11 @@
+{
+  "name": "r17d-bilinear-x0",
+  "idea": "Multiplicative bigram code in the contextual x0 (on the contextual-x0 model)",
+  "status": "trained",
+  "val_bpb": 0.952978,
+  "training_seconds": 257.5,
+  "peak_vram_mb": 15870.1,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-13 02:21"
+}

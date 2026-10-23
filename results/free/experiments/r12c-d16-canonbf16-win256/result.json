@@ -1,0 +1,11 @@
+{
+  "name": "r12c-d16-canonbf16-win256",
+  "idea": "Short sliding windows (256) for the S layers",
+  "status": "trained",
+  "val_bpb": 0.794628,
+  "training_seconds": 2399.8,
+  "peak_vram_mb": 63345.7,
+  "num_steps": 3815.0,
+  "num_params_M": 763.6,
+  "finished": "2026-10-14 02:30"
+}

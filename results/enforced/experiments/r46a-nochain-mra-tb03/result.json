@@ -1,0 +1,11 @@
+{
+  "name": "r46a-nochain-mra-tb03",
+  "idea": "Cheaper replacement of the read chain: MLP-reads-attention + token MLP bias (layers 0-3)",
+  "total_params": 52191836,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 67.06873813003767,
+  "status": "trained",
+  "val_loss": 0.9384780625374536,
+  "train_step_ms": 66.95156498986762,
+  "finished": "2026-10-13 08:13"
+}

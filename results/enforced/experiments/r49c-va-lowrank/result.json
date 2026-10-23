@@ -1,0 +1,11 @@
+{
+  "name": "r49c-va-lowrank",
+  "idea": "Value-path baseline + scalar and low-rank head self-gate (re-measure)",
+  "total_params": 50614320,
+  "flops_ratio": 1.0056814416701834,
+  "step_ms": 67.26135411998257,
+  "status": "trained",
+  "val_loss": 0.944708618838477,
+  "train_step_ms": 67.60312202997738,
+  "finished": "2026-10-13 09:13"
+}

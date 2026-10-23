@@ -1,0 +1,11 @@
+{
+  "name": "r58c-cheap-kashift-gate37",
+  "idea": "Keys read m(t-1) and a(t-1) + head self-gate (scalar, low-rank in 3, 7)",
+  "total_params": 50946688,
+  "flops_ratio": 1.012377800176477,
+  "step_ms": 66.16039636952337,
+  "status": "trained",
+  "val_loss": 0.9349710530262229,
+  "train_step_ms": 65.96397688001161,
+  "finished": "2026-10-13 12:49"
+}

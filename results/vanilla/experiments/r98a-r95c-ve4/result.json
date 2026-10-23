@@ -1,0 +1,11 @@
+{
+  "name": "r98a-r95c-ve4",
+  "idea": "r95c with 4-lag selective ctx-VE",
+  "status": "trained",
+  "val_bpb": 0.921446,
+  "training_seconds": 258.7,
+  "peak_vram_mb": 16038.2,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 22:31"
+}

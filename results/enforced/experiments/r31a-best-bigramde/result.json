@@ -1,0 +1,11 @@
+{
+  "name": "r31a-best-bigramde",
+  "idea": "Best model with the non-linear bigram embedding",
+  "total_params": 50872912,
+  "flops_ratio": 1.0108711195125608,
+  "step_ms": 68.33758636988932,
+  "status": "trained",
+  "val_loss": 0.9441146320949073,
+  "train_step_ms": 68.29126999975415,
+  "finished": "2026-10-13 02:07"
+}

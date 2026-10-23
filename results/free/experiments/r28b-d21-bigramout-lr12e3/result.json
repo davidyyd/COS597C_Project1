@@ -1,0 +1,11 @@
+{
+  "name": "r28b-d21-bigramout-lr12e3",
+  "idea": "r27b-d21-adambf16c-lr12e3 + output-side bigram table (65521)",
+  "status": "trained",
+  "val_bpb": 0.772691,
+  "training_seconds": 3236.0,
+  "peak_vram_mb": 77994.7,
+  "num_steps": 3815.0,
+  "num_params_M": 1587.6,
+  "finished": "2026-10-14 19:54"
+}

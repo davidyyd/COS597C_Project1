@@ -1,0 +1,11 @@
+{
+  "name": "r38b-ve-keys-norm",
+  "idea": "Normalized value embeddings into keys",
+  "total_params": 50881136,
+  "flops_ratio": 1.0110385284752181,
+  "step_ms": 67.66825646016514,
+  "status": "trained",
+  "val_loss": 0.940356941775547,
+  "train_step_ms": 67.6426831597928,
+  "finished": "2026-10-13 05:26"
+}

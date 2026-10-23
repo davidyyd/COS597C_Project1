@@ -1,0 +1,11 @@
+{
+  "name": "r71d-vag-temporal-ingate",
+  "idea": "MLP input gate that also sees the previous position",
+  "total_params": 50741296,
+  "flops_ratio": 1.0083599850727007,
+  "step_ms": 63.62075897981413,
+  "status": "trained",
+  "val_loss": 0.9422564725320915,
+  "train_step_ms": 63.55040113994619,
+  "finished": "2026-10-13 19:35"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r20d-r18b-selective",
+  "idea": "r18b + selective (token-gated) lags in the contextual x0",
+  "status": "trained",
+  "val_bpb": 0.937027,
+  "training_seconds": 265.6,
+  "peak_vram_mb": 16361.4,
+  "num_steps": 3815.0,
+  "num_params_M": 49.8,
+  "finished": "2026-10-13 03:29"
+}

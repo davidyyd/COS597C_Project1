@@ -1,0 +1,11 @@
+{
+  "name": "r36d-pointer-chunked",
+  "idea": "Pointer-sentinel head on the control, causal-chunked implementation",
+  "status": "trained",
+  "val_bpb": 0.95306,
+  "training_seconds": 236.0,
+  "peak_vram_mb": 12044.7,
+  "num_steps": 3815.0,
+  "num_params_M": 50.4,
+  "finished": "2026-10-13 11:35"
+}

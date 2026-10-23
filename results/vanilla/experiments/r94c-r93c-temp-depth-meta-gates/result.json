@@ -1,0 +1,11 @@
+{
+  "name": "r94c-r93c-temp-depth-meta-gates",
+  "idea": "r94a + token metadata embedding + MLP hidden gate in all 8 layers",
+  "status": "trained",
+  "val_bpb": 0.921942,
+  "training_seconds": 253.4,
+  "peak_vram_mb": 15459.2,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 19:53"
+}

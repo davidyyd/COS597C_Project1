@@ -1,0 +1,11 @@
+{
+  "name": "r43a-d16m6-gate-seed42",
+  "idea": "r42a (d16m6 + fused XSA/gate) with seed 42",
+  "status": "trained",
+  "val_bpb": 0.768313,
+  "training_seconds": 3122.9,
+  "peak_vram_mb": 75963.9,
+  "num_steps": 3815.0,
+  "num_params_M": 1673.7,
+  "finished": "2026-10-15 10:06"
+}

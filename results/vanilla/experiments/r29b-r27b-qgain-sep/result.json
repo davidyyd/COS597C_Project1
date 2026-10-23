@@ -1,0 +1,11 @@
+{
+  "name": "r29b-r27b-qgain-sep",
+  "idea": "r27b + per-channel query gain as a separate RMSNorm weight (as in r28a)",
+  "status": "trained",
+  "val_bpb": 0.935808,
+  "training_seconds": 254.2,
+  "peak_vram_mb": 15599.5,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-13 07:53"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r01b-d16w1024",
+  "idea": "Scale to 16 layers, width 1024",
+  "status": "trained",
+  "val_bpb": 0.844741,
+  "training_seconds": 1279.0,
+  "peak_vram_mb": 30147.0,
+  "num_steps": 3815.0,
+  "num_params_M": 285.2,
+  "finished": "2026-10-13 16:12"
+}

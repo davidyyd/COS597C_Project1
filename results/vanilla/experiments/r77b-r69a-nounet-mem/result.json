@@ -1,0 +1,11 @@
+{
+  "name": "r77b-r69a-nounet-mem",
+  "idea": "r69a without U-net, plus a mid-network gated hashed bigram memory",
+  "status": "trained",
+  "val_bpb": 0.925304,
+  "training_seconds": 262.5,
+  "peak_vram_mb": 15127.9,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 07:52"
+}

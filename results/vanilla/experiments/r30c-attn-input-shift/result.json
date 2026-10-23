@@ -1,0 +1,11 @@
+{
+  "name": "r30c-attn-input-shift",
+  "idea": "Token shift on the attention input (q, k, v all see x_t and x_{t-1})",
+  "status": "trained",
+  "val_bpb": 0.955424,
+  "training_seconds": 236.2,
+  "peak_vram_mb": 13481.1,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-13 08:19"
+}

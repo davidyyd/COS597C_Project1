@@ -1,0 +1,11 @@
+{
+  "name": "r47c-va-docpos-keys",
+  "idea": "Keys carry the document position (normalized bucket table)",
+  "total_params": 50430000,
+  "flops_ratio": 1.0006591727904632,
+  "step_ms": 65.11925197002711,
+  "status": "trained",
+  "val_loss": 0.9473785262057579,
+  "train_step_ms": 65.03992384998128,
+  "finished": "2026-10-13 08:29"
+}

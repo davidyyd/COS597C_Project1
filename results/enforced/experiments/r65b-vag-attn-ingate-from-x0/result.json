@@ -1,0 +1,11 @@
+{
+  "name": "r65b-vag-attn-ingate-from-x0",
+  "idea": "Attention input gate computed from the token embedding",
+  "total_params": 50610224,
+  "flops_ratio": 1.0056814416701834,
+  "step_ms": 61.239029620192014,
+  "status": "trained",
+  "val_loss": 0.9442944298034026,
+  "train_step_ms": 61.21494431979954,
+  "finished": "2026-10-13 16:15"
+}

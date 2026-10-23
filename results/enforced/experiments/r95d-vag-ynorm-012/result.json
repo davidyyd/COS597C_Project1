@@ -1,0 +1,11 @@
+{
+  "name": "r95d-vag-ynorm-012",
+  "idea": "Per-head output normalization only in the document-isolated layers 0-2",
+  "total_params": 50479196,
+  "flops_ratio": 0.9815745510475267,
+  "step_ms": 60.70011086005252,
+  "status": "trained",
+  "val_loss": 0.9398859099471122,
+  "train_step_ms": 60.96689451020211,
+  "finished": "2026-10-14 07:46"
+}

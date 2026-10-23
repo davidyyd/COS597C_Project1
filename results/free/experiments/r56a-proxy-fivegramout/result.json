@@ -1,0 +1,11 @@
+{
+  "name": "r56a-proxy-fivegramout",
+  "idea": "proxy (+4-gram) + output-side 5-gram table (sign)",
+  "status": "trained",
+  "val_bpb": 0.765396,
+  "training_seconds": 3215.1,
+  "peak_vram_mb": 70146.9,
+  "num_steps": 3815.0,
+  "num_params_M": 1959.8,
+  "finished": "2026-10-15 22:55"
+}

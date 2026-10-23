@@ -1,0 +1,11 @@
+{
+  "name": "r91d-vag-yhead-norm",
+  "idea": "Per-head attention outputs normalized (agreement magnitude removed)",
+  "total_params": 50479216,
+  "flops_ratio": 0.9815745510475267,
+  "step_ms": 61.97228515986353,
+  "status": "trained",
+  "val_loss": 0.9388348635245548,
+  "train_step_ms": 61.726043010130525,
+  "finished": "2026-10-14 06:12"
+}

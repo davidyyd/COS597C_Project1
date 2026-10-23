@@ -1,0 +1,11 @@
+{
+  "name": "r100c-vag-abl-docmask",
+  "idea": "Ablation: no early document masking (transfer test on the cheap base)",
+  "total_params": 50745456,
+  "flops_ratio": 1.0244312454878053,
+  "step_ms": 65.86536018003244,
+  "status": "trained",
+  "val_loss": 0.9399679026094775,
+  "train_step_ms": 65.73102199006826,
+  "finished": "2026-10-14 09:35"
+}

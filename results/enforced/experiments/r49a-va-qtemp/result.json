@@ -1,0 +1,11 @@
+{
+  "name": "r49a-va-qtemp",
+  "idea": "Value-path baseline + content query temperature (re-measure)",
+  "total_params": 50364464,
+  "flops_ratio": 1.0006591727904632,
+  "step_ms": 61.6603152998141,
+  "status": "trained",
+  "val_loss": 0.9457576205562372,
+  "train_step_ms": 61.589829529984854,
+  "finished": "2026-10-13 09:13"
+}

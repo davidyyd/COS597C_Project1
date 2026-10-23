@@ -1,0 +1,4 @@
+#!/bin/bash
+# the agent's experiment command (the frozen harness; see harness/run_experiment.py). Run by the launcher's relay
+# with the launcher's Python ($AR_PYTHON).
+exec "${AR_PYTHON:-python3}" "$(dirname "$(readlink -f "$0")")"/../../harness/run_experiment.py "$@"

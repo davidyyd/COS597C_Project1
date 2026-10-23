@@ -1,0 +1,11 @@
+{
+  "name": "r35a-lr37-vnorm",
+  "idea": "Low-rank gate only in the full-attention layers, plus value normalization",
+  "total_params": 50938480,
+  "flops_ratio": 1.0122103912138196,
+  "step_ms": 68.83775866008364,
+  "status": "trained",
+  "val_loss": 0.9410732018659858,
+  "train_step_ms": 68.6895763699431,
+  "finished": "2026-10-13 04:06"
+}

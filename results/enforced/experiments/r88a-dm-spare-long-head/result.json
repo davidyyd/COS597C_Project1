@@ -1,0 +1,11 @@
+{
+  "name": "r88a-dm-spare-long-head",
+  "idea": "Early document mask spares the longest-window head",
+  "total_params": 52191878,
+  "flops_ratio": 0.9949672680601138,
+  "step_ms": 68.64716739044525,
+  "status": "trained",
+  "val_loss": 0.9299615262732258,
+  "train_step_ms": 68.74037282017525,
+  "finished": "2026-10-14 04:33"
+}

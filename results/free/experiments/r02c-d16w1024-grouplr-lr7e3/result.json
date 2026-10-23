@@ -1,0 +1,11 @@
+{
+  "name": "r02c-d16w1024-grouplr-lr7e3",
+  "idea": "d16w1024 + group LRs, base LR 7e-3",
+  "status": "trained",
+  "val_bpb": 0.84038,
+  "training_seconds": 1254.1,
+  "peak_vram_mb": 55820.0,
+  "num_steps": 3815.0,
+  "num_params_M": 285.2,
+  "finished": "2026-10-13 16:57"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r01a-bigram-embed",
+  "idea": "Hashed bigram input embedding (trading one value-embedding slot)",
+  "status": "trained",
+  "val_bpb": 0.958503,
+  "training_seconds": 252.1,
+  "peak_vram_mb": 15467.6,
+  "num_steps": 3815.0,
+  "num_params_M": 50.4,
+  "finished": "2026-10-12 20:20"
+}

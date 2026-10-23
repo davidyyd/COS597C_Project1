@@ -1,0 +1,11 @@
+{
+  "name": "r62c-vag-attn-wgate",
+  "idea": "Attention write gate from its own input (fast value-path base)",
+  "total_params": 50610224,
+  "flops_ratio": 1.0056814416701834,
+  "step_ms": 61.35231135995127,
+  "status": "trained",
+  "val_loss": 0.9450811640525162,
+  "train_step_ms": 61.73917214968242,
+  "finished": "2026-10-13 14:32"
+}

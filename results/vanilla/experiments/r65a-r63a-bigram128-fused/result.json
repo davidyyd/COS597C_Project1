@@ -1,0 +1,11 @@
+{
+  "name": "r65a-r63a-bigram128-fused",
+  "idea": "r64c (rank-128 bigram logit prior) with the prior folded into the output-head matmul",
+  "status": "trained",
+  "val_bpb": 0.927801,
+  "training_seconds": 260.2,
+  "peak_vram_mb": 15146.9,
+  "num_steps": 3815.0,
+  "num_params_M": 52.2,
+  "finished": "2026-10-14 02:21"
+}

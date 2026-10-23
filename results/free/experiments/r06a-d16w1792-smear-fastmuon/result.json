@@ -1,0 +1,11 @@
+{
+  "name": "r06a-d16w1792-smear-fastmuon",
+  "idea": "d16w1792 + smear + fast Muon all_gather",
+  "status": "trained",
+  "val_bpb": 0.799738,
+  "training_seconds": 2786.1,
+  "peak_vram_mb": 51430.1,
+  "num_steps": 3815.0,
+  "num_params_M": 763.4,
+  "finished": "2026-10-13 20:47"
+}

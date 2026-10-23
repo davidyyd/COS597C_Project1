@@ -1,0 +1,11 @@
+{
+  "name": "r40b-gv-chain",
+  "idea": "Gated-value simple model + undiluted-read chain",
+  "total_params": 50352208,
+  "flops_ratio": 1.0003243548651486,
+  "step_ms": 66.38838780025253,
+  "status": "trained",
+  "val_loss": 0.9432951144122129,
+  "train_step_ms": 66.5146975798416,
+  "finished": "2026-10-13 06:10"
+}

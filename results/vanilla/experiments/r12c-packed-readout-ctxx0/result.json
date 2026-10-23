@@ -1,0 +1,11 @@
+{
+  "name": "r12c-packed-readout-ctxx0",
+  "idea": "Packed r10c + multi-depth readout + contextual x0",
+  "status": "trained",
+  "val_bpb": 0.941288,
+  "training_seconds": 274.4,
+  "peak_vram_mb": 17577.9,
+  "num_steps": 3815.0,
+  "num_params_M": 49.8,
+  "finished": "2026-10-13 00:11"
+}

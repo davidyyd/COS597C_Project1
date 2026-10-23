@@ -1,0 +1,11 @@
+{
+  "name": "r34b-both-temps",
+  "idea": "Per-token temperature both before and after the soft-cap",
+  "total_params": 51004496,
+  "flops_ratio": 1.0135496629150784,
+  "step_ms": 68.7176629298483,
+  "status": "trained",
+  "val_loss": 0.9450986122001185,
+  "train_step_ms": 68.48849884001538,
+  "finished": "2026-10-13 03:34"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r40b-d16m6-lr1e2",
+  "idea": "d16 MLP6x proxy, LR 1e-2",
+  "status": "trained",
+  "val_bpb": 0.769821,
+  "training_seconds": 3122.5,
+  "peak_vram_mb": 72365.8,
+  "num_steps": 3815.0,
+  "num_params_M": 1673.7,
+  "finished": "2026-10-15 07:08"
+}

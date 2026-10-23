@@ -1,0 +1,11 @@
+{
+  "name": "r88c-r87b-dist-nometa",
+  "idea": "r87b + log2-distance embedding, token metadata embedding removed (fit the cap)",
+  "status": "trained",
+  "val_bpb": 0.923063,
+  "training_seconds": 261.3,
+  "peak_vram_mb": 14925.7,
+  "num_steps": 3815.0,
+  "num_params_M": 52.7,
+  "finished": "2026-10-14 12:54"
+}

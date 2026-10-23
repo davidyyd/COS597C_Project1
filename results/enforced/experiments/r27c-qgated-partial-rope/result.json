@@ -1,0 +1,11 @@
+{
+  "name": "r27c-qgated-partial-rope",
+  "idea": "Query-gated position sensitivity (partial RoPE with a per-token balance)",
+  "total_params": 50348560,
+  "flops_ratio": 1.0003348179253146,
+  "step_ms": 64.30059572012397,
+  "status": "trained",
+  "val_loss": 0.9595216872118493,
+  "train_step_ms": 64.39522972999839,
+  "finished": "2026-10-13 00:41"
+}

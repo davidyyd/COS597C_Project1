@@ -1,0 +1,11 @@
+{
+  "name": "r78a-token-reads",
+  "idea": "Token-conditioned undiluted-read strengths",
+  "total_params": 52069000,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 67.80824155983282,
+  "status": "trained",
+  "val_loss": 0.9314127895814104,
+  "train_step_ms": 67.9608261300018,
+  "finished": "2026-10-14 00:09"
+}

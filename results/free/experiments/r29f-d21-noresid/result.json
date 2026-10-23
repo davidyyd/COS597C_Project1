@@ -1,0 +1,11 @@
+{
+  "name": "r29f-d21-noresid",
+  "idea": "r28b with resid_lambdas removed (memory/quality check)",
+  "status": "trained",
+  "val_bpb": 0.77469,
+  "training_seconds": 3242.4,
+  "peak_vram_mb": 77994.7,
+  "num_steps": 3815.0,
+  "num_params_M": 1587.6,
+  "finished": "2026-10-14 20:53"
+}

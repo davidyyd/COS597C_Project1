@@ -1,0 +1,7 @@
+{
+  "name": "r42b-d17m6-gate-fused",
+  "idea": "d17 MLP6x + fused XSA+attention gate",
+  "status": "crash",
+  "reason": "no val_bpb printed; see run.log",
+  "finished": "2026-10-15 09:06"
+}

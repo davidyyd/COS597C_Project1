@@ -1,0 +1,11 @@
+{
+  "name": "r72c-vag-temporal-hnorm",
+  "idea": "Temporal MLP input gate + MLP hidden normalization (fast base)",
+  "total_params": 50741296,
+  "flops_ratio": 1.0083599850727007,
+  "step_ms": 64.00623711000662,
+  "status": "trained",
+  "val_loss": 0.9458626502259837,
+  "train_step_ms": 63.80615945003228,
+  "finished": "2026-10-13 20:19"
+}

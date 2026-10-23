@@ -1,0 +1,11 @@
+{
+  "name": "r22b-cheap-ms-x0gate",
+  "idea": "Cheap lineage + multi-scale heads + x0 gate",
+  "total_params": 50340432,
+  "flops_ratio": 1.0,
+  "step_ms": 64.46502656006487,
+  "status": "trained",
+  "val_loss": 0.9467213580839566,
+  "train_step_ms": 64.41923425998539,
+  "finished": "2026-10-12 22:45"
+}

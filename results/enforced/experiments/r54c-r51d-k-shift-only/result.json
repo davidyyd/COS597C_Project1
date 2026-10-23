@@ -1,0 +1,11 @@
+{
+  "name": "r54c-r51d-k-shift-only",
+  "idea": "Role-specific reads on the cheaper shift model",
+  "total_params": 50877048,
+  "flops_ratio": 1.0110385284752181,
+  "step_ms": 65.13170088990591,
+  "status": "trained",
+  "val_loss": 0.9361196318676038,
+  "train_step_ms": 65.04066961002536,
+  "finished": "2026-10-13 11:09"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r03a-d24w1408-lr7e3",
+  "idea": "d24w1408 + group LRs, LR 7e-3",
+  "status": "trained",
+  "val_bpb": 0.80296,
+  "training_seconds": 2826.3,
+  "peak_vram_mb": 62327.6,
+  "num_steps": 3815.0,
+  "num_params_M": 732.4,
+  "finished": "2026-10-13 17:49"
+}

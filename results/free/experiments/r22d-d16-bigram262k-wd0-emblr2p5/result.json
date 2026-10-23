@@ -1,0 +1,11 @@
+{
+  "name": "r22d-d16-bigram262k-wd0-emblr2p5",
+  "idea": "d16 bigram 262k + emb WD 0 + all embedding LRs halved (mult 2.5)",
+  "status": "trained",
+  "val_bpb": 0.787808,
+  "training_seconds": 2455.4,
+  "peak_vram_mb": 70513.8,
+  "num_steps": 3815.0,
+  "num_params_M": 1233.3,
+  "finished": "2026-10-14 12:15"
+}

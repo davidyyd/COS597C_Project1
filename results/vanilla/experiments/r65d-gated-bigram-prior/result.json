@@ -1,0 +1,11 @@
+{
+  "name": "r65d-gated-bigram-prior",
+  "idea": "Context-gated bigram logit prior",
+  "status": "trained",
+  "val_bpb": 0.955123,
+  "training_seconds": 233.1,
+  "peak_vram_mb": 12742.1,
+  "num_steps": 3815.0,
+  "num_params_M": 51.4,
+  "finished": "2026-10-14 02:21"
+}

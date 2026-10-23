@@ -1,0 +1,11 @@
+{
+  "name": "r25c-d16-muonmu085",
+  "idea": "d16: Muon momentum 0.85",
+  "status": "trained",
+  "val_bpb": 0.786393,
+  "training_seconds": 2452.7,
+  "peak_vram_mb": 70513.8,
+  "num_steps": 3815.0,
+  "num_params_M": 1233.3,
+  "finished": "2026-10-14 15:18"
+}

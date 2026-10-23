@@ -1,0 +1,11 @@
+{
+  "name": "r74d-doc-x0gate",
+  "idea": "x0 re-injection gate also depends on document position",
+  "total_params": 51143296,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 68.14656619011657,
+  "status": "trained",
+  "val_loss": 0.9314081549172035,
+  "train_step_ms": 68.26703877013642,
+  "finished": "2026-10-13 21:34"
+}

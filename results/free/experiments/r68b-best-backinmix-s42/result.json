@@ -1,0 +1,11 @@
+{
+  "name": "r68b-best-backinmix-s42",
+  "idea": "best (backin5) + learnable mix between cached and current residual for the last-5 attention inputs (seed 42)",
+  "status": "trained",
+  "val_bpb": 0.761886,
+  "training_seconds": 3322.7,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-16 17:41"
+}

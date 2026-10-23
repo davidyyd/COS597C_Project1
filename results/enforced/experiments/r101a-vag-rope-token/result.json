@@ -1,0 +1,11 @@
+{
+  "name": "r101a-vag-rope-token",
+  "idea": "Cheap base + RoPE base proportional to window + token head-gate table (stacking test)",
+  "total_params": 51007600,
+  "flops_ratio": 1.003002898267666,
+  "step_ms": 67.0201080699917,
+  "status": "trained",
+  "val_loss": 0.9356692515576202,
+  "train_step_ms": 66.7641834699316,
+  "finished": "2026-10-14 10:11"
+}

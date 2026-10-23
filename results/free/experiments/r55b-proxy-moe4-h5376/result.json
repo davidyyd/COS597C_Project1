@@ -1,0 +1,11 @@
+{
+  "name": "r55b-proxy-moe4-h5376",
+  "idea": "proxy with 4-expert MoE MLP (expert hidden 5376 = 3x, cf 1.1)",
+  "status": "trained",
+  "val_bpb": 0.778637,
+  "training_seconds": 2683.8,
+  "peak_vram_mb": 74398.0,
+  "num_steps": 3815.0,
+  "num_params_M": 2290.3,
+  "finished": "2026-10-15 21:55"
+}

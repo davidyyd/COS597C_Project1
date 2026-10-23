@@ -1,0 +1,11 @@
+{
+  "name": "r15d-window-rope",
+  "idea": "RoPE base matched to each head's window (multi-scale heads)",
+  "total_params": 50332176,
+  "flops_ratio": 1.0,
+  "step_ms": 63.041627909988165,
+  "status": "trained",
+  "val_loss": 0.9547370779865378,
+  "train_step_ms": 63.285705859889276,
+  "finished": "2026-10-12 19:50"
+}

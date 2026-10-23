@@ -1,0 +1,11 @@
+{
+  "name": "r62a-outgate-2to7",
+  "idea": "MLP write gates in layers 2-7",
+  "total_params": 51208824,
+  "flops_ratio": 1.0177348869815117,
+  "step_ms": 68.65217029000632,
+  "status": "trained",
+  "val_loss": 0.9325203380131954,
+  "train_step_ms": 68.69139654008904,
+  "finished": "2026-10-13 14:31"
+}

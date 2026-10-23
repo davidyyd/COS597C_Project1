@@ -1,0 +1,11 @@
+{
+  "name": "r16a-d21-b16-lr1e2",
+  "idea": "d21 b16 fused-MLP, LR 1e-2",
+  "status": "trained",
+  "val_bpb": 0.782703,
+  "training_seconds": 3169.1,
+  "peak_vram_mb": 73320.4,
+  "num_steps": 3815.0,
+  "num_params_M": 1000.4,
+  "finished": "2026-10-14 06:32"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r30b-d16-softcap20",
+  "idea": "d16 (r28d): logit soft-cap 20",
+  "status": "trained",
+  "val_bpb": 0.782595,
+  "training_seconds": 2524.5,
+  "peak_vram_mb": 74157.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1468.2,
+  "finished": "2026-10-14 21:52"
+}

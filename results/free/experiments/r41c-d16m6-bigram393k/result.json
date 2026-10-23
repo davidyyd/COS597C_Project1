@@ -1,0 +1,11 @@
+{
+  "name": "r41c-d16m6-bigram393k",
+  "idea": "d16m6 proxy: input bigram table 393209 rows",
+  "status": "trained",
+  "val_bpb": 0.769311,
+  "training_seconds": 3141.8,
+  "peak_vram_mb": 75053.7,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.6,
+  "finished": "2026-10-15 08:09"
+}

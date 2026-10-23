@@ -1,0 +1,11 @@
+{
+  "name": "r26b-r26a-readout",
+  "idea": "r26a + multi-depth readout (bf16)",
+  "status": "trained",
+  "val_bpb": 0.935638,
+  "training_seconds": 266.6,
+  "peak_vram_mb": 15599.4,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-13 06:31"
+}

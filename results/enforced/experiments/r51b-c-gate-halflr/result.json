@@ -1,0 +1,11 @@
+{
+  "name": "r51b-c-gate-halflr",
+  "idea": "Cheap composition + head self-gate (scalar + low-rank in odd layers)",
+  "total_params": 51012208,
+  "flops_ratio": 1.0137170718777357,
+  "step_ms": 67.79792543995427,
+  "status": "trained",
+  "val_loss": 0.9361079770502602,
+  "train_step_ms": 67.88439041993115,
+  "finished": "2026-10-13 09:55"
+}

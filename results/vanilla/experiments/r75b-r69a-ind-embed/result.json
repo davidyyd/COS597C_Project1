@@ -1,0 +1,11 @@
+{
+  "name": "r75b-r69a-ind-embed",
+  "idea": "r69a + induction-candidate input embedding (rank-64 table + projection, added to the token embedding)",
+  "status": "trained",
+  "val_bpb": 0.927646,
+  "training_seconds": 262.4,
+  "peak_vram_mb": 15026.9,
+  "num_steps": 3815.0,
+  "num_params_M": 50.6,
+  "finished": "2026-10-14 06:48"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r97d-vag-early-no-bos",
+  "idea": "Isolated early layers without their document's BOS key (sink test)",
+  "total_params": 50479184,
+  "flops_ratio": 0.9815745510475267,
+  "step_ms": 61.15694672000245,
+  "status": "trained",
+  "val_loss": 0.9408407189305507,
+  "train_step_ms": 60.9649630903732,
+  "finished": "2026-10-14 08:28"
+}

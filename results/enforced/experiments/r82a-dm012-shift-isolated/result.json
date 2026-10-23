@@ -1,0 +1,11 @@
+{
+  "name": "r82a-dm012-shift-isolated",
+  "idea": "Early layers fully document-isolated: time-shifted reads also stop at document starts",
+  "total_params": 52159112,
+  "flops_ratio": 0.9942976322094844,
+  "step_ms": 68.72469633002765,
+  "status": "trained",
+  "val_loss": 0.9300138707160326,
+  "train_step_ms": 69.16906414029654,
+  "finished": "2026-10-14 02:04"
+}

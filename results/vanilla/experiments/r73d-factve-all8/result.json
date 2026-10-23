@@ -1,0 +1,11 @@
+{
+  "name": "r73d-factve-all8",
+  "idea": "Factorised value embeddings in every layer (8 x rank 256 ~ the parameters of 4 full tables)",
+  "status": "trained",
+  "val_bpb": 0.953385,
+  "training_seconds": 241.4,
+  "peak_vram_mb": 13241.0,
+  "num_steps": 3815.0,
+  "num_params_M": 51.4,
+  "finished": "2026-10-14 05:45"
+}

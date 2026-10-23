@@ -1,0 +1,11 @@
+{
+  "name": "r85c-r84b-ve3lag",
+  "idea": "r84b + 3-lag selective ctx-VE (combine r84b and r84c)",
+  "status": "trained",
+  "val_bpb": 0.923753,
+  "training_seconds": 261.3,
+  "peak_vram_mb": 15151.7,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 11:21"
+}

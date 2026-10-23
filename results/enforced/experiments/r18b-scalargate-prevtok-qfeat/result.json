@@ -1,0 +1,11 @@
+{
+  "name": "r18b-scalargate-prevtok-qfeat",
+  "idea": "Budget swap + per-dimension query gate",
+  "total_params": 50491952,
+  "flops_ratio": 1.003013361327832,
+  "step_ms": 68.60385319974739,
+  "status": "trained",
+  "val_loss": 0.9449374213052771,
+  "train_step_ms": 68.17767714994261,
+  "finished": "2026-10-12 20:59"
+}

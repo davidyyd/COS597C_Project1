@@ -1,0 +1,11 @@
+{
+  "name": "r05d-mlp-intemp",
+  "idea": "Per-token MLP input temperature after the gainless pre-norm",
+  "total_params": 50336272,
+  "flops_ratio": 1.0,
+  "step_ms": 66.12966347005568,
+  "status": "trained",
+  "val_loss": 0.9608349329462267,
+  "train_step_ms": 66.54951770004118,
+  "finished": "2026-10-12 16:05"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r47b-va-docpos-values",
+  "idea": "Values carry the document position (normalized bucket table)",
+  "total_params": 50430000,
+  "flops_ratio": 1.0006591727904632,
+  "step_ms": 64.7084991299198,
+  "status": "trained",
+  "val_loss": 0.9464744259012885,
+  "train_step_ms": 64.78933154023252,
+  "finished": "2026-10-13 08:29"
+}

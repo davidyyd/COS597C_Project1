@@ -1,0 +1,11 @@
+{
+  "name": "r39b-proj-gate-all",
+  "idea": "Per-token value loudness in all layers",
+  "total_params": 50889328,
+  "flops_ratio": 1.0112059374378757,
+  "step_ms": 67.93040499993367,
+  "status": "trained",
+  "val_loss": 0.9375763477219141,
+  "train_step_ms": 68.08437641011551,
+  "finished": "2026-10-13 05:52"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r28a-best-outtemp",
+  "idea": "Best model + per-token output temperature",
+  "total_params": 51003984,
+  "flops_ratio": 1.0135496629150784,
+  "step_ms": 68.58604525012197,
+  "status": "trained",
+  "val_loss": 0.9433520935192267,
+  "train_step_ms": 68.54277506994549,
+  "finished": "2026-10-13 01:11"
+}

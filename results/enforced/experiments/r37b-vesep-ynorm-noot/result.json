@@ -1,0 +1,11 @@
+{
+  "name": "r37b-vesep-ynorm-noot",
+  "idea": "Separately normalized values + normalized head output scaled by the self-gate",
+  "total_params": 50872432,
+  "flops_ratio": 1.0108711195125608,
+  "step_ms": 68.66789967985824,
+  "status": "trained",
+  "val_loss": 0.9398728238364105,
+  "train_step_ms": 67.65860174025875,
+  "finished": "2026-10-13 04:57"
+}

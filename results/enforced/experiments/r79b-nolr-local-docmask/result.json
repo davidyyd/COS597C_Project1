@@ -1,0 +1,11 @@
+{
+  "name": "r79b-nolr-local-docmask",
+  "idea": "Best - low-rank head gate + local document masking (score_mod)",
+  "total_params": 52060808,
+  "flops_ratio": 0.970860377437457,
+  "step_ms": 67.706136960187,
+  "status": "trained",
+  "val_loss": 0.9313551970629576,
+  "train_step_ms": 67.08960868010763,
+  "finished": "2026-10-14 00:38"
+}

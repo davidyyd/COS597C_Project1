@@ -1,0 +1,402 @@
+name	status	val_bpb	training_seconds	peak_vram_mb	num_steps	num_params_M	finished	idea
+baseline	baseline	0.958950	249.2	15486.0	3815	50.3	-	baseline (baseline_train.py)
+r01a-d12w768	trained	0.886981	619.0	32223.0	3815.0	135.3	2026-10-13 16:12	Scale to 12 layers, width 768
+r01b-d16w1024	trained	0.844741	1279.0	30147.0	3815.0	285.2	2026-10-13 16:12	Scale to 16 layers, width 1024
+r01c-grouplr	trained	0.948689	249.3	15486.0	3815.0	50.3	2026-10-13 16:12	Per-group AdamW learning rates (embeddings 5x, head 0.4x)
+r01d-fullattn-veall	trained	0.957230	256.3	16208.0	3815.0	67.1	2026-10-13 16:12	Full attention in all layers + value embeddings on every layer
+r02a-d16w1024-grouplr	trained	0.841278	1247.2	55820.0	3815.0	285.2	2026-10-13 16:57	d16w1024 + group LRs
+r02b-d20w1280-grouplr	trained	0.818506	2020.1	47162.8	3815.0	519.0	2026-10-13 16:57	d20w1280 + group LRs
+r02c-d16w1024-grouplr-lr7e3	trained	0.840380	1254.1	55820.0	3815.0	285.2	2026-10-13 16:57	d16w1024 + group LRs, base LR 7e-3
+r02d-attngate	trained	0.948879	240.1	16002.1	3815.0	50.3	2026-10-13 16:57	Gated attention (head-wise sigmoid output gate)
+r03a-d24w1408-lr7e3	trained	0.802960	2826.3	62327.6	3815.0	732.4	2026-10-13 17:49	d24w1408 + group LRs, LR 7e-3
+r03b-d20w1280-lr5e3	trained	0.814674	2033.4	47162.8	3815.0	519.0	2026-10-13 17:49	d20w1280 + group LRs, LR 5e-3
+r03c-nesterov	trained	0.948015	257.6	15486.0	3815.0	50.3	2026-10-13 17:49	Muon with Nesterov momentum
+r03d-unet-skips	trained	0.947128	250.7	15486.0	3815.0	50.3	2026-10-13 17:49	U-net skip connections between first and second half
+r04a-d24w1408-lr5e3	trained	0.802231	2843.5	62327.6	3815.0	732.4	2026-10-13 18:43	d24w1408, LR 5e-3
+r04b-d24w1408-lr5e3-unet-nest	trained	0.801906	2847.0	62327.6	3815.0	732.4	2026-10-13 18:43	d24w1408, LR 5e-3, U-net skips + Nesterov Muon
+r04c-fp8-d16	trained	0.844246	1231.4	43150.1	3815.0	285.2	2026-10-13 18:43	FP8 matmuls for all block linears (speed test at d16w1024)
+r04d-d20w1280-lr3e3	trained	0.817235	2026.7	47162.8	3815.0	519.0	2026-10-13 18:43	d20w1280, LR 3e-3
+r05a-d16w1792-unet-nest	trained	0.800365	2790.6	54564.1	3815.0	763.4	2026-10-13 19:43	Wider-shallower: d16w1792 (similar params to d24w1408)
+r05b-r04b-rerun-profile	trained	0.801899	2847.3	62327.6	3815.0	732.4	2026-10-13 19:43	Rerun of r04b with a torch profiler on 3 steps (noise estimate + time breakdown)
+r05c-normuon	trained	0.950451	344.8	15486.0	3815.0	50.3	2026-10-13 19:43	NorMuon: per-row second-moment normalization after Newton-Schulz
+r05d-smear	trained	0.945582	262.3	14722.1	3815.0	50.3	2026-10-13 19:43	Smear: mix the previous token's embedding into each position (gated)
+r06a-d16w1792-smear-fastmuon	trained	0.799738	2786.1	51430.1	3815.0	763.4	2026-10-13 20:47	d16w1792 + smear + fast Muon all_gather
+r06b-d18w1792-smear-fastmuon	trained	0.795922	3188.8	57616.3	3815.0	855.1	2026-10-13 20:47	d18w1792 + smear + fast Muon
+r06c-d12w2048-smear-fastmuon	trained	0.801386	2640.6	45290.1	3815.0	738.2	2026-10-13 20:47	Even wider: d12w2048 + smear + fast Muon
+r06d-attnscale	trained	0.944197	262.9	14722.1	3815.0	50.3	2026-10-13 20:47	Attention logit scale 0.12 (instead of 1/sqrt(128)=0.088) after QK-norm
+r07a-d18w1792-attnscale	trained	0.794020	3220.5	57616.3	3815.0	855.1	2026-10-13 21:49	d18w1792 + attention scale 0.12 (+ phase timing)
+r07b-d18w1792-attnscale-lr4e3	trained	0.794768	3185.6	57616.3	3815.0	855.1	2026-10-13 21:49	d18w1792 + attention scale 0.12, LR 4e-3
+r07c-wd02	trained	0.945462	262.2	14722.1	3815.0	50.3	2026-10-13 21:49	Weight decay 0.2 (from 0.1)
+r07d-canon	trained	0.937541	324.0	20866.5	3815.0	50.4	2026-10-13 21:49	Canon layers: causal depthwise conv (k=4) before attention and MLP
+r08a-d16w1792-canon	trained	0.794628	3049.7	72937.6	3815.0	763.6	2026-10-13 22:48	d16w1792 + attnscale + Canon layers
+r08b-d18w1792-wd005-muontime	trained	0.796148	3185.7	57616.3	3815.0	855.1	2026-10-13 22:48	d18w1792 attnscale, weight decay 0.05 (+ Muon timing breakdown)
+r08c-canon-conv1d	trained	0.937477	466.0	15758.1	3815.0	50.4	2026-10-13 22:48	Canon via F.conv1d (speed test of same math)
+r08d-softcap30	trained	0.939840	324.3	20866.5	3815.0	50.4	2026-10-13 22:48	Logit soft-cap 30 (from 15)
+r09a-d16w1792-canon-muonfix	trained	0.794731	2545.6	74113.7	3815.0	763.6	2026-10-13 23:34	d16w1792 canon + Muon fix (static compile, one bf16 all_reduce of updates)
+r09b-d18w1792-canon-muonfix	crash	-	-	-	-	-	2026-10-13 23:34	d18w1792 attnscale + canon + Muon fix
+r09c-canon-attn-only	trained	0.940203	308.8	17794.3	3815.0	50.3	2026-10-13 23:34	Canon only before attention (drop the MLP one)
+r09d-partial-rope	trained	0.937171	324.5	20866.5	3815.0	50.4	2026-10-13 23:34	Half-truncated RoPE (modded-nanogpt): 32 freqs from 1 to 1/1024, other half of dims unrotated
+r10a-d18w1792-canon-b8	trained	0.790915	3015.7	46999.3	3815.0	855.4	2026-10-14 00:38	d18w1792 + canon + Muon fix, device batch 8
+r10b-d20w1792-canon-b8	trained	0.787867	3281.3	52044.9	3815.0	947.2	2026-10-14 00:38	d20w1792 + canon + Muon fix, device batch 8
+r10c-d22w1792-muonfix	trained	0.788632	3134.7	71556.5	3815.0	1038.6	2026-10-14 00:38	d22w1792 (no canon) + Muon fix
+r10d-polar-express	trained	0.936917	324.2	20866.5	3815.0	50.4	2026-10-14 00:38	Polar Express Newton-Schulz coefficients for Muon
+r11a-d16-canon-ddp	trained	0.794685	2705.0	78594.5	3815.0	763.6	2026-10-14 01:32	DDP (bucketed grad all_reduce overlapped with backward) instead of a post-backward all_reduce loop
+r11b-d16-canon-bf16	trained	0.794774	2494.7	63345.7	3815.0	763.6	2026-10-14 01:32	Canon computed in bf16 (speed/memory)
+r11c-d16-canon-emb10	trained	0.794941	2548.0	74113.7	3815.0	763.6	2026-10-14 01:32	Embedding LR multiplier 10x (from 5x) at scale
+r11d-mtp-aux	trained	0.946764	345.6	21199.5	3815.0	50.6	2026-10-14 01:32	Multi-token prediction auxiliary loss (t+2 head, weight 0.3)
+r12a-d20-canonbf16-b8-pe	trained	0.786481	3213.0	45314.9	3815.0	947.2	2026-10-14 02:30	d20w1792 + bf16 canon (b8) + Polar Express + partial RoPE
+r12b-d18-canonbf16-b16-pe	trained	0.789592	2801.3	71021.2	3815.0	855.4	2026-10-14 02:30	d18w1792 + bf16 canon (b16) + Polar Express + partial RoPE
+r12c-d16-canonbf16-win256	trained	0.794628	2399.8	63345.7	3815.0	763.6	2026-10-14 02:30	Short sliding windows (256) for the S layers
+r12d-docmask	trained	0.935817	364.1	20867.0	3815.0	50.4	2026-10-14 02:30	Document masking: attention only within the same document (flex_attention, all layers)
+r13a-d20-canon-b8-pe-win256	trained	0.787053	3087.2	45314.9	3815.0	947.2	2026-10-14 03:33	d20 canon-bf16 b8 + PE + pRoPE + S-window 256
+r13b-d20-canon-b16-membudget	trained	0.786855	3430.1	63979.5	3815.0	947.2	2026-10-14 03:33	d20 canon-bf16 at device batch 16 via compile activation memory budget 0.8 (+ win256)
+r13c-d16-win256-lr6e3	trained	0.793768	2403.0	63345.7	3815.0	763.6	2026-10-14 03:33	d16 canon-bf16 win256, LR 6e-3
+r13d-qgain	trained	0.936586	322.9	20866.5	3815.0	50.4	2026-10-14 03:33	Learnable per-head attention temperature (q gain, init 1 on top of scale 0.12)
+r14a-d20-win256-lr6e3	trained	0.786265	3086.4	45314.9	3815.0	947.2	2026-10-14 04:33	d20 canon b8 PE win256, LR 6e-3
+r14b-d21-win256-lr6e3	trained	0.783731	3300.6	47712.3	3815.0	1000.4	2026-10-14 04:33	d21 canon b8 PE win256, LR 6e-3
+r14c-d16-win256-lr8e3	trained	0.793180	2400.2	63345.7	3815.0	763.6	2026-10-14 04:33	d16 win256, LR 8e-3
+r14d-d16-allshort-lr6e3	trained	0.795131	2377.2	63345.7	3815.0	763.6	2026-10-14 04:33	Window 256 on every layer except the last (pattern S)
+r15a-d21-lr8e3	trained	0.782591	3255.3	47712.3	3815.0	1000.4	2026-10-14 05:31	d21 canon b8 PE win256, LR 8e-3
+r15b-d21-b16-fusedmlp-lr8e3	trained	0.782732	3162.4	73320.4	3815.0	1000.4	2026-10-14 05:31	d21 at device batch 16 with fused ReLU^2-proj (recompute activation in backward), LR 8e-3
+r15c-d16-lr1e2	trained	0.792901	2404.5	63345.7	3815.0	763.6	2026-10-14 05:31	d16 win256, LR 1e-2
+r15d-d19-mlp3x-lr8e3	trained	0.792129	2568.6	69351.3	3815.0	786.6	2026-10-14 05:31	Deeper with narrower MLP: d19, MLP 3x (same FLOPs as d16 MLP 4x)
+r16a-d21-b16-lr1e2	trained	0.782703	3169.1	73320.4	3815.0	1000.4	2026-10-14 06:32	d21 b16 fused-MLP, LR 1e-2
+r16b-d22-b16-normcanon-lr8e3	trained	0.782951	3411.9	61683.4	3815.0	1038.9	2026-10-14 06:32	d22 b16 with fused ReLU2Proj + fused NormCanon (memory), LR 8e-3
+r16c-d16-warmup2	trained	0.792216	2410.7	63345.7	3815.0	763.6	2026-10-14 06:32	d16 LR 1e-2, warmup 2% (from 5%)
+r16d-d16-pattern-SL	trained	0.792177	2426.2	63345.7	3815.0	763.6	2026-10-14 06:32	d16 LR 1e-2, window pattern SL (half the layers full attention)
+r17a-d21-b16-SL-wu2	trained	0.781464	3254.7	73320.4	3815.0	1000.4	2026-10-14 07:30	d21 b16 fused, LR 8e-3, window pattern SL + warmup 2%
+r17b-d21-b16-SL-wu2-seed42	trained	0.782533	3201.2	73320.4	3815.0	1000.4	2026-10-14 07:30	Same as r17a with seed 42 (seed-noise estimate)
+r17c-d16-wsd50	trained	0.793983	2409.1	63345.7	3815.0	763.6	2026-10-14 07:30	d16 (LR 1e-2, warmup 2%): WSD schedule, constant LR to 50% then linear decay to 0
+r17d-d16-pattern-L	trained	0.791382	2491.8	63345.7	3815.0	763.6	2026-10-14 07:30	d16 (LR 1e-2, warmup 2%): full attention in every layer
+r18a-d21-bigram	trained	0.779263	3223.2	75112.2	3815.0	1117.8	2026-10-14 08:31	d21 + hashed bigram embedding (65521 x 1792) added to the token embedding
+r18b-d23w1664	trained	0.784295	3241.1	73721.5	3815.0	955.4	2026-10-14 08:31	Deeper/narrower at ~same FLOPs: d23 x 1664 (13 heads)
+r18c-d16-bigram	trained	0.789870	2423.1	65137.5	3815.0	881.0	2026-10-14 08:31	d16 + hashed bigram embedding
+r18d-d16-backout	trained	0.791643	2411.2	63569.7	3815.0	763.6	2026-10-14 08:31	Backout: subtract a learned fraction of the 2/3-depth residual before the final norm
+r19a-d21-bi-tri-chunkce	trained	0.779001	3244.1	76891.5	3815.0	1235.2	2026-10-14 09:30	d21 bigram + trigram hash embeddings (65521 each) + chunked softcap CE (memory)
+r19b-d21-bigram-backout	trained	0.778223	3217.2	75336.2	3815.0	1117.8	2026-10-14 09:30	d21 bigram + backout
+r19c-d16-bigram262k	trained	0.788538	2465.0	70513.8	3815.0	1233.3	2026-10-14 09:30	d16 bigram table 4x larger (262139)
+r19d-d16-bi-tri	trained	0.789253	2447.1	66929.3	3815.0	998.4	2026-10-14 09:30	d16 bigram + trigram hash embeddings
+r20a-d21-bigram262k-backout-b8	trained	0.776790	3432.0	50288.3	3815.0	1470.1	2026-10-14 10:31	d21 bigram 262139 rows + backout, device batch 8
+r20b-d21-bigram262k-f768-b16	trained	0.780671	3247.7	76800.2	3815.0	1203.1	2026-10-14 10:31	d21 bigram 262139 x 768 factorized (+ up-projection) + backout, batch 16
+r20c-d16-bigram1m-f256	trained	0.792276	2452.2	67577.8	3815.0	1032.5	2026-10-14 10:31	d16 bigram 1048573 x 256 factorized
+r20d-d16-bigram262k-lr3x	trained	0.790710	2453.8	70513.8	3815.0	1233.3	2026-10-14 10:31	d16 bigram 262k with 3x higher LR on the bigram table
+r21a-d21-bigram131k-bf16ar	crash	-	-	-	-	-	2026-10-14 11:17	d21 bigram 131071 rows + backout, b16, flat bf16 grad all_reduce
+r21b-d21-bigram-bf16ar	crash	-	-	-	-	-	2026-10-14 11:17	r19b + flat bf16 grad all_reduce (clean speed/quality test)
+r21c-d16-bigram262k-lr033	trained	0.787608	2463.9	70513.8	3815.0	1233.3	2026-10-14 11:17	d16 bigram 262k with 1/3 LR on the bigram table
+r21d-d16-bigram262k-embwd0	trained	0.786973	2457.7	70513.8	3815.0	1233.3	2026-10-14 11:17	d16 bigram 262k, no weight decay on embedding tables
+r22a-d21-bigram-embwd0-bf16ar	trained	0.776936	3198.8	75336.2	3815.0	1117.8	2026-10-14 12:15	d21 bigram 65k + backout + embedding WD 0 + flat bf16 grad all_reduce
+r22b-d21-bigram131k-wd0-lr033-bf16ar	trained	0.777557	3259.1	77128.6	3815.0	1235.3	2026-10-14 12:15	d21 bigram 131k + backout + emb WD 0 + bigram LR/3 + bf16 grad all_reduce
+r22c-d16-bigram262k-wd0-lr033	trained	0.787189	2461.4	70513.8	3815.0	1233.3	2026-10-14 12:15	d16 bigram 262k + emb WD 0 + bigram LR/3
+r22d-d16-bigram262k-wd0-emblr2p5	trained	0.787808	2455.4	70513.8	3815.0	1233.3	2026-10-14 12:15	d16 bigram 262k + emb WD 0 + all embedding LRs halved (mult 2.5)
+r23a-d21-bigram262k-wd0-bf16ar-b8	trained	0.775321	3401.0	50288.3	3815.0	1470.1	2026-10-14 13:18	d21 bigram 262k + backout + emb WD 0 + bf16 all_reduce, device batch 8
+r23b-d16-headlr1	trained	0.786458	2463.6	70513.8	3815.0	1233.3	2026-10-14 13:18	d16 (bigram262k, emb WD0): lm_head LR multiplier 1.0 (from 0.4)
+r23c-d16-beta2-099	trained	0.786627	2457.6	70513.8	3815.0	1233.3	2026-10-14 13:18	d16 (bigram262k, emb WD0): AdamW beta2 0.99 (from 0.95)
+r23d-d16-muonmu098	trained	0.792620	2484.6	70513.8	3815.0	1233.3	2026-10-14 13:18	d16 (bigram262k, emb WD0): Muon momentum 0.98 (from 0.95)
+r24a-d21-bigram262k-b16-memsave	trained	0.775635	3230.5	78960.8	3815.0	1470.1	2026-10-14 14:20	d21 bigram 262k (r23a) at device batch 16: bf16 Muon momentum + per-step Muon update buffer
+r24b-d21-perblock-compile	timeout	-	-	-	-	-	2026-10-14 14:20	Per-block torch.compile (compile time / overhead test) on r22a
+r24c-d16-muonmu09	trained	0.785583	2449.5	70513.8	3815.0	1233.3	2026-10-14 14:20	d16 (bigram262k, emb WD0): Muon momentum 0.9
+r24d-d16-docmask	trained	0.786650	2502.7	70514.0	3815.0	1233.3	2026-10-14 14:20	d16 (bigram262k, emb WD0) + document masking
+r25a-d21-262k-b16-mu09	trained	0.775025	3216.1	78960.8	3815.0	1470.1	2026-10-14 15:18	r24a + Muon momentum 0.9
+r25b-d21-262k-b16-mu09-head1-b2	trained	0.775225	3227.1	78960.8	3815.0	1470.1	2026-10-14 15:18	r24a + Muon mu 0.9 + head LR x1.0 + Adam beta2 0.99
+r25c-d16-muonmu085	trained	0.786393	2452.7	70513.8	3815.0	1233.3	2026-10-14 15:18	d16: Muon momentum 0.85
+r25d-d16-bigram-ve-last	trained	0.784822	2466.6	72081.6	3815.0	1336.1	2026-10-14 15:18	d16 (mu 0.9): last layer's value embedding indexed by bigram hash (65521 rows)
+r26a-d21-adambf16-bigramve	trained	0.775879	3313.7	77615.6	3815.0	1572.9	2026-10-14 17:56	r25a + bf16-state AdamW + bigram-hashed value embedding on the last layer
+r26b-d21-adambf16	trained	0.774821	3281.4	76439.6	3815.0	1470.1	2026-10-14 17:56	r25a + bf16-state AdamW (memory/quality check)
+r26c-d16-bigram-ve-last2	trained	0.785148	2481.4	73649.2	3815.0	1438.8	2026-10-14 17:56	d16: bigram-hashed value embeddings on the last two VE layers
+r26d-d16-mu09-lr12e3	trained	0.784233	2449.2	70513.8	3815.0	1233.3	2026-10-14 17:56	d16 mu 0.9: LR 1.2e-2
+r27a-d21-adambf16c-lr1e2	trained	0.773334	3224.5	76439.6	3815.0	1470.1	2026-10-14 18:56	r26b (bf16 AdamW, now compiled) with LR 1e-2
+r27b-d21-adambf16c-lr12e3	trained	0.773342	3212.0	76439.6	3815.0	1470.1	2026-10-14 18:56	r26b (bf16 AdamW, now compiled) with LR 1.2e-2
+r27c-d16-mu09-lr15e3	trained	0.784687	2461.6	70513.8	3815.0	1233.3	2026-10-14 18:56	d16 mu 0.9: LR 1.5e-2
+r27d-d16-bigram-out	trained	0.783148	2475.3	72305.6	3815.0	1350.8	2026-10-14 18:56	d16: output-side bigram table added to the final hidden state
+r28a-d21-bigramout-lr1e2	trained	0.772776	3233.5	77994.7	3815.0	1587.6	2026-10-14 19:54	r27a-d21-adambf16c-lr1e2 + output-side bigram table (65521)
+r28b-d21-bigramout-lr12e3	trained	0.772691	3236.0	77994.7	3815.0	1587.6	2026-10-14 19:54	r27b-d21-adambf16c-lr12e3 + output-side bigram table (65521)
+r28c-d16-bigramout262k	trained	0.783224	2510.6	78614.0	3815.0	1703.1	2026-10-14 19:54	d16: output bigram table 262139 rows
+r28d-d16-trigramout	trained	0.782444	2522.2	74157.6	3815.0	1468.2	2026-10-14 19:54	d16: output-side trigram table (65521) in addition to the output bigram
+r29e-d21-trigramout-noresid	crash	-	-	-	-	-	2026-10-14 20:53	r28b + output trigram table, resid_lambdas removed (memory)
+r29f-d21-noresid	trained	0.774690	3242.4	77994.7	3815.0	1587.6	2026-10-14 20:53	r28b with resid_lambdas removed (memory/quality check)
+r29g-d16-noresid	trained	0.785491	2460.2	74157.6	3815.0	1468.2	2026-10-14 20:53	d16 (r28d): resid_lambdas removed
+r29h-d16-midbigram	trained	0.785314	2481.6	76173.5	3815.0	1585.6	2026-10-14 20:53	d16 (r28d): extra bigram table injected at the middle layer
+r30a-d21-r28b-seed42	trained	0.772561	3234.3	77994.7	3815.0	1587.6	2026-10-14 21:51	r28b with seed 42
+r30b-d16-softcap20	trained	0.782595	2524.5	74157.6	3815.0	1468.2	2026-10-14 21:52	d16 (r28d): logit soft-cap 20
+r30c-d16-attnscale014	trained	0.782436	2489.8	74157.6	3815.0	1468.2	2026-10-14 21:52	d16 (r28d): attention scale 0.14
+r30d-d16-nosmear	trained	0.782140	2469.6	77291.6	3815.0	1468.2	2026-10-14 21:52	d16 (r28d): remove smear (redundant with the bigram embedding?)
+r31a-d21-nosmear	crash	-	-	-	-	-	2026-10-14 22:37	r30a (r28b seed 42) without smear
+r31b-d16-win512	trained	0.782217	2506.5	77291.6	3815.0	1468.2	2026-10-14 22:37	d16 (r30d): S-layer window 512
+r31c-d16-wavg	trained	0.782770	2476.6	77291.6	3815.0	1468.2	2026-10-14 22:37	d16 (r30d): average weights over the last 150 steps (7 snapshots, CPU)
+r31d-d16-heads64	trained	0.784597	2503.5	77377.6	3815.0	1468.2	2026-10-14 22:37	d16 (r30d): 28 heads of 64 (instead of 14 of 128)
+r32a-d21-nosmear-ar2	crash	-	-	-	-	-	2026-10-14 23:23	r30a without smear + leaner bf16 grad all_reduce (no fp32 temporary)
+r32b-d21-bigram196k-trigramout	crash	-	-	-	-	-	2026-10-14 23:23	r32a + input bigram 196613 rows + output trigram table (memory-neutral trade)
+r32c-d16-signtrick	trained	0.781535	2473.1	77291.8	3815.0	1468.2	2026-10-14 23:23	d16 (r30d): sign trick on the hashed bigram embedding
+r32d-d16-xsa	crash	-	-	-	-	-	2026-10-14 23:23	d16 (r30d): learnable exclusive self-attention (XSA)
+r33a-d21-nosmear-sign	crash	-	-	-	-	-	2026-10-15 00:22	d21 no smear + lean all_reduce + empty_cache before first all_reduce + bigram sign trick
+r33b-d21-smear-sign	trained	0.772059	3239.0	77995.0	3815.0	1587.6	2026-10-15 00:22	r30a + bigram sign trick (+ empty_cache safety)
+r33c-d16-xsa-bf16	crash	-	-	-	-	-	2026-10-15 00:22	d16 (r30d): learnable XSA, bf16 formulation
+r33d-d16-sign-outtables	trained	0.781101	2469.5	77803.6	3815.0	1468.2	2026-10-15 00:22	d16 (r32c): sign trick also on the output bigram/trigram tables
+r34a-d21-sign-out	trained	0.771757	3277.4	78106.7	3815.0	1587.6	2026-10-15 01:20	r33b + sign trick on the output bigram table
+r34b-d16proxy	trained	0.780957	2469.1	61561.0	3815.0	1350.8	2026-10-15 01:21	New d16 proxy: r34a config at 16 layers
+r34c-d16proxy-xsa	trained	0.777726	2572.9	64305.1	3815.0	1350.8	2026-10-15 01:21	d16 proxy + learnable XSA (bf16)
+r34d-d16proxy-minlr005	trained	0.782071	2476.0	61561.0	3815.0	1350.8	2026-10-15 01:21	d16 proxy: LR decays linearly to 5% (not 0)
+r35a-d20-xsa	trained	0.770824	3183.6	78058.2	3815.0	1534.3	2026-10-15 02:19	d20 + learnable XSA (r34a config)
+r35b-d19-xsa	trained	0.771524	3054.3	74881.6	3815.0	1495.8	2026-10-15 02:19	d19 + learnable XSA (r34a config)
+r35c-d16proxy-xsa-fullonly	trained	0.778957	2528.3	63381.1	3815.0	1350.8	2026-10-15 02:19	d16 proxy + XSA only on the full-attention layers
+r35d-d16proxy-xsa-trigramout	trained	0.776681	2581.9	66096.5	3815.0	1468.2	2026-10-15 02:19	d16 proxy + XSA + output trigram table (with sign)
+r36a-d19-xsa-trigramout	trained	0.770823	3107.3	76673.0	3815.0	1613.2	2026-10-15 03:16	d19 + XSA + output trigram table (sign)
+r36b-d20-xsa-seed1337	trained	0.770621	3198.8	78058.2	3815.0	1534.3	2026-10-15 03:16	r35a (d20 XSA) with seed 1337
+r36c-d16-xsa-init05	trained	0.776578	2582.4	66096.5	3815.0	1468.2	2026-10-15 03:16	d16 (r35d): XSA gate initialized half on (tanh(alpha)=0.5)
+r36d-d16-xsa-trigramin	trained	0.777096	2596.5	67441.0	3815.0	1585.6	2026-10-15 03:16	d16 (r35d): input trigram table (sign) added to the token embedding
+r37a-d19-xsa-trigram-seed1337	trained	0.770987	3046.9	76673.0	3815.0	1613.2	2026-10-15 04:12	r36a (d19 XSA trigram_out) with seed 1337
+r37b-d16-mlp5x	trained	0.772795	2845.8	69110.9	3815.0	1570.9	2026-10-15 04:13	d16 (r35d): MLP hidden 5x (from 4x)
+r37c-d16-gatedskips	trained	0.775412	2600.0	66337.0	3815.0	1468.2	2026-10-15 04:13	d16 (r35d): input-dependent gates on the U-net skip connections
+r37d-d16-cautiouswd	trained	0.778062	2616.8	66096.5	3815.0	1468.2	2026-10-15 04:13	d16 (r35d): cautious weight decay for Muon
+r38a-d17-mlp5x-gskip	trained	0.770156	3045.6	73012.8	3815.0	1630.6	2026-10-15 05:10	d17 + MLP 5x + gated skips (XSA, trigram_out)
+r38b-d18-mlp5x-gskip	trained	0.768998	3203.0	76594.9	3815.0	1675.6	2026-10-15 05:11	d18 + MLP 5x + gated skips (XSA, trigram_out)
+r38c-d16-mlp6x	trained	0.770606	3104.5	72125.3	3815.0	1673.7	2026-10-15 05:11	d16 (r35d): MLP 6x
+r38d-d16-mlp5x-gskip	trained	0.772053	2869.6	69351.4	3815.0	1570.9	2026-10-15 05:11	d16 proxy: MLP 5x + gated skips (new proxy)
+r39a-d16-mlp6x-gskip	trained	0.769128	3120.7	72365.8	3815.0	1673.7	2026-10-15 06:09	d16 MLP 6x + gated skips (XSA, trigram_out)
+r39b-d17-mlp6x-gskip	trained	0.767745	3306.6	76206.6	3815.0	1739.8	2026-10-15 06:09	d17 MLP 6x + gated skips (XSA, trigram_out)
+r39c-d14-mlp7x-gskip	trained	0.770770	2976.8	67474.3	3815.0	1646.1	2026-10-15 06:09	d14 MLP 7x + gated skips (XSA, trigram_out)
+r39d-d13-mlp8x-gskip	trained	0.771453	2967.0	66040.3	3815.0	1671.8	2026-10-15 06:09	d13 MLP 8x + gated skips (XSA, trigram_out)
+r40a-d17-mlp6x-seed42	trained	0.767361	3317.4	76206.6	3815.0	1739.8	2026-10-15 07:08	r39b (d17 MLP6x) with seed 42
+r40b-d16m6-lr1e2	trained	0.769821	3122.5	72365.8	3815.0	1673.7	2026-10-15 07:08	d16 MLP6x proxy, LR 1e-2
+r40c-d16m6-lr14e3	trained	0.769744	3113.1	72365.8	3815.0	1673.7	2026-10-15 07:08	d16 MLP6x proxy, LR 1.4e-2
+r40d-d16m6-nove	trained	0.772134	3069.9	68326.7	3815.0	1556.3	2026-10-15 07:08	d16 MLP6x proxy without value embeddings
+r41a-d17m6-signbf16	trained	0.767557	3368.3	76206.6	3815.0	1739.8	2026-10-15 08:09	r40a with the sign patterns built in bf16 on the small (31/29-wide) tensors before gathering
+r41b-d16m6-x0gates	trained	0.769350	3133.9	72398.8	3815.0	1673.7	2026-10-15 08:09	d16m6 proxy: input-dependent gates on the x0 re-injection
+r41c-d16m6-bigram393k	trained	0.769311	3141.8	75053.7	3815.0	1908.6	2026-10-15 08:09	d16m6 proxy: input bigram table 393209 rows
+r41d-d16m6-attngate	trained	0.767949	3125.5	75963.9	3815.0	1673.7	2026-10-15 08:09	d16m6 proxy: head-wise attention output gate
+r42a-d16m6-gate-fused	trained	0.767665	3115.6	75963.9	3815.0	1673.7	2026-10-15 09:06	d16m6 + attention gate with fused XSA+gate autograd (memory)
+r42b-d17m6-gate-fused	crash	-	-	-	-	-	2026-10-15 09:06	d17 MLP6x + fused XSA+attention gate
+r42c-d16m6-gate-mlpgate	trained	0.770467	3167.0	77646.8	3815.0	1673.7	2026-10-15 09:06	d16m6 + gate + per-token MLP output gate
+r42d-d16m6-gate-fullx	trained	0.770325	3131.9	75967.7	3815.0	1674.1	2026-10-15 09:06	d16m6 + attention gate computed from the full input (not x[:32])
+r43a-d16m6-gate-seed42	trained	0.768313	3122.9	75963.9	3815.0	1673.7	2026-10-15 10:06	r42a (d16m6 + fused XSA/gate) with seed 42
+r43b-d16m6-gate-memdiag	trained	0.767723	3126.7	75963.9	3815.0	1673.7	2026-10-15 10:06	r42a + memory diagnostics (prints allocated/peak memory around forward/backward at steps 1-2)
+r43c-d16m6-elemgate	trained	0.767944	3187.1	77750.8	3815.0	1674.6	2026-10-15 10:06	d16m6 + elementwise (per-channel) attention output gate
+r43d-d16m65-gate	trained	0.766929	3290.2	77471.1	3815.0	1725.1	2026-10-15 10:06	d16 MLP 6.5x + gate (fused XSA/gate)
+r44a-d16m65-gate-nocanon	crash	-	-	-	-	-	2026-10-15 11:04	r43d without Canon layers (ablation / time)
+r44b-d16m65-gate-stash	trained	0.766215	3256.3	74180.7	3815.0	1725.1	2026-10-15 11:04	r43d + grad stash (bf16 flat buffer between micro-steps; memory)
+r44c-d16m65-gate-canon2	trained	0.765926	3159.9	70301.7	3815.0	1725.0	2026-10-15 11:04	r43d with Canon kernel 2 (from 4)
+r44d-d16m65-gate-seed42	trained	0.766880	3233.6	77471.1	3815.0	1725.1	2026-10-15 11:04	r43d with seed 42
+r45a-d16m7-canon2-stash	trained	0.764957	3320.4	68420.8	3815.0	1776.4	2026-10-15 12:03	d16 MLP 7x + canon2 + stash + gate
+r45b-d17m6-canon2-stash	trained	0.765494	3264.0	69094.0	3815.0	1739.7	2026-10-15 12:03	d17 MLP 6x + canon2 + stash + gate
+r45c-d16m65-gate-nocanon	trained	0.770280	3067.5	66716.4	3815.0	1724.9	2026-10-15 12:03	r43d without Canon layers (ablation; fixed)
+r45d-d16m65-canon2-stash	trained	0.765883	3196.1	67011.6	3815.0	1725.0	2026-10-15 12:03	r44c (canon kernel 2) + grad stash
+r46a-d16m65-canon3	trained	0.766119	3223.6	70596.1	3815.0	1725.0	2026-10-15 13:02	proxy (r45d) with Canon kernel 3
+r46b-d16m65-veall	trained	0.765634	3243.5	70826.6	3815.0	1842.4	2026-10-15 13:02	proxy (r45d) with value embeddings on every layer
+r46c-d16m7-seed42	trained	0.764934	3330.5	68420.8	3815.0	1776.4	2026-10-15 13:02	r45a (d16 m7) with seed 42
+r46d-d16m65-win128	trained	0.766214	3220.0	67011.6	3815.0	1725.0	2026-10-15 13:02	proxy (r45d) with S-window 128
+r47a-d16m65-fourgramout	trained	0.765327	3206.8	68579.2	3815.0	1842.4	2026-10-15 13:59	proxy (r45d) + output-side 4-gram table (65521, sign)
+r47b-d16m65-warmup1	trained	0.767989	3187.5	67011.6	3815.0	1725.0	2026-10-15 13:59	proxy (r45d): warmup 1%
+r47c-d16m65-gqa7	trained	0.768126	2973.5	57581.3	3815.0	1614.9	2026-10-15 13:59	proxy (r45d) with GQA: 7 KV heads for 14 query heads
+r47d-d16m65-emb7	trained	0.765523	3176.7	67011.6	3815.0	1725.0	2026-10-15 13:59	proxy (r45d): embedding LR multiplier 7
+r48a-d16m7-4g-emb7-s42	trained	0.764609	3359.4	69988.4	3815.0	1893.8	2026-10-15 14:59	r46c-d16m7-seed42 + 4-gram output table + embedding LR mult 7
+r48b-d16m7-4g-emb7-s1337	trained	0.764792	3353.7	69988.4	3815.0	1893.8	2026-10-15 14:59	r45a-d16m7-canon2-stash + 4-gram output table + embedding LR mult 7
+r48c-d16m65-emb9	trained	0.765291	3231.7	67011.6	3815.0	1725.0	2026-10-15 14:59	proxy: embedding LR multiplier 9
+r48d-d16m65-muonlr12	trained	0.766396	3183.0	67011.6	3815.0	1725.0	2026-10-15 14:59	proxy: Muon LR x1.2 relative to AdamW (RMS factor 0.24)
+r49a-d16m7-nosync	trained	0.764424	3332.5	69988.4	3815.0	1893.8	2026-10-15 15:58	r48a with no per-step host syncs
+r49b-d16m7-emb9	trained	0.764608	3347.4	69988.4	3815.0	1893.8	2026-10-15 15:58	r48a with embedding LR mult 9
+r49c-d16m65-muonlr085	trained	0.765468	3180.1	67011.6	3815.0	1725.0	2026-10-15 15:58	proxy: Muon LR x0.85 relative to AdamW (RMS factor 0.17)
+r49d-d16m65-nosmear	trained	0.765603	3175.8	70145.5	3815.0	1725.0	2026-10-15 15:58	proxy without smear
+r50a-d16m7-mu085-nosmear-s42	trained	0.764309	3391.3	73122.4	3815.0	1893.8	2026-10-15 16:59	r49a + Muon LR x0.85 + no smear (seed 42)
+r50b-d16m7-mu085-nosmear-s1337	trained	0.763955	3353.6	73122.4	3815.0	1893.8	2026-10-15 16:59	r49a + Muon LR x0.85 + no smear (seed 1337)
+r50c-d16m65-qkgain	trained	0.766602	3173.2	67011.7	3815.0	1725.0	2026-10-15 16:59	proxy: learnable per-channel QK-norm gains
+r50d-d16m65-finalgain	trained	0.766316	3173.2	66899.4	3815.0	1725.0	2026-10-15 16:59	proxy: learnable per-channel gain on the final norm
+r51a-d16h12288-s1337	trained	0.764462	3294.7	72719.7	3815.0	1879.1	2026-10-15 17:57	r50b with MLP hidden 12288 (96*128, 6.86x) for time margin (seed 1337)
+r51b-d16h12288-s42	trained	0.764233	3291.2	72719.7	3815.0	1879.1	2026-10-15 17:57	r50b with MLP hidden 12288 (96*128, 6.86x) for time margin (seed 42)
+r51c-d16m65-embbeta08	trained	0.765992	3172.6	67011.6	3815.0	1725.0	2026-10-15 17:57	proxy: AdamW beta1 0.8 for the embedding tables
+r51d-d16m65-gradclip	trained	0.765659	3210.4	67011.6	3815.0	1725.0	2026-10-15 17:57	proxy: global grad-norm clipping at 2x the running average norm
+r52a-w1536d19	trained	0.766727	3071.6	71534.0	3815.0	1662.6	2026-10-15 18:58	Shape: width 1536 x 19 layers (12 heads), MLP hidden 10752 (~7x)
+r52b-w2048d12	timeout	-	-	-	-	-	2026-10-15 18:58	Shape: width 2048 x 12 layers (16 heads), MLP hidden 14336 (~7x)
+r52c-w1664d18	timeout	0.764519	3425.4	74516.5	3815.0	1810.5	2026-10-15 18:58	Shape: width 1664 x 18 layers (13 heads), MLP hidden 11648 (~7x)
+r52d-w1920d14	trained	0.764592	3327.4	70618.3	3815.0	1951.4	2026-10-15 18:58	Shape: width 1920 x 14 layers (15 heads), MLP hidden 13440 (~7x)
+r53a-proxy-decay13	trained	0.766898	3190.7	67011.6	3815.0	1725.0	2026-10-15 19:57	proxy: LR decay shape ((T-t)/(T-w))^1.3
+r53b-proxy-decay075	trained	0.767601	3185.5	67011.6	3815.0	1725.0	2026-10-15 19:57	proxy: LR decay shape ((T-t)/(T-w))^0.75
+r53c-proxy-skipbigram	trained	0.765932	3189.5	68579.2	3815.0	1842.4	2026-10-15 19:57	proxy + output-side skip-bigram table (t-2, t), sign trick
+r53d-d16h12288-s7	trained	0.764440	3301.5	72719.7	3815.0	1879.1	2026-10-15 19:57	r51b with seed 7
+r54a-proxy-moe2-h10752	crash	-	-	-	-	-	2026-10-15 20:57	proxy with a 2-expert top-1 MoE MLP (expert hidden 10752, capacity 1.1)
+r54b-proxy-dense-m6	trained	0.767339	3080.3	65602.4	3815.0	1673.6	2026-10-15 20:57	proxy control: dense MLP 6x (10752)
+r54c-d16h12288-s123	trained	0.764604	3301.5	72719.7	3815.0	1879.1	2026-10-15 20:57	r51b with seed 123
+r54d-proxy-moe2-cf125	crash	-	-	-	-	-	2026-10-15 20:57	proxy with 2-expert MoE MLP (hidden 10752), capacity factor 1.25
+r55a-proxy-moe2-recompute	crash	-	-	-	-	-	2026-10-15 21:55	proxy with 2-expert MoE MLP (hidden 10752, cf 1.1), relu^2 recomputed in backward
+r55b-proxy-moe4-h5376	trained	0.778637	2683.8	74398.0	3815.0	2290.3	2026-10-15 21:55	proxy with 4-expert MoE MLP (expert hidden 5376 = 3x, cf 1.1)
+r55c-d16h12288-s2024	trained	0.765143	3288.7	72719.7	3815.0	1879.1	2026-10-15 21:55	r51b with seed 2024
+r55d-proxy-moe2-cf10	crash	-	-	-	-	-	2026-10-15 21:55	proxy with 2-expert MoE MLP (hidden 10752), capacity factor 1.0
+r56a-proxy-fivegramout	trained	0.765396	3215.1	70146.9	3815.0	1959.8	2026-10-15 22:55	proxy (+4-gram) + output-side 5-gram table (sign)
+r56b-proxy-bosmask	trained	0.765509	3180.3	67011.6	3815.0	1725.0	2026-10-15 22:55	proxy: BOS targets excluded from the training loss
+r56c-proxy-headlr06	trained	0.765809	3187.8	67011.6	3815.0	1725.0	2026-10-15 22:55	proxy: lm_head LR multiplier 0.6
+r56d-r50b-seed7	trained	0.764136	3339.9	73122.4	3815.0	1893.8	2026-10-15 22:55	r50b (best) with seed 7
+r57a-proxy-hd256	trained	0.767840	3316.9	66941.1	3815.0	1725.0	2026-10-15 23:54	proxy: 7 heads of 256 (instead of 14 of 128)
+r57b-proxy-nope-full	trained	0.768292	3134.8	65219.6	3815.0	1725.0	2026-10-15 23:54	proxy: no RoPE on the full-attention layers (RoPE only on sliding-window layers)
+r57c-r50b-bosmask	trained	0.763975	3333.4	73122.4	3815.0	1893.8	2026-10-15 23:54	r50b (best) + BOS targets excluded from training loss
+r57d-r51b-bosmask	trained	0.764447	3296.6	72719.7	3815.0	1879.1	2026-10-15 23:54	r51b (safe best) + BOS targets excluded from training loss
+r58a-proxy-muon07	trained	0.765406	3184.2	67011.6	3815.0	1725.0	2026-10-16 00:51	proxy (Muon x0.85): Muon LR x0.7
+r58b-proxy-wd015	trained	0.766541	3203.2	67011.6	3815.0	1725.0	2026-10-16 00:51	proxy (Muon x0.85): weight decay 0.15
+r58c-proxy-wd007	trained	0.765889	3181.0	67011.6	3815.0	1725.0	2026-10-16 00:51	proxy (Muon x0.85): weight decay 0.07
+r58d-proxy-softcap12	trained	0.765963	3178.2	67011.6	3815.0	1725.0	2026-10-16 00:51	proxy (Muon x0.85): logit softcap 12
+r59a-proxy-bf16resid	trained	0.765049	3094.5	65763.6	3815.0	1725.0	2026-10-16 01:52	proxy (r49c): bf16 residual stream
+r59b-r50b-bf16resid	trained	0.764193	3253.0	68626.4	3815.0	1893.8	2026-10-16 01:52	r50b (best): bf16 residual stream
+r59c-r50b-seed99	timeout	-	-	-	-	-	2026-10-16 01:52	r50b (best) with seed 99
+r59d-r51b-seed31337	trained	0.764405	3321.6	72719.7	3815.0	1879.1	2026-10-16 01:52	r51b (safe best) with seed 31337
+r60a-bf16-h12800	trained	0.763815	3279.8	69029.0	3815.0	1908.4	2026-10-16 02:50	r59b (bf16 residual) with MLP hidden 12800 (100*128)
+r60b-bf16-bosmask	trained	0.763969	3251.2	68626.4	3815.0	1893.8	2026-10-16 02:50	r59b + BOS-target masking
+r60c-bf16-s42	trained	0.764031	3278.1	68626.4	3815.0	1893.8	2026-10-16 02:50	r59b with seed 42
+r60d-bf16-s7	trained	0.764071	3254.0	68626.4	3815.0	1893.8	2026-10-16 02:50	r59b with seed 7
+r61a-h12800-s42	trained	0.763416	3279.7	69029.0	3815.0	1908.4	2026-10-16 03:51	r60a (best) with seed 42
+r61b-h12800-s7	trained	0.763708	3296.1	69029.0	3815.0	1908.4	2026-10-16 03:51	r60a (best) with seed 7
+r61c-h12800-bosmask	trained	0.763901	3279.1	69029.0	3815.0	1908.4	2026-10-16 03:51	r60a + BOS-target masking
+r61d-proxy-adameps1e8	timeout	-	-	-	-	-	2026-10-16 03:51	proxy (bf16 resid): AdamW eps 1e-8
+r62a-h12800-s123	trained	0.763725	3278.7	69029.0	3815.0	1908.4	2026-10-16 04:50	r60a (best config) with seed 123
+r62b-h12800-s2024	trained	0.763764	3293.5	69029.0	3815.0	1908.4	2026-10-16 04:50	r60a (best config) with seed 2024
+r62c-proxy-attnlr125	trained	0.765062	3092.7	65763.6	3815.0	1725.0	2026-10-16 04:50	proxy (bf16 resid): Muon LR x1.25 for attention matrices only
+r62d-proxy-attnlr08	trained	0.766047	3089.7	65763.6	3815.0	1725.0	2026-10-16 04:50	proxy (bf16 resid): Muon LR x0.8 for attention matrices only
+r64a-proxy-backin3	trained	0.764652	3125.3	65427.4	3815.0	1725.0	2026-10-16 13:39	proxy: last 3 attention layers read the cached 2/3-depth activation (x_backout)
+r64b-proxy-vscale	trained	0.765131	3131.8	66659.6	3815.0	1725.0	2026-10-16 13:39	proxy: learned per-layer scale on the attention values (init 1)
+r64c-proxy-x01	trained	0.765468	3162.9	66127.7	3815.0	1739.7	2026-10-16 13:39	proxy: extra token-embedding table mixed into every layer (x01)
+r64d-h12800-s11	trained	0.763938	3322.4	69029.0	3815.0	1908.4	2026-10-16 13:39	r60a (best config) with seed 11
+r65a-best-backin3-s42	trained	0.762298	3287.8	68692.7	3815.0	1908.4	2026-10-16 14:41	best config (r60a) + last 3 attention layers read x_backout (seed 42)
+r65b-best-backin3-s1337	trained	0.762016	3317.0	68692.7	3815.0	1908.4	2026-10-16 14:41	best config (r60a) + last 3 attention layers read x_backout (seed 1337)
+r65c-proxy-backin5	trained	0.764232	3117.1	64979.1	3815.0	1725.0	2026-10-16 14:41	proxy: last 5 attention layers read x_backout
+r65d-proxy-backin2	trained	0.764304	3129.1	65651.5	3815.0	1725.0	2026-10-16 14:41	proxy: last 2 attention layers read x_backout
+r66a-best-backin5-s1337	trained	0.761907	3304.7	68244.5	3815.0	1908.4	2026-10-16 15:40	best config (r60a) + last 5 attention layers read x_backout (seed 1337)
+r66b-best-backin5-s42	trained	0.762552	3278.9	68244.5	3815.0	1908.4	2026-10-16 15:40	best config (r60a) + last 5 attention layers read x_backout (seed 42)
+r66c-proxy-backin7	crash	-	-	-	-	-	2026-10-16 15:40	proxy: last 7 attention layers read x_backout
+r66d-proxy-backin5-bo-half	trained	0.764570	3130.6	64979.1	3815.0	1725.0	2026-10-16 15:40	proxy: backout activation from layer L/2 (not 2L/3), last 5 attention layers read it
+r67a-proxy-backin5-mix	trained	0.763875	3109.0	66323.6	3815.0	1725.0	2026-10-16 16:40	proxy backin5 + learnable per-layer mix between cached and current residual (init 0)
+r67b-proxy-backin6	trained	0.764662	3136.2	64755.0	3815.0	1725.0	2026-10-16 16:40	proxy: last 6 attention layers read x_backout
+r67c-best-backin5-s7	trained	0.762387	3305.4	68244.5	3815.0	1908.4	2026-10-16 16:40	best (r66a, backin5) with seed 7
+r67d-proxy-backin5-bo10	trained	0.764541	3118.8	64979.1	3815.0	1725.0	2026-10-16 16:40	proxy: backout/cache after layer 10 (not 9), last 5 attention layers read it
+r68a-best-backinmix-s1337	trained	0.761873	3338.6	69589.0	3815.0	1908.4	2026-10-16 17:41	best (backin5) + learnable mix between cached and current residual for the last-5 attention inputs (seed 1337)
+r68b-best-backinmix-s42	trained	0.761886	3322.7	69589.0	3815.0	1908.4	2026-10-16 17:41	best (backin5) + learnable mix between cached and current residual for the last-5 attention inputs (seed 42)
+r68c-proxy-mixgate	trained	0.765292	3145.9	66996.0	3815.0	1725.0	2026-10-16 17:41	proxy backin5: token-dependent mix gate sigmoid(w.x[:32]) instead of a scalar
+r68d-proxy-mlpmix	trained	0.764014	3127.9	66883.6	3815.0	1725.0	2026-10-16 17:41	proxy backin5 mix + MLP of the last 5 layers can also mix in the cached activation (init 0)
+r69a-best-mix-s7	trained	0.762304	3306.5	69589.0	3815.0	1908.4	2026-10-16 18:42	best (r68a, backin5 + mix) with seed 7
+r69b-best-mix-s2024	trained	0.762401	3322.4	69589.0	3815.0	1908.4	2026-10-16 18:42	best (r68a, backin5 + mix) with seed 2024
+r69c-proxy-cache2	trained	0.764194	3145.0	66771.6	3815.0	1725.0	2026-10-16 18:42	proxy backin5-mix + second cache: layers 4-8 attention read (mix of) the layer-3 activation
+r69d-proxy-nobackoutsub	trained	0.764037	3157.0	66323.6	3815.0	1725.0	2026-10-16 18:42	proxy backin5-mix without the final backout subtraction (ablation)
+r70a-proxy-attnlane	trained	0.763998	3155.8	66323.6	3815.0	1725.0	2026-10-16 19:44	proxy backin5-mix + attention lane: last layers' attention reads x_backout + accumulated attention outputs (no MLP outputs)
+r70b-proxy-early-x0in	trained	0.765230	3122.5	66659.6	3815.0	1725.0	2026-10-16 19:44	proxy backin5-mix + layers 1-3 attention read mix(x0, x) (learnable, init pure x0)
+r70c-best-mix-s123	trained	0.761909	3327.3	69589.0	3815.0	1908.4	2026-10-16 19:44	best (r68a) with seed 123
+r70d-best-mix-s99	trained	0.762076	3353.8	69589.0	3815.0	1908.4	2026-10-16 19:44	best (r68a) with seed 99
+r71a-proxy-logitbias	trained	0.763842	3122.1	66323.7	3815.0	1725.0	2026-10-16 20:44	proxy backin5-mix + learned output logit bias (unigram prior)
+r71b-proxy-attntemp	trained	0.764646	3113.4	66323.6	3815.0	1725.0	2026-10-16 20:45	proxy backin5-mix + learned per-layer attention temperature (scalar on the 0.12 scale, init 1)
+r71c-best-mix-s5	trained	0.762326	3319.4	69589.0	3815.0	1908.4	2026-10-16 20:45	best (r68a) with seed 5
+r71d-best-mix-s31337	trained	0.762459	3346.6	69589.1	3815.0	1908.4	2026-10-16 20:45	best (r68a) with seed 31337
+r72a-proxy-patternSLL	trained	0.764006	3133.1	66323.6	3815.0	1725.0	2026-10-16 21:45	proxy backin5-mix: window pattern SLL (2/3 full attention)
+r72b-proxy-mlpramp-up	trained	0.764985	3127.7	66562.3	3815.0	1725.0	2026-10-16 21:45	proxy backin5-mix: MLP width varying linearly with depth (step 256 per layer, same average 11648)
+r72c-proxy-mlpramp-down	trained	0.764835	3127.0	66095.4	3815.0	1725.0	2026-10-16 21:45	proxy backin5-mix: MLP width varying linearly with depth (step -256 per layer, same average 11648)
+r72d-best-mix-s77	trained	0.762186	3333.8	69589.0	3815.0	1908.4	2026-10-16 21:45	best (r68a) with seed 77
+r73a-proxy-backoutvec	trained	0.763853	3130.7	66323.6	3815.0	1725.0	2026-10-16 22:44	proxy backin5-mix: per-channel backout lambda (vector)
+r73b-proxy-noxsa-backin	trained	0.764799	3115.9	66323.6	3815.0	1725.0	2026-10-16 22:44	proxy backin5-mix: XSA disabled in the 5 backout-input layers
+r73c-best-mix-s88	trained	0.763066	3339.0	69589.0	3815.0	1908.4	2026-10-16 22:44	best (r68a) with seed 88
+r73d-best-mix-s66	trained	0.762896	3304.3	69589.0	3815.0	1908.4	2026-10-16 22:44	best (r68a) with seed 66
+r74a-proxy-muwarm	trained	0.763693	3110.5	66323.6	3815.0	1725.0	2026-10-16 23:42	proxy backin5-mix: Muon momentum warmup 0.8 -> 0.9 over the first 300 steps (5 levels)
+r74b-proxy-headlr025	trained	0.764894	3131.5	66323.6	3815.0	1725.0	2026-10-16 23:42	proxy backin5-mix: lm_head LR multiplier 0.25
+r74c-proxy-emb7	trained	0.763800	3132.0	66323.6	3815.0	1725.0	2026-10-16 23:42	proxy backin5-mix: embedding LR multiplier 7 (as in the best config)
+r74d-best-mix-s21	trained	0.762501	3307.9	69589.0	3815.0	1908.4	2026-10-16 23:42	best (r68a) with seed 21
+r75a-best-muwarm-s1337	trained	0.761493	3342.7	69589.0	3815.0	1908.4	2026-10-17 00:42	best (r68a) + Muon momentum warmup 0.8->0.9 (seed 1337)
+r75b-best-muwarm-s42	trained	0.761231	3336.1	69589.0	3815.0	1908.4	2026-10-17 00:42	best (r68a) + Muon momentum warmup 0.8->0.9 (seed 42)
+r75c-proxy-mlplr12	trained	0.764582	3108.3	66323.6	3815.0	1725.0	2026-10-17 00:42	proxy backin5-mix: Muon LR x1.2 for MLP matrices only
+r75d-proxy-mlplr08	trained	0.764184	3134.6	66323.6	3815.0	1725.0	2026-10-17 00:42	proxy backin5-mix: Muon LR x0.8 for MLP matrices only
+r76a-muwarm-from07	trained	0.762780	3357.6	69589.0	3815.0	1908.4	2026-10-17 01:41	best (r75b) with momentum warmup from 0.7 (0.7->0.9 in 5 levels over 300 steps)
+r76b-muwarm-600	trained	0.761271	3308.1	69589.0	3815.0	1908.4	2026-10-17 01:41	best (r75b) with momentum warmup over 600 steps (0.8->0.9, 5 levels)
+r76c-muwarm-cooldown	trained	0.761747	3335.8	69589.0	3815.0	1908.4	2026-10-17 01:41	best (r75b) + Muon momentum cooldown to 0.85 over the last 500 steps
+r76d-muwarm-s7	trained	0.761572	3311.6	69589.0	3815.0	1908.4	2026-10-17 01:41	best (r75b muwarm) with seed 7
+r77a-muwarm-from085	trained	0.760959	3314.5	69589.0	3815.0	1908.4	2026-10-17 02:41	best (r75b) with milder momentum warmup 0.85->0.9
+r77b-muwarm-to092	trained	0.760678	3340.8	69589.0	3815.0	1908.4	2026-10-17 02:41	best (r75b) with momentum warmup 0.8->0.92
+r77c-muwarm-s2024	trained	0.761763	3339.6	69589.0	3815.0	1908.4	2026-10-17 02:41	best (r75b muwarm) with seed 2024
+r77d-muwarm-s123	trained	0.761197	3310.7	69589.0	3815.0	1908.4	2026-10-17 02:41	best (r75b muwarm) with seed 123
+r78a-muwarm-085-092	trained	0.760758	3333.3	69589.0	3815.0	1908.4	2026-10-17 03:41	best (r75b) with momentum warmup 0.85 -> 0.92
+r78b-muwarm-08-095	trained	0.760980	3333.1	69589.0	3815.0	1908.4	2026-10-17 03:41	best (r75b) with momentum warmup 0.8 -> 0.95
+r78c-muwarm-085-095	trained	0.760744	3346.5	69589.0	3815.0	1908.4	2026-10-17 03:41	best (r75b) with momentum warmup 0.85 -> 0.95
+r78d-muwarm-08-094	trained	0.761319	3355.9	69589.0	3815.0	1908.4	2026-10-17 03:41	best (r75b) with momentum warmup 0.8 -> 0.94
+r79a-best-lrwarm3	trained	0.761454	3347.9	69589.0	3815.0	1908.4	2026-10-17 04:42	best (r77b) with LR warmup 3% (from 2%)
+r79b-best-b1warm	trained	0.761292	3337.0	69589.0	3815.0	1908.4	2026-10-17 04:42	best (r77b) + AdamW beta1 warmup 0.8 -> 0.9 over 300 steps (5 levels)
+r79c-best-s1337	trained	0.761484	3303.8	69589.0	3815.0	1908.4	2026-10-17 04:42	best (r77b) with seed 1337
+r79d-best-s7	trained	0.761162	3317.3	69589.0	3815.0	1908.4	2026-10-17 04:42	best (r77b) with seed 7
+r80a-best-mu-late096	trained	0.761434	3319.7	69589.0	3815.0	1908.4	2026-10-17 05:41	best (r77b) + momentum keeps rising after warmup: 0.92 -> 0.96 by the end (4 levels)
+r80b-best-muonrms019	trained	0.761041	3330.5	69589.0	3815.0	1908.4	2026-10-17 05:41	best (r77b) with Muon update RMS 0.19 (from 0.17)
+r80c-best-s2024	trained	0.761372	3346.2	69589.0	3815.0	1908.4	2026-10-17 05:41	best (r77b) with seed 2024
+r80d-best-s123	trained	0.761063	3308.8	69589.0	3815.0	1908.4	2026-10-17 05:41	best (r77b) with seed 123
+r81a-best-attnlane	trained	0.761403	3306.2	69589.0	3815.0	1908.4	2026-10-17 06:42	best (r77b) + attention lane for the last 5 layers (x_backout + their attention outputs)
+r81b-best-backin4	trained	0.760866	3333.3	69477.0	3815.0	1908.4	2026-10-17 06:42	best (r77b) with 4 backout-input layers (from 5)
+r81c-best-s99	trained	0.761316	3343.5	69589.0	3815.0	1908.4	2026-10-17 06:42	best (r77b) with seed 99
+r81d-best-s5	trained	0.761660	3331.2	69589.0	3815.0	1908.4	2026-10-17 06:42	best (r77b) with seed 5
+r82a-best-mu-mlp095	trained	0.761260	3328.4	69589.0	3815.0	1908.4	2026-10-17 07:42	best (r77b): MLP matrices use a higher momentum target (warmup to 0.95 instead of 0.92)
+r82b-best-mu-attn095	trained	0.760542	3308.4	69589.0	3815.0	1908.4	2026-10-17 07:42	best (r77b): attention matrices use a higher momentum target (warmup to 0.95 instead of 0.92)
+r82c-best-s31337	trained	0.761029	3348.4	69589.0	3815.0	1908.4	2026-10-17 07:42	best (r77b) with seed 31337
+r82d-best-s77	trained	0.761416	3340.6	69589.0	3815.0	1908.4	2026-10-17 07:42	best (r77b) with seed 77
+r83a-mu-attn097	trained	0.760377	3332.4	69589.0	3815.0	1908.4	2026-10-17 08:40	best (r82b): attention momentum target 0.97 (from 0.95)
+r83b-mu-attn095-mlp090	trained	0.760703	3307.0	69589.0	3815.0	1908.4	2026-10-17 08:40	best (r82b) + MLP momentum target 0.90 (attention 0.95)
+r83c-attn095-s1337	trained	0.760686	3318.0	69589.0	3815.0	1908.4	2026-10-17 08:40	best (r82b) with seed 1337
+r83d-attn095-s7	trained	0.760658	3314.0	69589.0	3815.0	1908.4	2026-10-17 08:40	best (r82b) with seed 7
+r84a-mu-attn098	trained	0.760691	3310.4	69589.0	3815.0	1908.4	2026-10-17 09:39	best (r83a): attention momentum target 0.98
+r84b-mu-attn099	trained	0.761718	3341.5	69589.0	3815.0	1908.4	2026-10-17 09:39	best (r83a): attention momentum target 0.99
+r84c-mu-qk098-vo095	trained	0.760901	3355.5	69589.0	3815.0	1908.4	2026-10-17 09:39	best (r83a): q,k momentum target 0.98, other attention matrices (v, proj, gates) 0.95
+r84d-attn097-s1337	trained	0.760522	3344.4	69589.0	3815.0	1908.4	2026-10-17 09:39	best (r83a) with seed 1337
+r85a-emb-beta095	trained	0.760657	3304.2	69589.0	3815.0	1908.4	2026-10-17 10:38	best (r83a): AdamW beta1 0.95 for the embedding tables
+r85b-emb-beta085	trained	0.760355	3332.3	69589.0	3815.0	1908.4	2026-10-17 10:38	best (r83a): AdamW beta1 0.85 for the embedding tables
+r85c-attn097-s7	trained	0.760777	3316.3	69589.0	3815.0	1908.4	2026-10-17 10:38	best (r83a) with seed 7
+r85d-attn097-s2024	trained	0.761170	3317.5	69589.0	3815.0	1908.4	2026-10-17 10:38	best (r83a) with seed 2024
+r86a-emb-beta08	trained	0.760524	3313.7	69589.0	3815.0	1908.4	2026-10-17 11:39	best (r85b): embedding AdamW beta1 0.8
+r86b-all-beta085	trained	0.760931	3350.9	69589.0	3815.0	1908.4	2026-10-17 11:39	best (r85b): beta1 0.85 for all AdamW groups (head, scalars too)
+r86c-embb085-s1337	trained	0.760399	3345.8	69589.0	3815.0	1908.4	2026-10-17 11:39	best (r85b) with seed 1337
+r86d-embb085-s7	trained	0.760650	3316.3	69589.0	3815.0	1908.4	2026-10-17 11:39	best (r85b) with seed 7
+r87a-attnmu-late	trained	0.760711	3307.4	69589.0	3815.0	1908.4	2026-10-17 12:38	best (r85b): attention momentum 0.97 only in the second half (layers 8-15), 0.92 elsewhere
+r87b-attnmu-early	trained	0.760591	3338.3	69589.0	3815.0	1908.4	2026-10-17 12:38	best (r85b): attention momentum 0.97 only in the first half (layers 0-7), 0.92 elsewhere
+r87c-embb085-s2024	trained	0.761079	3318.8	69589.0	3815.0	1908.4	2026-10-17 12:38	best (r85b) with seed 2024
+r87d-embb085-s123	trained	0.760783	3357.5	69589.0	3815.0	1908.4	2026-10-17 12:38	best (r85b) with seed 123
+r88a-best-nonesterov	trained	0.760245	3315.1	69589.0	3815.0	1908.4	2026-10-17 13:38	best (r85b) with Muon Nesterov off (plain momentum)
+r88b-best-embbeta2-099	trained	0.760647	3318.5	69589.0	3815.0	1908.4	2026-10-17 13:38	best (r85b): embedding AdamW beta2 0.99
+r88c-embb085-s99	trained	0.761052	3348.2	69589.0	3815.0	1908.4	2026-10-17 13:38	best (r85b) with seed 99
+r88d-embb085-s5	trained	0.760968	3335.4	69589.0	3815.0	1908.4	2026-10-17 13:38	best (r85b) with seed 5
+r89a-nonest-s1337	trained	0.760450	3340.0	69589.0	3815.0	1908.4	2026-10-17 14:39	best (r88a) with seed 1337
+r89b-nonest-attn095	trained	0.760071	3307.6	69589.0	3815.0	1908.4	2026-10-17 14:39	best (r88a, no Nesterov): attention momentum target 0.95 (from 0.97)
+r89c-nonest-mu09	trained	0.759898	3331.3	69589.0	3815.0	1908.4	2026-10-17 14:39	best (r88a, no Nesterov): global momentum warmup target 0.9 (attention scaled to 0.97*0.9/0.92)
+r89d-nonest-s7	trained	0.760470	3301.4	69589.0	3815.0	1908.4	2026-10-17 14:39	best (r88a) with seed 7
+r90a-nonest-mu088	trained	0.760047	3297.0	69589.0	3815.0	1908.4	2026-10-17 15:38	best (r89c, no Nesterov): global momentum target 0.88 (attention x0.97/0.92)
+r90b-nonest-mu09-attn095r	trained	0.759840	3332.2	69589.0	3815.0	1908.4	2026-10-17 15:38	best (r89c): global 0.9 and attention ratio 0.95/0.92 (attention ~0.929)
+r90c-mu09-s1337	trained	0.759866	3356.0	69589.0	3815.0	1908.4	2026-10-17 15:38	best (r89c) with seed 1337
+r90d-mu09-s7	trained	0.760008	3310.7	69589.0	3815.0	1908.4	2026-10-17 15:38	best (r89c) with seed 7
+r91a-mlpmu088	trained	0.760110	3344.6	69589.0	3815.0	1908.4	2026-10-17 16:38	best (r90b) + MLP momentum target 0.88 (global 0.9, attention ~0.929)
+r91b-muwarm-from085	trained	0.760377	3301.7	69589.0	3815.0	1908.4	2026-10-17 16:38	best (r90b) with momentum warmup from 0.85 (0.85 -> 0.9)
+r91c-r90b-s1337	trained	0.759817	3311.3	69589.0	3815.0	1908.4	2026-10-17 16:38	best (r90b) with seed 1337
+r91d-r90b-s7	trained	0.760194	3336.3	69589.0	3815.0	1908.4	2026-10-17 16:38	best (r90b) with seed 7
+r92a-mlpmu092	trained	0.760302	3358.4	69589.0	3815.0	1908.4	2026-10-17 17:37	best (r90b) + MLP momentum target 0.92 (global 0.9)
+r92b-muwarm450	trained	0.759987	3343.0	69589.0	3815.0	1908.4	2026-10-17 17:37	best (r90b) with momentum warmup over 450 steps (0.8 -> 0.9)
+r92c-r90b-s123	trained	0.760092	3315.2	69589.0	3815.0	1908.4	2026-10-17 17:37	best (r90b) with seed 123
+r92d-r90b-s2024	trained	0.759834	3334.2	69589.0	3815.0	1908.4	2026-10-17 17:37	best (r90b) with seed 2024
+r93a-lr11e3	trained	0.760133	3296.9	69589.0	3815.0	1908.4	2026-10-17 18:36	best (r90b) with LR 1.1e-2
+r93b-lr13e3	trained	0.760398	3330.1	69589.0	3815.0	1908.4	2026-10-17 18:36	best (r90b) with LR 1.3e-2
+r93c-r90b-s99	trained	0.760344	3336.5	69589.0	3815.0	1908.4	2026-10-17 18:36	best (r90b) with seed 99
+r93d-r90b-s5	trained	0.759981	3308.8	69589.0	3815.0	1908.4	2026-10-17 18:36	best (r90b) with seed 5
+r94a-attnr096	trained	0.760063	3346.8	69589.0	3815.0	1908.4	2026-10-17 19:36	best (r90b) with attention momentum ratio 0.96/0.92
+r94b-r90b-s31337	trained	0.760183	3310.2	69589.0	3815.0	1908.4	2026-10-17 19:36	best (r90b) with seed 31337
+r94c-r90b-s77	trained	0.760148	3328.9	69589.0	3815.0	1908.4	2026-10-17 19:36	best (r90b) with seed 77
+r94d-r90b-s11	trained	0.760055	3343.3	69589.0	3815.0	1908.4	2026-10-17 19:36	best (r90b) with seed 11
+r95a-emb6	trained	0.759833	3336.9	69589.0	3815.0	1908.4	2026-10-17 20:35	best (r90b) with embedding LR multiplier 6 (from 7)
+r95b-r90b-s3	trained	0.760174	3330.3	69589.0	3815.0	1908.4	2026-10-17 20:35	best (r90b) with seed 3
+r95c-r90b-s17	trained	0.760169	3305.4	69589.0	3815.0	1908.4	2026-10-17 20:35	best (r90b) with seed 17
+r95d-r90b-s23	trained	0.760168	3321.9	69589.0	3815.0	1908.4	2026-10-17 20:35	best (r90b) with seed 23
+r96a-h12928	trained	0.759825	3358.7	69790.3	3815.0	1915.8	2026-10-17 21:36	best (r90b) with MLP hidden 12928 (101*128, +1%)
+r96b-r90b-s1001	trained	0.760142	3336.1	69589.0	3815.0	1908.4	2026-10-17 21:36	best (r90b) with seed 1001
+r96c-r90b-s2002	trained	0.760257	3309.7	69589.0	3815.0	1908.4	2026-10-17 21:36	best (r90b) with seed 2002
+r96d-r90b-s3003	trained	0.760242	3326.7	69589.0	3815.0	1908.4	2026-10-17 21:36	best (r90b) with seed 3003
+r97a-backin4	trained	0.760071	3330.7	69477.0	3815.0	1908.4	2026-10-17 22:36	best (r90b) with 4 backout-input layers (from 5)
+r97b-r90b-s4	trained	0.759795	3333.5	69589.0	3815.0	1908.4	2026-10-17 22:36	best (r90b) with seed 4
+r97c-r90b-s8	trained	0.759968	3340.0	69589.0	3815.0	1908.4	2026-10-17 22:36	best (r90b) with seed 8
+r97d-r90b-s16	trained	0.759939	3327.2	69589.0	3815.0	1908.4	2026-10-17 22:36	best (r90b) with seed 16
+r98a-muwarm10lvl	trained	0.760042	3357.8	69589.0	3815.0	1908.4	2026-10-17 23:35	best (r90b) with a finer momentum warmup (10 levels over 300 steps, 0.8 -> 0.9)
+r98b-r90b-s32	trained	0.760462	3313.5	69589.0	3815.0	1908.4	2026-10-17 23:36	best (r90b) with seed 32
+r98c-r90b-s64	trained	0.760000	3299.3	69589.0	3815.0	1908.4	2026-10-17 23:36	best (r90b) with seed 64
+r98d-r90b-s128	trained	0.759901	3316.0	69589.0	3815.0	1908.4	2026-10-17 23:36	best (r90b) with seed 128
+r99a-logitbias	trained	0.760043	3337.5	69589.1	3815.0	1908.5	2026-10-18 00:35	best (r90b) + learned output logit bias
+r99b-r90b-s256	trained	0.760482	3336.6	69589.0	3815.0	1908.4	2026-10-18 00:35	best (r90b) with seed 256
+r99c-r90b-s512	trained	0.759940	3324.1	69589.0	3815.0	1908.4	2026-10-18 00:35	best (r90b) with seed 512
+r99d-r90b-s1024	trained	0.760080	3338.9	69589.0	3815.0	1908.4	2026-10-18 00:35	best (r90b) with seed 1024
+r100a-attnr094	trained	0.759993	3300.4	69589.0	3815.0	1908.4	2026-10-18 01:34	best (r90b) with attention momentum ratio 0.94/0.92
+r100b-r90b-s2048	trained	0.760291	3311.8	69589.0	3815.0	1908.4	2026-10-18 01:34	best (r90b) with seed 2048
+r100c-r90b-s4096	trained	0.760128	3349.8	69589.0	3815.0	1908.4	2026-10-18 01:34	best (r90b) with seed 4096
+r100d-r90b-s8192	trained	0.760324	3311.9	69589.0	3815.0	1908.4	2026-10-18 01:34	best (r90b) with seed 8192
+r101a-backoutinit01	trained	0.760057	3327.4	69589.0	3815.0	1908.4	2026-10-18 02:33	best (r90b) with backout lambda initialized at 0.1 (from 0)
+r101b-r90b-s6	trained	0.759811	3329.7	69589.0	3815.0	1908.4	2026-10-18 02:33	best (r90b) with seed 6
+r101c-r90b-s9	trained	0.760179	3334.6	69589.0	3815.0	1908.4	2026-10-18 02:33	best (r90b) with seed 9
+r101d-r90b-s13	trained	0.760431	3341.7	69589.0	3815.0	1908.4	2026-10-18 02:33	best (r90b) with seed 13

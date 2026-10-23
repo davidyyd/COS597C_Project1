@@ -1,0 +1,11 @@
+{
+  "name": "r26c-best-halflr-deepemb",
+  "idea": "Best model: low-rank gate in half the layers + deep embedding",
+  "total_params": 51012176,
+  "flops_ratio": 1.0137275349379018,
+  "step_ms": 68.30212583998218,
+  "status": "trained",
+  "val_loss": 0.9449704092093376,
+  "train_step_ms": 67.74358680006117,
+  "finished": "2026-10-13 00:23"
+}

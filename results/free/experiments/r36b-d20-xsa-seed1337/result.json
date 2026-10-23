@@ -1,0 +1,11 @@
+{
+  "name": "r36b-d20-xsa-seed1337",
+  "idea": "r35a (d20 XSA) with seed 1337",
+  "status": "trained",
+  "val_bpb": 0.770621,
+  "training_seconds": 3198.8,
+  "peak_vram_mb": 78058.2,
+  "num_steps": 3815.0,
+  "num_params_M": 1534.3,
+  "finished": "2026-10-15 03:16"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r85a-r84b-memprior",
+  "idea": "Memory read reused as a trigram-context logit prior",
+  "status": "trained",
+  "val_bpb": 0.923853,
+  "training_seconds": 262.8,
+  "peak_vram_mb": 14959.2,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 11:21"
+}

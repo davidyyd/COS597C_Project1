@@ -1,0 +1,11 @@
+{
+  "name": "r43b-r42b-pointer",
+  "idea": "r42b + pointer-sentinel copy head (32-dim, chunked)",
+  "status": "trained",
+  "val_bpb": 0.932017,
+  "training_seconds": 263.7,
+  "peak_vram_mb": 15182.5,
+  "num_steps": 3815.0,
+  "num_params_M": 50.0,
+  "finished": "2026-10-13 14:51"
+}

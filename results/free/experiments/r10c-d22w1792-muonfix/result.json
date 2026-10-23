@@ -1,0 +1,11 @@
+{
+  "name": "r10c-d22w1792-muonfix",
+  "idea": "d22w1792 (no canon) + Muon fix",
+  "status": "trained",
+  "val_bpb": 0.788632,
+  "training_seconds": 3134.7,
+  "peak_vram_mb": 71556.5,
+  "num_steps": 3815.0,
+  "num_params_M": 1038.6,
+  "finished": "2026-10-14 00:38"
+}

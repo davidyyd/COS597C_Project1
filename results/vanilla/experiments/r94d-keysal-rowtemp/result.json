@@ -1,0 +1,11 @@
+{
+  "name": "r94d-keysal-rowtemp",
+  "idea": "Key salience + position-aware temperature on the control (additivity test)",
+  "status": "trained",
+  "val_bpb": 0.955129,
+  "training_seconds": 235.0,
+  "peak_vram_mb": 12717.2,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-14 19:53"
+}

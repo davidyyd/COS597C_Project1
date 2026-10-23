@@ -1,0 +1,11 @@
+{
+  "name": "r65d-vag-attn-mlp-ingates",
+  "idea": "Attention and MLP input gates together (fast base)",
+  "total_params": 50872368,
+  "flops_ratio": 1.0110385284752181,
+  "step_ms": 66.51956484012771,
+  "status": "trained",
+  "val_loss": 0.9422816224010965,
+  "train_step_ms": 66.46234099986032,
+  "finished": "2026-10-13 16:15"
+}

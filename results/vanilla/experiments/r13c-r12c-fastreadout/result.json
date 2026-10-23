@@ -1,0 +1,11 @@
+{
+  "name": "r13c-r12c-fastreadout",
+  "idea": "r12c with the multi-depth readout computed in one fused bf16 pass",
+  "status": "trained",
+  "val_bpb": 0.941295,
+  "training_seconds": 271.7,
+  "peak_vram_mb": 17513.9,
+  "num_steps": 3815.0,
+  "num_params_M": 49.8,
+  "finished": "2026-10-13 00:40"
+}

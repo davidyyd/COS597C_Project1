@@ -1,0 +1,11 @@
+{
+  "name": "r18d-local-early",
+  "idea": "Local early layers: layers 0 and 1 use 128-token attention windows",
+  "status": "trained",
+  "val_bpb": 0.954016,
+  "training_seconds": 245.8,
+  "peak_vram_mb": 15486.0,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-13 02:35"
+}

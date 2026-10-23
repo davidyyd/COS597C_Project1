@@ -1,0 +1,11 @@
+{
+  "name": "r11b-qfeat-mra",
+  "idea": "Best model: swap the x0 gate for \"MLP reads the fresh attention output\"",
+  "total_params": 50749976,
+  "flops_ratio": 1.0083704481328668,
+  "step_ms": 68.74598494992824,
+  "status": "trained",
+  "val_loss": 0.9487840562833131,
+  "train_step_ms": 68.85018314002082,
+  "finished": "2026-10-12 18:25"
+}

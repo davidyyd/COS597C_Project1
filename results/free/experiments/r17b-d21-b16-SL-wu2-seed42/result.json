@@ -1,0 +1,11 @@
+{
+  "name": "r17b-d21-b16-SL-wu2-seed42",
+  "idea": "Same as r17a with seed 42 (seed-noise estimate)",
+  "status": "trained",
+  "val_bpb": 0.782533,
+  "training_seconds": 3201.2,
+  "peak_vram_mb": 73320.4,
+  "num_steps": 3815.0,
+  "num_params_M": 1000.4,
+  "finished": "2026-10-14 07:30"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r11d-head-reads-mlp",
+  "idea": "LM head reads the last MLP output undiluted",
+  "total_params": 50332177,
+  "flops_ratio": 1.0,
+  "step_ms": 65.61193383007776,
+  "status": "trained",
+  "val_loss": 0.9575081300844507,
+  "train_step_ms": 65.56890515988925,
+  "finished": "2026-10-12 18:25"
+}

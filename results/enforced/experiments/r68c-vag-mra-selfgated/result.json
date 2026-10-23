@@ -1,0 +1,11 @@
+{
+  "name": "r68c-vag-mra-selfgated",
+  "idea": "Self-gated undiluted read",
+  "total_params": 50610232,
+  "flops_ratio": 1.0056814416701834,
+  "step_ms": 62.39071181975305,
+  "status": "trained",
+  "val_loss": 0.9448894388993708,
+  "train_step_ms": 62.23110771039501,
+  "finished": "2026-10-13 17:54"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r68a-noVE5-rank288",
+  "idea": "r66b without layer 5's VE table, bigram-prior rank 288 (fit the time cap)",
+  "status": "trained",
+  "val_bpb": 0.927213,
+  "training_seconds": 261.2,
+  "peak_vram_mb": 15021.9,
+  "num_steps": 3815.0,
+  "num_params_M": 50.6,
+  "finished": "2026-10-14 03:30"
+}

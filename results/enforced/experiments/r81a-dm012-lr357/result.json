@@ -1,0 +1,11 @@
+{
+  "name": "r81a-dm012-lr357",
+  "idea": "Best + document masking in early local layers 0-2, low-rank head gate in 3, 5, 7",
+  "total_params": 52159112,
+  "flops_ratio": 0.9942976322094844,
+  "step_ms": 68.61646993958857,
+  "status": "trained",
+  "val_loss": 0.9300027611533015,
+  "train_step_ms": 68.3578388101887,
+  "finished": "2026-10-14 01:31"
+}

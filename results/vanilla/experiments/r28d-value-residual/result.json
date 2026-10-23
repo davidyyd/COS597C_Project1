@@ -1,0 +1,11 @@
+{
+  "name": "r28d-value-residual",
+  "idea": "Value residual from the first layer (ResFormer) on top of value embeddings",
+  "status": "trained",
+  "val_bpb": 0.957866,
+  "training_seconds": 234.1,
+  "peak_vram_mb": 12713.0,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-13 07:25"
+}

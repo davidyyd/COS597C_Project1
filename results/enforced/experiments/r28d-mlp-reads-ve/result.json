@@ -1,0 +1,11 @@
+{
+  "name": "r28d-mlp-reads-ve",
+  "idea": "MLP reads the layer's value embedding",
+  "total_params": 50332180,
+  "flops_ratio": 1.0,
+  "step_ms": 66.42443470016588,
+  "status": "trained",
+  "val_loss": 0.9594037077450541,
+  "train_step_ms": 66.43946533993585,
+  "finished": "2026-10-13 01:11"
+}

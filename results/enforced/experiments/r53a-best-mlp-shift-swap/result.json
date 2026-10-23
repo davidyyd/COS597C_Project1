@@ -1,0 +1,11 @@
+{
+  "name": "r53a-best-mlp-shift-swap",
+  "idea": "Best: MLP reads the attention output at t and t-1 (instead of the previous MLP output)",
+  "total_params": 51012208,
+  "flops_ratio": 1.0137170718777357,
+  "step_ms": 68.74274729023455,
+  "status": "trained",
+  "val_loss": 0.9352597653435792,
+  "train_step_ms": 68.64087939989986,
+  "finished": "2026-10-13 10:46"
+}

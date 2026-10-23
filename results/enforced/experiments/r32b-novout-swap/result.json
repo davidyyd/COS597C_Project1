@@ -1,0 +1,11 @@
+{
+  "name": "r32b-novout-swap",
+  "idea": "Best model: swap the half-layer low-rank gate for a novelty term in the output temperature",
+  "total_params": 50872913,
+  "flops_ratio": 1.0251566843259872,
+  "step_ms": 67.4705433298368,
+  "status": "trained",
+  "val_loss": 0.9458542669363155,
+  "train_step_ms": 67.35541471018223,
+  "finished": "2026-10-13 02:48"
+}

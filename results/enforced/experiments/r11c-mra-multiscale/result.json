@@ -1,0 +1,11 @@
+{
+  "name": "r11c-mra-multiscale",
+  "idea": "MLP reads attention + multi-scale heads (two base wins)",
+  "total_params": 50332184,
+  "flops_ratio": 1.0,
+  "step_ms": 64.09026631008601,
+  "status": "trained",
+  "val_loss": 0.9528292320971515,
+  "train_step_ms": 63.88445407996187,
+  "finished": "2026-10-12 18:25"
+}

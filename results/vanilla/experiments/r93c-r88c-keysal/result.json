@@ -1,0 +1,11 @@
+{
+  "name": "r93c-r88c-keysal",
+  "idea": "r88c + multiplicative per-key salience (shares the smear-gate matmul)",
+  "status": "trained",
+  "val_bpb": 0.923007,
+  "training_seconds": 249.4,
+  "peak_vram_mb": 14932.7,
+  "num_steps": 3815.0,
+  "num_params_M": 52.7,
+  "finished": "2026-10-14 18:54"
+}

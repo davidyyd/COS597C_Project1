@@ -1,0 +1,11 @@
+{
+  "name": "r37b-r36a-8chunks",
+  "idea": "r36a with the pointer computed over 8 causal query chunks (instead of 4)",
+  "status": "trained",
+  "val_bpb": 0.933875,
+  "training_seconds": 261.6,
+  "peak_vram_mb": 14851.3,
+  "num_steps": 3815.0,
+  "num_params_M": 50.4,
+  "finished": "2026-10-13 12:02"
+}

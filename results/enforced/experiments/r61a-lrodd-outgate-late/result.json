@@ -1,0 +1,11 @@
+{
+  "name": "r61a-lrodd-outgate-late",
+  "idea": "Low-rank gate in odd layers + MLP write gates in layers 4-7",
+  "total_params": 51143288,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 67.76342778990511,
+  "status": "trained",
+  "val_loss": 0.9322280133840307,
+  "train_step_ms": 67.62437520985259,
+  "finished": "2026-10-13 14:10"
+}

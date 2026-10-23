@@ -1,0 +1,11 @@
+{
+  "name": "r57a-r52a-conv01",
+  "idea": "r52a with layer 1 as a value conv too (conv layers 0-1)",
+  "status": "trained",
+  "val_bpb": 0.934439,
+  "training_seconds": 256.8,
+  "peak_vram_mb": 14087.6,
+  "num_steps": 3815.0,
+  "num_params_M": 49.6,
+  "finished": "2026-10-13 22:41"
+}

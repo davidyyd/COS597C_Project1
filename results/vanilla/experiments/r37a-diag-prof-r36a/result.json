@@ -1,0 +1,11 @@
+{
+  "name": "r37a-diag-prof-r36a",
+  "idea": "DIAGNOSTIC: profile of r36a (best model, at the time cap)",
+  "status": "trained",
+  "val_bpb": 0.934486,
+  "training_seconds": 261.3,
+  "peak_vram_mb": 14947.2,
+  "num_steps": 3815.0,
+  "num_params_M": 50.4,
+  "finished": "2026-10-13 12:02"
+}

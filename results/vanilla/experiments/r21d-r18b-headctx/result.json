@@ -1,0 +1,11 @@
+{
+  "name": "r21d-r18b-headctx",
+  "idea": "r18b + contextual x0 skip into the output head",
+  "status": "trained",
+  "val_bpb": 0.936758,
+  "training_seconds": 266.4,
+  "peak_vram_mb": 16484.9,
+  "num_steps": 3815.0,
+  "num_params_M": 49.8,
+  "finished": "2026-10-13 04:02"
+}

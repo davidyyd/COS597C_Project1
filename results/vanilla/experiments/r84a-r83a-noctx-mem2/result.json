@@ -1,0 +1,11 @@
+{
+  "name": "r84a-r83a-noctx-mem2",
+  "idea": "r83a - ctx-x0 conv + second memory read (skip-bigram hash) at layer 6",
+  "status": "trained",
+  "val_bpb": 0.923772,
+  "training_seconds": 261.4,
+  "peak_vram_mb": 14959.7,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 10:56"
+}

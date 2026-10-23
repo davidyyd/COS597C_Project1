@@ -1,0 +1,11 @@
+{
+  "name": "r43c-d16m6-elemgate",
+  "idea": "d16m6 + elementwise (per-channel) attention output gate",
+  "status": "trained",
+  "val_bpb": 0.767944,
+  "training_seconds": 3187.1,
+  "peak_vram_mb": 77750.8,
+  "num_steps": 3815.0,
+  "num_params_M": 1674.6,
+  "finished": "2026-10-15 10:06"
+}

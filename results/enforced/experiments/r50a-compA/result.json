@@ -1,0 +1,11 @@
+{
+  "name": "r50a-compA",
+  "idea": "Composition A: value-path baseline + deep embed + temperatures + multi-scale/x0 gate + one read + bigram MLP bias",
+  "total_params": 52187740,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 63.06047646998195,
+  "status": "trained",
+  "val_loss": 0.9380659182071763,
+  "train_step_ms": 62.80002183018951,
+  "finished": "2026-10-13 09:31"
+}

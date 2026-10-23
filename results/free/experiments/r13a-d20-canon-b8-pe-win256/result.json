@@ -1,0 +1,11 @@
+{
+  "name": "r13a-d20-canon-b8-pe-win256",
+  "idea": "d20 canon-bf16 b8 + PE + pRoPE + S-window 256",
+  "status": "trained",
+  "val_bpb": 0.787053,
+  "training_seconds": 3087.2,
+  "peak_vram_mb": 45314.9,
+  "num_steps": 3815.0,
+  "num_params_M": 947.2,
+  "finished": "2026-10-14 03:33"
+}

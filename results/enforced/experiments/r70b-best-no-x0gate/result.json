@@ -1,0 +1,11 @@
+{
+  "name": "r70b-best-no-x0gate",
+  "idea": "Best without the x0 re-injection gate (ablation)",
+  "total_params": 51139192,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 67.4823386897333,
+  "status": "trained",
+  "val_loss": 0.9330499165556551,
+  "train_step_ms": 67.60008686978836,
+  "finished": "2026-10-13 18:55"
+}

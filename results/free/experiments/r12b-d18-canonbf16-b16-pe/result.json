@@ -1,0 +1,11 @@
+{
+  "name": "r12b-d18-canonbf16-b16-pe",
+  "idea": "d18w1792 + bf16 canon (b16) + Polar Express + partial RoPE",
+  "status": "trained",
+  "val_bpb": 0.789592,
+  "training_seconds": 2801.3,
+  "peak_vram_mb": 71021.2,
+  "num_steps": 3815.0,
+  "num_params_M": 855.4,
+  "finished": "2026-10-14 02:30"
+}

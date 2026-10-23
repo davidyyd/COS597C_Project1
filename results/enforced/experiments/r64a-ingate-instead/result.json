@@ -1,0 +1,11 @@
+{
+  "name": "r64a-ingate-instead",
+  "idea": "Best with MLP input gates instead of MLP write gates (layers 4-7)",
+  "total_params": 51143288,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 67.84403270983603,
+  "status": "trained",
+  "val_loss": 0.9316875297493197,
+  "train_step_ms": 67.8188800503267,
+  "finished": "2026-10-13 15:28"
+}

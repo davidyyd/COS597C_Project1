@@ -1,0 +1,11 @@
+{
+  "name": "r57a-cheap-k-mshift2",
+  "idea": "Keys also read the previous MLP output at t-2 (cheap lineage)",
+  "total_params": 50877056,
+  "flops_ratio": 1.0110385284752181,
+  "step_ms": 65.24622939992696,
+  "status": "trained",
+  "val_loss": 0.9365442488971436,
+  "train_step_ms": 65.22029643005226,
+  "finished": "2026-10-13 12:16"
+}

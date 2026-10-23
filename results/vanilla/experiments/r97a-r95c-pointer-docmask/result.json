@@ -1,0 +1,11 @@
+{
+  "name": "r97a-r95c-pointer-docmask",
+  "idea": "r95c + pointer-sentinel copy head + document masking in the full layers",
+  "status": "trained",
+  "val_bpb": 0.922204,
+  "training_seconds": 265.6,
+  "peak_vram_mb": 15160.5,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 21:49"
+}

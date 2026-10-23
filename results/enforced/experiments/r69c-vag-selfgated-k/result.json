@@ -1,0 +1,11 @@
+{
+  "name": "r69c-vag-selfgated-k",
+  "idea": "Self-gated keys (per channel, after projection)",
+  "total_params": 50610224,
+  "flops_ratio": 1.0056814416701834,
+  "step_ms": 61.89031889021862,
+  "status": "trained",
+  "val_loss": 0.944967001368009,
+  "train_step_ms": 61.69466689985711,
+  "finished": "2026-10-13 18:24"
+}

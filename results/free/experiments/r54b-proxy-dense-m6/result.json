@@ -1,0 +1,11 @@
+{
+  "name": "r54b-proxy-dense-m6",
+  "idea": "proxy control: dense MLP 6x (10752)",
+  "status": "trained",
+  "val_bpb": 0.767339,
+  "training_seconds": 3080.3,
+  "peak_vram_mb": 65602.4,
+  "num_steps": 3815.0,
+  "num_params_M": 1673.6,
+  "finished": "2026-10-15 20:57"
+}

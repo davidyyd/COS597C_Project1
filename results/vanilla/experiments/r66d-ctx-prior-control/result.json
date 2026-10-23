@@ -1,0 +1,11 @@
+{
+  "name": "r66d-ctx-prior-control",
+  "idea": "Contextual n-gram logit prior on the control (lags 0-3 of x0 -> rank 64 -> logits, folded into the head)",
+  "status": "trained",
+  "val_bpb": 0.958076,
+  "training_seconds": 234.5,
+  "peak_vram_mb": 12985.8,
+  "num_steps": 3815.0,
+  "num_params_M": 51.0,
+  "finished": "2026-10-14 02:44"
+}

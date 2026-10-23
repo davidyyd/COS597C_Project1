@@ -1,0 +1,11 @@
+{
+  "name": "r73a-best-no-lowrank",
+  "idea": "Ablation: best without the low-rank head self-gate (odd layers)",
+  "total_params": 51012216,
+  "flops_ratio": 1.0137170718777357,
+  "step_ms": 66.23017265985254,
+  "status": "trained",
+  "val_loss": 0.9325383995722368,
+  "train_step_ms": 66.63192745996639,
+  "finished": "2026-10-13 20:57"
+}

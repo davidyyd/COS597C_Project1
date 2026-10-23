@@ -1,0 +1,11 @@
+{
+  "name": "r14b-chain3-noprev",
+  "idea": "Best model without prev-token keys",
+  "total_params": 50618920,
+  "flops_ratio": 1.0056919047303494,
+  "step_ms": 67.17198242986342,
+  "status": "trained",
+  "val_loss": 0.9457927213219215,
+  "train_step_ms": 67.18924074986717,
+  "finished": "2026-10-12 19:28"
+}

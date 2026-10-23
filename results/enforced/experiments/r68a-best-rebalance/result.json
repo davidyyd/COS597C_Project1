@@ -1,0 +1,11 @@
+{
+  "name": "r68a-best-rebalance",
+  "idea": "Best: low-rank gate in layers 1,3,5 and MLP input gates in layers 3-7",
+  "total_params": 51143288,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 68.03108992986381,
+  "status": "trained",
+  "val_loss": 0.9322341474984221,
+  "train_step_ms": 68.47707659995649,
+  "finished": "2026-10-13 17:54"
+}

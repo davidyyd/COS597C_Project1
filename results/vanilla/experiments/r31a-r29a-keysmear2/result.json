@@ -1,0 +1,11 @@
+{
+  "name": "r31a-r29a-keysmear2",
+  "idea": "r29a + lag-2 key smear",
+  "status": "trained",
+  "val_bpb": 0.935133,
+  "training_seconds": 265.1,
+  "peak_vram_mb": 16111.6,
+  "num_steps": 3815.0,
+  "num_params_M": 50.4,
+  "finished": "2026-10-13 08:46"
+}

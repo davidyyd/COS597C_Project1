@@ -1,0 +1,11 @@
+{
+  "name": "r11a-conv01-vsmear",
+  "idea": "Conv layers 0-1 + stale gates + temperature + key/value smear + head gate",
+  "status": "trained",
+  "val_bpb": 0.944633,
+  "training_seconds": 250.3,
+  "peak_vram_mb": 16803.2,
+  "num_steps": 3815.0,
+  "num_params_M": 49.3,
+  "finished": "2026-10-12 23:48"
+}

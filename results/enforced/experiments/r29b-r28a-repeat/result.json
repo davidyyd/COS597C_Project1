@@ -1,0 +1,11 @@
+{
+  "name": "r29b-r28a-repeat",
+  "idea": "Repeat of r28a (noise check of the current best)",
+  "total_params": 51003984,
+  "flops_ratio": 1.0135496629150784,
+  "step_ms": 68.58604525012197,
+  "status": "trained",
+  "val_loss": 0.9435367985192351,
+  "train_step_ms": 68.60946887987666,
+  "finished": "2026-10-13 01:31"
+}

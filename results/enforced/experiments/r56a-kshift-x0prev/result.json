@@ -1,0 +1,11 @@
+{
+  "name": "r56a-kshift-x0prev",
+  "idea": "Keys also read the previous token's deep embedding",
+  "total_params": 50946680,
+  "flops_ratio": 1.012377800176477,
+  "step_ms": 68.87294033018406,
+  "status": "trained",
+  "val_loss": 0.9354645766074262,
+  "train_step_ms": 69.3806635501096,
+  "finished": "2026-10-13 11:57"
+}

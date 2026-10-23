@@ -1,0 +1,11 @@
+{
+  "name": "r35b-nolr-vnorm",
+  "idea": "Replace the low-rank gate by value normalization",
+  "total_params": 50872944,
+  "flops_ratio": 1.0108711195125608,
+  "step_ms": 67.88559439999517,
+  "status": "trained",
+  "val_loss": 0.9417362314748722,
+  "train_step_ms": 67.7436041701003,
+  "finished": "2026-10-13 04:06"
+}

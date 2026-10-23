@@ -1,0 +1,11 @@
+{
+  "name": "r73d-best-rope-per-window",
+  "idea": "RoPE base matched to each multi-scale head's window",
+  "total_params": 51143288,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 68.26699918019585,
+  "status": "trained",
+  "val_loss": 0.9315057554928537,
+  "train_step_ms": 68.20453622000059,
+  "finished": "2026-10-13 20:57"
+}

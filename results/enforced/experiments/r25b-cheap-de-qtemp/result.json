@@ -1,0 +1,11 @@
+{
+  "name": "r25b-cheap-de-qtemp",
+  "idea": "Cheap lineage with deep embedding + content query temperature",
+  "total_params": 50881104,
+  "flops_ratio": 1.0110489915353844,
+  "step_ms": 65.66399310977431,
+  "status": "trained",
+  "val_loss": 0.9460699151355872,
+  "train_step_ms": 65.69019240007037,
+  "finished": "2026-10-12 23:55"
+}

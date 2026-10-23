@@ -1,0 +1,11 @@
+{
+  "name": "r34d-value-norm",
+  "idea": "Per-head value normalization",
+  "total_params": 50336304,
+  "flops_ratio": 1.0,
+  "step_ms": 64.01192566001555,
+  "status": "trained",
+  "val_loss": 0.9549691519810134,
+  "train_step_ms": 63.7465758700273,
+  "finished": "2026-10-13 03:34"
+}

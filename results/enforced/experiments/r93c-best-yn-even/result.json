@@ -1,0 +1,11 @@
+{
+  "name": "r93c-best-yn-even",
+  "idea": "Best + per-head output normalization (with per-head scale) in even layers",
+  "total_params": 52191894,
+  "flops_ratio": 1.003002898267666,
+  "step_ms": 68.84291614987887,
+  "status": "trained",
+  "val_loss": 0.9310912256736465,
+  "train_step_ms": 68.8082454900723,
+  "finished": "2026-10-14 07:00"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r84d-meta-output-emb",
+  "idea": "Output-side token metadata embedding",
+  "status": "trained",
+  "val_bpb": 0.958153,
+  "training_seconds": 231.7,
+  "peak_vram_mb": 12714.2,
+  "num_steps": 3815.0,
+  "num_params_M": 50.4,
+  "finished": "2026-10-14 10:56"
+}

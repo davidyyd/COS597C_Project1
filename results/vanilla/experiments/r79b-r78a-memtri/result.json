@@ -1,0 +1,11 @@
+{
+  "name": "r79b-r78a-memtri",
+  "idea": "r78a with a hashed trigram lookup added to the mid-network memory",
+  "status": "trained",
+  "val_bpb": 0.925471,
+  "training_seconds": 259.3,
+  "peak_vram_mb": 15100.5,
+  "num_steps": 3815.0,
+  "num_params_M": 52.7,
+  "finished": "2026-10-14 08:48"
+}

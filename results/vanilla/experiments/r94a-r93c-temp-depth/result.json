@@ -1,0 +1,11 @@
+{
+  "name": "r94a-r93c-temp-depth",
+  "idea": "r93c + RoPE-folded position temperature + n-gram repetition depth",
+  "status": "trained",
+  "val_bpb": 0.922335,
+  "training_seconds": 251.4,
+  "peak_vram_mb": 15393.4,
+  "num_steps": 3815.0,
+  "num_params_M": 52.7,
+  "finished": "2026-10-14 19:53"
+}

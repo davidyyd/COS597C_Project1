@@ -1,0 +1,11 @@
+{
+  "name": "r05a-stale-gates",
+  "idea": "Depth gates read from the previous MLP's normalized input (no extra read of the residual)",
+  "status": "trained",
+  "val_bpb": 0.950453,
+  "training_seconds": 252.8,
+  "peak_vram_mb": 15648.0,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-12 21:33"
+}

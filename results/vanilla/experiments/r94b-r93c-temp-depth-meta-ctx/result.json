@@ -1,0 +1,11 @@
+{
+  "name": "r94b-r93c-temp-depth-meta-ctx",
+  "idea": "r94a + token metadata embedding + ctx-x0 conv restored",
+  "status": "trained",
+  "val_bpb": 0.92163,
+  "training_seconds": 255.1,
+  "peak_vram_mb": 15587.1,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 19:53"
+}

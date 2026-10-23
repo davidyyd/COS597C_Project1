@@ -1,0 +1,11 @@
+{
+  "name": "r64a-r63a-bigram",
+  "idea": "r63a + low-rank bigram logit prior",
+  "status": "trained",
+  "val_bpb": 0.928542,
+  "training_seconds": 263.0,
+  "peak_vram_mb": 15125.9,
+  "num_steps": 3815.0,
+  "num_params_M": 51.1,
+  "finished": "2026-10-14 01:57"
+}

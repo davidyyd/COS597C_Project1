@@ -1,0 +1,11 @@
+{
+  "name": "r33b-d21-smear-sign",
+  "idea": "r30a + bigram sign trick (+ empty_cache safety)",
+  "status": "trained",
+  "val_bpb": 0.772059,
+  "training_seconds": 3239.0,
+  "peak_vram_mb": 77995.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1587.6,
+  "finished": "2026-10-15 00:22"
+}

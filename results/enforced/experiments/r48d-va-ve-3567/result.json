@@ -1,0 +1,11 @@
+{
+  "name": "r48d-va-ve-3567",
+  "idea": "Value embeddings on layers 3, 5, 6, 7",
+  "total_params": 50348080,
+  "flops_ratio": 1.0003243548651486,
+  "step_ms": 60.734813080052845,
+  "status": "trained",
+  "val_loss": 0.954602672724539,
+  "train_step_ms": 60.82742591999704,
+  "finished": "2026-10-13 08:51"
+}

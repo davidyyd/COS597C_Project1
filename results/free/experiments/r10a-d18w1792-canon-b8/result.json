@@ -1,0 +1,11 @@
+{
+  "name": "r10a-d18w1792-canon-b8",
+  "idea": "d18w1792 + canon + Muon fix, device batch 8",
+  "status": "trained",
+  "val_bpb": 0.790915,
+  "training_seconds": 3015.7,
+  "peak_vram_mb": 46999.3,
+  "num_steps": 3815.0,
+  "num_params_M": 855.4,
+  "finished": "2026-10-14 00:38"
+}

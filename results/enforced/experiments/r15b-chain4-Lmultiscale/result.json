@@ -1,0 +1,11 @@
+{
+  "name": "r15b-chain4-Lmultiscale",
+  "idea": "Multi-scale heads in the full-attention layers too",
+  "total_params": 50618928,
+  "flops_ratio": 1.0056919047303494,
+  "step_ms": 68.31356618000427,
+  "status": "trained",
+  "val_loss": 0.9465683460083039,
+  "train_step_ms": 68.26222297997447,
+  "finished": "2026-10-12 19:50"
+}

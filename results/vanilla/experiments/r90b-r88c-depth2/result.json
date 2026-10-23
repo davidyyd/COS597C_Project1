@@ -1,0 +1,11 @@
+{
+  "name": "r90b-r88c-depth2",
+  "idea": "r88c + bigram-only repetition depth (batched sort over 2 key sets)",
+  "status": "trained",
+  "val_bpb": 0.923036,
+  "training_seconds": 262.1,
+  "peak_vram_mb": 14926.2,
+  "num_steps": 3815.0,
+  "num_params_M": 52.7,
+  "finished": "2026-10-14 14:16"
+}

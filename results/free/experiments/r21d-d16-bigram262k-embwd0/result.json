@@ -1,0 +1,11 @@
+{
+  "name": "r21d-d16-bigram262k-embwd0",
+  "idea": "d16 bigram 262k, no weight decay on embedding tables",
+  "status": "trained",
+  "val_bpb": 0.786973,
+  "training_seconds": 2457.7,
+  "peak_vram_mb": 70513.8,
+  "num_steps": 3815.0,
+  "num_params_M": 1233.3,
+  "finished": "2026-10-14 11:17"
+}

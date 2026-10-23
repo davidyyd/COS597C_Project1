@@ -1,0 +1,11 @@
+{
+  "name": "r67b-vag-hidden-gate",
+  "idea": "Low-rank GLU on the MLP hidden units",
+  "total_params": 51003440,
+  "flops_ratio": 1.0137170718777357,
+  "step_ms": 64.15948481007945,
+  "status": "trained",
+  "val_loss": 0.9448058786299943,
+  "train_step_ms": 64.11812634993112,
+  "finished": "2026-10-13 17:35"
+}

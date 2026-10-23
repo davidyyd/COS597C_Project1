@@ -1,0 +1,11 @@
+{
+  "name": "r12b-best-attn-reads-mlp",
+  "idea": "Best model + attention reads the previous MLP output",
+  "total_params": 50623008,
+  "flops_ratio": 1.0056919047303494,
+  "step_ms": 67.89720539993141,
+  "status": "trained",
+  "val_loss": 0.9468819355673588,
+  "train_step_ms": 67.96768514002906,
+  "finished": "2026-10-12 18:46"
+}

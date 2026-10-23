@@ -1,0 +1,7 @@
+{
+  "name": "r33c-pointer-v2",
+  "idea": "Pointer-sentinel copy head (retry of r32c with a fix for the flex backward)",
+  "status": "crash",
+  "reason": "no val_bpb printed; see run.log",
+  "finished": "2026-10-13 09:45"
+}

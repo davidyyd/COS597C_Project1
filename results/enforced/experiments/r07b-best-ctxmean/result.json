@@ -1,0 +1,11 @@
+{
+  "name": "r07b-best-ctxmean",
+  "idea": "Best model + causal bag-of-tokens context channel",
+  "total_params": 50360856,
+  "flops_ratio": 1.0003348179253146,
+  "step_ms": 65.40420655001071,
+  "status": "trained",
+  "val_loss": 0.9522693237668676,
+  "train_step_ms": 65.38957632990787,
+  "finished": "2026-10-12 16:37"
+}

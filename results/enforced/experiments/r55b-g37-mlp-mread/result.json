@@ -1,0 +1,11 @@
+{
+  "name": "r55b-g37-mlp-mread",
+  "idea": "Third read for the MLP: previous block's MLP output",
+  "total_params": 50946680,
+  "flops_ratio": 1.012377800176477,
+  "step_ms": 67.89556461008033,
+  "status": "trained",
+  "val_loss": 0.9352756458841703,
+  "train_step_ms": 68.10120298992842,
+  "finished": "2026-10-13 11:34"
+}

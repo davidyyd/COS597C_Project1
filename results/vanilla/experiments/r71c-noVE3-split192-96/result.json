@@ -1,0 +1,11 @@
+{
+  "name": "r71c-noVE3-split192-96",
+  "idea": "r69a dropping layer 3's value-embedding table instead of layer 5's",
+  "status": "trained",
+  "val_bpb": 0.925878,
+  "training_seconds": 262.2,
+  "peak_vram_mb": 15022.4,
+  "num_steps": 3815.0,
+  "num_params_M": 50.6,
+  "finished": "2026-10-14 04:51"
+}

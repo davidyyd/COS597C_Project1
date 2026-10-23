@@ -1,0 +1,11 @@
+{
+  "name": "r06c-d12w2048-smear-fastmuon",
+  "idea": "Even wider: d12w2048 + smear + fast Muon",
+  "status": "trained",
+  "val_bpb": 0.801386,
+  "training_seconds": 2640.6,
+  "peak_vram_mb": 45290.1,
+  "num_steps": 3815.0,
+  "num_params_M": 738.2,
+  "finished": "2026-10-13 20:47"
+}

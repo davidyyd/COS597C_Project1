@@ -1,0 +1,11 @@
+{
+  "name": "r34c-head-x-x0",
+  "idea": "Head reads a token x context product feature",
+  "total_params": 50332177,
+  "flops_ratio": 1.0,
+  "step_ms": 66.42813584010582,
+  "status": "trained",
+  "val_loss": 0.9575137189442295,
+  "train_step_ms": 65.98823369015008,
+  "finished": "2026-10-13 03:34"
+}

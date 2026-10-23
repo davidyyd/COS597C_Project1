@@ -1,0 +1,11 @@
+{
+  "name": "r20c-d16-bigram1m-f256",
+  "idea": "d16 bigram 1048573 x 256 factorized",
+  "status": "trained",
+  "val_bpb": 0.792276,
+  "training_seconds": 2452.2,
+  "peak_vram_mb": 67577.8,
+  "num_steps": 3815.0,
+  "num_params_M": 1032.5,
+  "finished": "2026-10-14 10:31"
+}

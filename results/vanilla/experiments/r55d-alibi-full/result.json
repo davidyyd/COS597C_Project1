@@ -1,0 +1,11 @@
+{
+  "name": "r55d-alibi-full",
+  "idea": "Fixed ALiBi recency biases in the two full-attention layers (with RoPE)",
+  "status": "trained",
+  "val_bpb": 0.963375,
+  "training_seconds": 234.1,
+  "peak_vram_mb": 12713.0,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-13 21:48"
+}

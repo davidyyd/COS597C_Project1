@@ -1,0 +1,11 @@
+{
+  "name": "r42b-gv-q-ve",
+  "idea": "Queries read the normalized value embedding (value-path world)",
+  "total_params": 50360368,
+  "flops_ratio": 1.000491763827806,
+  "step_ms": 64.78466187021695,
+  "status": "trained",
+  "val_loss": 0.9465802734529538,
+  "train_step_ms": 65.3346732800128,
+  "finished": "2026-10-13 06:43"
+}

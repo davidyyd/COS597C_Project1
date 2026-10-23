@@ -1,0 +1,11 @@
+{
+  "name": "r66c-best-head-ingate",
+  "idea": "Head input gate (feature selection for the readout)",
+  "total_params": 51176056,
+  "flops_ratio": 1.0170652511308824,
+  "step_ms": 68.50944928009994,
+  "status": "trained",
+  "val_loss": 0.9318916594449009,
+  "train_step_ms": 68.41623193002306,
+  "finished": "2026-10-13 17:01"
+}

@@ -1,0 +1,12 @@
+work/
+data/climbmix/
+__pycache__/
+*.pyc
+report/*.aux
+report/*.log
+report/*.out
+report/*.blg
+report/*.bbl
+report/*.fdb_latexmk
+report/*.fls
+report/*.synctex.gz

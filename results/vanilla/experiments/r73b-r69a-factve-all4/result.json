@@ -1,0 +1,11 @@
+{
+  "name": "r73b-r69a-factve-all4",
+  "idea": "r69a with all four VE layers back, as factorised (rank-256) tables",
+  "status": "trained",
+  "val_bpb": 0.930315,
+  "training_seconds": 266.3,
+  "peak_vram_mb": 15238.9,
+  "num_steps": 3815.0,
+  "num_params_M": 46.9,
+  "finished": "2026-10-14 05:45"
+}

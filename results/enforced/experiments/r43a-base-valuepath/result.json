@@ -1,0 +1,11 @@
+{
+  "name": "r43a-base-valuepath",
+  "idea": "Gated normalized value path on the plain baseline (ablation)",
+  "total_params": 50348080,
+  "flops_ratio": 1.0003243548651486,
+  "step_ms": 60.83278170990525,
+  "status": "trained",
+  "val_loss": 0.9469032004972491,
+  "train_step_ms": 61.10398567019729,
+  "finished": "2026-10-13 06:59"
+}

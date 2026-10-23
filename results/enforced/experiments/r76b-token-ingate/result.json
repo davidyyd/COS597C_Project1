@@ -1,0 +1,11 @@
+{
+  "name": "r76b-token-ingate",
+  "idea": "Token-conditioned MLP feature selection (gate features from a per-token table)",
+  "total_params": 52191880,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 68.35357337957248,
+  "status": "trained",
+  "val_loss": 0.930868693634891,
+  "train_step_ms": 68.4648395201657,
+  "finished": "2026-10-13 22:47"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r67d-proxy-backin5-bo10",
+  "idea": "proxy: backout/cache after layer 10 (not 9), last 5 attention layers read it",
+  "status": "trained",
+  "val_bpb": 0.764541,
+  "training_seconds": 3118.8,
+  "peak_vram_mb": 64979.1,
+  "num_steps": 3815.0,
+  "num_params_M": 1725.0,
+  "finished": "2026-10-16 16:40"
+}

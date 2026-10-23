@@ -1,0 +1,11 @@
+{
+  "name": "r41a-d17m6-signbf16",
+  "idea": "r40a with the sign patterns built in bf16 on the small (31/29-wide) tensors before gathering",
+  "status": "trained",
+  "val_bpb": 0.767557,
+  "training_seconds": 3368.3,
+  "peak_vram_mb": 76206.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1739.8,
+  "finished": "2026-10-15 08:09"
+}

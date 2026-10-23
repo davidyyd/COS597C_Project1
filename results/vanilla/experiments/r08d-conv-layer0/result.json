@@ -1,0 +1,11 @@
+{
+  "name": "r08d-conv-layer0",
+  "idea": "Replace layer-0 attention by a causal depthwise convolution over the values",
+  "status": "trained",
+  "val_bpb": 0.955406,
+  "training_seconds": 240.4,
+  "peak_vram_mb": 15288.0,
+  "num_steps": 3815.0,
+  "num_params_M": 49.8,
+  "finished": "2026-10-12 22:28"
+}

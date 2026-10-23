@@ -1,0 +1,11 @@
+{
+  "name": "r71c-best-mix-s5",
+  "idea": "best (r68a) with seed 5",
+  "status": "trained",
+  "val_bpb": 0.762326,
+  "training_seconds": 3319.4,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-16 20:45"
+}

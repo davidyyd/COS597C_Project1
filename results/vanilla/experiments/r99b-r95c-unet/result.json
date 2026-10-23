@@ -1,0 +1,11 @@
+{
+  "name": "r99b-r95c-unet",
+  "idea": "r95c + U-net skips restored",
+  "status": "trained",
+  "val_bpb": 0.921448,
+  "training_seconds": 256.5,
+  "peak_vram_mb": 15844.7,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 22:57"
+}

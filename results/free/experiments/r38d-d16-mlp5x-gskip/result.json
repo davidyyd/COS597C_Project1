@@ -1,0 +1,11 @@
+{
+  "name": "r38d-d16-mlp5x-gskip",
+  "idea": "d16 proxy: MLP 5x + gated skips (new proxy)",
+  "status": "trained",
+  "val_bpb": 0.772053,
+  "training_seconds": 2869.6,
+  "peak_vram_mb": 69351.4,
+  "num_steps": 3815.0,
+  "num_params_M": 1570.9,
+  "finished": "2026-10-15 05:11"
+}

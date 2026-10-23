@@ -1,0 +1,11 @@
+{
+  "name": "r08a-d16w1792-canon",
+  "idea": "d16w1792 + attnscale + Canon layers",
+  "status": "trained",
+  "val_bpb": 0.794628,
+  "training_seconds": 3049.7,
+  "peak_vram_mb": 72937.6,
+  "num_steps": 3815.0,
+  "num_params_M": 763.6,
+  "finished": "2026-10-13 22:48"
+}

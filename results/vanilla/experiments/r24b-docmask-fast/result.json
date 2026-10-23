@@ -1,0 +1,7 @@
+{
+  "name": "r24b-docmask-fast",
+  "idea": "Document masking (in-graph block masks) on the bf16-rope baseline",
+  "status": "crash",
+  "reason": "no val_bpb printed; see run.log",
+  "finished": "2026-10-13 05:32"
+}

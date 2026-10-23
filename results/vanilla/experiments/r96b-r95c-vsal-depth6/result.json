@@ -1,0 +1,11 @@
+{
+  "name": "r96b-r95c-vsal-depth6",
+  "idea": "r96a + n-gram repetition depth up to 6",
+  "status": "trained",
+  "val_bpb": 0.921745,
+  "training_seconds": 259.4,
+  "peak_vram_mb": 16299.7,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 20:59"
+}

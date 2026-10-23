@@ -1,0 +1,11 @@
+{
+  "name": "r04a-gate-xy",
+  "idea": "Head gate from retrieved value and query-side input",
+  "total_params": 50373136,
+  "flops_ratio": 1.0006696358506293,
+  "step_ms": 64.67426887000329,
+  "status": "trained",
+  "val_loss": 0.952713229178327,
+  "train_step_ms": 64.62360963982064,
+  "finished": "2026-10-12 15:51"
+}

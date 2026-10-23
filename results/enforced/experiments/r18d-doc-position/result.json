@@ -1,0 +1,11 @@
+{
+  "name": "r18d-doc-position",
+  "idea": "Position within the document as an input feature",
+  "total_params": 50332688,
+  "flops_ratio": 1.0,
+  "step_ms": 65.89990125008626,
+  "status": "trained",
+  "val_loss": 0.9568553921563765,
+  "train_step_ms": 65.77450695971493,
+  "finished": "2026-10-12 20:59"
+}

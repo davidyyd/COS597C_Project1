@@ -1,0 +1,11 @@
+{
+  "name": "r48a-va-ve-4567",
+  "idea": "Value embeddings on the last four layers",
+  "total_params": 50348080,
+  "flops_ratio": 1.0003243548651486,
+  "step_ms": 60.7164559699595,
+  "status": "trained",
+  "val_loss": 0.9561982240345752,
+  "train_step_ms": 60.73112267011311,
+  "finished": "2026-10-13 08:51"
+}

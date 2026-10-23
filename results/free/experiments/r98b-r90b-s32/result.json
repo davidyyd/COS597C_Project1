@@ -1,0 +1,11 @@
+{
+  "name": "r98b-r90b-s32",
+  "idea": "best (r90b) with seed 32",
+  "status": "trained",
+  "val_bpb": 0.760462,
+  "training_seconds": 3313.5,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-17 23:36"
+}

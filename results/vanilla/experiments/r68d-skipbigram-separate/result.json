@@ -1,0 +1,11 @@
+{
+  "name": "r68d-skipbigram-separate",
+  "idea": "Skip-bigram logit prior with its own output factor (previous token -> next token)",
+  "status": "trained",
+  "val_bpb": 0.953907,
+  "training_seconds": 233.7,
+  "peak_vram_mb": 12755.5,
+  "num_steps": 3815.0,
+  "num_params_M": 52.4,
+  "finished": "2026-10-14 03:31"
+}

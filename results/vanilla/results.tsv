@@ -1,0 +1,402 @@
+name	status	val_bpb	training_seconds	peak_vram_mb	num_steps	num_params_M	finished	idea
+baseline	baseline	0.958950	249.2	15486.0	3815	50.3	-	baseline (baseline_train.py)
+r01a-bigram-embed	trained	0.958503	252.1	15467.6	3815.0	50.4	2026-10-12 20:20	Hashed bigram input embedding (trading one value-embedding slot)
+r01b-soft-docmask	timeout	-	-	-	-	-	2026-10-12 20:20	Soft document mask: learned per-head cross-document logit bias
+r01c-x0-token-gate	trained	0.954266	254.7	15489.0	3815.0	50.3	2026-10-12 20:20	Token-dependent gate on the x0 re-injection
+r01d-head-temperature	trained	0.954893	249.5	15486.0	3815.0	50.3	2026-10-12 20:20	Learned per-head attention temperature after QK-norm
+r02a-x0gate-temp	trained	0.951903	253.7	15489.0	3815.0	50.3	2026-10-12 20:32	Combine token x0 gate + per-head attention temperature
+r02b-depth-gates	trained	0.952132	265.4	15490.0	3815.0	50.3	2026-10-12 20:32	Per-token depth gates: gate both the residual and the x0 re-injection
+r02c-token-temperature	trained	0.955273	250.7	15506.0	3815.0	50.3	2026-10-12 20:32	Token-dependent attention temperature
+r02d-smeared-keys	trained	0.955511	253.4	15998.1	3815.0	50.3	2026-10-12 20:32	Learned per-channel smeared keys
+r03a-depthgates-temp	trained	0.949574	262.6	15650.0	3815.0	50.3	2026-10-12 20:57	Depth gates (residual + x0) + per-head temperature, cheaper gate read
+r03b-x0gate-temp-smear	trained	0.950055	269.7	16001.1	3815.0	50.3	2026-10-12 20:57	x0 gate + temperature + smeared keys
+r03c-final-x0	trained	0.957197	250.3	15614.3	3815.0	50.3	2026-10-12 20:57	Re-inject the token embedding before the output head
+r03d-key-salience	trained	0.956250	254.4	15502.0	3815.0	50.3	2026-10-12 20:57	Key salience: a query-independent learned logit bias per key token
+r04a-x0id-gates	trained	0.953449	250.8	15620.0	3815.0	50.3	2026-10-12 21:15	Depth gates read from the token embedding only (identity gates)
+r04b-docmask	crash	-	-	-	-	-	2026-10-12 21:15	Hard document masking (test of a known method as a possible base)
+r04c-x0gate-temp-sal-hx0	trained	0.951276	272.6	15633.3	3815.0	50.3	2026-10-12 21:15	x0 gate + temperature + key salience + head x0 skip
+r04d-logit-confidence	trained	0.957598	249.5	15494.6	3815.0	50.3	2026-10-12 21:15	Per-token output confidence: restore the magnitude the final RMSNorm discards
+r05a-stale-gates	trained	0.950453	252.8	15648.0	3815.0	50.3	2026-10-12 21:33	Depth gates read from the previous MLP's normalized input (no extra read of the residual)
+r05b-docmask-v2	trained	0.956719	303.5	14718.8	3815.0	50.3	2026-10-12 21:33	Hard document masking, block masks built eagerly (retry of r04b)
+r05c-head-gate	trained	0.953540	257.4	16018.0	3815.0	50.3	2026-10-12 21:33	Per-head attention output gate from the query token
+r05d-x0gate-temp-hx0-conf	trained	0.953116	264.6	15625.9	3815.0	50.3	2026-10-12 21:33	x0 gate + temperature + head x0 skip + per-token output confidence
+r06a-stalegates-headgate	trained	0.948161	265.1	16180.1	3815.0	50.3	2026-10-12 21:55	Stale depth gates + temperature + per-head attention output gate
+r06b-stalegates-smear	trained	0.947613	267.2	16160.1	3815.0	50.3	2026-10-12 21:55	Stale depth gates + temperature + smeared keys
+r06c-mlp-gate	trained	0.957319	252.8	15999.0	3815.0	50.3	2026-10-12 21:55	Per-token MLP output gate
+r06d-rope-head-scale	trained	0.955631	267.3	16524.0	3815.0	50.3	2026-10-12 21:55	Per-head learned RoPE frequency scale
+r07a-r06b-replicate	trained	0.947597	267.3	16160.1	3815.0	50.3	2026-10-12 22:17	Replicate of r06b-stalegates-smear (noise measurement)
+r07b-stalegates-fullread	trained	0.971479	261.5	15680.1	3815.0	50.3	2026-10-12 22:17	Stale depth gates read from the full normalized state
+r07c-shared-ve	trained	0.960242	253.4	15504.0	3815.0	50.3	2026-10-12 22:17	Value embeddings in every layer by sharing tables between layer pairs
+r07d-query-sink	trained	0.955263	265.6	16018.0	3815.0	50.3	2026-10-12 22:17	Query-dependent null key (sink) computed exactly from the log-sum-exp
+r08a-headgate-bf16	trained	0.947942	266.2	16180.1	3815.0	50.3	2026-10-12 22:28	r06a with the head gate applied in bf16
+r08b-stalegates-mlpgate	trained	0.950175	256.3	16161.1	3815.0	50.3	2026-10-12 22:28	Stale depth gates + temperature + per-token MLP output gate
+r08c-stalegates-headsmear	trained	0.948893	266.9	16160.1	3815.0	50.3	2026-10-12 22:28	Stale depth gates + temperature + per-head scalar smeared keys
+r08d-conv-layer0	trained	0.955406	240.4	15288.0	3815.0	49.8	2026-10-12 22:28	Replace layer-0 attention by a causal depthwise convolution over the values
+r09a-conv0-stalegates-smear	trained	0.945345	250.1	15898.1	3815.0	49.8	2026-10-12 23:03	Conv layer 0 + stale depth gates + temperature + smeared keys
+r09b-conv0-stalegates-headgate	trained	0.946651	248.9	15913.6	3815.0	49.8	2026-10-12 23:03	Conv layer 0 + stale depth gates + temperature + head output gate
+r09c-conv0-all	trained	0.944515	258.8	16361.6	3815.0	49.8	2026-10-12 23:03	Conv layer 0 + stale depth gates + temperature + smeared keys + head output gate
+r09d-logn-temp	trained	0.955117	249.5	15486.3	3815.0	50.3	2026-10-12 23:03	Learned per-head log-length query scaling
+r10a-r09c-logn	trained	0.944439	267.5	16361.8	3815.0	49.8	2026-10-12 23:28	r09c + learned per-head log-length query scaling
+r10b-r09c-conv01	trained	0.945349	245.5	16227.1	3815.0	49.3	2026-10-12 23:28	r09c with layers 0 and 1 both as value-convolution layers
+r10c-r09c-vsmear	trained	0.943427	269.2	17065.7	3815.0	49.8	2026-10-12 23:28	r09c + per-channel smeared values
+r10d-depth-readout	trained	0.954640	259.2	15614.3	3815.0	50.3	2026-10-12 23:28	Multi-depth readout: the output head reads every layer's normalized state
+r11a-conv01-vsmear	trained	0.944633	250.3	16803.2	3815.0	49.3	2026-10-12 23:48	Conv layers 0-1 + stale gates + temperature + key/value smear + head gate
+r11b-context-x0	trained	0.953263	252.7	15870.0	3815.0	50.3	2026-10-12 23:48	Contextual x0: causal per-channel convolution over the token embeddings
+r11c-diag-prof-r09c	trained	0.944419	263.9	16361.6	3815.0	49.8	2026-10-12 23:48	DIAGNOSTIC: r09c with a torch.profiler table (steps 100-102) and phase timings (steps 200-299)
+r11d-diag-prof-r10a	trained	0.944442	266.9	16361.8	3815.0	49.8	2026-10-12 23:48	DIAGNOSTIC: r10a with a torch.profiler table (steps 100-102) and phase timings (steps 200-299)
+r12a-packed-r10c	trained	0.943630	265.7	17065.7	3815.0	49.8	2026-10-13 00:11	r10c with the per-layer extras packed into a few tensors (same model, fewer all-reduces)
+r12b-packed-logn-ctxx0	trained	0.943865	269.7	17449.9	3815.0	49.8	2026-10-13 00:11	Packed r10c + log-n query scaling + contextual x0
+r12c-packed-readout-ctxx0	trained	0.941288	274.4	17577.9	3815.0	49.8	2026-10-13 00:11	Packed r10c + multi-depth readout + contextual x0
+r12d-doc-age	trained	0.956900	250.6	15486.3	3815.0	50.3	2026-10-13 00:11	Document-age feature in the embedding
+r13a-r12c-conv01	trained	0.943328	267.0	17315.5	3815.0	49.3	2026-10-13 00:40	r12c with layer 1 also a value-convolution layer
+r13b-r12c-conv01-novsmear	trained	0.943643	258.2	16739.4	3815.0	49.3	2026-10-13 00:40	r12c with conv layers 0-1 and without value smear
+r13c-r12c-fastreadout	trained	0.941295	271.7	17513.9	3815.0	49.8	2026-10-13 00:40	r12c with the multi-depth readout computed in one fused bf16 pass
+r13d-context-ve	trained	0.949978	293.6	17022.1	3815.0	50.3	2026-10-13 00:40	Contextual value embeddings: causal per-channel conv over each value embedding
+r14a-r13b-ctxve	trained	0.938861	264.7	17059.5	3815.0	49.3	2026-10-13 01:05	r13b + contextual value embeddings (bf16)
+r14b-ctxve-bf16	trained	0.950333	288.7	15998.1	3815.0	50.3	2026-10-13 01:05	Contextual value embeddings in bf16 (speed/quality check of r13d)
+r14c-diag-prof-r13d	trained	0.950023	293.5	17022.1	3815.0	50.3	2026-10-13 01:05	DIAGNOSTIC: profile of r13d-context-ve (why +11 ms/step?)
+r14d-diag-prof-r12c	trained	0.941360	274.9	17577.9	3815.0	49.8	2026-10-13 01:05	DIAGNOSTIC: profile of r12c-packed-readout-ctxx0 (where do the extra 25 s go?)
+r15a-r14a-nokeysmear	trained	0.941889	255.2	16675.5	3815.0	49.3	2026-10-13 01:43	r14a without key smear
+r15b-r14a-noreadout	trained	0.939664	251.8	16931.3	3815.0	49.3	2026-10-13 01:43	r14a without the multi-depth readout
+r15c-r14a-headveconv	trained	0.938485	266.3	17059.4	3815.0	49.3	2026-10-13 01:43	r14a with per-head (not per-channel) contextual value-embedding conv weights
+r15d-multibase-rope	trained	0.959510	249.4	15516.0	3815.0	50.3	2026-10-13 01:43	Multi-scale RoPE: a different fixed base per head
+r16a-r15b-headveconv	trained	0.939117	252.7	16931.2	3815.0	49.3	2026-10-13 02:01	r15b with per-head contextual value-embedding conv weights
+r16b-r15b-attn1	trained	0.938104	269.3	17257.7	3815.0	49.8	2026-10-13 02:01	r15b with attention restored in layer 1 (conv only in layer 0)
+r16c-r15b-headvconv	trained	0.939453	268.9	18467.3	3815.0	49.3	2026-10-13 02:01	r15b + contextual values: per-head 4-lag causal conv on the attention values
+r16d-temporal-readout	trained	0.958043	258.0	15998.3	3815.0	50.3	2026-10-13 02:01	Temporal readout: the head also sees the previous positions' final states
+r17a-r16a-localattn1	trained	0.937013	266.5	17257.7	3815.0	49.8	2026-10-13 02:20	r16a with layer 1 as short local attention (window 128) instead of a conv
+r17b-r16a-bilinear-x0	trained	0.938938	252.3	16931.2	3815.0	49.3	2026-10-13 02:21	r16a + multiplicative bigram code in the contextual x0
+r17c-r16b-noheadgate	trained	0.939234	265.9	16794.2	3815.0	49.8	2026-10-13 02:21	r16b without the head output gate
+r17d-bilinear-x0	trained	0.952978	257.5	15870.1	3815.0	50.3	2026-10-13 02:21	Multiplicative bigram code in the contextual x0 (on the contextual-x0 model)
+r18a-bf16-rope	trained	0.957390	241.9	14201.0	3815.0	50.3	2026-10-13 02:35	Baseline with bf16 RoPE tables (attention runs in bf16 in every layer)
+r18b-r17a-bf16	trained	0.936916	261.0	16356.7	3815.0	49.8	2026-10-13 02:35	r17a (local attention in layer 1) with bf16 RoPE tables
+r18c-r16b-bf16	trained	0.938138	264.5	16356.7	3815.0	49.8	2026-10-13 02:35	r16b (full attention in layer 1) with bf16 RoPE tables
+r18d-local-early	trained	0.954016	245.8	15486.0	3815.0	50.3	2026-10-13 02:35	Local early layers: layers 0 and 1 use 128-token attention windows
+r19a-r18b-local0	trained	0.936355	271.2	16559.1	3815.0	50.3	2026-10-13 03:04	r18b with layer 0 as local attention (window 128) instead of the value conv
+r19b-r18b-local2	trained	0.937719	253.0	16356.7	3815.0	49.8	2026-10-13 03:04	r18b with layer 2 also local (window 128)
+r19c-r18b-vsmear	trained	0.936320	268.6	16804.7	3815.0	49.8	2026-10-13 03:04	r18b + value smear (now cheap with a bf16 value path)
+r19d-selective-ctx-x0	trained	0.951505	258.0	15874.8	3815.0	50.3	2026-10-13 03:04	Selective contextual embedding: token-dependent lag gates in the contextual x0
+r20a-diag-prof-r18b	trained	0.936786	261.8	16356.7	3815.0	49.8	2026-10-13 03:29	DIAGNOSTIC: profile of r18b (best valid model) to find remaining time sinks
+r20b-diag-prof-r19c	trained	0.936461	267.7	16804.7	3815.0	49.8	2026-10-13 03:29	DIAGNOSTIC: profile of r19c (r18b + value smear, +7.6 s for one elementwise op?)
+r20c-mlp-thresholds	trained	0.957657	248.5	14201.2	3815.0	50.3	2026-10-13 03:29	Learned per-unit thresholds in the ReLU^2 MLP
+r20d-r18b-selective	trained	0.937027	265.6	16361.4	3815.0	49.8	2026-10-13 03:29	r18b + selective (token-gated) lags in the contextual x0
+r21a-r18b-vekeys	trained	0.936864	264.3	16356.7	3815.0	49.8	2026-10-13 04:02	r18b + contextual value embeddings also added to the keys
+r21b-vekeys	trained	0.957875	247.3	14201.0	3815.0	50.3	2026-10-13 04:02	Value embeddings also added to the keys (token identity for matching)
+r21c-r18b-ctx8	trained	0.936697	265.3	16868.7	3815.0	49.8	2026-10-13 04:02	r18b with a width-8 contextual x0 (lags 0-7)
+r21d-r18b-headctx	trained	0.936758	266.4	16484.9	3815.0	49.8	2026-10-13 04:02	r18b + contextual x0 skip into the output head
+r22a-r18b-noheadgate	trained	0.938196	250.9	15893.1	3815.0	49.8	2026-10-13 04:28	Ablation of r18b: remove the head output gate
+r22b-r18b-nodepthgates	trained	0.939238	251.6	16194.6	3815.0	49.8	2026-10-13 04:28	Ablation of r18b: remove the stale depth gates (x0 + residual gates; back to scalar x0/resid lambdas)
+r22c-r18b-notemp	trained	0.938760	254.2	16356.6	3815.0	49.8	2026-10-13 04:28	Ablation of r18b: remove the per-head attention temperature
+r22d-x0-as-ve	trained	0.958303	245.8	14219.0	3815.0	50.3	2026-10-13 04:28	Token embedding as the value embedding of the layers without a VE table
+r23a-lookahead-ve	trained	0.958687	250.9	14458.5	3815.0	50.3	2026-10-13 05:02	Lookahead value embeddings: keys also offer the NEXT token's embedding (exactly causal)
+r23b-lookahead-ve-l37	trained	0.958218	267.5	14716.5	3815.0	50.3	2026-10-13 05:02	Lookahead value embeddings in both full-attention layers (3 and 7)
+r23c-r18b-lookahead	trained	0.936719	272.5	16550.2	3815.0	49.8	2026-10-13 05:02	r18b + lookahead value embeddings in layer 7
+r23d-r22a-lookahead	trained	0.938420	269.1	16150.7	3815.0	49.8	2026-10-13 05:02	r18b without head gate + lookahead value embeddings in layer 7
+r24a-r18b-docmask	crash	-	-	-	-	-	2026-10-13 05:32	r18b + document masking with per-batch block masks built in-graph
+r24b-docmask-fast	crash	-	-	-	-	-	2026-10-13 05:32	Document masking (in-graph block masks) on the bf16-rope baseline
+r24c-word-embed	trained	0.957276	247.6	14330.1	3815.0	50.3	2026-10-13 05:32	Word-so-far embedding: mean of the token embeddings since the last word start
+r24d-r18b-word-embed	trained	0.937207	265.7	16485.7	3815.0	49.8	2026-10-13 05:32	r18b + word-so-far embedding in the contextual x0
+r25a-bf16-resid	trained	0.957260	230.5	12713.0	3815.0	50.3	2026-10-13 05:54	bf16 residual stream (control on r18a)
+r25b-r18b-bf16-resid	trained	0.937237	242.4	14824.7	3815.0	49.8	2026-10-13 05:54	r18b-r17a-bf16 with a bf16 residual stream
+r25c-r19c-bf16-resid	trained	0.936333	247.7	15272.7	3815.0	49.8	2026-10-13 05:54	r19c-r18b-vsmear with a bf16 residual stream
+r25d-r19a-bf16-resid	trained	0.936258	247.8	15023.1	3815.0	50.3	2026-10-13 05:54	r19a-r18b-local0 with a bf16 residual stream
+r26a-local0-vsmear-bf16	trained	0.935998	256.8	15535.2	3815.0	50.3	2026-10-13 06:31	Local attention layers 0-1 + value smear, bf16 residual (combine the two over-cap wins)
+r26b-r26a-readout	trained	0.935638	266.6	15599.4	3815.0	50.3	2026-10-13 06:31	r26a + multi-depth readout (bf16)
+r26c-r26a-ctx8-headctx	trained	0.935782	268.6	16111.5	3815.0	50.3	2026-10-13 06:31	r26a + width-8 contextual x0 + contextual x0 skip into the head
+r26d-multires-heads	trained	0.955269	223.9	12713.0	3815.0	50.3	2026-10-13 06:31	Multi-resolution heads: half the heads of each sliding-window layer are local (128)
+r27a-r26a-multires	trained	0.936280	249.4	15535.2	3815.0	50.3	2026-10-13 06:57	r26a + multi-resolution heads in the sliding-window layers
+r27b-r27a-readout	trained	0.935842	252.3	15599.5	3815.0	50.3	2026-10-13 06:57	r27a + multi-depth readout
+r27c-r27a-all	trained	0.935722	267.1	16111.5	3815.0	50.3	2026-10-13 06:57	r27a + readout + width-8 contextual x0 + contextual x0 head skip
+r27d-multires-all-layers	trained	0.957164	224.0	12713.0	3815.0	50.3	2026-10-13 06:57	Multi-resolution heads in every layer (also the full-attention layers)
+r28a-qk-gain	trained	0.954566	232.3	12713.0	3815.0	50.3	2026-10-13 07:25	Per-channel query gains in the QK-norm (learned RoPE-band weighting)
+r28b-partial-rope	trained	0.960115	231.0	12713.0	3815.0	50.3	2026-10-13 07:25	Partial RoPE: the lowest-frequency half of the channel pairs is not rotated
+r28c-r27b-qk-gain	trained	0.938814	253.5	15599.5	3815.0	50.3	2026-10-13 07:25	r27b + per-channel query gains (RoPE-band weighting)
+r28d-value-residual	trained	0.957866	234.1	12713.0	3815.0	50.3	2026-10-13 07:25	Value residual from the first layer (ResFormer) on top of value embeddings
+r29a-r27b-headchan-gain	trained	0.935361	252.6	15599.5	3815.0	50.3	2026-10-13 07:53	r27b with the per-head temperature replaced by a per-(head, channel) query gain
+r29b-r27b-qgain-sep	trained	0.935808	254.2	15599.5	3815.0	50.3	2026-10-13 07:53	r27b + per-channel query gain as a separate RMSNorm weight (as in r28a)
+r29c-mlp-smear	trained	0.954864	234.4	13225.1	3815.0	50.3	2026-10-13 07:53	Token shift for the MLP: the MLP also sees the previous position's normalized input
+r29d-headchan-gain	trained	0.954770	232.2	12713.1	3815.0	50.3	2026-10-13 07:53	Per-(head, channel) query gain after QK-norm (temperature and RoPE-band weighting in one)
+r30a-r29a-mlpsmear	trained	0.935303	264.1	16559.6	3815.0	50.4	2026-10-13 08:19	r29a + token shift on the MLP input
+r30b-r30a-nokeysmear	trained	0.938107	250.0	16047.5	3815.0	50.3	2026-10-13 08:19	r30a without the key smear
+r30c-attn-input-shift	trained	0.955424	236.2	13481.1	3815.0	50.3	2026-10-13 08:19	Token shift on the attention input (q, k, v all see x_t and x_{t-1})
+r30d-r30a-x0mix	trained	0.934988	271.1	16623.8	3815.0	50.4	2026-10-13 08:19	r30a + per-layer mix between the contextual and the plain token embedding in the x0 re-injection
+r31a-r29a-keysmear2	trained	0.935133	265.1	16111.6	3815.0	50.4	2026-10-13 08:46	r29a + lag-2 key smear
+r31b-r29a-qsmear	trained	0.934373	266.5	16111.6	3815.0	50.4	2026-10-13 08:46	r29a + query smear (bigram queries)
+r31c-r29a-qsmear-keysmear2	trained	0.934142	269.9	16623.6	3815.0	50.4	2026-10-13 08:46	r29a + query smear + lag-2 key smear
+r31d-bigram-qk	trained	0.953065	245.9	13737.1	3815.0	50.3	2026-10-13 08:46	Bigram queries and keys: lag-1 smear on both q and k
+r32a-r31b-novsmear	trained	0.934967	252.6	15599.5	3815.0	50.3	2026-10-13 09:18	r31b (query smear) without value smear, to fit the time cap
+r32b-r31c-novsmear	trained	0.934386	264.0	16111.6	3815.0	50.4	2026-10-13 09:18	r31c (query smear + lag-2 key smear) without value smear
+r32c-pointer	crash	-	-	-	-	-	2026-10-13 09:18	Pointer-sentinel copy head, computed exactly with two flex passes
+r32d-r29a-pointer	crash	-	-	-	-	-	2026-10-13 09:18	r29a + pointer-sentinel copy head
+r33a-r32b-noreadout	trained	0.935171	252.3	16047.3	3815.0	50.4	2026-10-13 09:45	r32b (query smear + lag-2 key smear) without the depth readout, to fit the cap
+r33b-r32a-noreadout	trained	0.935406	248.8	15535.3	3815.0	50.3	2026-10-13 09:45	Ablation: r32a without the depth readout
+r33c-pointer-v2	crash	-	-	-	-	-	2026-10-13 09:45	Pointer-sentinel copy head (retry of r32c with a fix for the flex backward)
+r33d-r32a-pointer	crash	-	-	-	-	-	2026-10-13 09:45	r32a + pointer-sentinel copy head
+r34a-r32b-noresidgate	trained	0.935632	260.4	16110.6	3815.0	50.4	2026-10-13 10:18	r32b without the residual gate (keep the x0 gate), to fit the cap
+r34b-selective-qk-smear	trained	0.951925	240.3	13753.1	3815.0	50.3	2026-10-13 10:18	Selective (token-gated) query/key smear
+r34c-pointer-dense	trained	0.953150	236.5	12235.8	3815.0	50.4	2026-10-13 10:18	Pointer-sentinel copy head (dense implementation)
+r34d-r32a-pointer-dense	trained	0.934204	265.0	15122.3	3815.0	50.4	2026-10-13 10:18	r32a + pointer-sentinel copy head (dense)
+r35a-r34d-ptr-bf16	trained	0.934772	264.8	15032.7	3815.0	50.4	2026-10-13 10:48	r34d with the pointer scores kept in bf16 (fp32 only inside the fused reductions)
+r35b-r35a-noreadout	trained	0.934600	256.9	14968.4	3815.0	50.4	2026-10-13 10:48	r35a without the depth readout
+r35c-pointer-x0keys	trained	0.956725	236.4	12210.2	3815.0	50.4	2026-10-13 10:48	Pointer head whose keys are the contextual token embeddings (not final states)
+r35d-r32a-selective-smear	trained	0.934208	254.9	15615.5	3815.0	50.4	2026-10-13 10:48	r32a with selective (token-gated) query/key smear
+r36a-r35d-ptr-chunked	trained	0.933890	261.5	14947.2	3815.0	50.4	2026-10-13 11:35	r35d + pointer-sentinel copy head (fp32 scores, causal query chunks)
+r36b-r36a-noreadout	trained	0.934458	258.6	14883.0	3815.0	50.4	2026-10-13 11:35	r36a without the depth readout
+r36c-pointer-ngram-match	trained	0.952853	240.9	12172.0	3815.0	50.4	2026-10-13 11:35	Pointer head with exact n-gram match priors (neural pointer + induction cue)
+r36d-pointer-chunked	trained	0.953060	236.0	12044.7	3815.0	50.4	2026-10-13 11:35	Pointer-sentinel head on the control, causal-chunked implementation
+r37a-diag-prof-r36a	trained	0.934486	261.3	14947.2	3815.0	50.4	2026-10-13 12:02	DIAGNOSTIC: profile of r36a (best model, at the time cap)
+r37b-r36a-8chunks	trained	0.933875	261.6	14851.3	3815.0	50.4	2026-10-13 12:02	r36a with the pointer computed over 8 causal query chunks (instead of 4)
+r37c-pointer-2heads	trained	0.953374	239.3	12484.8	3815.0	50.5	2026-10-13 12:02	Two-head pointer: one sentinel, jointly normalised over both heads' keys
+r37d-pointer-recency	trained	0.953223	240.1	11951.5	3815.0	50.4	2026-10-13 12:02	Pointer with a learned log-distance recency bias
+r38a-r36b-keysmear2	trained	0.934428	260.3	15395.0	3815.0	50.4	2026-10-13 12:23	r36b (no readout) + selective lag-2 key smear
+r38b-r36a-ptr32	trained	0.933887	260.9	14930.8	3815.0	50.4	2026-10-13 12:23	r36a with a 32-dim pointer (instead of 64)
+r38c-unet-skips	trained	0.956756	231.7	12713.0	3815.0	50.3	2026-10-13 12:23	U-net skip connections (layer i output added to layer L-1-i input, learned scalar)
+r38d-elementwise-attn-gate	trained	0.951943	240.2	13737.8	3815.0	50.5	2026-10-13 12:23	Elementwise (per-channel) attention-output gate from a 32-channel read
+r39a-r38b-elementwise-gate	trained	0.932986	264.0	15440.0	3815.0	50.5	2026-10-13 12:46	r38b with the per-head output gate replaced by a per-channel (elementwise) gate
+r39b-r38b-both-gates	trained	0.932123	268.7	15448.0	3815.0	50.5	2026-10-13 12:46	r38b with both a per-head and a per-channel attention-output gate (one 32 -> 4+512 read)
+r39c-mlp-lowrank-gate	trained	0.953909	249.0	14764.3	3815.0	50.9	2026-10-13 12:46	Low-rank elementwise gate on the MLP hidden units
+r39d-ve-elementwise-gate	trained	0.957751	196.4	12967.5	3815.0	50.4	2026-10-13 12:46	Per-channel (instead of per-head) value-embedding gate
+r40a-r39b-noptr-noreadout	trained	0.932561	260.4	16068.5	3815.0	50.5	2026-10-13 13:20	r39b (head + channel output gates) without the pointer and the readout, to fit the cap
+r40b-r39b-noptr	trained	0.932412	264.2	16132.8	3815.0	50.5	2026-10-13 13:20	r39b without the pointer
+r40c-r39a-noreadout	trained	0.933455	261.1	15375.8	3815.0	50.5	2026-10-13 13:20	r39a (channel output gate) without the readout
+r40d-mlp-input-gate	trained	0.955074	241.4	13737.8	3815.0	50.5	2026-10-13 13:20	Low-rank elementwise gate on the MLP input
+r41a-r40a-noselective	trained	0.933383	264.6	16052.5	3815.0	50.5	2026-10-13 13:44	Ablation of r40a: remove the selective (token-gated) smear gate (plain query/key smears remain)
+r41b-r40a-noctxve	trained	0.937652	250.2	15300.5	3815.0	50.5	2026-10-13 13:44	Ablation of r40a: remove the contextual value-embedding conv (plain VE lookups)
+r41c-r40a-noqgain	trained	0.934106	261.8	16065.0	3815.0	50.5	2026-10-13 13:44	Ablation of r40a: remove the per-(head, channel) query gain (no QK temperature at all)
+r41d-mlp-group-gate	trained	0.954811	235.9	12841.2	3815.0	50.4	2026-10-13 13:44	Grouped low-rank gate on the MLP hidden units (one gate per 16 units)
+r42a-r40a-chan-lambdas	trained	0.933208	256.7	16068.6	3815.0	50.5	2026-10-13 14:17	r40a with per-channel residual and x0 mixing weights
+r42b-r40a-conv0-mlpgate	trained	0.932459	252.7	15867.2	3815.0	50.0	2026-10-13 14:17	r40a with layer 0 back to the value conv (cheaper) + grouped MLP hidden gate
+r42c-r40a-mlpgate	trained	0.931985	262.9	16196.7	3815.0	50.5	2026-10-13 14:17	r40a + grouped MLP hidden gate
+r42d-mlp-output-gate	trained	0.955147	238.0	13737.8	3815.0	50.5	2026-10-13 14:17	Low-rank elementwise gate on the MLP output
+r43a-r42b-readout	trained	0.932089	262.0	15931.5	3815.0	50.0	2026-10-13 14:51	r42b + depth readout
+r43b-r42b-pointer	trained	0.932017	263.7	15182.5	3815.0	50.0	2026-10-13 14:51	r42b + pointer-sentinel copy head (32-dim, chunked)
+r43c-r42b-readout-pointer	trained	0.931876	266.5	15246.7	3815.0	50.0	2026-10-13 14:51	r42b + depth readout + pointer
+r43d-fullread-attn-gate	trained	0.951858	243.4	13770.6	3815.0	50.6	2026-10-13 14:51	Elementwise attention-output gate reading a learned 32-dim projection of the full input
+r44a-r42b-readout-late	trained	0.932382	260.8	15931.5	3815.0	50.0	2026-10-13 15:25	r42b + depth readout from the second half of the layers only
+r44b-r42b-mlp-outgate	trained	0.932255	265.1	16892.0	3815.0	50.1	2026-10-13 15:25	r42b + elementwise low-rank MLP output gate
+r44c-r42b-unet	trained	0.932038	258.9	15867.2	3815.0	50.0	2026-10-13 15:25	r42b + U-net skip connections
+r44d-key-value-gate	trained	0.955896	235.0	13229.0	3815.0	50.3	2026-10-13 15:25	Key-side value gate: each token scales the value it offers
+r45a-r44c-readout-late	trained	0.932181	261.9	15931.5	3815.0	50.0	2026-10-13 15:57	r44c + late-layer depth readout
+r45b-r44c-doc-mean	trained	0.932101	261.3	15996.3	3815.0	50.0	2026-10-13 15:57	r44c + document-so-far mean embedding in the contextual x0
+r45c-doc-mean	trained	0.957179	239.2	12842.1	3815.0	50.3	2026-10-13 15:57	Document-so-far mean embedding added to x0 (a causal topic summary)
+r45d-r44c-kvgate	trained	0.932495	264.7	16318.7	3815.0	50.0	2026-10-13 15:57	r44c + key-side value gate
+r46a-r44c-ve2lags	trained	0.932192	248.3	15355.2	3815.0	50.0	2026-10-13 16:37	r44c with 2-lag (instead of 4-lag) contextual value embeddings
+r46b-r44c-ctxx0-bf16	trained	0.932147	254.1	15611.2	3815.0	50.0	2026-10-13 16:37	r44c with the contextual x0 conv computed in bf16
+r46c-r44c-selective-ve	trained	0.931433	287.4	15869.2	3815.0	50.0	2026-10-13 16:37	r44c with selective (token-gated) contextual value-embedding lags
+r46d-token-embed-scale	trained	0.956515	231.9	12713.1	3815.0	50.3	2026-10-13 16:37	Per-token learned scale of the normalised input embedding
+r47a-r44c-lean	trained	0.932349	246.8	15095.7	3815.0	50.0	2026-10-13 17:04	r44c with 2-lag ctx-VE and bf16 ctx-x0 conv (lean base)
+r47b-r47a-local0	trained	0.932038	261.5	15428.7	3815.0	50.5	2026-10-13 17:04	Lean base + local attention in layer 0 (instead of the value conv)
+r47c-r47a-outgate-readout	trained	0.932385	264.6	16188.3	3815.0	50.1	2026-10-13 17:04	Lean base + MLP output gate + late-layer readout
+r47d-value-rope	trained	0.961836	237.6	13225.3	3815.0	50.3	2026-10-13 17:04	RoPE on the value path: values carry their relative offset
+r48a-lean-unit-mlpgate	trained	0.931732	271.6	17022.3	3815.0	50.5	2026-10-13 17:40	Lean base with a per-unit (instead of grouped) MLP hidden gate
+r48b-lean-writable-x0	trained	0.932601	258.1	15735.7	3815.0	50.0	2026-10-13 17:40	Writable x0 stream: blocks may add their output into the re-injected embedding stream
+r48c-lean-kvgate	trained	0.932611	255.5	15550.7	3815.0	50.0	2026-10-13 17:40	Lean base + key-side value gate
+r48d-token-meta	trained	0.955707	230.6	12714.7	3815.0	50.4	2026-10-13 17:40	Token metadata embedding (byte length, leading whitespace, first-character class)
+r49a-lean-tokmeta	trained	0.931473	247.2	15100.9	3815.0	50.1	2026-10-13 18:36	Lean base + token metadata embedding
+r49b-lean-tokmeta-local0	trained	0.931007	258.8	15430.4	3815.0	50.6	2026-10-13 18:36	Lean base + token metadata + local attention in layer 0
+r49c-lean-tokmeta-group8	trained	0.931581	249.0	15229.1	3815.0	50.1	2026-10-13 18:36	Lean base + token metadata, MLP hidden gate with groups of 8 (256 gates)
+r49d-char-ngram-embed	trained	0.956130	240.5	12740.9	3815.0	52.4	2026-10-13 18:36	Character n-gram embeddings of the tokens (FastText-style subword sharing)
+r50a-r49b-richmeta	trained	0.931021	261.2	15436.0	3815.0	51.1	2026-10-13 19:10	r49b with richer token metadata (adds the last-character class)
+r50b-r49a-ngram	trained	0.931250	264.3	15128.8	3815.0	52.2	2026-10-13 19:10	r49a + character n-gram embeddings
+r50c-r49b-meta-ve	trained	0.931352	260.9	15434.9	3815.0	51.0	2026-10-13 19:10	r49b + token metadata also in the value embeddings
+r50d-pos-in-word	trained	0.955738	231.8	12713.6	3815.0	50.3	2026-10-13 19:10	Position-in-word embedding (tokens since the last word start)
+r51a-r49b-posinword	trained	0.930970	260.6	15431.0	3815.0	50.6	2026-10-13 19:40	r49b + position-in-word embedding
+r51b-r49a-pointer	trained	0.930749	260.9	14416.2	3815.0	50.1	2026-10-13 19:40	r49a + pointer-sentinel copy head (32-dim, chunked)
+r51c-r49b-dilated-ctx	trained	0.931024	260.5	15622.4	3815.0	50.6	2026-10-13 19:40	r49b + dilated contextual x0 lags (4, 8, 12)
+r51d-sentence-pos	trained	0.956286	230.8	12713.6	3815.0	50.3	2026-10-13 19:40	Sentence-position embedding (log-bucket of tokens since the last sentence end)
+r52a-r51b-docmask-full	trained	0.929378	265.0	14416.7	3815.0	50.1	2026-10-13 20:24	r51b + document masking in the two full-attention layers (non-learnable score_mod)
+r52b-diff-attn-full	crash	-	-	-	-	-	2026-10-13 20:24	Differential attention in the two full-attention layers
+r52c-r51b-posinword	trained	0.930676	262.8	14416.7	3815.0	50.1	2026-10-13 20:24	r51b + position-in-word embedding
+r52d-r51b-sentpos	trained	0.930845	261.9	14416.7	3815.0	50.1	2026-10-13 20:24	r51b + sentence-position embedding
+r53a-r49a-docmask-full	trained	0.931646	257.8	15101.4	3815.0	50.1	2026-10-13 20:51	r49a + document masking in the two full-attention layers
+r53b-r49a-docmask-all	trained	0.931225	260.2	15101.4	3815.0	50.1	2026-10-13 20:51	r49a + document masking in every attention layer (score_mod on all flex layers)
+r53c-r53a-posinword	trained	0.931564	258.7	15102.0	3815.0	50.1	2026-10-13 20:51	r53a + position-in-word embedding
+r53d-diff-attn-full-v2	trained	0.958485	244.6	12981.0	3815.0	50.3	2026-10-13 20:51	Differential attention in the two full-attention layers (retry of r52b)
+r54a-r52a-replicate	trained	0.929183	266.2	14416.7	3815.0	50.1	2026-10-13 21:26	Replicate of r52a (noise measurement)
+r54b-r51b-replicate	trained	0.930789	261.0	14416.2	3815.0	50.1	2026-10-13 21:26	Replicate of r51b (noise measurement)
+r54c-r52a-nounet	trained	0.929584	264.7	14413.2	3815.0	50.1	2026-10-13 21:26	r52a without the U-net skips (to fit the cap)
+r54d-kv-share	trained	0.963929	221.2	12321.0	3815.0	49.3	2026-10-13 21:26	Cross-layer KV sharing between adjacent sliding-window layers (2 <- 1, 6 <- 5)
+r55a-r52a-nomlpgate	trained	0.930372	261.6	14288.5	3815.0	50.1	2026-10-13 21:48	r52a without the grouped MLP hidden gate (to fit the cap)
+r55b-r52a-headgate-only	trained	0.931574	253.0	13964.4	3815.0	50.0	2026-10-13 21:48	r52a with only the per-head output gate (channel gate removed, to fit the cap)
+r55c-r52a-docptr-nomlpgate	trained	0.930666	261.4	14351.2	3815.0	50.1	2026-10-13 21:48	r55a with the pointer restricted to the current document
+r55d-alibi-full	trained	0.963375	234.1	12713.0	3815.0	50.3	2026-10-13 21:48	Fixed ALiBi recency biases in the two full-attention layers (with RoPE)
+r56a-r55a-sdpa-docmask	trained	0.930378	274.2	14800.0	3815.0	50.1	2026-10-13 22:18	r55a with the full-layer document mask applied through SDPA (boolean attn_mask) instead of flex
+r56b-r52a-ve1lag	trained	0.930051	263.2	14160.7	3815.0	50.1	2026-10-13 22:18	r52a with 1-lag contextual value embeddings (to fit the cap)
+r56c-diag-prof-r52a	trained	0.929217	265.7	14416.7	3815.0	50.1	2026-10-13 22:18	DIAGNOSTIC: profile of r52a (pointer + doc-masked full layers), to price its parts
+r56d-induction-prior	crash	-	-	-	-	-	2026-10-13 22:18	Hard-wired induction prior in the global layers
+r57a-r52a-conv01	trained	0.934439	256.8	14087.6	3815.0	49.6	2026-10-13 22:41	r52a with layer 1 as a value conv too (conv layers 0-1)
+r57b-r52a-3localheads	trained	0.930063	262.8	14416.7	3815.0	50.1	2026-10-13 22:41	r52a with 3 of 4 heads local (window 128) in the sliding-window layers
+r57c-r56b-conv01	trained	0.934336	254.4	13831.6	3815.0	49.6	2026-10-13 22:41	r56b (1-lag ctx-VE) with conv layers 0-1
+r57d-induction-prior-v2	crash	-	-	-	-	-	2026-10-13 22:41	Hard-wired induction prior in the global layers (retry of r56d)
+r58a-r52a-flexptr	crash	-	-	-	-	-	2026-10-13 23:15	r52a with the pointer computed by two block-sparse flex passes (instead of dense T x T chunks)
+r58b-r55a-flexptr	crash	-	-	-	-	-	2026-10-13 23:15	r55a with the flex pointer (speed reference)
+r58c-r52a-1lag-3local	trained	0.930374	260.7	14160.7	3815.0	50.1	2026-10-13 23:15	r52a with 1-lag ctx-VE and 3 local heads (two time cuts together)
+r58d-induction-prior-v3	crash	-	-	-	-	-	2026-10-13 23:15	Hard-wired induction prior in the global layers (v3: lowering-safe score_mod form)
+r59a-r52a-docmask7-3local	trained	0.930701	260.4	14416.7	3815.0	50.1	2026-10-13 23:37	r52a with document masking only in the last global layer and 3 local heads (fit the cap with the MLP gate)
+r59b-r55a-wordsent	trained	0.931198	263.8	14289.6	3815.0	50.1	2026-10-13 23:37	r55a + position-in-word and sentence-position embeddings
+r59c-r55a-ctxve-headsel	trained	0.929398	265.6	14292.5	3815.0	50.1	2026-10-13 23:37	r55a + per-head selective contextual value-embedding lags
+r59d-induction-sdpa	trained	0.959545	263.1	14761.0	3815.0	50.3	2026-10-13 23:37	Hard-wired induction prior in the global layers via an SDPA additive mask
+r60a-r59c-chgate-only	trained	0.930745	262.6	14285.5	3815.0	50.1	2026-10-14 00:18	r59c with only the channel (elementwise) attention-output gate (head gate dropped to fit the cap)
+r60b-r59c-3local	trained	0.930338	263.8	14292.5	3815.0	50.1	2026-10-14 00:18	r59c with 3 of 4 local heads in the sliding-window layers (fit the cap)
+r60c-r49b-selve	trained	0.930155	262.5	15434.4	3815.0	50.6	2026-10-14 00:18	r49b + per-head selective contextual value-embedding lags
+r60d-key-scale	trained	0.955928	232.6	12717.0	3815.0	50.3	2026-10-14 00:18	Data-dependent key scale after QK-norm (key-side sharpness)
+r61a-r60c-noVEgate	trained	0.931201	261.3	15432.4	3815.0	50.6	2026-10-14 00:45	r60c without the per-head VE gate (the selective lag gates already gate each head's VE per token)
+r61b-r60c-fusedlag	trained	0.929948	262.1	15434.4	3815.0	50.6	2026-10-14 00:45	r60c with all VE tables' selective lag gates computed in one matmul
+r61c-r60c-nounet	trained	0.930225	262.2	15434.4	3815.0	50.6	2026-10-14 00:45	r60c without U-net skips (fit the cap)
+r61d-content-rope-offset	trained	0.957587	239.6	13744.5	3815.0	50.3	2026-10-14 00:45	Content-dependent RoPE position offsets
+r62a-r61b-nounet	trained	0.930149	262.2	15434.4	3815.0	50.6	2026-10-14 01:13	r61b without U-net skips (fit the cap)
+r62b-r61b-ctxx0k2	trained	0.930211	262.1	15306.4	3815.0	50.6	2026-10-14 01:13	r61b with a 2-lag (instead of 4-lag) contextual x0 conv (fit the cap)
+r62c-r61b-nounet-keyscale	trained	0.931708	243.5	15438.4	3815.0	50.6	2026-10-14 01:13	r62a + data-dependent key scale (read through the existing selective-smear gate projection)
+r62d-normalized-resid	trained	0.978976	232.5	12715.0	3815.0	50.3	2026-10-14 01:13	Normalised residual stream: rescale to unit RMS after every block (learned per-layer scale)
+r63a-r61b-conv0	trained	0.930675	253.7	15104.9	3815.0	50.1	2026-10-14 01:35	r61b with the value conv in layer 0 (instead of local attention) to fit the cap
+r63b-r63a-mlpoutgate	trained	0.931151	263.0	16129.7	3815.0	50.2	2026-10-14 01:35	r63a + elementwise low-rank MLP output gate
+r63c-r61b-3local	trained	0.931059	260.5	15434.4	3815.0	50.6	2026-10-14 01:35	r61b with 3 local heads (fit the cap)
+r63d-bigram-logit-prior	trained	0.954901	235.9	12734.0	3815.0	51.4	2026-10-14 01:35	Low-rank bigram logit prior: a direct current-token -> next-token path into the logits
+r64a-r63a-bigram	trained	0.928542	263.0	15125.9	3815.0	51.1	2026-10-14 01:57	r63a + low-rank bigram logit prior
+r64b-r49a-selve-bigram	trained	0.928886	262.9	15125.9	3815.0	51.1	2026-10-14 01:57	r49a + selective ctx-VE (fused gates) + low-rank bigram logit prior
+r64c-r63a-bigram128	trained	0.927758	263.6	15146.9	3815.0	52.2	2026-10-14 01:57	r63a + rank-128 bigram logit prior
+r64d-skipbigram-prior	trained	0.955346	236.6	12740.5	3815.0	51.9	2026-10-14 01:57	Low-rank skip-bigram logit prior (current and previous token)
+r65a-r63a-bigram128-fused	trained	0.927801	260.2	15146.9	3815.0	52.2	2026-10-14 02:21	r64c (rank-128 bigram logit prior) with the prior folded into the output-head matmul
+r65b-r63a-bigram64-fused	trained	0.928755	258.9	15125.9	3815.0	51.1	2026-10-14 02:21	r64a (rank-64 bigram prior) folded into the head matmul
+r65c-r64b-bigram128-fused	trained	0.927900	260.0	15146.9	3815.0	52.2	2026-10-14 02:21	r49a + selective ctx-VE + rank-128 bigram prior folded into the head
+r65d-gated-bigram-prior	trained	0.955123	233.1	12742.1	3815.0	51.4	2026-10-14 02:21	Context-gated bigram logit prior
+r66a-r65a-ctxprior128	trained	0.929534	260.2	15135.8	3815.0	51.2	2026-10-14 02:44	r65a with the prior's input factor computed from the contextual embedding (P x0_t) instead of a table U[x_t]
+r66b-r65a-rank160	trained	0.927071	261.5	15157.4	3815.0	52.7	2026-10-14 02:44	r65a with a rank-160 bigram prior (the largest that fits the parameter cap)
+r66c-r65a-ctxprior256	trained	0.928585	263.4	15166.7	3815.0	52.3	2026-10-14 02:44	r66a with rank 256 (contextual n-gram prior; the freed U parameters go into V)
+r66d-ctx-prior-control	trained	0.958076	234.5	12985.8	3815.0	51.0	2026-10-14 02:44	Contextual n-gram logit prior on the control (lags 0-3 of x0 -> rank 64 -> logits, folded into the head)
+r67a-r66b-noVE1-rank416	trained	0.928263	263.7	15063.9	3815.0	52.7	2026-10-14 03:06	r66b trading layer 1's value-embedding table (4.2M params) for bigram-prior rank 416
+r67b-r66b-noVE5-rank416	trained	0.926810	263.9	15063.9	3815.0	52.7	2026-10-14 03:06	r66b trading layer 5's value-embedding table for bigram-prior rank 416
+r67c-r66b-noVE1-rank288	trained	0.928642	260.6	15021.9	3815.0	50.6	2026-10-14 03:06	r66b without layer 1's VE and with rank 288 (half of the freed parameters)
+r67d-hashed-trigram-prior	trained	0.955423	232.8	12740.5	3815.0	51.9	2026-10-14 03:06	Hashed trigram logit prior (table indexed by hash(previous, current token))
+r68a-noVE5-rank288	trained	0.927213	261.2	15021.9	3815.0	50.6	2026-10-14 03:30	r66b without layer 5's VE table, bigram-prior rank 288 (fit the time cap)
+r68b-noVE5-rank416-3local	trained	0.927059	262.1	15063.9	3815.0	52.7	2026-10-14 03:31	r67b with 3 local heads (fit the time cap)
+r68c-noVE5-rank352	trained	0.926957	262.3	15042.9	3815.0	51.7	2026-10-14 03:31	r66b without layer 5's VE table, bigram-prior rank 352
+r68d-skipbigram-separate	trained	0.953907	233.7	12755.5	3815.0	52.4	2026-10-14 03:31	Skip-bigram logit prior with its own output factor (previous token -> next token)
+r69a-r68a-split192-96	trained	0.926580	261.1	15022.4	3815.0	50.6	2026-10-14 04:02	r68a with the prior rank split between the current token (192) and the previous token (96, own factors)
+r69b-r66b-split112-48	trained	0.927277	263.0	15157.9	3815.0	52.7	2026-10-14 04:02	r66b with the prior rank split 112 (current) + 48 (previous token)
+r69c-r68a-split144-144	trained	0.926650	261.1	15022.4	3815.0	50.6	2026-10-14 04:02	r68a with the prior rank split evenly (144 + 144)
+r69d-trigram-decomposed	trained	0.954188	236.5	12761.3	3815.0	52.7	2026-10-14 04:02	Decomposed trigram logit prior: current, previous and two-back token tables (rank 48 each)
+r70a-r69a-unigram	trained	0.926555	262.6	15023.5	3815.0	50.6	2026-10-14 04:22	r69a + learned unigram logit bias (a constant feature in the folded head)
+r70b-r69a-replicate	trained	0.926560	261.2	15022.4	3815.0	50.6	2026-10-14 04:22	Replicate of r69a (noise check of the best model)
+r70c-posinword-prior	trained	0.957625	232.4	12717.3	3815.0	50.5	2026-10-14 04:22	Position-in-word logit prior (rank 16, folded into the head)
+r70d-docpos-prior	trained	0.957700	232.4	12717.3	3815.0	50.5	2026-10-14 04:22	Document-position logit prior (log2 bucket of tokens since BOS, rank 16)
+r71a-r69a-sharedU160	trained	0.927121	262.9	15017.9	3815.0	49.8	2026-10-14 04:51	r69a with one token table shared by both lags (separate output factors), rank 160 each
+r71b-r69a-split224-64	trained	0.927034	261.3	15022.4	3815.0	50.6	2026-10-14 04:51	r69a with the prior rank split 224 (current) + 64 (previous)
+r71c-noVE3-split192-96	trained	0.925878	262.2	15022.4	3815.0	50.6	2026-10-14 04:51	r69a dropping layer 3's value-embedding table instead of layer 5's
+r71d-prior-after-softcap	trained	0.954757	237.4	13758.0	3815.0	51.4	2026-10-14 04:51	Bigram prior added after the logit soft-cap
+r72a-noVE35-split192-96	trained	0.927609	258.4	14844.9	3815.0	46.4	2026-10-14 05:18	r71c also dropping layer 5's VE table (VE only in layers 1 and 7), prior 192 + 96
+r72b-noVE35-split224-128	trained	0.926689	259.8	14865.9	3815.0	47.5	2026-10-14 05:18	r72a with the freed parameters/time put into prior rank (224 + 128)
+r72c-r71c-split176-96	trained	0.926212	262.1	15017.2	3815.0	50.4	2026-10-14 05:18	r71c with a slightly smaller current-token prior rank (176) to fit the time cap
+r72d-factorized-ve	trained	0.956474	233.3	12752.0	3815.0	42.5	2026-10-14 05:18	Factorised value embeddings (rank-256 tables + up-projection)
+r73a-r71c-factve	trained	0.931428	263.4	15048.7	3815.0	44.7	2026-10-14 05:45	r71c with factorised (rank-256) value-embedding tables
+r73b-r69a-factve-all4	trained	0.930315	266.3	15238.9	3815.0	46.9	2026-10-14 05:45	r69a with all four VE layers back, as factorised (rank-256) tables
+r73c-r73b-rank384	trained	0.929157	267.7	15270.4	3815.0	48.5	2026-10-14 05:45	r73b with the freed parameters in the n-gram priors (256 + 128)
+r73d-factve-all8	trained	0.953385	241.4	13241.0	3815.0	51.4	2026-10-14 05:45	Factorised value embeddings in every layer (8 x rank 256 ~ the parameters of 4 full tables)
+r74a-r71c-nounet	trained	0.926874	261.7	15019.4	3815.0	50.6	2026-10-14 06:17	r71c without U-net skips (fit the time cap)
+r74b-r71c-nomlpgate-rank	trained	0.927374	257.8	14894.2	3815.0	50.6	2026-10-14 06:17	r71c without the grouped MLP hidden gate (fit the time cap)
+r74c-factve-all8-ctx	trained	0.951842	245.6	14265.1	3815.0	51.4	2026-10-14 06:17	Factorised VE in all layers + contextual (4-lag) conv on the 256-d table outputs
+r74d-factve-all8-r128	trained	0.957770	239.0	13010.0	3815.0	42.5	2026-10-14 06:17	Factorised VE in all layers at rank 128 (half the parameters of r73d)
+r75a-r69a-ind-prior	trained	0.927022	262.3	15022.9	3815.0	50.6	2026-10-14 06:48	r69a with an induction-candidate logit prior (prior rank 160 + 64 + 64)
+r75b-r69a-ind-embed	trained	0.927646	262.4	15026.9	3815.0	50.6	2026-10-14 06:48	r69a + induction-candidate input embedding (rank-64 table + projection, added to the token embedding)
+r75c-ind-prior	trained	0.957328	233.2	12734.5	3815.0	51.4	2026-10-14 06:48	Induction-candidate logit prior (attention-free copy cue)
+r75d-ind-embed	trained	0.957170	233.5	12792.0	3815.0	50.9	2026-10-14 06:48	Induction-candidate input embedding
+r76a-r69a-nounet	trained	0.926608	261.2	15019.4	3815.0	50.6	2026-10-14 07:21	Ablation of r69a: no U-net skips
+r76b-r69a-nomlpgate	trained	0.927166	257.9	14894.2	3815.0	50.6	2026-10-14 07:21	Ablation of r69a: no grouped MLP hidden gate
+r76c-r69a-noselsmear	trained	0.927129	263.8	15008.4	3815.0	50.6	2026-10-14 07:21	Ablation of r69a: static (non-selective) query/key smears
+r76d-midnet-ngram-memory	trained	0.956230	231.9	12818.8	3815.0	52.5	2026-10-14 07:21	Mid-network hashed bigram memory with a context gate (Engram-like)
+r77a-r69a-gated-prior	trained	0.925797	262.5	15122.7	3815.0	50.6	2026-10-14 07:52	Context-gated n-gram logit priors
+r77b-r69a-nounet-mem	trained	0.925304	262.5	15127.9	3815.0	52.8	2026-10-14 07:52	r69a without U-net, plus a mid-network gated hashed bigram memory
+r77c-docmean-x0	trained	0.954226	235.9	12973.8	3815.0	50.6	2026-10-14 07:52	Bag-of-words document context in x0
+r77d-mem-bi-tri	trained	0.955901	232.5	12819.3	3815.0	52.5	2026-10-14 07:52	Mid-network gated memory with hashed bigram + trigram lookups
+r78a-r77b-gprior-nomlpgate	trained	0.925327	259.4	15100.0	3815.0	52.7	2026-10-14 08:22	r77b + context-gated priors, paid for by dropping the MLP hidden gate
+r78b-r77b-docmean-nomlpgate	trained	0.928656	262.5	15111.2	3815.0	52.9	2026-10-14 08:22	r77b + low-rank bag-of-words document context, MLP gate dropped
+r78c-docmean-lowrank	trained	0.954559	235.1	12892.0	3815.0	50.5	2026-10-14 08:22	Low-rank bag-of-words document context in x0
+r78d-selective-time-rope	trained	0.956727	238.5	13866.5	3815.0	50.3	2026-10-14 08:22	Selective-time RoPE: token-dependent position clock per head
+r79a-r78a-dropve3	trained	0.924342	258.8	15100.0	3815.0	52.7	2026-10-14 08:48	r78a with the VE table dropped at layer 3 instead of layer 5
+r79b-r78a-memtri	trained	0.925471	259.3	15100.5	3815.0	52.7	2026-10-14 08:48	r78a with a hashed trigram lookup added to the mid-network memory
+r79c-hidden-docmean	trained	0.957992	234.2	12892.3	3815.0	50.5	2026-10-14 08:48	Document summary of the hidden state, injected mid-network
+r79d-doc-cache-prior	trained	0.957613	233.1	12751.3	3815.0	51.4	2026-10-14 08:48	Document-unigram cache prior folded into the head
+r80a-r79a-mlpgate-late	trained	0.923610	261.6	15164.1	3815.0	52.8	2026-10-14 09:18	r79a with the grouped MLP hidden gate restored in layers 4-7 only
+r80b-r79a-mem8k-rank256	trained	0.924619	259.4	15117.0	3815.0	52.7	2026-10-14 09:18	r79a: halve the hashed memory table, spend the parameters on bigram-prior rank (192 -> 256)
+r80c-r79a-mem-at2	trained	0.924663	259.1	15100.0	3815.0	52.7	2026-10-14 09:18	r79a with the hashed memory injected at layer 2 instead of 4
+r80d-mlp-token-shift	trained	0.954930	236.0	13226.1	3815.0	50.3	2026-10-14 09:18	Selective token shift on the MLP input
+r81a-r80a-nometa	trained	0.924150	260.6	15162.4	3815.0	52.7	2026-10-14 09:47	Ablation of r80a: no token metadata embedding
+r81b-r79a-mlpshift-late	trained	0.924397	261.4	15548.5	3815.0	52.7	2026-10-14 09:47	r79a + selective MLP token shift in layers 4-7
+r81c-r80a-nodepthgates	trained	0.925173	257.6	15162.1	3815.0	52.8	2026-10-14 09:47	Ablation of r80a: no stale depth gates (plain resid/x0 lambdas)
+r81d-key-salience	trained	0.958113	240.9	12713.1	3815.0	50.3	2026-10-14 09:47	Key salience bias carried in one q/k channel
+r82a-r80a-group-depthgates	trained	0.924431	261.8	15106.1	3815.0	52.8	2026-10-14 10:17	Channel-grouped stale depth gates
+r82b-r80a-group-priorgates	trained	0.923532	261.6	15165.3	3815.0	52.8	2026-10-14 10:17	Component-grouped context gates on the n-gram logit priors
+r82c-r80a-group-memgate	trained	0.923481	261.6	15113.9	3815.0	52.8	2026-10-14 10:17	Feature-grouped gate on the mid-network hashed memory
+r82d-adaptive-softcap	trained	0.957937	231.5	12717.6	3815.0	50.3	2026-10-14 10:17	Per-token adaptive logit soft-cap
+r83a-r82c-group-priorgates	trained	0.923469	261.6	15118.2	3815.0	52.8	2026-10-14 10:37	r82c + component-grouped prior gates (combine r82b and r82c)
+r83b-r82c-noctxx0	trained	0.923746	260.1	14924.9	3815.0	52.8	2026-10-14 10:37	Ablation of r82c: no contextual x0 conv (x0 = norm(token embedding + metadata))
+r83c-r82c-nolaggates	trained	0.924627	256.9	15113.9	3815.0	52.8	2026-10-14 10:37	Ablation of r82c: static ctx-VE conv (no selective lag gates)
+r83d-outemb-input	trained	0.957199	233.4	12841.0	3815.0	50.3	2026-10-14 10:37	Output embedding of the current token as an extra input feature
+r84a-r83a-noctx-mem2	trained	0.923772	261.4	14959.7	3815.0	52.8	2026-10-14 10:56	r83a - ctx-x0 conv + second memory read (skip-bigram hash) at layer 6
+r84b-r83a-noctx-mlpgate2	trained	0.923372	260.6	14958.2	3815.0	52.8	2026-10-14 10:56	r83a - ctx-x0 conv + MLP hidden gate in layers 2-7
+r84c-r83a-noctx-ve3lag	trained	0.923599	260.1	15119.7	3815.0	52.8	2026-10-14 10:56	r83a - ctx-x0 conv + 3-lag selective ctx-VE
+r84d-meta-output-emb	trained	0.958153	231.7	12714.2	3815.0	50.4	2026-10-14 10:56	Output-side token metadata embedding
+r85a-r84b-memprior	trained	0.923853	262.8	14959.2	3815.0	52.8	2026-10-14 11:21	Memory read reused as a trigram-context logit prior
+r85b-r84b-mlpgate-all	trained	0.923484	260.5	14990.3	3815.0	52.8	2026-10-14 11:21	r84b with the MLP hidden gate in all 8 layers
+r85c-r84b-ve3lag	trained	0.923753	261.3	15151.7	3815.0	52.8	2026-10-14 11:21	r84b + 3-lag selective ctx-VE (combine r84b and r84c)
+r85d-doc-occurrence-count	trained	0.955723	232.0	12713.6	3815.0	50.3	2026-10-14 11:21	Document occurrence count of the current token as an input feature
+r86a-r83a-noctx-occ	trained	0.923154	262.1	14926.7	3815.0	52.8	2026-10-14 11:52	r83a - ctx-x0 conv + document occurrence-count embedding
+r86b-r84b-occ-nometa	trained	0.923266	262.1	14957.1	3815.0	52.7	2026-10-14 11:52	r84b: token metadata embedding replaced by the document occurrence-count embedding
+r86c-bigram-occurrence	trained	0.955123	233.4	12713.6	3815.0	50.3	2026-10-14 11:52	Document occurrence count of the current bigram
+r86d-occ-distance	trained	0.955025	233.5	12714.1	3815.0	50.3	2026-10-14 11:52	Document occurrence count + log-distance to the previous occurrence
+r87a-r83a-noctx-bigocc32	trained	0.923062	262.5	14926.7	3815.0	52.8	2026-10-14 12:20	r83a - ctx-x0 conv + document BIGRAM occurrence count (cheap int32 sort)
+r87b-r86a-int32	trained	0.922928	262.0	14926.7	3815.0	52.8	2026-10-14 12:20	r86a with the occurrence count computed by a cheaper int32 sort
+r87c-occ-all3	trained	0.954388	234.5	12714.7	3815.0	50.3	2026-10-14 12:20	Unigram count + log-distance + bigram count occurrence features
+r87d-prev-occ-successor-state	trained	0.959621	232.3	12845.3	3815.0	50.6	2026-10-14 12:20	Hard induction pointer: hidden state of the successor of the previous occurrence
+r88a-r87b-gates57	trained	0.923473	266.4	14910.7	3815.0	52.8	2026-10-14 12:54	r87b with the MLP hidden gate in layers 5-7 (fit the time cap)
+r88b-r87b-dist-gates57	trained	0.923224	266.9	14911.3	3815.0	52.8	2026-10-14 12:54	r88a + log2-distance-to-previous-occurrence embedding (same sort)
+r88c-r87b-dist-nometa	trained	0.923063	261.3	14925.7	3815.0	52.7	2026-10-14 12:54	r87b + log2-distance embedding, token metadata embedding removed (fit the cap)
+r88d-local-repeat-flags	trained	0.956350	233.5	12713.6	3815.0	50.3	2026-10-14 12:54	Local repetition pattern embedding
+r89a-r88c-repflags	trained	0.923040	263.7	14926.3	3815.0	52.7	2026-10-14 13:21	r88c + local repetition-pattern embedding
+r89b-r88c-rowcount	trained	0.923493	261.8	14925.7	3815.0	52.7	2026-10-14 13:21	r88c with occurrence statistics over the whole row (across documents)
+r89c-r88c-ngram-depth	trained	0.922832	263.0	14926.2	3815.0	52.7	2026-10-14 13:21	r88c + n-gram repetition depth (one batched sort for n = 1..4)
+r89d-ngram-depth	trained	0.954575	234.3	12714.7	3815.0	50.3	2026-10-14 13:21	Document repetition features with n-gram repetition depth (control)
+r90a-r89c-rank160-64	trained	0.923683	260.7	14897.4	3815.0	51.6	2026-10-14 14:16	r89c with prior ranks 160 + 64 (fit the time cap)
+r90b-r88c-depth2	trained	0.923036	262.1	14926.2	3815.0	52.7	2026-10-14 14:16	r88c + bigram-only repetition depth (batched sort over 2 key sets)
+r90c-r89c-gates456	trained	0.923149	267.0	14910.2	3815.0	52.7	2026-10-14 14:16	r89c with the MLP hidden gate in layers 4-6 (fit the time cap)
+r90d-doclen-temperature	trained	0.954848	230.1	12716.7	3815.0	50.3	2026-10-14 14:16	Document-length-aware attention temperature
+r91a-r88c-doclen	trained	0.922870	262.9	14929.3	3815.0	52.7	2026-10-14 15:16	r88c + document-length-aware attention temperature
+r91b-r90b-doclen	trained	0.922550	263.0	14929.8	3815.0	52.7	2026-10-14 15:16	r90b (bigram repetition depth) + document-length-aware attention temperature
+r91c-r89c-doclen-rank176	trained	0.923249	261.6	14915.8	3815.0	52.1	2026-10-14 15:16	r89c + document-length temperature, prior ranks 176 + 80 (fit the cap)
+r91d-rowlen-temperature	trained	0.954847	231.6	12716.5	3815.0	50.3	2026-10-14 15:16	Row-position attention temperature (ablation of the document-relative length)
+r92a-r90b-rowtemp	trained	0.922549	265.5	14926.3	3815.0	52.7	2026-10-14 17:53	r90b-r88c-depth2 + position-aware attention temperature (cheap static form)
+r92b-r88c-rowtemp	trained	0.922931	264.2	14925.8	3815.0	52.7	2026-10-14 17:53	r88c-r87b-dist-nometa + position-aware attention temperature (cheap static form)
+r92c-r89c-rowtemp	trained	0.922637	264.6	14926.3	3815.0	52.7	2026-10-14 17:53	r89c-r88c-ngram-depth + position-aware attention temperature (cheap static form)
+r92d-key-scale-salience	trained	0.955189	232.0	12717.0	3815.0	50.3	2026-10-14 17:53	Multiplicative key salience after QK-norm
+r93a-r90b-ropetemp	trained	0.922696	264.5	15386.4	3815.0	52.7	2026-10-14 18:54	r90b-r88c-depth2 + position-aware attention temperature folded into the query RoPE tables
+r93b-r88c-ropetemp	trained	0.922918	262.5	15385.9	3815.0	52.7	2026-10-14 18:54	r88c-r87b-dist-nometa + position-aware attention temperature folded into the query RoPE tables
+r93c-r88c-keysal	trained	0.923007	249.4	14932.7	3815.0	52.7	2026-10-14 18:54	r88c + multiplicative per-key salience (shares the smear-gate matmul)
+r93d-value-salience	trained	0.955923	235.3	13229.0	3815.0	50.3	2026-10-14 18:54	Per-key value salience
+r94a-r93c-temp-depth	trained	0.922335	251.4	15393.4	3815.0	52.7	2026-10-14 19:53	r93c + RoPE-folded position temperature + n-gram repetition depth
+r94b-r93c-temp-depth-meta-ctx	trained	0.921630	255.1	15587.1	3815.0	52.8	2026-10-14 19:53	r94a + token metadata embedding + ctx-x0 conv restored
+r94c-r93c-temp-depth-meta-gates	trained	0.921942	253.4	15459.2	3815.0	52.8	2026-10-14 19:53	r94a + token metadata embedding + MLP hidden gate in all 8 layers
+r94d-keysal-rowtemp	trained	0.955129	235.0	12717.2	3815.0	50.3	2026-10-14 19:53	Key salience + position-aware temperature on the control (additivity test)
+r95a-r94b-gatesall	trained	0.921678	254.4	15651.2	3815.0	52.8	2026-10-14 20:30	r94b + MLP hidden gate in all 8 layers
+r95b-r94b-gatesall-bigocc	trained	0.921747	255.1	15651.7	3815.0	52.8	2026-10-14 20:30	r95a + bigram occurrence-count embedding (free from the batched n-gram sort)
+r95c-r94b-gatesall-ve3	trained	0.921402	255.2	15844.7	3815.0	52.8	2026-10-14 20:30	r95a + 3-lag selective ctx-VE
+r95d-key-value-salience	trained	0.952950	227.2	13233.0	3815.0	50.3	2026-10-14 20:30	Key salience + value salience from one per-key gate matmul (control)
+r96a-r95c-vsal	trained	0.921542	259.7	16299.7	3815.0	52.8	2026-10-14 20:59	r95c + per-key value salience (4 more columns of the shared smear/salience gate)
+r96b-r95c-vsal-depth6	trained	0.921745	259.4	16299.7	3815.0	52.8	2026-10-14 20:59	r96a + n-gram repetition depth up to 6
+r96c-r95c-vsal-qsal	trained	0.921711	253.8	16306.7	3815.0	52.8	2026-10-14 20:59	r96a + per-query temperature (5th gate block)
+r96d-lexical-salience	trained	0.955808	234.6	13247.0	3815.0	50.9	2026-10-14 20:59	Lexical (token-identity) key/value salience
+r97a-r95c-pointer-docmask	trained	0.922204	265.6	15160.5	3815.0	52.8	2026-10-14 21:49	r95c + pointer-sentinel copy head + document masking in the full layers
+r97b-r95c-pointer	trained	0.922490	262.0	15160.0	3815.0	52.8	2026-10-14 21:49	r95c + pointer-sentinel copy head (no doc mask)
+r97c-r95c-docmask	trained	0.921499	258.3	15845.2	3815.0	52.8	2026-10-14 21:49	r95c + document masking in the full layers (no pointer)
+r97d-salience-full-layers	trained	0.956060	231.5	12843.0	3815.0	50.3	2026-10-14 21:49	Key/value salience only in the full-context layers (control)
+r98a-r95c-ve4	trained	0.921446	258.7	16038.2	3815.0	52.8	2026-10-14 22:31	r95c with 4-lag selective ctx-VE
+r98b-r95c-selective-x0conv	trained	0.921592	279.5	15974.5	3815.0	52.8	2026-10-14 22:31	Selective ctx-x0 conv: per-token lag gates on the input-embedding conv
+r98c-r95c-notemp	trained	0.921689	251.4	15844.7	3815.0	52.8	2026-10-14 22:31	Ablation of r95c: position-aware attention temperature off
+r98d-signed-value-salience	trained	0.952817	226.8	13233.0	3815.0	50.3	2026-10-14 22:31	Signed value salience: keys can contribute negatively
+r99a-r95c-replicate	trained	0.921488	255.6	15844.7	3815.0	52.8	2026-10-14 22:57	Replicate of r95c (noise estimate for the final model)
+r99b-r95c-unet	trained	0.921448	256.5	15844.7	3815.0	52.8	2026-10-14 22:57	r95c + U-net skips restored
+r99c-r95c-repfeat-head	trained	0.921564	255.8	15845.4	3815.0	52.8	2026-10-14 22:57	Repetition status fed straight to the head
+r99d-control-allwins	trained	0.949723	238.2	13747.9	3815.0	50.4	2026-10-14 22:57	Control + all control-level wins combined (additivity test)
+r100a-r95c-keytemp	trained	0.921311	258.2	15857.4	3815.0	52.8	2026-10-14 23:25	r95c + key-position temperature (folded into the key RoPE tables)
+r100b-r95c-depth-priorgate	trained	0.921548	255.4	15844.7	3815.0	52.8	2026-10-14 23:25	Prior gates conditioned on n-gram repetition depth
+r100c-r95c-keytemp-depthgate	trained	0.921495	258.3	15857.5	3815.0	52.8	2026-10-14 23:25	r95c + key-position temperature + depth-conditioned prior gates
+r100d-key-position-temp	trained	0.955080	231.7	12720.1	3815.0	50.3	2026-10-14 23:25	Key-position attention temperature (control)

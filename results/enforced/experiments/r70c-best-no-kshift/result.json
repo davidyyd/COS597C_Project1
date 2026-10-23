@@ -1,0 +1,11 @@
+{
+  "name": "r70c-best-no-kshift",
+  "idea": "Best without the key time-shifted read (ablation)",
+  "total_params": 51143280,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 66.64176731021143,
+  "status": "trained",
+  "val_loss": 0.9330600037659876,
+  "train_step_ms": 66.61169676983263,
+  "finished": "2026-10-13 18:55"
+}

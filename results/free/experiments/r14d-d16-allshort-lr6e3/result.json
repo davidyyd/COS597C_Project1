@@ -1,0 +1,11 @@
+{
+  "name": "r14d-d16-allshort-lr6e3",
+  "idea": "Window 256 on every layer except the last (pattern S)",
+  "status": "trained",
+  "val_bpb": 0.795131,
+  "training_seconds": 2377.2,
+  "peak_vram_mb": 63345.7,
+  "num_steps": 3815.0,
+  "num_params_M": 763.6,
+  "finished": "2026-10-14 04:33"
+}

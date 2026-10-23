@@ -1,0 +1,11 @@
+{
+  "name": "r76c-token-headgate",
+  "idea": "Token-conditioned head gates (per-token, per-layer, per-head gate bias)",
+  "total_params": 51405448,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 68.61492400988936,
+  "status": "trained",
+  "val_loss": 0.930743694014959,
+  "train_step_ms": 68.49415308999596,
+  "finished": "2026-10-13 22:47"
+}

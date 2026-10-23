@@ -1,0 +1,11 @@
+{
+  "name": "r92b-r88c-rowtemp",
+  "idea": "r88c-r87b-dist-nometa + position-aware attention temperature (cheap static form)",
+  "status": "trained",
+  "val_bpb": 0.922931,
+  "training_seconds": 264.2,
+  "peak_vram_mb": 14925.8,
+  "num_steps": 3815.0,
+  "num_params_M": 52.7,
+  "finished": "2026-10-14 17:53"
+}

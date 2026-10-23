@@ -1,0 +1,11 @@
+{
+  "name": "r02a-d16w1024-grouplr",
+  "idea": "d16w1024 + group LRs",
+  "status": "trained",
+  "val_bpb": 0.841278,
+  "training_seconds": 1247.2,
+  "peak_vram_mb": 55820.0,
+  "num_steps": 3815.0,
+  "num_params_M": 285.2,
+  "finished": "2026-10-13 16:57"
+}

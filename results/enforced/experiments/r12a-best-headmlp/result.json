@@ -1,0 +1,11 @@
+{
+  "name": "r12a-best-headmlp",
+  "idea": "Best model + LM head reads the last MLP output",
+  "total_params": 50623001,
+  "flops_ratio": 1.0056919047303494,
+  "step_ms": 66.88205398007995,
+  "status": "trained",
+  "val_loss": 0.9509815686856278,
+  "train_step_ms": 66.89174325991189,
+  "finished": "2026-10-12 18:46"
+}

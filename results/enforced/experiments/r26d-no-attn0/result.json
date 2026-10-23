@@ -1,0 +1,11 @@
+{
+  "name": "r26d-no-attn0",
+  "idea": "No attention in layer 0 when the input already has bigram features",
+  "total_params": 49676816,
+  "flops_ratio": 0.9366078061404213,
+  "step_ms": 63.206679110007826,
+  "status": "trained",
+  "val_loss": 0.9577342744350146,
+  "train_step_ms": 63.6223929701373,
+  "finished": "2026-10-13 00:23"
+}

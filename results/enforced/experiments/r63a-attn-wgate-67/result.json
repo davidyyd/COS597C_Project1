@@ -1,0 +1,11 @@
+{
+  "name": "r63a-attn-wgate-67",
+  "idea": "Best + attention write gates in layers 6-7",
+  "total_params": 51208824,
+  "flops_ratio": 1.0177348869815117,
+  "step_ms": 68.65320208016783,
+  "status": "trained",
+  "val_loss": 0.9326114636903213,
+  "train_step_ms": 68.14884474006249,
+  "finished": "2026-10-13 14:56"
+}

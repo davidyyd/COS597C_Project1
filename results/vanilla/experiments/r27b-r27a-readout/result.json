@@ -1,0 +1,11 @@
+{
+  "name": "r27b-r27a-readout",
+  "idea": "r27a + multi-depth readout",
+  "status": "trained",
+  "val_bpb": 0.935842,
+  "training_seconds": 252.3,
+  "peak_vram_mb": 15599.5,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-13 06:57"
+}

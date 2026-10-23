@@ -1,0 +1,11 @@
+{
+  "name": "r80b-r79a-mem8k-rank256",
+  "idea": "r79a: halve the hashed memory table, spend the parameters on bigram-prior rank (192 -> 256)",
+  "status": "trained",
+  "val_bpb": 0.924619,
+  "training_seconds": 259.4,
+  "peak_vram_mb": 15117.0,
+  "num_steps": 3815.0,
+  "num_params_M": 52.7,
+  "finished": "2026-10-14 09:18"
+}

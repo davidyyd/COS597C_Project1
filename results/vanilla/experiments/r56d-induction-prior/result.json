@@ -1,0 +1,7 @@
+{
+  "name": "r56d-induction-prior",
+  "idea": "Hard-wired induction prior in the global layers",
+  "status": "crash",
+  "reason": "no val_bpb printed; see run.log",
+  "finished": "2026-10-13 22:18"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r27b-best-vegate-qtemp",
+  "idea": "Best model + content term in the doc temperature",
+  "total_params": 51019856,
+  "flops_ratio": 1.013884480840393,
+  "step_ms": 67.53547649990651,
+  "status": "trained",
+  "val_loss": 0.9444048438624483,
+  "train_step_ms": 67.45835534995422,
+  "finished": "2026-10-13 00:41"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "r33d-r32a-pointer",
+  "idea": "r32a + pointer-sentinel copy head",
+  "status": "crash",
+  "reason": "no val_bpb printed; see run.log",
+  "finished": "2026-10-13 09:45"
+}

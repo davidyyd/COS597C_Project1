@@ -1,0 +1,11 @@
+{
+  "name": "r19a-qfeat-docpos",
+  "idea": "Document position feature on qfeat-docpos",
+  "total_params": 50492464,
+  "flops_ratio": 1.003013361327832,
+  "step_ms": 68.867332469963,
+  "status": "trained",
+  "val_loss": 0.9446831963421658,
+  "train_step_ms": 68.99942897987785,
+  "finished": "2026-10-12 21:31"
+}

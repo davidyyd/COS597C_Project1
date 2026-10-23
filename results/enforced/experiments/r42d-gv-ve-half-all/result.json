@@ -1,0 +1,11 @@
+{
+  "name": "r42d-gv-ve-half-all",
+  "idea": "Half-width value embeddings in every layer",
+  "total_params": 50352176,
+  "flops_ratio": 1.0003243548651486,
+  "step_ms": 68.17427097994369,
+  "status": "trained",
+  "val_loss": 0.9474996408865753,
+  "train_step_ms": 68.04768419999164,
+  "finished": "2026-10-13 06:43"
+}

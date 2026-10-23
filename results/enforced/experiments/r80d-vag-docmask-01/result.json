@@ -1,0 +1,11 @@
+{
+  "name": "r80d-vag-docmask-01",
+  "idea": "Document masking only in layers 0-1",
+  "total_params": 50348080,
+  "flops_ratio": 0.9860387900517223,
+  "step_ms": 58.77887820999604,
+  "status": "trained",
+  "val_loss": 0.9445303205801662,
+  "train_step_ms": 58.765091320092324,
+  "finished": "2026-10-14 01:07"
+}

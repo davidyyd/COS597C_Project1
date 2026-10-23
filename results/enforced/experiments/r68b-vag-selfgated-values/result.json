@@ -1,0 +1,11 @@
+{
+  "name": "r68b-vag-selfgated-values",
+  "idea": "Self-gated values (per-channel, from the values themselves)",
+  "total_params": 50610224,
+  "flops_ratio": 1.0056814416701834,
+  "step_ms": 62.74922557990067,
+  "status": "trained",
+  "val_loss": 0.9443494323624457,
+  "train_step_ms": 62.501517569762655,
+  "finished": "2026-10-13 17:54"
+}

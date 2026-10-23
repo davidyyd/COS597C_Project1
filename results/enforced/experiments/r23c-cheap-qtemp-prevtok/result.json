@@ -1,0 +1,11 @@
+{
+  "name": "r23c-cheap-qtemp-prevtok",
+  "idea": "Cheap lineage + content query temperature + prev-token keys",
+  "total_params": 50360912,
+  "flops_ratio": 1.0003348179253146,
+  "step_ms": 65.69228360982379,
+  "status": "trained",
+  "val_loss": 0.9459079063588272,
+  "train_step_ms": 65.82228209997993,
+  "finished": "2026-10-12 23:09"
+}

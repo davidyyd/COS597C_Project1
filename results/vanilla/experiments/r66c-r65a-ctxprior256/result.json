@@ -1,0 +1,11 @@
+{
+  "name": "r66c-r65a-ctxprior256",
+  "idea": "r66a with rank 256 (contextual n-gram prior; the freed U parameters go into V)",
+  "status": "trained",
+  "val_bpb": 0.928585,
+  "training_seconds": 263.4,
+  "peak_vram_mb": 15166.7,
+  "num_steps": 3815.0,
+  "num_params_M": 52.3,
+  "finished": "2026-10-14 02:44"
+}

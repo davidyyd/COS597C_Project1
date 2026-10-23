@@ -1,0 +1,11 @@
+{
+  "name": "r20d-d16-bigram262k-lr3x",
+  "idea": "d16 bigram 262k with 3x higher LR on the bigram table",
+  "status": "trained",
+  "val_bpb": 0.79071,
+  "training_seconds": 2453.8,
+  "peak_vram_mb": 70513.8,
+  "num_steps": 3815.0,
+  "num_params_M": 1233.3,
+  "finished": "2026-10-14 10:31"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r07c-wd02",
+  "idea": "Weight decay 0.2 (from 0.1)",
+  "status": "trained",
+  "val_bpb": 0.945462,
+  "training_seconds": 262.2,
+  "peak_vram_mb": 14722.1,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-13 21:49"
+}

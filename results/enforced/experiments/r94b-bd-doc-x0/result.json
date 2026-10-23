@@ -1,0 +1,11 @@
+{
+  "name": "r94b-bd-doc-x0",
+  "idea": "Block-diagonal gate form + document position in the x0 re-injection gate",
+  "total_params": 52191886,
+  "flops_ratio": 1.003002898267666,
+  "step_ms": 68.32021157984855,
+  "status": "trained",
+  "val_loss": 0.9290294135130355,
+  "train_step_ms": 67.90610363997985,
+  "finished": "2026-10-14 07:27"
+}

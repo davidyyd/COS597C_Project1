@@ -1,0 +1,9 @@
+# Python 3.11. PyTorch 2.11 built for CUDA 13.0 (any CUDA 12.8+ build of 2.11 should also work).
+--extra-index-url https://download.pytorch.org/whl/cu130
+torch==2.11.0
+numpy==2.4.6
+pyarrow==25.0.1
+rustbpe==0.1.0
+tiktoken==0.14.0
+requests==2.34.2
+matplotlib==3.11.1

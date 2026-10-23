@@ -1,0 +1,11 @@
+{
+  "name": "r61b-r60c-fusedlag",
+  "idea": "r60c with all VE tables' selective lag gates computed in one matmul",
+  "status": "trained",
+  "val_bpb": 0.929948,
+  "training_seconds": 262.1,
+  "peak_vram_mb": 15434.4,
+  "num_steps": 3815.0,
+  "num_params_M": 50.6,
+  "finished": "2026-10-14 00:45"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r69d-vag-qk-mlp-ingates",
+  "idea": "q/k input gate + MLP input gate (fast base)",
+  "total_params": 50872368,
+  "flops_ratio": 1.0110385284752181,
+  "step_ms": 66.29925826971885,
+  "status": "trained",
+  "val_loss": 0.9430331195708725,
+  "train_step_ms": 66.33489245024975,
+  "finished": "2026-10-13 18:24"
+}

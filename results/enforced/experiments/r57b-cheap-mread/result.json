@@ -1,0 +1,11 @@
+{
+  "name": "r57b-cheap-mread",
+  "idea": "Cheap key-shift lineage + MLP reads attention output at t-1",
+  "total_params": 50877056,
+  "flops_ratio": 1.0110385284752181,
+  "step_ms": 66.22330059995875,
+  "status": "trained",
+  "val_loss": 0.9360526337070841,
+  "train_step_ms": 66.59303491003811,
+  "finished": "2026-10-13 12:16"
+}

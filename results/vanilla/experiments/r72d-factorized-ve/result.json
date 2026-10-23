@@ -1,0 +1,11 @@
+{
+  "name": "r72d-factorized-ve",
+  "idea": "Factorised value embeddings (rank-256 tables + up-projection)",
+  "status": "trained",
+  "val_bpb": 0.956474,
+  "training_seconds": 233.3,
+  "peak_vram_mb": 12752.0,
+  "num_steps": 3815.0,
+  "num_params_M": 42.5,
+  "finished": "2026-10-14 05:18"
+}

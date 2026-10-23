@@ -1,0 +1,11 @@
+{
+  "name": "r76d-all-doc-x2",
+  "idea": "Document position everywhere it helped + RoPE bases x2",
+  "total_params": 51143313,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 68.39140622993,
+  "status": "trained",
+  "val_loss": 0.9310067793655246,
+  "train_step_ms": 68.5992369899759,
+  "finished": "2026-10-13 22:47"
+}

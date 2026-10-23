@@ -1,0 +1,11 @@
+{
+  "name": "r16b-d22-b16-normcanon-lr8e3",
+  "idea": "d22 b16 with fused ReLU2Proj + fused NormCanon (memory), LR 8e-3",
+  "status": "trained",
+  "val_bpb": 0.782951,
+  "training_seconds": 3411.9,
+  "peak_vram_mb": 61683.4,
+  "num_steps": 3815.0,
+  "num_params_M": 1038.9,
+  "finished": "2026-10-14 06:32"
+}

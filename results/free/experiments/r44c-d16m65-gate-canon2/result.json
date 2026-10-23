@@ -1,0 +1,11 @@
+{
+  "name": "r44c-d16m65-gate-canon2",
+  "idea": "r43d with Canon kernel 2 (from 4)",
+  "status": "trained",
+  "val_bpb": 0.765926,
+  "training_seconds": 3159.9,
+  "peak_vram_mb": 70301.7,
+  "num_steps": 3815.0,
+  "num_params_M": 1725.0,
+  "finished": "2026-10-15 11:04"
+}

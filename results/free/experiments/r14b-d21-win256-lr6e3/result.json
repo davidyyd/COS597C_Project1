@@ -1,0 +1,11 @@
+{
+  "name": "r14b-d21-win256-lr6e3",
+  "idea": "d21 canon b8 PE win256, LR 6e-3",
+  "status": "trained",
+  "val_bpb": 0.783731,
+  "training_seconds": 3300.6,
+  "peak_vram_mb": 47712.3,
+  "num_steps": 3815.0,
+  "num_params_M": 1000.4,
+  "finished": "2026-10-14 04:33"
+}

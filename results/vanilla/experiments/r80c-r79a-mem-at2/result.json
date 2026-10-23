@@ -1,0 +1,11 @@
+{
+  "name": "r80c-r79a-mem-at2",
+  "idea": "r79a with the hashed memory injected at layer 2 instead of 4",
+  "status": "trained",
+  "val_bpb": 0.924663,
+  "training_seconds": 259.1,
+  "peak_vram_mb": 15100.0,
+  "num_steps": 3815.0,
+  "num_params_M": 52.7,
+  "finished": "2026-10-14 09:18"
+}

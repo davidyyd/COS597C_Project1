@@ -1,0 +1,11 @@
+{
+  "name": "r82b-r81a-repeat",
+  "idea": "Repeat of r81a (noise check of the current best)",
+  "total_params": 52159112,
+  "flops_ratio": 0.9942976322094844,
+  "step_ms": 68.61646993958857,
+  "status": "trained",
+  "val_loss": 0.9301786057658556,
+  "train_step_ms": 68.80773341981694,
+  "finished": "2026-10-14 02:04"
+}

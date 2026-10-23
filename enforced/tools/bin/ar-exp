@@ -1,0 +1,4 @@
+#!/bin/bash
+# the agent's experiment command (the frozen harness, outside the agent's folder; see harness/run_experiment.py)
+source "$(dirname "$(readlink -f "$0")")"/../../../env.sh
+exec python "$(dirname "$(readlink -f "$0")")"/../../harness/run_experiment.py "$@"

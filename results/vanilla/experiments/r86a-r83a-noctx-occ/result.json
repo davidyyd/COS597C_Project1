@@ -1,0 +1,11 @@
+{
+  "name": "r86a-r83a-noctx-occ",
+  "idea": "r83a - ctx-x0 conv + document occurrence-count embedding",
+  "status": "trained",
+  "val_bpb": 0.923154,
+  "training_seconds": 262.1,
+  "peak_vram_mb": 14926.7,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 11:52"
+}

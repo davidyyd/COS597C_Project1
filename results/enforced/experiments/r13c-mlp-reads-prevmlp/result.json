@@ -1,0 +1,11 @@
+{
+  "name": "r13c-mlp-reads-prevmlp",
+  "idea": "MLP also reads the previous MLP output",
+  "total_params": 50623016,
+  "flops_ratio": 1.0056919047303494,
+  "step_ms": 68.62682718026917,
+  "status": "trained",
+  "val_loss": 0.9452193860968029,
+  "train_step_ms": 68.88775542989606,
+  "finished": "2026-10-12 19:09"
+}

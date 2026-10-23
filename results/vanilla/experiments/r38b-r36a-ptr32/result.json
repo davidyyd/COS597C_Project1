@@ -1,0 +1,11 @@
+{
+  "name": "r38b-r36a-ptr32",
+  "idea": "r36a with a 32-dim pointer (instead of 64)",
+  "status": "trained",
+  "val_bpb": 0.933887,
+  "training_seconds": 260.9,
+  "peak_vram_mb": 14930.8,
+  "num_steps": 3815.0,
+  "num_params_M": 50.4,
+  "finished": "2026-10-13 12:23"
+}

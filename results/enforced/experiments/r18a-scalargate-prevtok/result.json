@@ -1,0 +1,11 @@
+{
+  "name": "r18a-scalargate-prevtok",
+  "idea": "Budget swap: scalar self-gate only + prev-token keys",
+  "total_params": 50360880,
+  "flops_ratio": 1.0003348179253146,
+  "step_ms": 65.40955978998682,
+  "status": "trained",
+  "val_loss": 0.945980902320085,
+  "train_step_ms": 65.58048514008988,
+  "finished": "2026-10-12 20:59"
+}

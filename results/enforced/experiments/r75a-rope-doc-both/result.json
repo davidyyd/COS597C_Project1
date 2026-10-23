@@ -1,0 +1,11 @@
+{
+  "name": "r75a-rope-doc-both",
+  "idea": "Combine: RoPE base \u221d window + doc position in output temperature + doc position in x0 gate",
+  "total_params": 51143297,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 68.59568383952137,
+  "status": "trained",
+  "val_loss": 0.9311552249337971,
+  "train_step_ms": 68.60792145016603,
+  "finished": "2026-10-13 22:24"
+}

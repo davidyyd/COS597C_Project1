@@ -1,0 +1,11 @@
+{
+  "name": "r06b-prevtok2",
+  "idea": "Keys see the two previous tokens",
+  "total_params": 50361360,
+  "flops_ratio": 1.0003348179253146,
+  "step_ms": 64.56954201014014,
+  "status": "trained",
+  "val_loss": 0.9524596176266549,
+  "train_step_ms": 64.70068274007645,
+  "finished": "2026-10-12 16:21"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r89b-early-rope-half",
+  "idea": "Finer RoPE in the document-isolated early layers (base 10 x window there)",
+  "total_params": 52191878,
+  "flops_ratio": 0.9949672680601138,
+  "step_ms": 68.79607357957866,
+  "status": "trained",
+  "val_loss": 0.9291402365130406,
+  "train_step_ms": 68.95443664005143,
+  "finished": "2026-10-14 04:58"
+}

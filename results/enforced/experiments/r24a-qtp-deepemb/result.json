@@ -1,0 +1,11 @@
+{
+  "name": "r24a-qtp-deepemb",
+  "idea": "Deep token embedding on r23c-cheap-qtemp-prevtok",
+  "total_params": 50885200,
+  "flops_ratio": 1.0110489915353844,
+  "step_ms": 67.30064988980303,
+  "status": "trained",
+  "val_loss": 0.9456038587554921,
+  "train_step_ms": 67.07981409010245,
+  "finished": "2026-10-12 23:34"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r44a-best-no-outtemp",
+  "idea": "Best model without the output temperature (ablation)",
+  "total_params": 50897008,
+  "flops_ratio": 1.011373346400533,
+  "step_ms": 68.00260588002857,
+  "status": "trained",
+  "val_loss": 0.939019909308696,
+  "train_step_ms": 67.86303869012045,
+  "finished": "2026-10-13 07:24"
+}

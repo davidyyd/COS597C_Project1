@@ -1,0 +1,11 @@
+{
+  "name": "r01c-qtemp",
+  "idea": "Per-token query temperature after QK-norm",
+  "total_params": 50348560,
+  "flops_ratio": 1.0003348179253146,
+  "step_ms": 60.05338418006431,
+  "status": "diverged",
+  "val_loss": null,
+  "train_step_ms": null,
+  "finished": "2026-10-12 14:50"
+}

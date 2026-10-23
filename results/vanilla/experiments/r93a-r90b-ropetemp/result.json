@@ -1,0 +1,11 @@
+{
+  "name": "r93a-r90b-ropetemp",
+  "idea": "r90b-r88c-depth2 + position-aware attention temperature folded into the query RoPE tables",
+  "status": "trained",
+  "val_bpb": 0.922696,
+  "training_seconds": 264.5,
+  "peak_vram_mb": 15386.4,
+  "num_steps": 3815.0,
+  "num_params_M": 52.7,
+  "finished": "2026-10-14 18:54"
+}

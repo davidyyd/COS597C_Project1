@@ -1,0 +1,11 @@
+{
+  "name": "r93a-lr11e3",
+  "idea": "best (r90b) with LR 1.1e-2",
+  "status": "trained",
+  "val_bpb": 0.760133,
+  "training_seconds": 3296.9,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-17 18:36"
+}

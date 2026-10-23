@@ -1,0 +1,11 @@
+{
+  "name": "r81b-dm012-lr1357-ig567",
+  "idea": "Document masking 0-2 + full low-rank head gate (1,3,5,7), MLP input gates only in 5-7",
+  "total_params": 52159112,
+  "flops_ratio": 0.9942976322094844,
+  "step_ms": 68.60377056989819,
+  "status": "trained",
+  "val_loss": 0.9304819036440983,
+  "train_step_ms": 68.98745154001517,
+  "finished": "2026-10-14 01:31"
+}

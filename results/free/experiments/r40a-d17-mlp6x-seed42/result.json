@@ -1,0 +1,11 @@
+{
+  "name": "r40a-d17-mlp6x-seed42",
+  "idea": "r39b (d17 MLP6x) with seed 42",
+  "status": "trained",
+  "val_bpb": 0.767361,
+  "training_seconds": 3317.4,
+  "peak_vram_mb": 76206.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1739.8,
+  "finished": "2026-10-15 07:08"
+}

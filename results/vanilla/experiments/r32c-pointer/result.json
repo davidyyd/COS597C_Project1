@@ -1,0 +1,7 @@
+{
+  "name": "r32c-pointer",
+  "idea": "Pointer-sentinel copy head, computed exactly with two flex passes",
+  "status": "crash",
+  "reason": "no val_bpb printed; see run.log",
+  "finished": "2026-10-13 09:18"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r53c-proxy-skipbigram",
+  "idea": "proxy + output-side skip-bigram table (t-2, t), sign trick",
+  "status": "trained",
+  "val_bpb": 0.765932,
+  "training_seconds": 3189.5,
+  "peak_vram_mb": 68579.2,
+  "num_steps": 3815.0,
+  "num_params_M": 1842.4,
+  "finished": "2026-10-15 19:57"
+}

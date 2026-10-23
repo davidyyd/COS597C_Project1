@@ -1,0 +1,15 @@
+{
+  "model_file": "harness/vanilla/train.py",
+  "model_sha256": "2bfeb87c0076ad3edead15942259cb476b01c1160eaf0407a2672e5350b8363b",
+  "best_val": 0.95895,
+  "best_val_note": "karpathy-arch baseline: mean of 4 seeds at LR 1e-2 (the same model, optimizer, schedule, data and loss as this train.py); the score shown to agents, as in the karpathy-arch arm",
+  "this_train_py_seed1337": 0.95728,
+  "karpathy_arch_seed1337": 0.95736,
+  "metric": "val_bpb (evaluate_bpb in prepare.py)",
+  "training_seconds": 249.2,
+  "peak_vram_mb": 15486.0,
+  "num_steps": 3815,
+  "num_params_M": 50.3,
+  "step_ms": 65.5,
+  "measurement": "baseline/measure_vanilla_ident_20261012-1856: one run of harness/vanilla/train.py on 8 H100s (harness/run_vanilla.sh), seed 1337"
+}

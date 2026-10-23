@@ -1,0 +1,11 @@
+{
+  "name": "r81c-vag-dm012-doctemp",
+  "idea": "Early-layer document masking + document-position query temperature (fast base)",
+  "total_params": 50348112,
+  "flops_ratio": 0.9788960076450093,
+  "step_ms": 58.68762652040459,
+  "status": "trained",
+  "val_loss": 0.9418852222977572,
+  "train_step_ms": 58.51840776973404,
+  "finished": "2026-10-14 01:31"
+}

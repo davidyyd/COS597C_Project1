@@ -1,0 +1,11 @@
+{
+  "name": "r89d-nonest-s7",
+  "idea": "best (r88a) with seed 7",
+  "status": "trained",
+  "val_bpb": 0.76047,
+  "training_seconds": 3301.4,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-17 14:39"
+}

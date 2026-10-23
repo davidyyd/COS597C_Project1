@@ -1,0 +1,11 @@
+{
+  "name": "r42a-d16m6-gate-fused",
+  "idea": "d16m6 + attention gate with fused XSA+gate autograd (memory)",
+  "status": "trained",
+  "val_bpb": 0.767665,
+  "training_seconds": 3115.6,
+  "peak_vram_mb": 75963.9,
+  "num_steps": 3815.0,
+  "num_params_M": 1673.7,
+  "finished": "2026-10-15 09:06"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r68c-proxy-mixgate",
+  "idea": "proxy backin5: token-dependent mix gate sigmoid(w.x[:32]) instead of a scalar",
+  "status": "trained",
+  "val_bpb": 0.765292,
+  "training_seconds": 3145.9,
+  "peak_vram_mb": 66996.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1725.0,
+  "finished": "2026-10-16 17:41"
+}

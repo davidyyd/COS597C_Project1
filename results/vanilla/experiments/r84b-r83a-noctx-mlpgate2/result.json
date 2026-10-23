@@ -1,0 +1,11 @@
+{
+  "name": "r84b-r83a-noctx-mlpgate2",
+  "idea": "r83a - ctx-x0 conv + MLP hidden gate in layers 2-7",
+  "status": "trained",
+  "val_bpb": 0.923372,
+  "training_seconds": 260.6,
+  "peak_vram_mb": 14958.2,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 10:56"
+}

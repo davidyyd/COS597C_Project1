@@ -1,0 +1,11 @@
+{
+  "name": "r41b-d16m6-x0gates",
+  "idea": "d16m6 proxy: input-dependent gates on the x0 re-injection",
+  "status": "trained",
+  "val_bpb": 0.76935,
+  "training_seconds": 3133.9,
+  "peak_vram_mb": 72398.8,
+  "num_steps": 3815.0,
+  "num_params_M": 1673.7,
+  "finished": "2026-10-15 08:09"
+}

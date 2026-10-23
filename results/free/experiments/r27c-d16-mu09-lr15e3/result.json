@@ -1,0 +1,11 @@
+{
+  "name": "r27c-d16-mu09-lr15e3",
+  "idea": "d16 mu 0.9: LR 1.5e-2",
+  "status": "trained",
+  "val_bpb": 0.784687,
+  "training_seconds": 2461.6,
+  "peak_vram_mb": 70513.8,
+  "num_steps": 3815.0,
+  "num_params_M": 1233.3,
+  "finished": "2026-10-14 18:56"
+}

@@ -1,0 +1,36 @@
+{
+  "model_file": "harness/baseline_model.py",
+  "model_sha256": "1e2e036e28c0d4d982a13d4d6d8efef37fed283da3065af78d87c3b0c0c22123",
+  "measured_at_commit": "5400165486cc4f300d36ebb40a2bca2d3585c996",
+  "schedule": "5% linear warmup, then linear decay to 0",
+  "metric": "validation bits per byte (Karpathy's evaluate_bpb) on 40 x 524,288 tokens of the pinned ClimbMix val shard; reported as val_loss",
+  "best_lr": 0.01,
+  "best_val": 0.95895,
+  "best_val_note": "mean of 4 seeds at LR 1e-2 (the baseline score shown to agents)",
+  "seeds": {
+    "1337": 0.95736,
+    "1": 0.95851,
+    "2": 0.95936,
+    "3": 0.96058
+  },
+  "seed_sd": 0.00136,
+  "seed_range": 0.00322,
+  "per_lr": {
+    "1e-3": 1.01257,
+    "3.16e-3": 0.97324,
+    "1e-2": 0.95736,
+    "3.16e-2": 0.95797,
+    "1e-1": 1.00388
+  },
+  "step_ms": {
+    "mean": 65.63,
+    "sd": 0.14,
+    "min": 65.4,
+    "max": 65.9,
+    "n": 16,
+    "source": "baseline/measure_karpathy_speed_20261012-1418 (fixed data loader; runs on two nodes excluded: a CPU tokenization job ran there, 67.5-71.4 ms)"
+  },
+  "total_params": 50332176,
+  "flops_per_token": 293604352.0,
+  "measurement": "baseline/measure_karpathy_20261012-1342 (LR sweep + seeds, fp32 RoPE, precision rule); speed from baseline/measure_karpathy_speed_20261012-1418"
+}

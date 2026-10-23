@@ -1,0 +1,11 @@
+{
+  "name": "r58d-proxy-softcap12",
+  "idea": "proxy (Muon x0.85): logit softcap 12",
+  "status": "trained",
+  "val_bpb": 0.765963,
+  "training_seconds": 3178.2,
+  "peak_vram_mb": 67011.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1725.0,
+  "finished": "2026-10-16 00:51"
+}

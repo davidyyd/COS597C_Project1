@@ -1,0 +1,11 @@
+{
+  "name": "r36a-r35d-ptr-chunked",
+  "idea": "r35d + pointer-sentinel copy head (fp32 scores, causal query chunks)",
+  "status": "trained",
+  "val_bpb": 0.93389,
+  "training_seconds": 261.5,
+  "peak_vram_mb": 14947.2,
+  "num_steps": 3815.0,
+  "num_params_M": 50.4,
+  "finished": "2026-10-13 11:35"
+}

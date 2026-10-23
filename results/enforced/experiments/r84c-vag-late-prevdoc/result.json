@@ -1,0 +1,11 @@
+{
+  "name": "r84c-vag-late-prevdoc",
+  "idea": "Late local layers see only the current and the previous document",
+  "total_params": 50479184,
+  "flops_ratio": 0.9601462038273874,
+  "step_ms": 60.96609622007236,
+  "status": "trained",
+  "val_loss": 0.9400920161906641,
+  "train_step_ms": 60.93524214986246,
+  "finished": "2026-10-14 02:55"
+}

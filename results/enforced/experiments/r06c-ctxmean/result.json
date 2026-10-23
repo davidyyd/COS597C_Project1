@@ -1,0 +1,11 @@
+{
+  "name": "r06c-ctxmean",
+  "idea": "Causal bag-of-tokens context channel",
+  "total_params": 50332184,
+  "flops_ratio": 1.0,
+  "step_ms": 68.75772183993831,
+  "status": "trained",
+  "val_loss": 0.957598233409178,
+  "train_step_ms": 68.81090647002566,
+  "finished": "2026-10-12 16:21"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r15a-r14a-nokeysmear",
+  "idea": "r14a without key smear",
+  "status": "trained",
+  "val_bpb": 0.941889,
+  "training_seconds": 255.2,
+  "peak_vram_mb": 16675.5,
+  "num_steps": 3815.0,
+  "num_params_M": 49.3,
+  "finished": "2026-10-13 01:43"
+}

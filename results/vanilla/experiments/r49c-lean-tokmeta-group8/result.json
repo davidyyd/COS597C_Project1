@@ -1,0 +1,11 @@
+{
+  "name": "r49c-lean-tokmeta-group8",
+  "idea": "Lean base + token metadata, MLP hidden gate with groups of 8 (256 gates)",
+  "status": "trained",
+  "val_bpb": 0.931581,
+  "training_seconds": 249.0,
+  "peak_vram_mb": 15229.1,
+  "num_steps": 3815.0,
+  "num_params_M": 50.1,
+  "finished": "2026-10-13 18:36"
+}

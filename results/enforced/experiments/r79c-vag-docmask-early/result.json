@@ -1,0 +1,11 @@
+{
+  "name": "r79c-vag-docmask-early",
+  "idea": "Document masking only in the early local layers (0-2)",
+  "total_params": 50348080,
+  "flops_ratio": 0.9788960076450093,
+  "step_ms": 59.15900463995058,
+  "status": "trained",
+  "val_loss": 0.9433976222793763,
+  "train_step_ms": 59.03018085984513,
+  "finished": "2026-10-14 00:38"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r100c-r90b-s4096",
+  "idea": "best (r90b) with seed 4096",
+  "status": "trained",
+  "val_bpb": 0.760128,
+  "training_seconds": 3349.8,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-18 01:34"
+}

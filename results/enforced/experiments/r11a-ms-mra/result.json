@@ -1,0 +1,11 @@
+{
+  "name": "r11a-ms-mra",
+  "idea": "Best-gate model + MLP reads the fresh attention output",
+  "total_params": 50623000,
+  "flops_ratio": 1.0056919047303494,
+  "step_ms": 66.77629345998866,
+  "status": "trained",
+  "val_loss": 0.9478655067316105,
+  "train_step_ms": 66.89634662994649,
+  "finished": "2026-10-12 18:25"
+}

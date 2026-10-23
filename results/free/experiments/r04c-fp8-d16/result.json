@@ -1,0 +1,11 @@
+{
+  "name": "r04c-fp8-d16",
+  "idea": "FP8 matmuls for all block linears (speed test at d16w1024)",
+  "status": "trained",
+  "val_bpb": 0.844246,
+  "training_seconds": 1231.4,
+  "peak_vram_mb": 43150.1,
+  "num_steps": 3815.0,
+  "num_params_M": 285.2,
+  "finished": "2026-10-13 18:43"
+}

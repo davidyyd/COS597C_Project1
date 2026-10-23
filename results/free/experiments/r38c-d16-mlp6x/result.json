@@ -1,0 +1,11 @@
+{
+  "name": "r38c-d16-mlp6x",
+  "idea": "d16 (r35d): MLP 6x",
+  "status": "trained",
+  "val_bpb": 0.770606,
+  "training_seconds": 3104.5,
+  "peak_vram_mb": 72125.3,
+  "num_steps": 3815.0,
+  "num_params_M": 1673.7,
+  "finished": "2026-10-15 05:11"
+}

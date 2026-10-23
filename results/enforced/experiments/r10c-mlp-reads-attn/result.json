@@ -1,0 +1,11 @@
+{
+  "name": "r10c-mlp-reads-attn",
+  "idea": "MLP reads this block's attention output directly",
+  "total_params": 50332184,
+  "flops_ratio": 1.0,
+  "step_ms": 66.05924859002698,
+  "status": "trained",
+  "val_loss": 0.9537949461728416,
+  "train_step_ms": 65.99999140977161,
+  "finished": "2026-10-12 17:41"
+}

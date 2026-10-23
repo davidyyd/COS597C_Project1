@@ -1,0 +1,11 @@
+{
+  "name": "r58a-best-gates-adam",
+  "idea": "Small gate matrices labelled as gates (\"other\", AdamW) instead of attention projections (Muon)",
+  "total_params": 50946680,
+  "flops_ratio": 1.012377800176477,
+  "step_ms": 64.88564300001599,
+  "status": "trained",
+  "val_loss": 0.9340368274044087,
+  "train_step_ms": 64.37553113006288,
+  "finished": "2026-10-13 12:49"
+}

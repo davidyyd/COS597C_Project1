@@ -1,0 +1,11 @@
+{
+  "name": "r83c-vag-late-full",
+  "idea": "Late layers attend over the whole row (no sliding window in the second half)",
+  "total_params": 50348112,
+  "flops_ratio": 0.9788960076450093,
+  "step_ms": 58.34454792988254,
+  "status": "trained",
+  "val_loss": 0.9417677880855747,
+  "train_step_ms": 58.25093941995874,
+  "finished": "2026-10-14 02:37"
+}

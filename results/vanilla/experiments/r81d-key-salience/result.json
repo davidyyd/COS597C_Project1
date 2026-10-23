@@ -1,0 +1,11 @@
+{
+  "name": "r81d-key-salience",
+  "idea": "Key salience bias carried in one q/k channel",
+  "status": "trained",
+  "val_bpb": 0.958113,
+  "training_seconds": 240.9,
+  "peak_vram_mb": 12713.1,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-14 09:47"
+}

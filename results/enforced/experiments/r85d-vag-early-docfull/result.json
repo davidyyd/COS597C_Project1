@@ -1,0 +1,11 @@
+{
+  "name": "r85d-vag-early-docfull",
+  "idea": "Early layers: whole current document visible (document mask, no sliding window)",
+  "total_params": 50479184,
+  "flops_ratio": 0.9815745510475267,
+  "step_ms": 61.77261414995883,
+  "status": "trained",
+  "val_loss": 0.9402879670670568,
+  "train_step_ms": 61.19713780004531,
+  "finished": "2026-10-14 03:12"
+}

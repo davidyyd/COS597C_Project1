@@ -1,0 +1,11 @@
+{
+  "name": "r77d-mem-bi-tri",
+  "idea": "Mid-network gated memory with hashed bigram + trigram lookups",
+  "status": "trained",
+  "val_bpb": 0.955901,
+  "training_seconds": 232.5,
+  "peak_vram_mb": 12819.3,
+  "num_steps": 3815.0,
+  "num_params_M": 52.5,
+  "finished": "2026-10-14 07:52"
+}

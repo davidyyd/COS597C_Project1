@@ -1,0 +1,11 @@
+{
+  "name": "r14c-chain3-attn-reads-attn",
+  "idea": "Attention also reads the previous attention output (no prev-token keys)",
+  "total_params": 50618928,
+  "flops_ratio": 1.0056919047303494,
+  "step_ms": 68.31420347007224,
+  "status": "trained",
+  "val_loss": 0.9445517899805362,
+  "train_step_ms": 68.43239403999178,
+  "finished": "2026-10-12 19:28"
+}

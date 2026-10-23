@@ -1,0 +1,11 @@
+{
+  "name": "r31b-best-de-docpos",
+  "idea": "Deep embedding also sees the document position",
+  "total_params": 51004496,
+  "flops_ratio": 1.0135496629150784,
+  "step_ms": 67.2739035700215,
+  "status": "trained",
+  "val_loss": 0.9441343294177864,
+  "train_step_ms": 67.32451054005651,
+  "finished": "2026-10-13 02:07"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r39d-base-gated-values",
+  "idea": "Gated normalized value mixing on a simple model",
+  "total_params": 50352176,
+  "flops_ratio": 1.0003243548651486,
+  "step_ms": 63.33311191003304,
+  "status": "trained",
+  "val_loss": 0.9463060103828306,
+  "train_step_ms": 63.142354900192004,
+  "finished": "2026-10-13 05:52"
+}

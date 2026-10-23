@@ -1,0 +1,11 @@
+{
+  "name": "r65b-r63a-bigram64-fused",
+  "idea": "r64a (rank-64 bigram prior) folded into the head matmul",
+  "status": "trained",
+  "val_bpb": 0.928755,
+  "training_seconds": 258.9,
+  "peak_vram_mb": 15125.9,
+  "num_steps": 3815.0,
+  "num_params_M": 51.1,
+  "finished": "2026-10-14 02:21"
+}

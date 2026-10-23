@@ -1,0 +1,11 @@
+{
+  "name": "r51b-r49a-pointer",
+  "idea": "r49a + pointer-sentinel copy head (32-dim, chunked)",
+  "status": "trained",
+  "val_bpb": 0.930749,
+  "training_seconds": 260.9,
+  "peak_vram_mb": 14416.2,
+  "num_steps": 3815.0,
+  "num_params_M": 50.1,
+  "finished": "2026-10-13 19:40"
+}

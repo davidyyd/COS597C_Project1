@@ -1,0 +1,11 @@
+{
+  "name": "r37c-d16-gatedskips",
+  "idea": "d16 (r35d): input-dependent gates on the U-net skip connections",
+  "status": "trained",
+  "val_bpb": 0.775412,
+  "training_seconds": 2600.0,
+  "peak_vram_mb": 66337.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1468.2,
+  "finished": "2026-10-15 04:13"
+}

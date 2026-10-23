@@ -1,0 +1,11 @@
+{
+  "name": "r43c-base-proj-norm-only",
+  "idea": "Only normalize the values after mixing (ablation)",
+  "total_params": 50332208,
+  "flops_ratio": 1.0,
+  "step_ms": 68.79101711994736,
+  "status": "trained",
+  "val_loss": 0.9555481442227374,
+  "train_step_ms": 68.09645917994203,
+  "finished": "2026-10-13 06:59"
+}

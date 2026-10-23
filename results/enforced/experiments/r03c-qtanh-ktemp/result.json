@@ -1,0 +1,11 @@
+{
+  "name": "r03c-qtanh-ktemp",
+  "idea": "Per-key salience in addition to per-query temperature",
+  "total_params": 50369040,
+  "flops_ratio": 1.0006696358506293,
+  "step_ms": 62.52075421012705,
+  "status": "trained",
+  "val_loss": 0.9566518758722343,
+  "train_step_ms": 62.801166550052585,
+  "finished": "2026-10-12 15:31"
+}

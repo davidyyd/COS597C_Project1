@@ -1,0 +1,11 @@
+{
+  "name": "r46b-d16m65-veall",
+  "idea": "proxy (r45d) with value embeddings on every layer",
+  "status": "trained",
+  "val_bpb": 0.765634,
+  "training_seconds": 3243.5,
+  "peak_vram_mb": 70826.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1842.4,
+  "finished": "2026-10-15 13:02"
+}

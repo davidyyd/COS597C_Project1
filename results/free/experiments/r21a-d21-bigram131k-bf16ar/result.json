@@ -1,0 +1,7 @@
+{
+  "name": "r21a-d21-bigram131k-bf16ar",
+  "idea": "d21 bigram 131071 rows + backout, b16, flat bf16 grad all_reduce",
+  "status": "crash",
+  "reason": "no val_bpb printed; see run.log",
+  "finished": "2026-10-14 11:17"
+}

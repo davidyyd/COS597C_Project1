@@ -1,0 +1,11 @@
+{
+  "name": "r37c-pointer-2heads",
+  "idea": "Two-head pointer: one sentinel, jointly normalised over both heads' keys",
+  "status": "trained",
+  "val_bpb": 0.953374,
+  "training_seconds": 239.3,
+  "peak_vram_mb": 12484.8,
+  "num_steps": 3815.0,
+  "num_params_M": 50.5,
+  "finished": "2026-10-13 12:02"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r69b-r66b-split112-48",
+  "idea": "r66b with the prior rank split 112 (current) + 48 (previous token)",
+  "status": "trained",
+  "val_bpb": 0.927277,
+  "training_seconds": 263.0,
+  "peak_vram_mb": 15157.9,
+  "num_steps": 3815.0,
+  "num_params_M": 52.7,
+  "finished": "2026-10-14 04:02"
+}

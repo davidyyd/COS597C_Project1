@@ -1,0 +1,11 @@
+{
+  "name": "r30c-best-prevtok-swap",
+  "idea": "Swap the deep embedding for prev-token keys",
+  "total_params": 50483792,
+  "flops_ratio": 1.0028354893050087,
+  "step_ms": 68.74386387993582,
+  "status": "trained",
+  "val_loss": 0.9448966635229874,
+  "train_step_ms": 68.70947335002711,
+  "finished": "2026-10-13 01:52"
+}

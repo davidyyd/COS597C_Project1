@@ -1,0 +1,11 @@
+{
+  "name": "r99a-vag-global-prevdoc",
+  "idea": "Global layers restricted to the current + previous document",
+  "total_params": 50479184,
+  "flops_ratio": 0.9672889862341005,
+  "step_ms": 61.48867201991379,
+  "status": "trained",
+  "val_loss": 0.9403331550430736,
+  "train_step_ms": 62.09561344003305,
+  "finished": "2026-10-14 09:22"
+}

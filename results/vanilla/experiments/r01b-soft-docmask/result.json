@@ -1,0 +1,7 @@
+{
+  "name": "r01b-soft-docmask",
+  "idea": "Soft document mask: learned per-head cross-document logit bias",
+  "status": "timeout",
+  "reason": "stopped at the 60m limit",
+  "finished": "2026-10-12 20:20"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r29a-r27b-headchan-gain",
+  "idea": "r27b with the per-head temperature replaced by a per-(head, channel) query gain",
+  "status": "trained",
+  "val_bpb": 0.935361,
+  "training_seconds": 252.6,
+  "peak_vram_mb": 15599.5,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-13 07:53"
+}

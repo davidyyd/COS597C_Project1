@@ -1,0 +1,11 @@
+{
+  "name": "r91c-r90b-s1337",
+  "idea": "best (r90b) with seed 1337",
+  "status": "trained",
+  "val_bpb": 0.759817,
+  "training_seconds": 3311.3,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-17 16:38"
+}

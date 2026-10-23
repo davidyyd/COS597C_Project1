@@ -1,0 +1,11 @@
+{
+  "name": "r42a-r40a-chan-lambdas",
+  "idea": "r40a with per-channel residual and x0 mixing weights",
+  "status": "trained",
+  "val_bpb": 0.933208,
+  "training_seconds": 256.7,
+  "peak_vram_mb": 16068.6,
+  "num_steps": 3815.0,
+  "num_params_M": 50.5,
+  "finished": "2026-10-13 14:17"
+}

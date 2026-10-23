@@ -1,0 +1,11 @@
+{
+  "name": "r15a-chain4-nox0gate",
+  "idea": "Best model without the x0 gate",
+  "total_params": 50614832,
+  "flops_ratio": 1.0056919047303494,
+  "step_ms": 67.20865061986842,
+  "status": "trained",
+  "val_loss": 0.9461868040931573,
+  "train_step_ms": 67.27124389988603,
+  "finished": "2026-10-12 19:50"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r89a-r87a-repeat",
+  "idea": "Repeat of r87a (noise check of the best)",
+  "total_params": 52191878,
+  "flops_ratio": 0.9949672680601138,
+  "step_ms": 68.44595404982101,
+  "status": "trained",
+  "val_loss": 0.9287813226643157,
+  "train_step_ms": 68.72987408016343,
+  "finished": "2026-10-14 04:58"
+}

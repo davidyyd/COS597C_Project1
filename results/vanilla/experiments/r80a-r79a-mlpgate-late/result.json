@@ -1,0 +1,11 @@
+{
+  "name": "r80a-r79a-mlpgate-late",
+  "idea": "r79a with the grouped MLP hidden gate restored in layers 4-7 only",
+  "status": "trained",
+  "val_bpb": 0.92361,
+  "training_seconds": 261.6,
+  "peak_vram_mb": 15164.1,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 09:18"
+}

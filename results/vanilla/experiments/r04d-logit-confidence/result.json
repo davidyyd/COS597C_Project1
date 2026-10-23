@@ -1,0 +1,11 @@
+{
+  "name": "r04d-logit-confidence",
+  "idea": "Per-token output confidence: restore the magnitude the final RMSNorm discards",
+  "status": "trained",
+  "val_bpb": 0.957598,
+  "training_seconds": 249.5,
+  "peak_vram_mb": 15494.6,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-12 21:15"
+}

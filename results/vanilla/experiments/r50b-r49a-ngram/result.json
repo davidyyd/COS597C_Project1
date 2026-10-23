@@ -1,0 +1,11 @@
+{
+  "name": "r50b-r49a-ngram",
+  "idea": "r49a + character n-gram embeddings",
+  "status": "trained",
+  "val_bpb": 0.93125,
+  "training_seconds": 264.3,
+  "peak_vram_mb": 15128.8,
+  "num_steps": 3815.0,
+  "num_params_M": 52.2,
+  "finished": "2026-10-13 19:10"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r47a-r44c-lean",
+  "idea": "r44c with 2-lag ctx-VE and bf16 ctx-x0 conv (lean base)",
+  "status": "trained",
+  "val_bpb": 0.932349,
+  "training_seconds": 246.8,
+  "peak_vram_mb": 15095.7,
+  "num_steps": 3815.0,
+  "num_params_M": 50.0,
+  "finished": "2026-10-13 17:04"
+}

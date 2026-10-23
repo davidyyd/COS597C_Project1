@@ -1,0 +1,11 @@
+{
+  "name": "r31d-bigram-qk",
+  "idea": "Bigram queries and keys: lag-1 smear on both q and k",
+  "status": "trained",
+  "val_bpb": 0.953065,
+  "training_seconds": 245.9,
+  "peak_vram_mb": 13737.1,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-13 08:46"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r67c-vag-prenorm-gate",
+  "idea": "Per-channel gate before the MLP's normalization",
+  "total_params": 50610224,
+  "flops_ratio": 1.0056814416701834,
+  "step_ms": 62.92860315006692,
+  "status": "trained",
+  "val_loss": 0.9460249316300502,
+  "train_step_ms": 62.908747080073226,
+  "finished": "2026-10-13 17:35"
+}

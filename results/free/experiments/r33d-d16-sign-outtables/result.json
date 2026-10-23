@@ -1,0 +1,11 @@
+{
+  "name": "r33d-d16-sign-outtables",
+  "idea": "d16 (r32c): sign trick also on the output bigram/trigram tables",
+  "status": "trained",
+  "val_bpb": 0.781101,
+  "training_seconds": 2469.5,
+  "peak_vram_mb": 77803.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1468.2,
+  "finished": "2026-10-15 00:22"
+}

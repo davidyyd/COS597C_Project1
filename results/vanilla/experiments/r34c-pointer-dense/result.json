@@ -1,0 +1,11 @@
+{
+  "name": "r34c-pointer-dense",
+  "idea": "Pointer-sentinel copy head (dense implementation)",
+  "status": "trained",
+  "val_bpb": 0.95315,
+  "training_seconds": 236.5,
+  "peak_vram_mb": 12235.8,
+  "num_steps": 3815.0,
+  "num_params_M": 50.4,
+  "finished": "2026-10-13 10:18"
+}

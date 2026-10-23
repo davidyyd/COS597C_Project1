@@ -1,0 +1,11 @@
+{
+  "name": "r09d-logn-temp",
+  "idea": "Learned per-head log-length query scaling",
+  "status": "trained",
+  "val_bpb": 0.955117,
+  "training_seconds": 249.5,
+  "peak_vram_mb": 15486.3,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-12 23:03"
+}

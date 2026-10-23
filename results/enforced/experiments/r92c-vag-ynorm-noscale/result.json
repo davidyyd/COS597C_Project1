@@ -1,0 +1,11 @@
+{
+  "name": "r92c-vag-ynorm-noscale",
+  "idea": "Per-head output normalization without the per-head scale",
+  "total_params": 50479184,
+  "flops_ratio": 0.9815745510475267,
+  "step_ms": 61.06662471021991,
+  "status": "trained",
+  "val_loss": 0.941127863640896,
+  "train_step_ms": 61.00115252949763,
+  "finished": "2026-10-14 06:33"
+}

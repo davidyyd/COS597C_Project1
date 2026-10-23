@@ -1,0 +1,11 @@
+{
+  "name": "r46b-nochain-mra-bigramtb03",
+  "idea": "As r46a with the bigram-hashed token table",
+  "total_params": 52191836,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 67.0388153498061,
+  "status": "trained",
+  "val_loss": 0.9377759109101151,
+  "train_step_ms": 67.0575147800264,
+  "finished": "2026-10-13 08:13"
+}

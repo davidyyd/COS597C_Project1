@@ -1,0 +1,11 @@
+{
+  "name": "r71a-proxy-logitbias",
+  "idea": "proxy backin5-mix + learned output logit bias (unigram prior)",
+  "status": "trained",
+  "val_bpb": 0.763842,
+  "training_seconds": 3122.1,
+  "peak_vram_mb": 66323.7,
+  "num_steps": 3815.0,
+  "num_params_M": 1725.0,
+  "finished": "2026-10-16 20:44"
+}

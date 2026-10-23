@@ -1,0 +1,11 @@
+{
+  "name": "r09a-conv0-stalegates-smear",
+  "idea": "Conv layer 0 + stale depth gates + temperature + smeared keys",
+  "status": "trained",
+  "val_bpb": 0.945345,
+  "training_seconds": 250.1,
+  "peak_vram_mb": 15898.1,
+  "num_steps": 3815.0,
+  "num_params_M": 49.8,
+  "finished": "2026-10-12 23:03"
+}

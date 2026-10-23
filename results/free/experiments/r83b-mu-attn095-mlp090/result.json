@@ -1,0 +1,11 @@
+{
+  "name": "r83b-mu-attn095-mlp090",
+  "idea": "best (r82b) + MLP momentum target 0.90 (attention 0.95)",
+  "status": "trained",
+  "val_bpb": 0.760703,
+  "training_seconds": 3307.0,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-17 08:40"
+}

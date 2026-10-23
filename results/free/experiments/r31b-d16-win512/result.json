@@ -1,0 +1,11 @@
+{
+  "name": "r31b-d16-win512",
+  "idea": "d16 (r30d): S-layer window 512",
+  "status": "trained",
+  "val_bpb": 0.782217,
+  "training_seconds": 2506.5,
+  "peak_vram_mb": 77291.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1468.2,
+  "finished": "2026-10-14 22:37"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r25a-cheap-de-lowrank-half",
+  "idea": "Cheap lineage with deep embedding + low-rank self-gate in half the layers",
+  "total_params": 50995792,
+  "flops_ratio": 1.0133927170125872,
+  "step_ms": 68.07619540995802,
+  "status": "trained",
+  "val_loss": 0.9444100919380943,
+  "train_step_ms": 68.20865293993847,
+  "finished": "2026-10-12 23:55"
+}

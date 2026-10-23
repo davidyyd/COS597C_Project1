@@ -1,0 +1,11 @@
+{
+  "name": "r77b-token-head-mlp",
+  "idea": "Token-conditioned head gates + token-conditioned MLP feature selection",
+  "total_params": 52191880,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 68.78609970997786,
+  "status": "trained",
+  "val_loss": 0.9306600655887559,
+  "train_step_ms": 68.83822375006275,
+  "finished": "2026-10-13 23:27"
+}

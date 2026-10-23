@@ -1,0 +1,11 @@
+{
+  "name": "r98c-r95c-notemp",
+  "idea": "Ablation of r95c: position-aware attention temperature off",
+  "status": "trained",
+  "val_bpb": 0.921689,
+  "training_seconds": 251.4,
+  "peak_vram_mb": 15844.7,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 22:31"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r69d-proxy-nobackoutsub",
+  "idea": "proxy backin5-mix without the final backout subtraction (ablation)",
+  "status": "trained",
+  "val_bpb": 0.764037,
+  "training_seconds": 3157.0,
+  "peak_vram_mb": 66323.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1725.0,
+  "finished": "2026-10-16 18:42"
+}

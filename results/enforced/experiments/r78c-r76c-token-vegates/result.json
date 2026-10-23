@@ -1,0 +1,11 @@
+{
+  "name": "r78c-r76c-token-vegates",
+  "idea": "Token-conditioned value-embedding gates",
+  "total_params": 51667592,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 68.60676276002778,
+  "status": "trained",
+  "val_loss": 0.9307355151957705,
+  "train_step_ms": 68.80054852983449,
+  "finished": "2026-10-14 00:09"
+}

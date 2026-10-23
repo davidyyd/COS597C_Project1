@@ -1,0 +1,11 @@
+{
+  "name": "r27a-r26a-multires",
+  "idea": "r26a + multi-resolution heads in the sliding-window layers",
+  "status": "trained",
+  "val_bpb": 0.93628,
+  "training_seconds": 249.4,
+  "peak_vram_mb": 15535.2,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-13 06:57"
+}

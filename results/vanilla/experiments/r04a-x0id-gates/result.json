@@ -1,0 +1,11 @@
+{
+  "name": "r04a-x0id-gates",
+  "idea": "Depth gates read from the token embedding only (identity gates)",
+  "status": "trained",
+  "val_bpb": 0.953449,
+  "training_seconds": 250.8,
+  "peak_vram_mb": 15620.0,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-12 21:15"
+}

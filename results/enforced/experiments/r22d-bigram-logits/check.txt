@@ -1,0 +1,11 @@
+check: pass
+  attention    8,389,120 params  (cap 8,808,576; 1.00x baseline)
+  mlp         16,777,216 params  (cap 17,616,076; 1.00x baseline)
+  embedding   21,102,592 params  (cap 22,020,096; 1.01x baseline)
+  head         4,325,376 params  (cap 4,404,019; 1.03x baseline)
+  other               16 params  (cap 1,000,000; 1.00x baseline)
+  total       50,594,320 params
+  FLOPs per token: 1.003x baseline (cap 1.05x)
+  causality: ok
+  torch.compile: ok
+  step time (8 H100s, steps 20-120): 67.4 ms/step (cap 68.9)

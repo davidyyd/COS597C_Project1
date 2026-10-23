@@ -1,0 +1,11 @@
+{
+  "name": "r21b-vekeys",
+  "idea": "Value embeddings also added to the keys (token identity for matching)",
+  "status": "trained",
+  "val_bpb": 0.957875,
+  "training_seconds": 247.3,
+  "peak_vram_mb": 14201.0,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-13 04:02"
+}

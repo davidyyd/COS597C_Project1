@@ -1,0 +1,11 @@
+{
+  "name": "r48b-va-ve-plus6",
+  "idea": "One more late value-embedding layer (layer 6 shares layer 7's table)",
+  "total_params": 50352176,
+  "flops_ratio": 1.0004080593464773,
+  "step_ms": 61.34994743013522,
+  "status": "trained",
+  "val_loss": 0.9477210142592791,
+  "train_step_ms": 61.3303542000358,
+  "finished": "2026-10-13 08:51"
+}

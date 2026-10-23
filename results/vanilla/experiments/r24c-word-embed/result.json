@@ -1,0 +1,11 @@
+{
+  "name": "r24c-word-embed",
+  "idea": "Word-so-far embedding: mean of the token embeddings since the last word start",
+  "status": "trained",
+  "val_bpb": 0.957276,
+  "training_seconds": 247.6,
+  "peak_vram_mb": 14330.1,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-13 05:32"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r52c-shift-mlp",
+  "idea": "Time-shifted read into the MLP",
+  "total_params": 50877056,
+  "flops_ratio": 1.0110385284752181,
+  "step_ms": 65.90730875002919,
+  "status": "trained",
+  "val_loss": 0.9358547062827208,
+  "train_step_ms": 65.34063236002112,
+  "finished": "2026-10-13 10:21"
+}

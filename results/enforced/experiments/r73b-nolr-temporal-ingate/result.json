@@ -1,0 +1,11 @@
+{
+  "name": "r73b-nolr-temporal-ingate",
+  "idea": "Low-rank head gate -> temporal MLP input gate (layers 4-7)",
+  "total_params": 51077752,
+  "flops_ratio": 1.0150563435789943,
+  "step_ms": 67.75443382997764,
+  "status": "trained",
+  "val_loss": 0.9349930676812054,
+  "train_step_ms": 67.05392234027386,
+  "finished": "2026-10-13 20:57"
+}

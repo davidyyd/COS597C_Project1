@@ -1,0 +1,11 @@
+{
+  "name": "r20b-d21-bigram262k-f768-b16",
+  "idea": "d21 bigram 262139 x 768 factorized (+ up-projection) + backout, batch 16",
+  "status": "trained",
+  "val_bpb": 0.780671,
+  "training_seconds": 3247.7,
+  "peak_vram_mb": 76800.2,
+  "num_steps": 3815.0,
+  "num_params_M": 1203.1,
+  "finished": "2026-10-14 10:31"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r86d-vag-prevdoc-summary",
+  "idea": "Late layers read the previous document's final state (neighbour-document summary)",
+  "total_params": 50479188,
+  "flops_ratio": 0.9815745510475267,
+  "step_ms": 62.46892484021373,
+  "status": "trained",
+  "val_loss": 0.9400722507109583,
+  "train_step_ms": 62.32222178019583,
+  "finished": "2026-10-14 03:36"
+}

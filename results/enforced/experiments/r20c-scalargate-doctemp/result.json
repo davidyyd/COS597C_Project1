@@ -1,0 +1,11 @@
+{
+  "name": "r20c-scalargate-doctemp",
+  "idea": "Doc-position term in the query temperature",
+  "total_params": 50360912,
+  "flops_ratio": 1.0003348179253146,
+  "step_ms": 65.87719692994142,
+  "status": "trained",
+  "val_loss": 0.9460883174787615,
+  "train_step_ms": 66.21064045990352,
+  "finished": "2026-10-12 21:50"
+}

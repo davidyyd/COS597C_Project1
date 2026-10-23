@@ -1,0 +1,11 @@
+{
+  "name": "r79d-doc-cache-prior",
+  "idea": "Document-unigram cache prior folded into the head",
+  "status": "trained",
+  "val_bpb": 0.957613,
+  "training_seconds": 233.1,
+  "peak_vram_mb": 12751.3,
+  "num_steps": 3815.0,
+  "num_params_M": 51.4,
+  "finished": "2026-10-14 08:48"
+}

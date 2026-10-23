@@ -1,0 +1,4 @@
+#!/bin/bash
+# the gate every model passes before training: model check on one GPU, then the 8-GPU speed benchmark
+source "$(dirname "$(readlink -f "$0")")"/../../../env.sh
+exec python "$(dirname "$(readlink -f "$0")")"/../../harness/check.py "$@"

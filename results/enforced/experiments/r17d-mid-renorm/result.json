@@ -1,0 +1,11 @@
+{
+  "name": "r17d-mid-renorm",
+  "idea": "Mid-depth renormalization of the residual stream",
+  "total_params": 50332176,
+  "flops_ratio": 1.0,
+  "step_ms": 65.47993727988796,
+  "status": "trained",
+  "val_loss": 0.9673992532269702,
+  "train_step_ms": 65.47137205983745,
+  "finished": "2026-10-12 20:35"
+}

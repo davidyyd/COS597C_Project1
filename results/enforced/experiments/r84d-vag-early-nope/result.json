@@ -1,0 +1,11 @@
+{
+  "name": "r84d-vag-early-nope",
+  "idea": "No RoPE in the document-isolated early layers",
+  "total_params": 50479184,
+  "flops_ratio": 0.9815745510475267,
+  "step_ms": 59.16063587006647,
+  "status": "trained",
+  "val_loss": 0.9788514403252808,
+  "train_step_ms": 59.165259129949845,
+  "finished": "2026-10-14 02:55"
+}

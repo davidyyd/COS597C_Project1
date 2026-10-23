@@ -1,0 +1,11 @@
+{
+  "name": "r13b-d20-canon-b16-membudget",
+  "idea": "d20 canon-bf16 at device batch 16 via compile activation memory budget 0.8 (+ win256)",
+  "status": "trained",
+  "val_bpb": 0.786855,
+  "training_seconds": 3430.1,
+  "peak_vram_mb": 63979.5,
+  "num_steps": 3815.0,
+  "num_params_M": 947.2,
+  "finished": "2026-10-14 03:33"
+}

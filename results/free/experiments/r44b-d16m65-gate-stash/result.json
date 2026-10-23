@@ -1,0 +1,11 @@
+{
+  "name": "r44b-d16m65-gate-stash",
+  "idea": "r43d + grad stash (bf16 flat buffer between micro-steps; memory)",
+  "status": "trained",
+  "val_bpb": 0.766215,
+  "training_seconds": 3256.3,
+  "peak_vram_mb": 74180.7,
+  "num_steps": 3815.0,
+  "num_params_M": 1725.1,
+  "finished": "2026-10-15 11:04"
+}

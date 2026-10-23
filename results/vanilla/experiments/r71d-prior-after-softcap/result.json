@@ -1,0 +1,11 @@
+{
+  "name": "r71d-prior-after-softcap",
+  "idea": "Bigram prior added after the logit soft-cap",
+  "status": "trained",
+  "val_bpb": 0.954757,
+  "training_seconds": 237.4,
+  "peak_vram_mb": 13758.0,
+  "num_steps": 3815.0,
+  "num_params_M": 51.4,
+  "finished": "2026-10-14 04:51"
+}

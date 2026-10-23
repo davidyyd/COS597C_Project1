@@ -1,0 +1,11 @@
+{
+  "name": "r07a-resid-gate",
+  "idea": "Per-token forget gate on the residual stream",
+  "total_params": 50364944,
+  "flops_ratio": 1.0003348179253146,
+  "step_ms": 65.31208279018756,
+  "status": "trained",
+  "val_loss": 1.0405995486509876,
+  "train_step_ms": 65.33808348991442,
+  "finished": "2026-10-12 16:37"
+}

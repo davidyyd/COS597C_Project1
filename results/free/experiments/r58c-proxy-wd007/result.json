@@ -1,0 +1,11 @@
+{
+  "name": "r58c-proxy-wd007",
+  "idea": "proxy (Muon x0.85): weight decay 0.07",
+  "status": "trained",
+  "val_bpb": 0.765889,
+  "training_seconds": 3181.0,
+  "peak_vram_mb": 67011.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1725.0,
+  "finished": "2026-10-16 00:51"
+}

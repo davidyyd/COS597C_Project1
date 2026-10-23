@@ -1,0 +1,11 @@
+{
+  "name": "r34a-postcap-temp",
+  "idea": "Output temperature after the soft-cap",
+  "total_params": 51003984,
+  "flops_ratio": 1.0135496629150784,
+  "step_ms": 68.39410927001154,
+  "status": "trained",
+  "val_loss": 0.944257488803401,
+  "train_step_ms": 68.46945018012775,
+  "finished": "2026-10-13 03:34"
+}

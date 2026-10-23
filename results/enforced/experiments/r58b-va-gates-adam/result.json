@@ -1,0 +1,11 @@
+{
+  "name": "r58b-va-gates-adam",
+  "idea": "Value-path gates as \"other\" (AdamW) on the value-path baseline",
+  "total_params": 50348080,
+  "flops_ratio": 1.0003243548651486,
+  "step_ms": 58.31774063000921,
+  "status": "trained",
+  "val_loss": 0.9461786934307952,
+  "train_step_ms": 58.357706390088424,
+  "finished": "2026-10-13 12:49"
+}

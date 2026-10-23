@@ -1,0 +1,11 @@
+{
+  "name": "r01a-prevtok-key",
+  "idea": "Previous-token embedding injected into keys",
+  "total_params": 50334224,
+  "flops_ratio": 1.0,
+  "step_ms": 68.14261366991559,
+  "status": "trained",
+  "val_loss": 0.9577786445291125,
+  "train_step_ms": 68.07603507011663,
+  "finished": "2026-10-12 14:50"
+}

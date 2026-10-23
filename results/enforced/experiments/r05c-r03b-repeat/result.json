@@ -1,0 +1,11 @@
+{
+  "name": "r05c-r03b-repeat",
+  "idea": "Repeat of r03b (noise estimate)",
+  "total_params": 50356752,
+  "flops_ratio": 1.0003348179253146,
+  "step_ms": 63.49021754984278,
+  "status": "trained",
+  "val_loss": 0.9531154226119248,
+  "train_step_ms": 63.3664626601967,
+  "finished": "2026-10-12 16:05"
+}

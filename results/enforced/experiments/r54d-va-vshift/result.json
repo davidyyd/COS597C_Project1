@@ -1,0 +1,11 @@
+{
+  "name": "r54d-va-vshift",
+  "idea": "Previous position's value as a normalized value source",
+  "total_params": 50364464,
+  "flops_ratio": 1.0006591727904632,
+  "step_ms": 64.84483026986709,
+  "status": "trained",
+  "val_loss": 0.9466949813920735,
+  "train_step_ms": 64.73274156975094,
+  "finished": "2026-10-13 11:09"
+}

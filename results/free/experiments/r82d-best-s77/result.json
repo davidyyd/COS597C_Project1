@@ -1,0 +1,11 @@
+{
+  "name": "r82d-best-s77",
+  "idea": "best (r77b) with seed 77",
+  "status": "trained",
+  "val_bpb": 0.761416,
+  "training_seconds": 3340.6,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-17 07:42"
+}

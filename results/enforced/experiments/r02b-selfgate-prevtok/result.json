@@ -1,0 +1,11 @@
+{
+  "name": "r02b-selfgate-prevtok",
+  "idea": "Self-gated heads + previous-token embedding in keys (all layers)",
+  "total_params": 50340368,
+  "flops_ratio": 1.0,
+  "step_ms": 64.57719144993462,
+  "status": "trained",
+  "val_loss": 0.9556820042301235,
+  "train_step_ms": 64.35369540995453,
+  "finished": "2026-10-12 15:09"
+}

@@ -1,0 +1,4 @@
+#!/bin/sh
+# stand-in inside the agent jail for ssh and Slurm commands: GPU work goes through ar-check and ar-exp
+echo "$(basename "$0") is not available here: use ar-check and ar-exp" >&2
+exit 1

@@ -1,0 +1,11 @@
+{
+  "name": "r99c-r94a-repeat2",
+  "idea": "Second repeat of the final model r94a",
+  "total_params": 52191878,
+  "flops_ratio": 1.003002898267666,
+  "step_ms": 67.8894792997744,
+  "status": "trained",
+  "val_loss": 0.9288153329207748,
+  "train_step_ms": 68.18881389044691,
+  "finished": "2026-10-14 09:22"
+}

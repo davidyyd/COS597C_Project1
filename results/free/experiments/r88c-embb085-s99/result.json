@@ -1,0 +1,11 @@
+{
+  "name": "r88c-embb085-s99",
+  "idea": "best (r85b) with seed 99",
+  "status": "trained",
+  "val_bpb": 0.761052,
+  "training_seconds": 3348.2,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-17 13:38"
+}

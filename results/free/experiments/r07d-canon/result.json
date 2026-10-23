@@ -1,0 +1,11 @@
+{
+  "name": "r07d-canon",
+  "idea": "Canon layers: causal depthwise conv (k=4) before attention and MLP",
+  "status": "trained",
+  "val_bpb": 0.937541,
+  "training_seconds": 324.0,
+  "peak_vram_mb": 20866.5,
+  "num_steps": 3815.0,
+  "num_params_M": 50.4,
+  "finished": "2026-10-13 21:49"
+}

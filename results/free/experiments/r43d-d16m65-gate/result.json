@@ -1,0 +1,11 @@
+{
+  "name": "r43d-d16m65-gate",
+  "idea": "d16 MLP 6.5x + gate (fused XSA/gate)",
+  "status": "trained",
+  "val_bpb": 0.766929,
+  "training_seconds": 3290.2,
+  "peak_vram_mb": 77471.1,
+  "num_steps": 3815.0,
+  "num_params_M": 1725.1,
+  "finished": "2026-10-15 10:06"
+}

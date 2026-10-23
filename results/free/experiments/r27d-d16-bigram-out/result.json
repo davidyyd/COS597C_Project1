@@ -1,0 +1,11 @@
+{
+  "name": "r27d-d16-bigram-out",
+  "idea": "d16: output-side bigram table added to the final hidden state",
+  "status": "trained",
+  "val_bpb": 0.783148,
+  "training_seconds": 2475.3,
+  "peak_vram_mb": 72305.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1350.8,
+  "finished": "2026-10-14 18:56"
+}

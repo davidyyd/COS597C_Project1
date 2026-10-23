@@ -1,0 +1,11 @@
+{
+  "name": "r91b-r90b-doclen",
+  "idea": "r90b (bigram repetition depth) + document-length-aware attention temperature",
+  "status": "trained",
+  "val_bpb": 0.92255,
+  "training_seconds": 263.0,
+  "peak_vram_mb": 14929.8,
+  "num_steps": 3815.0,
+  "num_params_M": 52.7,
+  "finished": "2026-10-14 15:16"
+}

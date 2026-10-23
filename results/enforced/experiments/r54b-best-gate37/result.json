@@ -1,0 +1,11 @@
+{
+  "name": "r54b-best-gate37",
+  "idea": "Best with the low-rank gate only in layers 3, 7",
+  "total_params": 50946672,
+  "flops_ratio": 1.012377800176477,
+  "step_ms": 67.40818510006648,
+  "status": "trained",
+  "val_loss": 0.9356798158657387,
+  "train_step_ms": 67.46842877997551,
+  "finished": "2026-10-13 11:09"
+}

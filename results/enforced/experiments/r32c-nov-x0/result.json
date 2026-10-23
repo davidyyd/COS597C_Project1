@@ -1,0 +1,11 @@
+{
+  "name": "r32c-nov-x0",
+  "idea": "Token-identity re-injection modulated by novelty",
+  "total_params": 50336280,
+  "flops_ratio": 1.0,
+  "step_ms": 63.12486704002367,
+  "status": "trained",
+  "val_loss": 0.9561306124626164,
+  "train_step_ms": 63.197701379831415,
+  "finished": "2026-10-13 02:48"
+}

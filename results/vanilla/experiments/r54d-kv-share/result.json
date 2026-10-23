@@ -1,0 +1,11 @@
+{
+  "name": "r54d-kv-share",
+  "idea": "Cross-layer KV sharing between adjacent sliding-window layers (2 <- 1, 6 <- 5)",
+  "status": "trained",
+  "val_bpb": 0.963929,
+  "training_seconds": 221.2,
+  "peak_vram_mb": 12321.0,
+  "num_steps": 3815.0,
+  "num_params_M": 49.3,
+  "finished": "2026-10-13 21:26"
+}

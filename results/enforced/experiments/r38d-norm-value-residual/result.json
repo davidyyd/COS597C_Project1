@@ -1,0 +1,11 @@
+{
+  "name": "r38d-norm-value-residual",
+  "idea": "Value residual with normalized mixing",
+  "total_params": 50350608,
+  "flops_ratio": 1.0002929656846504,
+  "step_ms": 64.53917036007624,
+  "status": "trained",
+  "val_loss": 0.9555649789589005,
+  "train_step_ms": 64.53702903003432,
+  "finished": "2026-10-13 05:26"
+}

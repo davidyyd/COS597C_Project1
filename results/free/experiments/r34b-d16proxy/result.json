@@ -1,0 +1,11 @@
+{
+  "name": "r34b-d16proxy",
+  "idea": "New d16 proxy: r34a config at 16 layers",
+  "status": "trained",
+  "val_bpb": 0.780957,
+  "training_seconds": 2469.1,
+  "peak_vram_mb": 61561.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1350.8,
+  "finished": "2026-10-15 01:21"
+}

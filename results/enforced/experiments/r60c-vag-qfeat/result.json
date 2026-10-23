@@ -1,0 +1,11 @@
+{
+  "name": "r60c-vag-qfeat",
+  "idea": "Value-path baseline + per-dimension query feature gate (AdamW gate)",
+  "total_params": 50479152,
+  "flops_ratio": 1.003002898267666,
+  "step_ms": 60.56291089014849,
+  "status": "trained",
+  "val_loss": 0.9449368078938379,
+  "train_step_ms": 60.287635719869286,
+  "finished": "2026-10-13 13:40"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r95c-r94b-gatesall-ve3",
+  "idea": "r95a + 3-lag selective ctx-VE",
+  "status": "trained",
+  "val_bpb": 0.921402,
+  "training_seconds": 255.2,
+  "peak_vram_mb": 15844.7,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 20:30"
+}

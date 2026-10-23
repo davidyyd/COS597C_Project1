@@ -1,0 +1,11 @@
+{
+  "name": "r31c-d16-wavg",
+  "idea": "d16 (r30d): average weights over the last 150 steps (7 snapshots, CPU)",
+  "status": "trained",
+  "val_bpb": 0.78277,
+  "training_seconds": 2476.6,
+  "peak_vram_mb": 77291.6,
+  "num_steps": 3815.0,
+  "num_params_M": 1468.2,
+  "finished": "2026-10-14 22:37"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r68b-noVE5-rank416-3local",
+  "idea": "r67b with 3 local heads (fit the time cap)",
+  "status": "trained",
+  "val_bpb": 0.927059,
+  "training_seconds": 262.1,
+  "peak_vram_mb": 15063.9,
+  "num_steps": 3815.0,
+  "num_params_M": 52.7,
+  "finished": "2026-10-14 03:31"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r47c-d16m65-gqa7",
+  "idea": "proxy (r45d) with GQA: 7 KV heads for 14 query heads",
+  "status": "trained",
+  "val_bpb": 0.768126,
+  "training_seconds": 2973.5,
+  "peak_vram_mb": 57581.3,
+  "num_steps": 3815.0,
+  "num_params_M": 1614.9,
+  "finished": "2026-10-15 13:59"
+}

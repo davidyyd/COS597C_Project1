@@ -1,0 +1,11 @@
+{
+  "name": "r66a-r65a-ctxprior128",
+  "idea": "r65a with the prior's input factor computed from the contextual embedding (P x0_t) instead of a table U[x_t]",
+  "status": "trained",
+  "val_bpb": 0.929534,
+  "training_seconds": 260.2,
+  "peak_vram_mb": 15135.8,
+  "num_steps": 3815.0,
+  "num_params_M": 51.2,
+  "finished": "2026-10-14 02:44"
+}

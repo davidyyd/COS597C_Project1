@@ -1,0 +1,11 @@
+{
+  "name": "r77a-token-controls",
+  "idea": "Token-identity bias on every bounded per-token control",
+  "total_params": 51741320,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 68.81549120997079,
+  "status": "trained",
+  "val_loss": 0.9306844657326685,
+  "train_step_ms": 69.20820293016732,
+  "finished": "2026-10-13 23:27"
+}

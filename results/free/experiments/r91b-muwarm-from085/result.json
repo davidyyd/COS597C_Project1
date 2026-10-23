@@ -1,0 +1,11 @@
+{
+  "name": "r91b-muwarm-from085",
+  "idea": "best (r90b) with momentum warmup from 0.85 (0.85 -> 0.9)",
+  "status": "trained",
+  "val_bpb": 0.760377,
+  "training_seconds": 3301.7,
+  "peak_vram_mb": 69589.0,
+  "num_steps": 3815.0,
+  "num_params_M": 1908.4,
+  "finished": "2026-10-17 16:38"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r53d-shift-dilated",
+  "idea": "Dilated time-shifted read (t-1 and t-2)",
+  "total_params": 50877056,
+  "flops_ratio": 1.0110385284752181,
+  "step_ms": 64.99541388999205,
+  "status": "trained",
+  "val_loss": 0.9361844490096732,
+  "train_step_ms": 65.38099104014691,
+  "finished": "2026-10-13 10:46"
+}

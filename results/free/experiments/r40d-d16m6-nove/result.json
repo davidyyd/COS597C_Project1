@@ -1,0 +1,11 @@
+{
+  "name": "r40d-d16m6-nove",
+  "idea": "d16 MLP6x proxy without value embeddings",
+  "status": "trained",
+  "val_bpb": 0.772134,
+  "training_seconds": 3069.9,
+  "peak_vram_mb": 68326.7,
+  "num_steps": 3815.0,
+  "num_params_M": 1556.3,
+  "finished": "2026-10-15 07:08"
+}

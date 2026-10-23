@@ -1,0 +1,11 @@
+{
+  "name": "r03b-qtanh-prevtok",
+  "idea": "Self-gate + query temperature + previous-token embedding in keys",
+  "total_params": 50356752,
+  "flops_ratio": 1.0003348179253146,
+  "step_ms": 63.49021754984278,
+  "status": "trained",
+  "val_loss": 0.9528156007318372,
+  "train_step_ms": 63.490354609966744,
+  "finished": "2026-10-12 15:31"
+}

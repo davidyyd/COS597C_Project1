@@ -1,0 +1,11 @@
+{
+  "name": "r85a-noshift-all012-ig3",
+  "idea": "No time-shifted reads in the isolated layers 0-2; MLP input gate also in layer 3",
+  "total_params": 52224642,
+  "flops_ratio": 0.9956369039107431,
+  "step_ms": 68.74501812970266,
+  "status": "trained",
+  "val_loss": 0.9310189794374809,
+  "train_step_ms": 69.10735921002924,
+  "finished": "2026-10-14 03:12"
+}

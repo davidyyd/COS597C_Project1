@@ -1,0 +1,11 @@
+{
+  "name": "r84c-r83a-noctx-ve3lag",
+  "idea": "r83a - ctx-x0 conv + 3-lag selective ctx-VE",
+  "status": "trained",
+  "val_bpb": 0.923599,
+  "training_seconds": 260.1,
+  "peak_vram_mb": 15119.7,
+  "num_steps": 3815.0,
+  "num_params_M": 52.8,
+  "finished": "2026-10-14 10:56"
+}

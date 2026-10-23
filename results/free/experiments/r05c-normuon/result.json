@@ -1,0 +1,11 @@
+{
+  "name": "r05c-normuon",
+  "idea": "NorMuon: per-row second-moment normalization after Newton-Schulz",
+  "status": "trained",
+  "val_bpb": 0.950451,
+  "training_seconds": 344.8,
+  "peak_vram_mb": 15486.0,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-13 19:43"
+}

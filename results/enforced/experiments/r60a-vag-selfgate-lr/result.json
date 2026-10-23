@@ -1,0 +1,11 @@
+{
+  "name": "r60a-vag-selfgate-lr",
+  "idea": "Value-path baseline + head self-gate (scalar + low-rank, AdamW gates)",
+  "total_params": 50614320,
+  "flops_ratio": 1.0056814416701834,
+  "step_ms": 63.88005457993131,
+  "status": "trained",
+  "val_loss": 0.9441226064436161,
+  "train_step_ms": 63.4918621298857,
+  "finished": "2026-10-13 13:40"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r100d-key-position-temp",
+  "idea": "Key-position attention temperature (control)",
+  "status": "trained",
+  "val_bpb": 0.95508,
+  "training_seconds": 231.7,
+  "peak_vram_mb": 12720.1,
+  "num_steps": 3815.0,
+  "num_params_M": 50.3,
+  "finished": "2026-10-14 23:25"
+}

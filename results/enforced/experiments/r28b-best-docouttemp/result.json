@@ -1,0 +1,11 @@
+{
+  "name": "r28b-best-docouttemp",
+  "idea": "Best model + doc-position output temperature",
+  "total_params": 51003474,
+  "flops_ratio": 1.0135496629150784,
+  "step_ms": 68.79644551983802,
+  "status": "trained",
+  "val_loss": 0.9435229626834412,
+  "train_step_ms": 68.63197115017101,
+  "finished": "2026-10-13 01:11"
+}

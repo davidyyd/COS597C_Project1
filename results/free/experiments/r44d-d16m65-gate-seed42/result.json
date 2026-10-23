@@ -1,0 +1,11 @@
+{
+  "name": "r44d-d16m65-gate-seed42",
+  "idea": "r43d with seed 42",
+  "status": "trained",
+  "val_bpb": 0.76688,
+  "training_seconds": 3233.6,
+  "peak_vram_mb": 77471.1,
+  "num_steps": 3815.0,
+  "num_params_M": 1725.1,
+  "finished": "2026-10-15 11:04"
+}

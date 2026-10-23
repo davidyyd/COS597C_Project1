@@ -1,0 +1,11 @@
+{
+  "name": "r50c-r49b-meta-ve",
+  "idea": "r49b + token metadata also in the value embeddings",
+  "status": "trained",
+  "val_bpb": 0.931352,
+  "training_seconds": 260.9,
+  "peak_vram_mb": 15434.9,
+  "num_steps": 3815.0,
+  "num_params_M": 51.0,
+  "finished": "2026-10-13 19:10"
+}

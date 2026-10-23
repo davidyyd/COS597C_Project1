@@ -1,0 +1,11 @@
+{
+  "name": "r30b-best-qfeat-swap",
+  "idea": "Swap the half-layer low-rank output gate for a per-dimension query gate",
+  "total_params": 51003984,
+  "flops_ratio": 1.0135496629150784,
+  "step_ms": 67.62107699993066,
+  "status": "trained",
+  "val_loss": 0.9445245272499077,
+  "train_step_ms": 67.68869830993935,
+  "finished": "2026-10-13 01:52"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "r55d-va-deep-normmix",
+  "idea": "Deep embedding with normalized gated mixing",
+  "total_params": 50872880,
+  "flops_ratio": 1.0110489915353844,
+  "step_ms": 62.40677250985755,
+  "status": "trained",
+  "val_loss": 0.9451736528661735,
+  "train_step_ms": 62.87565025006188,
+  "finished": "2026-10-13 11:34"
+}

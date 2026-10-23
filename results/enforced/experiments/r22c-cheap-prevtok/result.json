@@ -1,0 +1,11 @@
+{
+  "name": "r22c-cheap-prevtok",
+  "idea": "Cheap lineage + prev-token keys",
+  "total_params": 50340432,
+  "flops_ratio": 1.0,
+  "step_ms": 67.81911122001475,
+  "status": "trained",
+  "val_loss": 0.9477109952057732,
+  "train_step_ms": 68.11399150989018,
+  "finished": "2026-10-12 22:45"
+}

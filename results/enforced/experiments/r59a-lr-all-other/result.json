@@ -1,0 +1,11 @@
+{
+  "name": "r59a-lr-all-other",
+  "idea": "Low-rank self-gate in all layers, its matrices trained as gates (AdamW)",
+  "total_params": 51143288,
+  "flops_ratio": 1.0163956152802531,
+  "step_ms": 67.685502669774,
+  "status": "trained",
+  "val_loss": 0.9327824010113624,
+  "train_step_ms": 68.05280839995248,
+  "finished": "2026-10-13 13:03"
+}

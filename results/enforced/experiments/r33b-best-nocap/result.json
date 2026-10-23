@@ -1,0 +1,11 @@
+{
+  "name": "r33b-best-nocap",
+  "idea": "Best model without the logit soft-cap",
+  "total_params": 51003984,
+  "flops_ratio": 1.0135496629150784,
+  "step_ms": 67.87163392000366,
+  "status": "trained",
+  "val_loss": 0.9495249891449706,
+  "train_step_ms": 68.11678946978645,
+  "finished": "2026-10-13 03:17"
+}

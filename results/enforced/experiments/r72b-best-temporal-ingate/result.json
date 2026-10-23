@@ -1,0 +1,11 @@
+{
+  "name": "r72b-best-temporal-ingate",
+  "idea": "Best + temporal MLP input gate (gate features of the previous position, cheap form)",
+  "total_params": 51159672,
+  "flops_ratio": 1.0167304332055678,
+  "step_ms": 67.9984706902178,
+  "status": "trained",
+  "val_loss": 0.9334180997327938,
+  "train_step_ms": 68.40059086011024,
+  "finished": "2026-10-13 20:19"
+}

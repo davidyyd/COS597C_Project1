@@ -1,0 +1,11 @@
+{
+  "name": "r55a-g37-ynorm",
+  "idea": "Head output = normalized retrieval x self-gate (on the gate(3,7) best variant)",
+  "total_params": 50946672,
+  "flops_ratio": 1.012377800176477,
+  "step_ms": 68.22395569004584,
+  "status": "trained",
+  "val_loss": 0.938059920406438,
+  "train_step_ms": 68.02513241011184,
+  "finished": "2026-10-13 11:34"
+}

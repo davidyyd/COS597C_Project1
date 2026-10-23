@@ -1,0 +1,11 @@
+{
+  "name": "r14a-d20-win256-lr6e3",
+  "idea": "d20 canon b8 PE win256, LR 6e-3",
+  "status": "trained",
+  "val_bpb": 0.786265,
+  "training_seconds": 3086.4,
+  "peak_vram_mb": 45314.9,
+  "num_steps": 3815.0,
+  "num_params_M": 947.2,
+  "finished": "2026-10-14 04:33"
+}

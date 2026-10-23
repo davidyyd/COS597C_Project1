@@ -1,0 +1,11 @@
+{
+  "name": "r89c-vag-dm0124",
+  "idea": "Boundary probe: document masking in layers 0-2 and 4",
+  "total_params": 50479184,
+  "flops_ratio": 0.9744317686408136,
+  "step_ms": 60.59314450016245,
+  "status": "trained",
+  "val_loss": 0.9395276095098264,
+  "train_step_ms": 60.65914406994125,
+  "finished": "2026-10-14 04:58"
+}

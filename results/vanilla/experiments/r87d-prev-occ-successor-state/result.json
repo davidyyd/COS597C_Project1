@@ -1,0 +1,11 @@
+{
+  "name": "r87d-prev-occ-successor-state",
+  "idea": "Hard induction pointer: hidden state of the successor of the previous occurrence",
+  "status": "trained",
+  "val_bpb": 0.959621,
+  "training_seconds": 232.3,
+  "peak_vram_mb": 12845.3,
+  "num_steps": 3815.0,
+  "num_params_M": 50.6,
+  "finished": "2026-10-14 12:20"
+}

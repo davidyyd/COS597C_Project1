@@ -1,0 +1,11 @@
+{
+  "name": "r101b-vag-doc-outtemp",
+  "idea": "Cheap base (+RoPE/token) + document position in the output temperature (transfer test)",
+  "total_params": 51007601,
+  "flops_ratio": 1.003002898267666,
+  "step_ms": 67.62364597991109,
+  "status": "trained",
+  "val_loss": 0.9354484915963553,
+  "train_step_ms": 67.27942042984068,
+  "finished": "2026-10-14 10:11"
+}

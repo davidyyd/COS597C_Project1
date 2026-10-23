@@ -1,0 +1,11 @@
+{
+  "name": "r22b-r18b-nodepthgates",
+  "idea": "Ablation of r18b: remove the stale depth gates (x0 + residual gates; back to scalar x0/resid lambdas)",
+  "status": "trained",
+  "val_bpb": 0.939238,
+  "training_seconds": 251.6,
+  "peak_vram_mb": 16194.6,
+  "num_steps": 3815.0,
+  "num_params_M": 49.8,
+  "finished": "2026-10-13 04:28"
+}
